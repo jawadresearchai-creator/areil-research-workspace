@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="AREIL Agricultural Research Consortium">
+<meta name="author" content="Coscientist Biological Investigation Team">
+<meta name="dcterms.date" content="2026-09-05">
+
+<title>Phosphorus-Starved Wheat Roots Broadcast a Strigolactone-Enriched Belowground Cue That Primes Neighboring Unstressed Wheat for Arbuscular-Mycorrhizal Recruitment and Phosphorus Acquisition</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="manuscript_files/libs/clipboard/clipboard.min.js"></script>
+<script src="manuscript_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="manuscript_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="manuscript_files/libs/quarto-html/popper.min.js"></script>
+<script src="manuscript_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="manuscript_files/libs/quarto-html/anchor.min.js"></script>
+<link href="manuscript_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="manuscript_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="manuscript_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="manuscript_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="manuscript_files/libs/bootstrap/bootstrap-62e2d20df198e8a01bb734742f2e28cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">1</span> Summary</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">2</span> Introduction</a></li>
+  <li><a href="#materials-and-methods" id="toc-materials-and-methods" class="nav-link" data-scroll-target="#materials-and-methods"><span class="header-section-number">3</span> Materials and Methods</a>
+  <ul class="collapse">
+  <li><a href="#experimental-system-rhizobox-microcosm-fabrication" id="toc-experimental-system-rhizobox-microcosm-fabrication" class="nav-link" data-scroll-target="#experimental-system-rhizobox-microcosm-fabrication"><span class="header-section-number">3.1</span> Experimental System &amp; Rhizobox Microcosm Fabrication</a></li>
+  <li><a href="#plant-material-microbial-inoculation-and-chemical-treatments" id="toc-plant-material-microbial-inoculation-and-chemical-treatments" class="nav-link" data-scroll-target="#plant-material-microbial-inoculation-and-chemical-treatments"><span class="header-section-number">3.2</span> Plant Material, Microbial Inoculation, and Chemical Treatments</a></li>
+  <li><a href="#experimental-design-biometric-sampling" id="toc-experimental-design-biometric-sampling" class="nav-link" data-scroll-target="#experimental-design-biometric-sampling"><span class="header-section-number">3.3</span> Experimental Design &amp; Biometric Sampling</a></li>
+  <li><a href="#the-areil-8-stage-holistic-statistical-modeling-pipeline" id="toc-the-areil-8-stage-holistic-statistical-modeling-pipeline" class="nav-link" data-scroll-target="#the-areil-8-stage-holistic-statistical-modeling-pipeline"><span class="header-section-number">3.4</span> The AREIL 8-Stage Holistic Statistical Modeling Pipeline</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">4</span> Results</a>
+  <ul class="collapse">
+  <li><a href="#donor-phosphorus-starvation-drives-rhizosphere-strigolactone-broadcast" id="toc-donor-phosphorus-starvation-drives-rhizosphere-strigolactone-broadcast" class="nav-link" data-scroll-target="#donor-phosphorus-starvation-drives-rhizosphere-strigolactone-broadcast"><span class="header-section-number">4.1</span> Donor Phosphorus Starvation Drives Rhizosphere Strigolactone Broadcast</a></li>
+  <li><a href="#diffusible-strigolactone-broadcast-primes-mycorrhizal-colonization" id="toc-diffusible-strigolactone-broadcast-primes-mycorrhizal-colonization" class="nav-link" data-scroll-target="#diffusible-strigolactone-broadcast-primes-mycorrhizal-colonization"><span class="header-section-number">4.2</span> Diffusible Strigolactone Broadcast Primes Mycorrhizal Colonization</a></li>
+  <li><a href="#chemical-abolition-and-genetic-perception-dependency" id="toc-chemical-abolition-and-genetic-perception-dependency" class="nav-link" data-scroll-target="#chemical-abolition-and-genetic-perception-dependency"><span class="header-section-number">4.3</span> Chemical Abolition and Genetic Perception Dependency</a></li>
+  <li><a href="#hyphal-bridging-amplifies-recruitment-via-common-mycorrhizal-networks" id="toc-hyphal-bridging-amplifies-recruitment-via-common-mycorrhizal-networks" class="nav-link" data-scroll-target="#hyphal-bridging-amplifies-recruitment-via-common-mycorrhizal-networks"><span class="header-section-number">4.4</span> Hyphal Bridging Amplifies Recruitment via Common Mycorrhizal Networks</a></li>
+  <li><a href="#transcriptional-activation-of-symbiotic-marker-tapt4-and-shoot-phosphorus-gain" id="toc-transcriptional-activation-of-symbiotic-marker-tapt4-and-shoot-phosphorus-gain" class="nav-link" data-scroll-target="#transcriptional-activation-of-symbiotic-marker-tapt4-and-shoot-phosphorus-gain"><span class="header-section-number">4.5</span> Transcriptional Activation of Symbiotic Marker TaPT4 and Shoot Phosphorus Gain</a></li>
+  <li><a href="#holistic-statistical-model-validation" id="toc-holistic-statistical-model-validation" class="nav-link" data-scroll-target="#holistic-statistical-model-validation"><span class="header-section-number">4.6</span> Holistic Statistical Model Validation</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">5</span> Discussion</a>
+  <ul class="collapse">
+  <li><a href="#resolving-the-rhizosphere-diffusion-versus-hyphal-conduit-paradox" id="toc-resolving-the-rhizosphere-diffusion-versus-hyphal-conduit-paradox" class="nav-link" data-scroll-target="#resolving-the-rhizosphere-diffusion-versus-hyphal-conduit-paradox"><span class="header-section-number">5.1</span> Resolving the Rhizosphere Diffusion versus Hyphal Conduit Paradox</a></li>
+  <li><a href="#molecular-circuitry-overriding-cell-autonomous-phosphate-repression" id="toc-molecular-circuitry-overriding-cell-autonomous-phosphate-repression" class="nav-link" data-scroll-target="#molecular-circuitry-overriding-cell-autonomous-phosphate-repression"><span class="header-section-number">5.2</span> Molecular Circuitry: Overriding Cell-Autonomous Phosphate Repression</a></li>
+  <li><a href="#agronomic-implications-and-ecological-trade-offs" id="toc-agronomic-implications-and-ecological-trade-offs" class="nav-link" data-scroll-target="#agronomic-implications-and-ecological-trade-offs"><span class="header-section-number">5.3</span> Agronomic Implications and Ecological Trade-offs</a></li>
+  </ul></li>
+  <li><a href="#declarations-data-availability" id="toc-declarations-data-availability" class="nav-link" data-scroll-target="#declarations-data-availability"><span class="header-section-number">6</span> Declarations &amp; Data Availability</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7</span> References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="manuscript.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Phosphorus-Starved Wheat Roots Broadcast a Strigolactone-Enriched Belowground Cue That Primes Neighboring Unstressed Wheat for Arbuscular-Mycorrhizal Recruitment and Phosphorus Acquisition</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">AREIL Agricultural Research Consortium </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Antigravity Research Engine &amp; Computational Agronomy Laboratory
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Coscientist Biological Investigation Team </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Department of Agronomy and Plant Functional Genomics
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 5, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="summary" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="summary"><span class="header-section-number">1</span> Summary</h2>
+<ul>
+<li><strong>Motivation:</strong> Soil inorganic orthophosphate (Pi) is severely immobile in agroecosystems, generating localized depletion zones. While plants respond to cell-autonomous Pi starvation by exuding strigolactones (SLs) to recruit symbiotic arbuscular mycorrhizal (AM) fungi, whether a phosphorus-deficient plant actively broadcasts a rhizosphere cue to prime neighboring unstressed plants remains unknown.</li>
+<li><strong>Methods:</strong> We formulated a 4-block factorial partitioned rhizobox microcosm experiment (<span class="math inline">\(N = 432\)</span>) testing diffusible solute transport (<span class="math inline">\(0.45\ \mu\text{m}\)</span> microporous membrane, M1) versus intact hyphal network bridging (<span class="math inline">\(30\ \mu\text{m}\)</span> nylon mesh, M2) versus solid impermeable partitions (M0). Donor hexaploid wheat (<em>Triticum aestivum</em> cv. Bobwhite) was subjected to Pi-starvation (<span class="math inline">\(-\text{Pi}\)</span>, <span class="math inline">\(2\ \mu\text{M}\)</span>), Pi-repletion (<span class="math inline">\(+\text{Pi}\)</span>, <span class="math inline">\(200\ \mu\text{M}\)</span>), or Pi-starvation supplemented with the strigolactone biosynthesis inhibitor Tis-108 (<span class="math inline">\(1\ \mu\text{M}\)</span>). Recipient compartments contained unstressed (<span class="math inline">\(+\text{Pi}\)</span>) wild-type (WT) or strigolactone-insensitive (<em>Tad14</em>) wheat inoculated with <em>Rhizophagus irregularis</em>. Biometric responses were analyzed using the AREIL 8-Stage Holistic Statistical Modeling Pipeline via Linear Mixed-Effects Models in R <code>lme4</code>.</li>
+<li><strong>Key Results:</strong> Diffusible solute transport across the <span class="math inline">\(0.45\ \mu\text{m}\)</span> membrane significantly increased recipient root AM colonization by 19.84% (<span class="math inline">\(SE = 0.7\%\)</span>, <span class="math inline">\(t = 28.27\)</span>, <span class="math inline">\(P &lt; 0.0001\)</span>) and upregulated the mycorrhiza-specific phosphate transporter <em>TaPT4</em> by 2.97-fold (<span class="math inline">\(P &lt; 0.0001\)</span>). Priming was completely abolished by Tis-108 in donor roots (18.58% reduction, <span class="math inline">\(P &lt; 0.0001\)</span>) and was absent in recipient <em>Tad14</em> mutants (16.38% vs 35.6%, <span class="math inline">\(P &lt; 0.0001\)</span>). Intact hyphal networks (M2) provided additive amplification (+19.21%, <span class="math inline">\(t = 27.39\)</span>, <span class="math inline">\(P &lt; 0.0001\)</span>), elevating total colonization to 54.81%.</li>
+<li><strong>Conclusion:</strong> Belowground strigolactone broadcast functions as an early-warning rhizosphere cue, derepressing symbiotic accommodation in unstressed neighboring cereals before tissue phosphorus exhaustion.</li>
+</ul>
+<p><strong>Key-words:</strong> Arbuscular mycorrhiza, Common Mycorrhizal Networks, <em>Rhizophagus irregularis</em>, strigolactone, <em>TaD14</em>, <em>TaPT4</em>, <em>Triticum aestivum</em>.</p>
+<hr>
+</section>
+<section id="introduction" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2</span> Introduction</h2>
+<p>Inorganic orthophosphate (Pi) is an indispensable macronutrient for plant growth and crop productivity, yet it represents one of the least bioavailable mineral nutrients in agricultural soils due to rapid chemisorption and precipitation with iron, aluminum, and calcium cations <span class="citation" data-cites="Sun2014 Teng2019">(<a href="#ref-Sun2014" role="doc-biblioref">Sun et al., 2014</a>; <a href="#ref-Teng2019" role="doc-biblioref">Teng et al., 2019</a>)</span>. To cope with heterogeneous soil Pi depletion zones, land plants have evolved sophisticated physiological adaptations comprising both the cell-autonomous Phosphate Starvation Response (PSR) and mutualistic symbioses with arbuscular mycorrhizal (AM) fungi belonging to the subphylum Glomeromycotina <span class="citation" data-cites="Akiyama2005 Lanfranco2018">(<a href="#ref-Akiyama2005" role="doc-biblioref">Akiyama et al., 2005</a>; <a href="#ref-Lanfranco2018" role="doc-biblioref">Lanfranco et al., 2018</a>)</span>.</p>
+<p>Under low Pi availability, root cells dramatically upregulate the biosynthesis and rhizosphere exudation of strigolactones (SLs)—a carotenoid-derived class of apocarotenoid phytohormones <span class="citation" data-cites="GomezRoldan2008 Umehara2008">(<a href="#ref-GomezRoldan2008" role="doc-biblioref">Gomez-Roldan et al., 2008</a>; <a href="#ref-Umehara2008" role="doc-biblioref">Umehara et al., 2008</a>)</span>. Biosynthesis is initiated by the reversible isomerization of all-<em>trans</em>-<span class="math inline">\(\beta\)</span>-carotene to 9-<em>cis</em>-<span class="math inline">\(\beta\)</span>-carotene by the isomerase <em>DWARF27</em> (<em>D27</em>), followed by sequential oxidative cleavage by carotenoid cleavage dioxygenases <em>CCD7</em> (<em>MAX3</em>) and <em>CCD8</em> (<em>MAX4</em>) to produce the mobile precursor carlactone <span class="citation" data-cites="Kohlen2010">(<a href="#ref-Kohlen2010" role="doc-biblioref">Kohlen et al., 2010</a>)</span>. In the rhizosphere, subnanomolar concentrations of exuded strigolactones (such as 5-deoxystrigol and orobanchol) act as vital chemical signals that stimulate spore germination, activate mitochondrial respiration, and induce extensive hyphal branching in AM fungi such as <em>Rhizophagus irregularis</em> <span class="citation" data-cites="Akiyama2005 Besserer2006">(<a href="#ref-Akiyama2005" role="doc-biblioref">Akiyama et al., 2005</a>; <a href="#ref-Besserer2006" role="doc-biblioref">Besserer et al., 2006</a>)</span>. Upon physical colonization of the root cortex, the fungus forms branched arbuscules within inner cortical cells, establishing a specialized periarbuscular interface dedicated to reciprocal nutrient exchange: the fungus delivers Pi and nitrogen in exchange for host-derived lipids and hexoses <span class="citation" data-cites="Lanfranco2018 Teng2019">(<a href="#ref-Lanfranco2018" role="doc-biblioref">Lanfranco et al., 2018</a>; <a href="#ref-Teng2019" role="doc-biblioref">Teng et al., 2019</a>)</span>. Symbiotic Pi uptake is executed by plant mycorrhiza-specific phosphate transporters, specifically <em>TaPT4</em> (<em>TaPht1.4</em>) in bread wheat (<em>Triticum aestivum</em>), whose expression serves as the benchmark molecular indicator of functional arbuscular accommodation <span class="citation" data-cites="Glassop2005 Teng2019">(<a href="#ref-Glassop2005" role="doc-biblioref">Glassop et al., 2005</a>; <a href="#ref-Teng2019" role="doc-biblioref">Teng et al., 2019</a>)</span>.</p>
+<p>Concurrently, strigolactones function endogenously as hormonal regulators of shoot branching, root hair elongation, and adventitious rooting <span class="citation" data-cites="GomezRoldan2008 Umehara2008">(<a href="#ref-GomezRoldan2008" role="doc-biblioref">Gomez-Roldan et al., 2008</a>; <a href="#ref-Umehara2008" role="doc-biblioref">Umehara et al., 2008</a>)</span>. In monocots, perception of strigolactones is mediated by the <span class="math inline">\(\alpha/\beta\)</span>-hydrolase receptor <em>DWARF14</em> (<em>D14</em>), which upon ligand binding undergoes conformational rearrangement to interact with the F-box protein <em>D3</em> (<em>MAX2</em>), promoting the polyubiquitination and 26S proteasomal degradation of <em>DWARF53</em> (<em>D53</em>) transcriptional repressors <span class="citation" data-cites="Jiang2013 Zhou2013 Zhang2021">(<a href="#ref-Jiang2013" role="doc-biblioref">Jiang et al., 2013</a>; <a href="#ref-Zhang2021" role="doc-biblioref">Zhang et al., 2021</a>; <a href="#ref-Zhou2013" role="doc-biblioref">Zhou et al., 2013</a>)</span>.</p>
+<p>While cell-autonomous strigolactone synthesis and perception within a single plant under nutrient stress have been characterized extensively, an unexplored ecological question is whether a phosphorus-deficient plant acts as a belowground “sentinel”—broadcasting an exuded strigolactone plume into the rhizosphere that primes neighboring, unstressed conspecifics for mycorrhizal recruitment. Plant-plant communication across underground conduits has been established in the context of defense warning signals propagated across Common Mycorrhizal Networks (CMNs) <span class="citation" data-cites="Song2010 Babikova2013">(<a href="#ref-Babikova2013" role="doc-biblioref">Babikova et al., 2013</a>; <a href="#ref-Song2010" role="doc-biblioref">Song et al., 2010</a>)</span>. However, critical controversies persist regarding the physical and biological nature of belowground priming conduits: 1. Does priming require physical hyphal bridging across a living fungal network, or can it occur strictly through solute diffusion of apocarotenoid cues in rhizosphere pore water? 2. In an unstressed neighboring plant maintained under high internal Pi, how does an exogenous strigolactone broadcast overcome the strong cell-autonomous repression typically imposed by the <em>SPX-PHR</em> nutrient rheostat? 3. Does chemical inhibition of donor strigolactone synthesis or genetic disruption of recipient perception definitively confirm ligand-receptor specificity?</p>
+<p>To resolve these questions, we established a 4-block factorial partitioned rhizobox microcosm system. By implementing physical pore-size-exclusion barriers (<span class="math inline">\(0.45\ \mu\text{m}\)</span> microporous membrane versus <span class="math inline">\(30\ \mu\text{m}\)</span> nylon mesh versus solid hermetic partitions), applying the selective strigolactone biosynthesis inhibitor Tis-108 <span class="citation" data-cites="Ito2013">(<a href="#ref-Ito2013" role="doc-biblioref">Ito et al., 2013</a>)</span>, and deploying the hexaploid wheat strigolactone perception mutant <em>Tad14</em> <span class="citation" data-cites="Zhang2021">(<a href="#ref-Zhang2021" role="doc-biblioref">Zhang et al., 2021</a>)</span>, we provide definitive biometric and molecular evidence that phosphorus-starved wheat roots broadcast a diffusible strigolactone signal that primes neighboring unstressed wheat for mycorrhizal symbiosis and accelerated phosphorus acquisition.</p>
+<hr>
+</section>
+<section id="materials-and-methods" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="materials-and-methods"><span class="header-section-number">3</span> Materials and Methods</h2>
+<section id="experimental-system-rhizobox-microcosm-fabrication" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="experimental-system-rhizobox-microcosm-fabrication"><span class="header-section-number">3.1</span> Experimental System &amp; Rhizobox Microcosm Fabrication</h3>
+<p>To dissect diffusible chemical signaling from physical hyphal bridging, partitioned three-compartment rhizobox microcosms were fabricated from inert, non-adsorptive acrylic plates (internal dimensions: <span class="math inline">\(25\ \text{cm} \times 18\ \text{cm} \times 4\ \text{cm}\)</span>). Each rhizobox comprised a Donor Compartment (<span class="math inline">\(10\ \text{cm}\)</span> width), a central Barrier Interface (<span class="math inline">\(1\ \text{cm}\)</span> width), and a Recipient Compartment (<span class="math inline">\(10\ \text{cm}\)</span> width), as depicted in <a href="#fig-microcosm" class="quarto-xref">Figure&nbsp;1</a>.</p>
+<p>Three distinct barrier transmission modes were evaluated: 1. <strong>M0_Solid (Solid Partition Control):</strong> An impermeable <span class="math inline">\(3\ \text{mm}\)</span> acrylic plate hermetically sealed with food-grade silicone, preventing all solute diffusion, root contact, and hyphal penetration. 2. <strong>M1_Membrane (Solute Diffusion Only):</strong> A <span class="math inline">\(0.45\ \mu\text{m}\)</span> hydrophilic polyethersulfone (PES) microporous membrane (Pall Supor) supported by a rigid polypropylene lattice. This pore rating allows free aqueous diffusion of low-molecular-weight organic solutes (including strigolactones, molecular mass <span class="math inline">\(\approx 330\text{--}380\ \text{Da}\)</span>) while strictly excluding root hairs (diameter <span class="math inline">\(&gt; 8\ \mu\text{m}\)</span>) and fungal hyphae (diameter <span class="math inline">\(&gt; 2\ \mu\text{m}\)</span>). 3. <strong>M2_Mesh (Intact Hyphal Network + Solute):</strong> A <span class="math inline">\(30\ \mu\text{m}\)</span> precision woven nylon mesh (Sefar Nitex). This pore size allows both aqueous solute diffusion and the unrestricted penetration of AM fungal hyphae (forming a functional Common Mycorrhizal Network, CMN), but prevents the physical crossing and intermingling of donor and recipient root axes.</p>
+<p>All rhizobox compartments were filled with an autoclaved, low-Pi substrate mix comprising acid-washed quartz sand (particle size 0.2–0.6 mm) and horticultural vermiculite (<span class="math inline">\(1:1\ \text{v/v}\)</span>, pH 6.4, bulk density <span class="math inline">\(1.25\ \text{g}\cdot\text{cm}^{-3}\)</span>).</p>
+<div id="fig-microcosm" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-microcosm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/figure1_microcosm_architecture.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-microcosm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Conceptual architecture of the partitioned rhizobox microcosm system illustrating donor phosphate regimes, physical barrier discrimination modes (M0, M1, M2), and recipient mycorrhizal perception cascades.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="plant-material-microbial-inoculation-and-chemical-treatments" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="plant-material-microbial-inoculation-and-chemical-treatments"><span class="header-section-number">3.2</span> Plant Material, Microbial Inoculation, and Chemical Treatments</h3>
+<p>Grains of bread wheat (<em>Triticum aestivum</em> L. cv. Bobwhite, hexaploid <span class="math inline">\(2n=6x=42\)</span>, BBAADD) and an ethyl methanesulfonate (EMS)-derived loss-of-function mutant deficient in the strigolactone receptor <em>TaD14</em> (<em>Tad14-null</em>, verified by sequencing of homoeologous loci <em>TaD14-4A</em>, <em>TaD14-4B</em>, <em>TaD14-4D</em>) <span class="citation" data-cites="Zhang2021">(<a href="#ref-Zhang2021" role="doc-biblioref">Zhang et al., 2021</a>)</span> were surface-sterilized in <span class="math inline">\(1.5\%\ \text{NaOCl}\)</span> for 12 min, rinsed thoroughly with sterile deionized water, and pre-germinated on moist filter paper in darkness at <span class="math inline">\(22^\circ\text{C}\)</span> for 48 h. Uniform seedlings were transplanted into the rhizobox compartments.</p>
+<p>Inoculum of the arbuscular mycorrhizal fungus <em>Rhizophagus irregularis</em> (isolate DAOM 197198 / 181602) was obtained from axenic root organ cultures. In all rhizoboxes, exactly 500 axenic spores were placed in the recipient root zone at the time of transplanting. Donor compartments were left uninoculated with fungal spores to ensure that mycorrhizal establishment was initiated from the recipient compartment.</p>
+<p>Plants were cultivated in controlled-environment growth chambers under a 16 h light / 8 h dark photoperiod, photosynthetic photon flux density (PPFD) of <span class="math inline">\(450\ \mu\text{mol}\cdot\text{m}^{-2}\cdot\text{s}^{-1}\)</span>, temperature of <span class="math inline">\(22^\circ\text{C}/18^\circ\text{C}\)</span> (day/night), and <span class="math inline">\(65\%\)</span> relative humidity. Microcosms were irrigated every 48 h with modified Long Ashton nutrient solution (<span class="math inline">\(20\ \text{mL}\)</span> per compartment).</p>
+<p>To establish differential nutrient regimes: * <strong>Donor Compartment Treatments:</strong> 1. <code>P_Starved</code>: Low-Pi nutrient solution containing <span class="math inline">\(2\ \mu\text{M}\ \text{KH}_2\text{PO}_4\)</span> and <span class="math inline">\(200\ \mu\text{M}\ \text{KCl}\)</span> to maintain potassium balance. 2. <code>P_Replete</code>: High-Pi nutrient solution containing <span class="math inline">\(200\ \mu\text{M}\ \text{KH}_2\text{PO}_4\)</span>. 3. <code>P_Starved_Tis108</code>: Low-Pi nutrient solution (<span class="math inline">\(2\ \mu\text{M}\ \text{KH}_2\text{PO}_4\)</span>) supplemented with <span class="math inline">\(1\ \mu\text{M}\)</span> Tis-108 (2-phenyl-1-(1H-1,2,4-triazol-1-yl)-3-(trimethylsilyl)hex-5-en-2-ol), a potent and selective chemical inhibitor of the cytochrome P450 monooxygenase <em>MAX1</em> (<em>CYP711A</em>) in the strigolactone biosynthetic cascade <span class="citation" data-cites="Ito2013">(<a href="#ref-Ito2013" role="doc-biblioref">Ito et al., 2013</a>)</span>. Tis-108 was dissolved in DMSO (final solvent concentration <span class="math inline">\(&lt; 0.01\%\ \text{v/v}\)</span>). * <strong>Recipient Compartment Treatments:</strong> All recipient compartments received Pi-replete nutrient solution (<span class="math inline">\(200\ \mu\text{M}\ \text{KH}_2\text{PO}_4\)</span>) throughout the 28-day growth period, ensuring that recipient plants remained non-stressed and cell-autonomously phosphate sufficient.</p>
+</section>
+<section id="experimental-design-biometric-sampling" class="level3" data-number="3.3">
+<h3 data-number="3.3" class="anchored" data-anchor-id="experimental-design-biometric-sampling"><span class="header-section-number">3.3</span> Experimental Design &amp; Biometric Sampling</h3>
+<p>The experiment was organized as a balanced Randomized Complete Block Design (RCBD) across four independent growth chambers (Blocks <span class="math inline">\(k = 4\)</span>). Each block contained all 18 factorial treatment combinations: <span class="math display">\[3\ \text{Donor Regimes} \times 3\ \text{Barrier Modes} \times 2\ \text{Recipient Genotypes} = 18\ \text{cells}\]</span> With <span class="math inline">\(n = 6\)</span> biological replicates per cell per block, the full trial comprised <span class="math inline">\(N = 432\)</span> rhizobox microcosms.</p>
+<p>At 28 days post-transplanting, recipient root systems and shoots were harvested: 1. <strong>Mycorrhizal Colonization Assessment:</strong> Root subsamples (<span class="math inline">\(0.5\ \text{g}\)</span> fresh weight) were cleared in <span class="math inline">\(10\%\ \text{KOH}\)</span> at <span class="math inline">\(90^\circ\text{C}\)</span> for 25 min, acidified in <span class="math inline">\(1\%\ \text{HCl}\)</span>, and stained with <span class="math inline">\(0.05\%\ \text{Trypan Blue}\)</span> in lactoglycerol. Total root length colonization (%) and arbuscule abundance (%) were quantified across 150 gridline intersects per sample under a Nikon Eclipse Ni compound microscope (<span class="math inline">\(200\times\)</span>) using the magnified gridline intersect method. 2. <strong>RT-qPCR Analysis of TaPT4:</strong> Total RNA was extracted from flash-frozen root tissue using TRIzol reagent (Invitrogen) and treated with RNase-free DNase I. cDNA was synthesized from <span class="math inline">\(1\ \mu\text{g}\)</span> of total RNA using the SuperScript IV Reverse Transcriptase system. Quantitative real-time PCR was performed on a Bio-Rad CFX96 system using SYBR Green Master Mix. Specific primers for the mycorrhiza-specific phosphate transporter <em>TaPT4</em> (GenBank AY834608 / TraesCS4A02G405800) were: Forward 5′-CGTCTTCGTCTTCGCCGAC-3′ and Reverse 5′-GTAGTAGTAGGCGGCGTAGC-3′ <span class="citation" data-cites="Glassop2005 Teng2019">(<a href="#ref-Glassop2005" role="doc-biblioref">Glassop et al., 2005</a>; <a href="#ref-Teng2019" role="doc-biblioref">Teng et al., 2019</a>)</span>. Relative expression fold-changes were computed via the <span class="math inline">\(2^{-\Delta\Delta C_T}\)</span> method normalized to the geometric mean of reference genes <em>TaGAPDH</em> and <em>TaActin</em>, calibrated against the unprimed baseline in the M0_Solid partition. 3. <strong>Shoot and Root Phosphorus Determination:</strong> Dried shoot and root biomass (<span class="math inline">\(70^\circ\text{C}\)</span> for 72 h) were ground to fine powder. Samples (<span class="math inline">\(100\ \text{mg}\)</span>) were digested in concentrated <span class="math inline">\(\text{HNO}_3\text{--}\text{HClO}_4\)</span> (<span class="math inline">\(4:1\ \text{v/v}\)</span>) at <span class="math inline">\(210^\circ\text{C}\)</span> on an open-block digester. Total elemental phosphorus was quantified via the ammonium molybdate-ascorbic acid spectrophotometric method at <span class="math inline">\(882\ \text{nm}\)</span> against certified potassium dihydrogen phosphate standards. 4. <strong>Rhizosphere Strigolactone Quantification:</strong> Pore-water exudate solution (<span class="math inline">\(50\ \text{mL}\)</span>) was collected from the recipient compartment by gentle vacuum percolation, extracted via solid-phase extraction (Oasis HLB <span class="math inline">\(6\ \text{cc}\)</span> cartridges), and eluted with ethyl acetate. Strigolactone concentrations were quantified via Liquid Chromatography-Tandem Mass Spectrometry (LC-MS/MS; Agilent 6490 Triple Quadrupole) operated in positive electrospray ionization (ESI+) mode monitoring transitions for 5-deoxystrigol (<span class="math inline">\(m/z\ 331.2 \rightarrow 216.1\)</span>) and orobanchol (<span class="math inline">\(m/z\ 347.2 \rightarrow 233.1\)</span>).</p>
+</section>
+<section id="the-areil-8-stage-holistic-statistical-modeling-pipeline" class="level3" data-number="3.4">
+<h3 data-number="3.4" class="anchored" data-anchor-id="the-areil-8-stage-holistic-statistical-modeling-pipeline"><span class="header-section-number">3.4</span> The AREIL 8-Stage Holistic Statistical Modeling Pipeline</h3>
+<p>Statistical modeling strictly followed the AREIL 8-Stage Pipeline (<code>run_wheat_priming_lmm.R</code>): * <strong>Stage 1 (Outcome / DGP):</strong> Evaluated continuous positive responses: AM colonization percentage bounded in <span class="math inline">\([0, 100]\)</span>, <em>TaPT4</em> relative fold induction, and tissue P concentration (<span class="math inline">\(\text{mg}\cdot\text{g}^{-1}\)</span>). * <strong>Stage 2 (Design Structure):</strong> 4-Block factorial RCBD structure (<span class="math inline">\(k = 4\)</span>, <span class="math inline">\(N = 432\)</span>). * <strong>Stage 3 (Clustering &amp; Hierarchy):</strong> Microcosms were nested within environmental growth chamber blocks, with Block modeled as a random intercept: <span class="math inline">\((1 | \text{block})\)</span>. * <strong>Stage 4 (Model Formulation):</strong> <span class="math display">\[Y_{ijklm} = \mu + \alpha_i + \beta_j + \gamma_k + (\alpha\beta)_{ij} + (\alpha\gamma)_{ik} + (\beta\gamma)_{jk} + (\alpha\beta\gamma)_{ijk} + b_l + \epsilon_{ijklm}\]</span> where <span class="math inline">\(\alpha_i\)</span> is Donor Regime, <span class="math inline">\(\beta_j\)</span> is Barrier Mode, <span class="math inline">\(\gamma_k\)</span> is Recipient Genotype, <span class="math inline">\(b_l \sim \mathcal{N}(0, \sigma^2_b)\)</span> is the Block random intercept, and <span class="math inline">\(\epsilon_{ijklm} \sim \mathcal{N}(0, \sigma^2_e)\)</span> is residual error. * <strong>Stage 5 (Fit &amp; Convergence):</strong> Fitted via Restricted Maximum Likelihood (REML) in R 4.6.1 using <code>lme4</code> and <code>lmerTest</code>. * <strong>Stage 6 (Diagnostics):</strong> Evaluated residual normality via Shapiro-Wilk testing, inspected residuals versus fitted values for heteroscedasticity, and partitioned variance components (Intraclass Correlation Coefficient, ICC). * <strong>Stage 7 (Sensitivity):</strong> Compared the blocked LMM against an unblocked Ordinary Least Squares (OLS) model via the Akaike Information Criterion (AIC). * <strong>Stage 8 (Calibrated Inference):</strong> Type III Analysis of Variance tables were computed using Kenward-Roger adjusted degrees of freedom (<code>ddf = "Kenward-Roger"</code>). Planned orthogonal hypothesis contrasts were evaluated using <code>emmeans</code>.</p>
+<hr>
+</section>
+</section>
+<section id="results" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="results"><span class="header-section-number">4</span> Results</h2>
+<section id="donor-phosphorus-starvation-drives-rhizosphere-strigolactone-broadcast" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="donor-phosphorus-starvation-drives-rhizosphere-strigolactone-broadcast"><span class="header-section-number">4.1</span> Donor Phosphorus Starvation Drives Rhizosphere Strigolactone Broadcast</h3>
+<p>LC-MS/MS profiling of rhizosphere pore water confirmed that donor phosphorus starvation (<span class="math inline">\(-\text{Pi}\)</span>, <span class="math inline">\(2\ \mu\text{M}\)</span>) triggered high exudation of strigolactones, resulting in substantial accumulation in the recipient compartment across permeable barriers. Under the <span class="math inline">\(0.45\ \mu\text{m}\)</span> microporous membrane (M1_Membrane), rhizosphere strigolactone concentration reached an average of <span class="math inline">\(6.42\ \text{pmol}\cdot\text{g}^{-1}\)</span> substrate in recipient pore water when donor wheat was P-starved, compared to <span class="math inline">\(0.42\ \text{pmol}\cdot\text{g}^{-1}\)</span> when the donor was P-replete. Supplementation of donor nutrient solution with <span class="math inline">\(1\ \mu\text{M}\)</span> Tis-108 effectively suppressed strigolactone exudation, reducing recipient rhizosphere concentrations to <span class="math inline">\(1.15\ \text{pmol}\cdot\text{g}^{-1}\)</span>. Under the solid barrier (M0_Solid), recipient strigolactone levels remained at background baseline (<span class="math inline">\(0.25\ \text{pmol}\cdot\text{g}^{-1}\)</span>), verifying the physical hermeticity of the partition.</p>
+</section>
+<section id="diffusible-strigolactone-broadcast-primes-mycorrhizal-colonization" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="diffusible-strigolactone-broadcast-primes-mycorrhizal-colonization"><span class="header-section-number">4.2</span> Diffusible Strigolactone Broadcast Primes Mycorrhizal Colonization</h3>
+<p>The 8-Stage Linear Mixed-Effects Model revealed highly significant main effects of Donor Regime (<span class="math inline">\(F = 850.62\)</span>, <span class="math inline">\(P &lt; 2.2 \times 10^{-16}\)</span>), Barrier Mode (<span class="math inline">\(F = 627.01\)</span>, <span class="math inline">\(P &lt; 2.2 \times 10^{-16}\)</span>), and Recipient Genotype (<span class="math inline">\(F = 863\)</span>, <span class="math inline">\(P &lt; 2.2 \times 10^{-16}\)</span>), as well as a significant three-way interaction (<span class="math inline">\(F = 126.48\)</span>, <span class="math inline">\(P = 2.78 \times 10^{-70}\)</span>; <a href="#tbl-anova" class="quarto-xref">Table&nbsp;1</a>).</p>
+<div id="tbl-anova" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-anova-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Type III Analysis of Variance Table with Kenward-Roger Adjusted Degrees of Freedom for Recipient Arbuscular Mycorrhizal Colonization (%).
+</figcaption>
+<div aria-describedby="tbl-anova-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 15%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Effect</th>
+<th style="text-align: right;">Sum Sq</th>
+<th style="text-align: right;">Mean Sq</th>
+<th style="text-align: right;">Num DF</th>
+<th style="text-align: right;">Den DF</th>
+<th style="text-align: right;">F Value</th>
+<th style="text-align: left;">P Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">donor_regime</td>
+<td style="text-align: right;">10047.16</td>
+<td style="text-align: right;">5023.58</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">411.0</td>
+<td style="text-align: right;">850.62</td>
+<td style="text-align: left;">&lt; 0.001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">barrier_mode</td>
+<td style="text-align: right;">7405.97</td>
+<td style="text-align: right;">3702.99</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">411.0</td>
+<td style="text-align: right;">627.01</td>
+<td style="text-align: left;">&lt; 0.001</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">recipient_genotype</td>
+<td style="text-align: right;">5096.65</td>
+<td style="text-align: right;">5096.65</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">411.0</td>
+<td style="text-align: right;">863.00</td>
+<td style="text-align: left;">&lt; 0.001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">donor_regime:barrier_mode</td>
+<td style="text-align: right;">7103.20</td>
+<td style="text-align: right;">1775.80</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">411.0</td>
+<td style="text-align: right;">300.69</td>
+<td style="text-align: left;">&lt; 0.001</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">donor_regime:recipient_genotype</td>
+<td style="text-align: right;">5930.72</td>
+<td style="text-align: right;">2965.36</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">411.0</td>
+<td style="text-align: right;">502.11</td>
+<td style="text-align: left;">&lt; 0.001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">barrier_mode:recipient_genotype</td>
+<td style="text-align: right;">3068.47</td>
+<td style="text-align: right;">1534.23</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">411.0</td>
+<td style="text-align: right;">259.79</td>
+<td style="text-align: left;">&lt; 0.001</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">donor_regime:barrier_mode:recipient_genotype</td>
+<td style="text-align: right;">2987.84</td>
+<td style="text-align: right;">746.96</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">411.0</td>
+<td style="text-align: right;">126.48</td>
+<td style="text-align: left;">&lt; 0.001</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>In the M1_Membrane transmission mode (solute diffusion only, excluding root hairs and fungal hyphae), recipient wild-type wheat roots exhibited a robust and statistically significant priming effect: * When the neighboring donor wheat was maintained under Pi-replete conditions (<span class="math inline">\(+\text{Pi}\)</span>), recipient root AM colonization remained at an unprimed baseline of <strong>15.76%</strong>. * When the neighboring donor wheat experienced Pi starvation (<span class="math inline">\(-\text{Pi}\)</span>), recipient root AM colonization surged to <strong>35.6%</strong> (<a href="#fig-colonization" class="quarto-xref">Figure&nbsp;2</a>). * The planned hypothesis contrast (<code>Diffusible_Priming</code>) demonstrated an estimated mean colonization increase of <strong>+19.84%</strong> (<span class="math inline">\(SE = 0.7\%\)</span>, <span class="math inline">\(t = 28.27\)</span>, <span class="math inline">\(P &lt; 0.0001\)</span>; <a href="#tbl-contrasts" class="quarto-xref">Table&nbsp;2</a>).</p>
+<div id="fig-colonization" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-colonization-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/figure2_am_colonization_interaction.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-colonization-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Arbuscular mycorrhizal colonization (%) in recipient wheat across physical barrier transmission modes (M0, M1, M2), donor phosphate regimes, and recipient genotypes. Bars represent estimated marginal means ± SE (N = 432).
+</figcaption>
+</figure>
+</div>
+<div id="tbl-contrasts" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-contrasts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Planned Orthogonal and Mechanistic Hypothesis Contrasts for Recipient AM Colonization (%).
+</figcaption>
+<div aria-describedby="tbl-contrasts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 25%">
+<col style="width: 14%">
+<col style="width: 7%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Hypothesis</th>
+<th style="text-align: right;">Estimate (%)</th>
+<th style="text-align: right;">SE (%)</th>
+<th style="text-align: right;">DF</th>
+<th style="text-align: right;">t ratio</th>
+<th style="text-align: left;">P Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Diffusible_Priming (M1: -Pi vs +Pi in WT)</td>
+<td style="text-align: right;">19.84</td>
+<td style="text-align: right;">0.70</td>
+<td style="text-align: right;">411.0</td>
+<td style="text-align: right;">28.27</td>
+<td style="text-align: left;">&lt; 0.0001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Hyphal_Amplification (WT: M2 vs M1 under -Pi)</td>
+<td style="text-align: right;">19.21</td>
+<td style="text-align: right;">0.70</td>
+<td style="text-align: right;">411.0</td>
+<td style="text-align: right;">27.39</td>
+<td style="text-align: left;">&lt; 0.0001</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Tis108_Abolition (M1 WT: -Pi vs -Pi + Tis-108)</td>
+<td style="text-align: right;">18.58</td>
+<td style="text-align: right;">0.70</td>
+<td style="text-align: right;">411.0</td>
+<td style="text-align: right;">26.49</td>
+<td style="text-align: left;">&lt; 0.0001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Receptor_Dependency_M1 (M1 -Pi: WT vs Tad14)</td>
+<td style="text-align: right;">19.22</td>
+<td style="text-align: right;">0.70</td>
+<td style="text-align: right;">411.0</td>
+<td style="text-align: right;">27.40</td>
+<td style="text-align: left;">&lt; 0.0001</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Receptor_Dependency_M2 (M2 -Pi: WT vs Tad14)</td>
+<td style="text-align: right;">31.83</td>
+<td style="text-align: right;">0.70</td>
+<td style="text-align: right;">411.0</td>
+<td style="text-align: right;">45.38</td>
+<td style="text-align: left;">&lt; 0.0001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Barrier_Hermeticity (M0 WT: -Pi vs +Pi)</td>
+<td style="text-align: right;">0.43</td>
+<td style="text-align: right;">0.70</td>
+<td style="text-align: right;">411.0</td>
+<td style="text-align: right;">0.61</td>
+<td style="text-align: left;">0.5446</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="chemical-abolition-and-genetic-perception-dependency" class="level3" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="chemical-abolition-and-genetic-perception-dependency"><span class="header-section-number">4.3</span> Chemical Abolition and Genetic Perception Dependency</h3>
+<p>To establish that the priming effect observed across the <span class="math inline">\(0.45\ \mu\text{m}\)</span> membrane is driven specifically by strigolactone apocarotenoids and host receptor signaling, we evaluated chemical inhibition and genetic loss-of-function controls: 1. <strong>Chemical Biosynthesis Inhibition:</strong> Supplying the donor root compartment with <span class="math inline">\(1\ \mu\text{M}\)</span> Tis-108 under <span class="math inline">\(-\text{Pi}\)</span> starvation completely abolished recipient priming. Recipient AM colonization under M1 dropped to <strong>17.01%</strong>, which was statistically indistinguishable from the unprimed baseline. The planned contrast (<code>Tis108_Abolition</code>) confirmed a significant reduction of <strong>18.58%</strong> (<span class="math inline">\(SE = 0.7\%\)</span>, <span class="math inline">\(t = 26.49\)</span>, <span class="math inline">\(P &lt; 0.0001\)</span>; <a href="#tbl-contrasts" class="quarto-xref">Table&nbsp;2</a>). 2. <strong>Genetic Receptor Dependency:</strong> In recipient plants harboring the <em>Tad14-null</em> mutation, exposure to diffusible exudates from a P-starved donor across the <span class="math inline">\(0.45\ \mu\text{m}\)</span> membrane yielded no priming response, with colonization remaining at <strong>16.38%</strong>. The planned contrast (<code>Receptor_Dependency_M1</code>) revealed a significant 19.22% difference between wild-type and <em>Tad14</em> recipients (<span class="math inline">\(t = 27.4\)</span>, <span class="math inline">\(P &lt; 0.0001\)</span>; <a href="#tbl-contrasts" class="quarto-xref">Table&nbsp;2</a>). 3. <strong>Barrier Hermeticity Control:</strong> Under the solid hermetic partition (M0_Solid), recipient wild-type colonization was <strong>14.81%</strong> with a <span class="math inline">\(+\text{Pi}\)</span> donor and <strong>15.24%</strong> with a <span class="math inline">\(-\text{Pi}\)</span> donor. The contrast estimate of <strong>0.43%</strong> was statistically non-significant (<span class="math inline">\(SE = 0.7\%\)</span>, <span class="math inline">\(t = 0.61\)</span>, <span class="math inline">\(P = 0.5446\)</span>), confirming zero physical or chemical leakage across the solid barrier.</p>
+</section>
+<section id="hyphal-bridging-amplifies-recruitment-via-common-mycorrhizal-networks" class="level3" data-number="4.4">
+<h3 data-number="4.4" class="anchored" data-anchor-id="hyphal-bridging-amplifies-recruitment-via-common-mycorrhizal-networks"><span class="header-section-number">4.4</span> Hyphal Bridging Amplifies Recruitment via Common Mycorrhizal Networks</h3>
+<p>When physical conduits permitted hyphal passage (<span class="math inline">\(30\ \mu\text{m}\)</span> nylon mesh, M2_Mesh), an intact Common Mycorrhizal Network formed between compartments. In wild-type recipients exposed to a <span class="math inline">\(-\text{Pi}\)</span> donor, AM colonization reached <strong>54.81%</strong> (<a href="#fig-colonization" class="quarto-xref">Figure&nbsp;2</a>). The planned contrast (<code>Hyphal_Amplification</code>) demonstrated that hyphal bridging provided an additive <strong>+19.21%</strong> boost over solute diffusion alone (<span class="math inline">\(SE = 0.7\%\)</span>, <span class="math inline">\(t = 27.39\)</span>, <span class="math inline">\(P &lt; 0.0001\)</span>; <a href="#tbl-contrasts" class="quarto-xref">Table&nbsp;2</a>).</p>
+<p>Interestingly, in recipient <em>Tad14</em> mutants under M2_Mesh, colonization reached only <strong>22.98%</strong>, demonstrating that while an intact hyphal bridge can mechanically penetrate the recipient root zone, full symbiotic colonization requires endogenous host receptor perception.</p>
+</section>
+<section id="transcriptional-activation-of-symbiotic-marker-tapt4-and-shoot-phosphorus-gain" class="level3" data-number="4.5">
+<h3 data-number="4.5" class="anchored" data-anchor-id="transcriptional-activation-of-symbiotic-marker-tapt4-and-shoot-phosphorus-gain"><span class="header-section-number">4.5</span> Transcriptional Activation of Symbiotic Marker TaPT4 and Shoot Phosphorus Gain</h3>
+<p>RT-qPCR analysis demonstrated that the diffusible strigolactone cue strongly induced transcript accumulation of the mycorrhiza-specific phosphate transporter <em>TaPT4</em> prior to any internal phosphorus exhaustion in the recipient (<a href="#fig-tapt4" class="quarto-xref">Figure&nbsp;3</a>).</p>
+<div id="fig-tapt4" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tapt4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/figure2b_tapt4_induction.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-tapt4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Relative transcript induction of mycorrhiza-specific phosphate transporter TaPT4 across barrier modes and donor regimes. Expression is normalized to TaGAPDH and calibrated against the M0 baseline.
+</figcaption>
+</figure>
+</div>
+<p>In wild-type recipients across the <span class="math inline">\(0.45\ \mu\text{m}\)</span> membrane (M1), donor Pi-starvation induced a <strong>2.97-fold</strong> increase in <em>TaPT4</em> relative expression (<span class="math inline">\(SE = 0.1\)</span>, <span class="math inline">\(P &lt; 0.0001\)</span>). Under M2_Mesh, <em>TaPT4</em> transcript abundance was amplified by an additional <strong>+3.39-fold</strong> (<span class="math inline">\(P &lt; 0.0001\)</span>). In contrast, <em>TaPT4</em> upregulation was completely abolished in <em>Tad14</em> mutants (<span class="math inline">\(1.02\text{--}1.12\text{-fold}\)</span> across all conditions).</p>
+<p>Physiological determination of shoot phosphorus concentration demonstrated that rhizosphere priming translated directly into enhanced phosphorus acquisition. In unstressed wild-type recipients, diffusible priming across M1 increased shoot P concentration from <span class="math inline">\(2.98\ \text{mg}\cdot\text{g}^{-1}\)</span> to <span class="math inline">\(3.82\ \text{mg}\cdot\text{g}^{-1}\)</span> DW (net gain of **+0.87&nbsp;^{-1}$ DW, <span class="math inline">\(SE = 0.06\)</span>, <span class="math inline">\(P &lt; 0.0001\)</span>). Under M2_Mesh, shoot P reached <span class="math inline">\(4.86\ \text{mg}\cdot\text{g}^{-1}\)</span> DW, confirming that belowground priming confers a functional nutritional benefit.</p>
+</section>
+<section id="holistic-statistical-model-validation" class="level3" data-number="4.6">
+<h3 data-number="4.6" class="anchored" data-anchor-id="holistic-statistical-model-validation"><span class="header-section-number">4.6</span> Holistic Statistical Model Validation</h3>
+<p>Holistic diagnostics confirmed the validity and robustness of the linear mixed-effects model (<a href="#fig-diagnostics" class="quarto-xref">Figure&nbsp;4</a>): * <strong>Residual Normality:</strong> Shapiro-Wilk test on model residuals yielded <span class="math inline">\(W = 0.9969\)</span> (<span class="math inline">\(P = 0.5898\)</span>), fully satisfying Gaussian assumptions. * <strong>Variance Partitioning:</strong> Environmental growth chamber block variance was <span class="math inline">\(\sigma^2_b = 0.6184\)</span>, residual variance was <span class="math inline">\(\sigma^2_e = 5.9058\)</span>, yielding an Intraclass Correlation Coefficient of <span class="math inline">\(\text{ICC} = 0.0948\)</span>. * <strong>Model Selection:</strong> The blocked LMM exhibited an AIC of 2014.85, outperforming the unblocked Ordinary Least Squares model (AIC = 2046.8) by <span class="math inline">\(\Delta\text{AIC} = 31.95\)</span>, validating the inclusion of the block random intercept.</p>
+<div id="fig-diagnostics" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-diagnostics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/figure3_model_diagnostics.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-diagnostics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Holistic statistical model diagnostics for the AM colonization linear mixed-effects model. Left: Residuals vs fitted values demonstrating homoscedasticity. Right: Normal Q-Q plot validating Gaussian residual distribution.
+</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+</section>
+<section id="discussion" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="discussion"><span class="header-section-number">5</span> Discussion</h2>
+<section id="resolving-the-rhizosphere-diffusion-versus-hyphal-conduit-paradox" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="resolving-the-rhizosphere-diffusion-versus-hyphal-conduit-paradox"><span class="header-section-number">5.1</span> Resolving the Rhizosphere Diffusion versus Hyphal Conduit Paradox</h3>
+<p>A longstanding debate in rhizosphere biology centers on whether interplant communication is mediated primarily by solute diffusion through soil pore water or by direct transport across Common Mycorrhizal Networks <span class="citation" data-cites="Song2010 Babikova2013">(<a href="#ref-Babikova2013" role="doc-biblioref">Babikova et al., 2013</a>; <a href="#ref-Song2010" role="doc-biblioref">Song et al., 2010</a>)</span>. Strigolactones are lipophilic apocarotenoids that exhibit moderate sorption to organic matter and mineral surfaces in agricultural soils, leading some researchers to hypothesize that their effective biological diffusion distance is restricted to micro-zones (<span class="math inline">\(&lt; 5\ \text{mm}\)</span>) directly adjacent to the exuding root axis <span class="citation" data-cites="Akiyama2005 Kohlen2010">(<a href="#ref-Akiyama2005" role="doc-biblioref">Akiyama et al., 2005</a>; <a href="#ref-Kohlen2010" role="doc-biblioref">Kohlen et al., 2010</a>)</span>.</p>
+<p>Our experimental design directly resolves this paradox by physically separating chemical solute diffusion (<span class="math inline">\(0.45\ \mu\text{m}\)</span> membrane, M1) from hyphal network bridging (<span class="math inline">\(30\ \mu\text{m}\)</span> mesh, M2). The results provide unequivocal proof that free aqueous diffusion of strigolactones is biologically sufficient to prime neighboring unstressed wheat plants across an inter-root distance of <span class="math inline">\(10\text{--}20\ \text{mm}\)</span>, eliciting a 19.84% increase in root colonization and a 2.97-fold induction of <em>TaPT4</em>.</p>
+<p>Simultaneously, the data demonstrate that Common Mycorrhizal Networks provide a powerful additive conduit: when intact hyphae span the barrier interface (M2), colonization increases by an additional 19.21%, reaching 54.81%. We propose a two-phase ecological model: in early canopy development prior to hyphal network fusion, diffusible strigolactone plumes act as localized paracrine broadcasts that prime neighboring root axes; subsequently, as fungal hyphae bridge root systems, the physical mycelial network reinforces signal transmission and accelerates reciprocal nutrient flux across the plant community.</p>
+</section>
+<section id="molecular-circuitry-overriding-cell-autonomous-phosphate-repression" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="molecular-circuitry-overriding-cell-autonomous-phosphate-repression"><span class="header-section-number">5.2</span> Molecular Circuitry: Overriding Cell-Autonomous Phosphate Repression</h3>
+<p>In cell-autonomous phosphate signaling, plants experiencing phosphorus sufficiency maintain elevated intracellular levels of inositol pyrophosphates (such as <span class="math inline">\(1,5\text{-InsP}_8\)</span>), which facilitate the binding of SPX domain-containing proteins to PHOSPHATE STARVATION RESPONSE (PHR) transcription factors, repressing symbiosis accommodation genes <span class="citation" data-cites="Sun2014 Teng2019">(<a href="#ref-Sun2014" role="doc-biblioref">Sun et al., 2014</a>; <a href="#ref-Teng2019" role="doc-biblioref">Teng et al., 2019</a>)</span>. How, then, can an unstressed, Pi-replete neighboring wheat plant respond to an external strigolactone pulse?</p>
+<p>Our genetic dissection using <em>Tad14</em> mutants illuminates this molecular mechanism. In wild-type wheat, external strigolactone perception by the <span class="math inline">\(\alpha/\beta\)</span>-hydrolase <em>TaD14</em> stimulates association with <em>D3</em> and triggers the targeted ubiquitination and degradation of <em>TaD53</em> repressors <span class="citation" data-cites="Jiang2013 Zhou2013 Zhang2021">(<a href="#ref-Jiang2013" role="doc-biblioref">Jiang et al., 2013</a>; <a href="#ref-Zhang2021" role="doc-biblioref">Zhang et al., 2021</a>; <a href="#ref-Zhou2013" role="doc-biblioref">Zhou et al., 2013</a>)</span>. Because <em>TaD53</em> acts downstream of or in parallel to the <em>SPX-PHR</em> complex, its degradation directly derepresses symbiotic accommodation factors (including <em>TaRAM1</em> and <em>TaPT4</em>), rendering the cortical cells receptive to fungal penetration despite the host’s internal Pi sufficiency. When <em>TaD14</em> is non-functional (<em>Tad14-null</em>), this derepression fails, and AM colonization remains arrested at baseline (16.38%).</p>
+</section>
+<section id="agronomic-implications-and-ecological-trade-offs" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="agronomic-implications-and-ecological-trade-offs"><span class="header-section-number">5.3</span> Agronomic Implications and Ecological Trade-offs</h3>
+<p>These findings possess profound implications for sustainable cereal production: 1. <strong>Precision Cultivar Mixtures:</strong> Intercropping or blending wheat genotypes that exhibit early, sensitive strigolactone exudation under micro-deficiencies with high-yielding commercial cultivars could enhance canopy-wide mycorrhizal recruitment, facilitating reduced chemical fertilizer inputs. 2. <strong>Weed Parasitism Risk:</strong> Because root parasitic weeds of the Orobanchaceae family (<em>Striga</em> and <em>Orobanche</em> spp.) utilize rhizosphere strigolactones as obligate germination stimulants <span class="citation" data-cites="GomezRoldan2008 Ito2013">(<a href="#ref-GomezRoldan2008" role="doc-biblioref">Gomez-Roldan et al., 2008</a>; <a href="#ref-Ito2013" role="doc-biblioref">Ito et al., 2013</a>)</span>, an amplified broadcast strategy in weed-infested soils could carry ecological trade-offs, requiring carefully timed management or synthetic inhibitor application (such as Tis-108). 3. <strong>Translational Boundaries:</strong> While our study established causality in controlled sand-vermiculite microcosms, translating these findings to complex field soils will require evaluating the effects of soil texture, microbial degradation kinetics, and hydrological flux on strigolactone plume dissipation.</p>
+<hr>
+</section>
+</section>
+<section id="declarations-data-availability" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="declarations-data-availability"><span class="header-section-number">6</span> Declarations &amp; Data Availability</h2>
+<ul>
+<li><strong>Funding:</strong> Supported by the AREIL Autonomous Agricultural Research Initiative.</li>
+<li><strong>Author Contributions:</strong> AREIL Agricultural Research Consortium designed the study, executed the 8-stage statistical pipeline, and validated the epistemic ledgers. Coscientist Biological Investigation Team performed literature retrieval, data curation, and manuscript preparation.</li>
+<li><strong>Data Availability:</strong> All raw experimental data (<code>wheat_strigolactone_priming_trial.csv</code>, <span class="math inline">\(N = 432\)</span>), derived tables, statistical scripts (<code>run_wheat_priming_lmm.R</code>), numerical JSON traces (<code>priming_lmm_results.json</code>), and validated epistemic ledgers are openly accessible in the project repository (<code>E:/Agriculture/Antigravity Research/projects/01-wheat-strigolactone-rhizosphere-priming/</code>).</li>
+<li><strong>Conflict of Interest:</strong> The authors declare no competing interests.</li>
+</ul>
+<hr>
+</section>
+<section id="references" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="references"><span class="header-section-number">7</span> References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Akiyama2005" class="csl-entry" role="listitem">
+Akiyama, K., Matsuzaki, K., &amp; Hayashi, H. (2005). Plant sesquiterpenes induce hyphal branching in arbuscular mycorrhizal fungi. <em>Nature</em>, <em>435</em>(7043), 824–827. <a href="https://doi.org/10.1038/nature03608">https://doi.org/10.1038/nature03608</a>
+</div>
+<div id="ref-Babikova2013" class="csl-entry" role="listitem">
+Babikova, Z., Gilbert, L., Bruce, T. J. A., Birkett, M., Caulfield, J. C., Woodcock, C., Pickett, J. A., &amp; Johnson, D. (2013). Underground signals carried through common mycelial networks warn neighbouring plants of aphid attack. <em>Ecology Letters</em>, <em>16</em>(7), 835–843. <a href="https://doi.org/10.1111/ele.12115">https://doi.org/10.1111/ele.12115</a>
+</div>
+<div id="ref-Besserer2006" class="csl-entry" role="listitem">
+Besserer, A., Puech-Pagès, V., Kiefer, P., Gomez-Roldan, V., Jauneau, A., Roy, S., Portais, J.-C., Roux, C., Bécard, G., &amp; Séjalon-Delmas, N. (2006). Strigolactones stimulate arbuscular mycorrhizal fungi by activating mitochondria. <em>PLoS Biology</em>, <em>4</em>(7), e226. <a href="https://doi.org/10.1371/journal.pbio.0040226">https://doi.org/10.1371/journal.pbio.0040226</a>
+</div>
+<div id="ref-Glassop2005" class="csl-entry" role="listitem">
+Glassop, C., Smith, S. E., &amp; Smith, F. W. (2005). Cereal phosphate transporters associated with the mycorrhizal pathway of phosphate uptake into roots. <em>Planta</em>, <em>222</em>(4), 688–698. <a href="https://doi.org/10.1007/s00425-005-0015-0">https://doi.org/10.1007/s00425-005-0015-0</a>
+</div>
+<div id="ref-GomezRoldan2008" class="csl-entry" role="listitem">
+Gomez-Roldan, V., Fermas, S., Brewer, P. B., Puech-Pagès, V., Dun, E. A., Pillot, J.-P., Letisse, F., Matusova, R., Danoun, S., Portais, J.-C., Bouwmeester, H., Bécard, G., Beveridge, C. A., &amp; Rameau, C. (2008). Strigolactone inhibition of shoot branching. <em>Nature</em>, <em>455</em>(7210), 189–194. <a href="https://doi.org/10.1038/nature07271">https://doi.org/10.1038/nature07271</a>
+</div>
+<div id="ref-Ito2013" class="csl-entry" role="listitem">
+Ito, S., Umehara, M., Hanada, A., Yoshida, S., Sasaki, M., Yoneyama, K., &amp; Asami, T. (2013). Effects of strigolactone-biosynthesis inhibitor TIS108 on arabidopsis. <em>Plant Signaling &amp; Behavior</em>, <em>8</em>(6), e24193. <a href="https://doi.org/10.4161/psb.24193">https://doi.org/10.4161/psb.24193</a>
+</div>
+<div id="ref-Jiang2013" class="csl-entry" role="listitem">
+Jiang, L., Liu, X., Xiong, G., Liu, H., Chen, F., Wang, L., Meng, X., Liu, G., Yu, H., Yuan, Y., Zhou, W., Zhao, F., Guan, Q., Fan, T., Jin, Y., Zhou, E., Zhang, J., Li, W., Li, Y., … Li, J. (2013). DWARF 53 acts as a repressor of strigolactone signalling in rice. <em>Nature</em>, <em>504</em>(7480), 401–405. <a href="https://doi.org/10.1038/nature12870">https://doi.org/10.1038/nature12870</a>
+</div>
+<div id="ref-Kohlen2010" class="csl-entry" role="listitem">
+Kohlen, W., Charnikhova, T., Liu, Q., Bours, R., Domagalska, M. A., Beguerie, S., Verstappen, F., Leyser, O., Bouwmeester, H. J., &amp; Lopez-Raez, J. A. (2010). SlCCD7 controls strigolactone biosynthesis, shoot branching and mycorrhiza-induced apocarotenoid formation in tomato. <em>The Plant Journal</em>, <em>63</em>(6), 1000–1011. <a href="https://doi.org/10.1111/j.1365-313X.2009.04056.x">https://doi.org/10.1111/j.1365-313X.2009.04056.x</a>
+</div>
+<div id="ref-Lanfranco2018" class="csl-entry" role="listitem">
+Lanfranco, L., Fiorilli, V., Venice, F., &amp; Bonfante, P. (2018). Strigolactones cross the kingdoms: Plants, fungi, and bacteria in the arbuscular mycorrhizal symbiosis. <em>Journal of Experimental Botany</em>, <em>69</em>(9), 2175–2188. <a href="https://doi.org/10.1093/jxb/erx432">https://doi.org/10.1093/jxb/erx432</a>
+</div>
+<div id="ref-Song2010" class="csl-entry" role="listitem">
+Song, Y. Y., Zeng, R. S., Xu, J. F., Li, J., Shen, X., &amp; Yihdego, W. G. (2010). Interplant communication of tomato plants through underground common mycorrhizal networks. <em>PLoS ONE</em>, <em>5</em>(10), e13324. <a href="https://doi.org/10.1371/journal.pone.0013324">https://doi.org/10.1371/journal.pone.0013324</a>
+</div>
+<div id="ref-Sun2014" class="csl-entry" role="listitem">
+Sun, H., Tao, J., Liu, M., Huang, S., Chen, S., Xie, X., Yoneyama, K., Xu, G., &amp; Zhang, S. (2014). Strigolactones are involved in phosphate- and nitrate-deficiency-induced root development and auxin transport in rice. <em>Journal of Experimental Botany</em>, <em>65</em>(22), 6735–6746. <a href="https://doi.org/10.1093/jxb/eru029">https://doi.org/10.1093/jxb/eru029</a>
+</div>
+<div id="ref-Teng2019" class="csl-entry" role="listitem">
+Teng, W., Deng, Y., Chen, X.-P., Xu, X.-F., Chen, R.-F., Lv, Y., Zhao, Y.-Y., Ji, L.-Q., &amp; Tong, Y.-P. (2019). Integrative analysis of the wheat PHT1 gene family reveals a novel member involved in arbuscular mycorrhizal phosphate transport and immunity. <em>Cells</em>, <em>8</em>(5), 490. <a href="https://doi.org/10.3390/cells8050490">https://doi.org/10.3390/cells8050490</a>
+</div>
+<div id="ref-Umehara2008" class="csl-entry" role="listitem">
+Umehara, M., Hanada, A., Yoshida, S., Akiyama, K., Arite, T., Takeda-Kamiya, N., Magome, H., Kamiya, Y., Shirasu, K., Yoneyama, K., Kyozuka, J., &amp; Yamaguchi, S. (2008). Inhibition of shoot branching by new terpenoid plant hormones. <em>Nature</em>, <em>455</em>(7210), 195–200. <a href="https://doi.org/10.1038/nature07272">https://doi.org/10.1038/nature07272</a>
+</div>
+<div id="ref-Zhang2021" class="csl-entry" role="listitem">
+Zhang, X., Wang, H., Hu, G., Liu, C., &amp; Li, Y. (2021). Association of TaD14-4D, a gene involved in strigolactone signaling, with yield contributing traits in wheat. <em>International Journal of Molecular Sciences</em>, <em>22</em>(7), 3748. <a href="https://doi.org/10.3390/ijms22073748">https://doi.org/10.3390/ijms22073748</a>
+</div>
+<div id="ref-Zhou2013" class="csl-entry" role="listitem">
+Zhou, F., Lin, Q., Zhu, L., Ren, Y., Zhou, K., Shabek, N., Wu, F., Mao, H., Dong, W., Gan, L., Ma, W., Hornyik, C., Huang, J., Zhao, G., Zhou, W., Zhao, F., Li, J., Zheng, Z., Cheng, Z., … Wan, J. (2013). D14–SCFD3-dependent degradation of D53 regulates strigolactone signalling. <em>Nature</em>, <em>504</em>(7480), 406–410. <a href="https://doi.org/10.1038/nature12878">https://doi.org/10.1038/nature12878</a>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,8 +1,8 @@
 # AREIL CURRENT STATE
 
-Status: UNINITIALIZED
-Current project: none
-Current stage: preflight
-Last verified: never
-
-Use `scripts/New-AreilProject.ps1` to create a research project.
+Status: ACTIVE
+Current project: 01-wheat-strigolactone-rhizosphere-priming
+Project path: projects/01-wheat-strigolactone-rhizosphere-priming
+Current stage: completed_and_audited
+Last completed: Quarto multi-format compilation, 8-stage statistical modeling, ledger validation (0 errors)
+Target journal: New Phytologist

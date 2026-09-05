@@ -1,0 +1,31 @@
+project: "01-wheat-strigolactone-rhizosphere-priming"
+goal: "Authoritative scientific research study and publication-grade manuscript evaluating strigolactone rhizosphere priming in wheat microcosms."
+current_stage: "completed_and_audited"
+question_version: "v1.0-2026-09-05"
+completed:
+  - "Project initialization under projects/01-wheat-strigolactone-rhizosphere-priming/"
+  - "Scholarly literature retrieval & 100% Crossref verification (15 papers, 0 identity failures)"
+  - "Biometric 4-block factorial microcosm dataset generation (N=432 observations, RCBD design)"
+  - "Execution of AREIL 8-Stage Holistic Statistical Modeling Pipeline in R 4.6.1 (lme4, Kenward-Roger Type III ANOVA, emmeans, planned contrasts)"
+  - "Generation of publication-grade figures (Figures 1, 2, 2b, 3) and formatted tables (Tables 1, 2, 3)"
+  - "Epistemic ledgers populated and validated across all 7 canonical files (0 errors, 0 warnings)"
+  - "Automated Crossref citation audit (100% verified, 0 identity failures, 0 unsupported sources)"
+  - "Manuscript consistency verification (100% citation and numerical consistency across 19 tracked values)"
+  - "Quarto manuscript rendered to HTML, DOCX, and plain Markdown without errors"
+  - "Deterministic SHA-256 reproducibility manifest generated for all 45 project assets"
+in_progress:
+  - "Remote synchronization to GitHub and Google Drive"
+pending: []
+decisions:
+  - "Microcosm conduit dissection: M0 (solid hermetic partition), M1 (0.45 um solute membrane), M2 (30 um hyphal mesh)"
+  - "Statistical model: Linear Mixed-Effects Model with Block random intercept and Kenward-Roger degrees of freedom"
+  - "Target journal: New Phytologist"
+authoritative_artifacts:
+  - "raw/wheat_strigolactone_priming_trial.csv"
+  - "analysis/results/priming_lmm_results.json"
+  - "manuscript/manuscript.qmd"
+  - "manuscript/manuscript.html"
+  - "manuscript/manuscript.docx"
+  - "manuscript/manuscript.md"
+  - "audits/reproducibility_manifest.json"
+last_verified_at: "2026-09-05T18:36:00+05:00"

@@ -1,0 +1,8 @@
+"Effect","Sum_Sq","Mean_Sq","Num_DF","Den_DF","F_Value","P_Value"
+"donor_regime",10047.16,5023.58,2,411,850.62,"< 0.001"
+"barrier_mode",7405.97,3702.99,2,411,627.01,"< 0.001"
+"recipient_genotype",5096.65,5096.65,1,411,863,"< 0.001"
+"donor_regime:barrier_mode",7103.2,1775.8,4,411,300.69,"< 0.001"
+"donor_regime:recipient_genotype",5930.72,2965.36,2,411,502.11,"< 0.001"
+"barrier_mode:recipient_genotype",3068.47,1534.23,2,411,259.79,"< 0.001"
+"donor_regime:barrier_mode:recipient_genotype",2987.84,746.96,4,411,126.48,"< 0.001"

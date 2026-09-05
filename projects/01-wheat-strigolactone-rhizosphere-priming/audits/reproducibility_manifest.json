@@ -1,0 +1,237 @@
+{
+  "created_at": "2026-09-05T13:35:05.334494+00:00",
+  "project_root": "E:\\Agriculture\\Antigravity Research\\projects\\01-wheat-strigolactone-rhizosphere-priming",
+  "environment": {
+    "platform": "Windows-11-10.0.22631-SP0",
+    "python_version": "3.13.1",
+    "processor": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel"
+  },
+  "total_files_hashed": 45,
+  "files": [
+    {
+      "path": "analysis/results/priming_lmm_results.json",
+      "bytes": 3576,
+      "sha256": "06cf5659d3d59943c2e2528eb69bcd8eb2fe9aa537a29642aa8740a8660aa173"
+    },
+    {
+      "path": "analysis/scripts/run_wheat_priming_lmm.R",
+      "bytes": 21019,
+      "sha256": "691a8e93a573492846f56f06638765ae1e3731d2a62ede8e5795a999bfb50bcc"
+    },
+    {
+      "path": "ANALYSIS_PLAN.md",
+      "bytes": 3333,
+      "sha256": "f85e4ecfb7c8a1378749e7a1370e0ac2c56a836cc5d40d58e2c30f9439e13bc7"
+    },
+    {
+      "path": "audits/citation_audit.jsonl",
+      "bytes": 8653,
+      "sha256": "0099bcc0645b8a690df9e4e3df18e923a22f1fb931cf888629ea46826a497d56"
+    },
+    {
+      "path": "derived/treatment_summary_statistics.csv",
+      "bytes": 4256,
+      "sha256": "202c7b16b0e9ce877b43b9b52ed7944283141545d32085df7b8aef4b95c3d4d7"
+    },
+    {
+      "path": "HANDOFF.yaml",
+      "bytes": 1464,
+      "sha256": "7bbab35eb2bab638f80490b0d466d1ad028ae6803683607fbb65e481e2871909"
+    },
+    {
+      "path": "JOURNAL_PROFILE.md",
+      "bytes": 1227,
+      "sha256": "b3abd23a056f7618539c031cc61593657bebbe28dfc3660e8cb98271d69338e5"
+    },
+    {
+      "path": "ledgers/CLAIM_LEDGER.jsonl",
+      "bytes": 2461,
+      "sha256": "8ff0bce86d8067265b88ac835fbea42dc9f6d5ee1000fbe1132a1edbe39a5545"
+    },
+    {
+      "path": "ledgers/CONTRADICTION_LEDGER.jsonl",
+      "bytes": 1820,
+      "sha256": "bc75f7120ffa0c378c94221e881a6d0adee0739d8cfd8a43fe8a8de09cea0dbc"
+    },
+    {
+      "path": "ledgers/DATASET_REGISTRY.jsonl",
+      "bytes": 408,
+      "sha256": "991e1e22b7fde10a04fdb9a28682aea02402d1be33bdc75303a6868f57fa8728"
+    },
+    {
+      "path": "ledgers/EVIDENCE_LEDGER.jsonl",
+      "bytes": 6502,
+      "sha256": "7ab8e8fc5791280f41d412be30e044d899f04c68c918bcb577860de6780749a8"
+    },
+    {
+      "path": "ledgers/NOVELTY_LEDGER.jsonl",
+      "bytes": 770,
+      "sha256": "928d55056fc61e2c862508f3e9335a11c4afcf68b7d9bda5d44be169e9169144"
+    },
+    {
+      "path": "ledgers/REVIEW_LEDGER.jsonl",
+      "bytes": 934,
+      "sha256": "c473b42200e86cad88ddb0f51dba24371ee81d8bc6e9f0faae698c0da6a1a0f4"
+    },
+    {
+      "path": "ledgers/SOURCE_REGISTRY.jsonl",
+      "bytes": 6318,
+      "sha256": "74b11c1054f94fb47c9f498994d19a321b78d06800e479197d954bb94a74115b"
+    },
+    {
+      "path": "ledgers/TASK_TELEMETRY.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "manuscript/figures/figure1_microcosm_architecture.png",
+      "bytes": 328795,
+      "sha256": "5745a7d746fd5184b2a78b260d50b7bccbab77b56d0c565fcdd495ab3554ff20"
+    },
+    {
+      "path": "manuscript/figures/figure2_am_colonization_interaction.png",
+      "bytes": 71437,
+      "sha256": "506980a08fc3a7fb2a98b4fb0db0e24e8b317e85ce5f2952473e98411f45ff21"
+    },
+    {
+      "path": "manuscript/figures/figure2b_tapt4_induction.png",
+      "bytes": 65206,
+      "sha256": "8d0ab22cc4ee0921a673d6056a51727664ed41f8693f24cee6afc0ee80a9559b"
+    },
+    {
+      "path": "manuscript/figures/figure3_model_diagnostics.png",
+      "bytes": 69264,
+      "sha256": "e4f13cd610540df2f71244cf59cea65f3d849304c2bb58756e6b80d8a12ab51c"
+    },
+    {
+      "path": "manuscript/manuscript.docx",
+      "bytes": 503428,
+      "sha256": "0c9c879c45a0951e6e7bcad7f2d5d115f09a9af2afb8ba4fa578808c75ab2b0b"
+    },
+    {
+      "path": "manuscript/manuscript.html",
+      "bytes": 86279,
+      "sha256": "57c6e9d86014672bbfc1b2e6734e1e89a1bf96a8c1db37c039115854fbd1cc5e"
+    },
+    {
+      "path": "manuscript/manuscript.md",
+      "bytes": 31664,
+      "sha256": "e913c21b20167f2e2e77da62bbfc582f2d924f726beffc163741a70707df7767"
+    },
+    {
+      "path": "manuscript/manuscript.qmd",
+      "bytes": 31664,
+      "sha256": "e913c21b20167f2e2e77da62bbfc582f2d924f726beffc163741a70707df7767"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-62e2d20df198e8a01bb734742f2e28cf.min.css",
+      "bytes": 421064,
+      "sha256": "31b3b18b6d5ebc2c59503fe8a7468b51f0fe1a3b76d7571b22ec90a4140ab983"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-icons.css",
+      "bytes": 99464,
+      "sha256": "01253947f506e030589e4f33fc7ec7ccdfb9505e2e596dedf16445f12e243c0a"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-icons.woff",
+      "bytes": 180288,
+      "sha256": "f55513b7b591cb84a3b87ff0e34ea24d4831d6fedc22e54b911ca64b5b544a15"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap.min.js",
+      "bytes": 80668,
+      "sha256": "d2ea6c1e0cabca20d18e924b25a1cd0187c38ba7c33f60ab06e1b0402b9bcdb5"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/clipboard/clipboard.min.js",
+      "bytes": 9160,
+      "sha256": "e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/anchor.min.js",
+      "bytes": 5888,
+      "sha256": "69098e105d990f834cff1b7886d873444228ff63c590e5ff834d568f1115ed8b"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/popper.min.js",
+      "bytes": 20084,
+      "sha256": "4d50586b184724d39ddfe0f6582861664eddd5e806e5a79e0dbaa832361414d0"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css",
+      "bytes": 3678,
+      "sha256": "4973a76eb0de3b99bc67687ab2ecea249e552bae328dd8a952dad89732e9ec18"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/quarto.js",
+      "bytes": 26830,
+      "sha256": "4ecb60f215d96b2af0fe9d985c71e32863b1c993a64725a416ac18b5991c59c6"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tabsets/tabsets.js",
+      "bytes": 2882,
+      "sha256": "a9c226bf70e82eaf5476f619cecfb70b4446b87ce4d1634d6404b0b2ba006d15"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tippy.css",
+      "bytes": 1409,
+      "sha256": "5969f497d9158d7682f8219c6f13fa67269cdf5bf50a3931d95327151dee5678"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tippy.umd.min.js",
+      "bytes": 24033,
+      "sha256": "41181eeec6d7ba64cb9165f0e95563e34e026bde79e7c13aeec83270429b6fae"
+    },
+    {
+      "path": "manuscript/references.bib",
+      "bytes": 7002,
+      "sha256": "f30a24aeac6b4d6e91237d6031a7471e9fe1d2451c43cb95385d4c6968cfc39c"
+    },
+    {
+      "path": "manuscript/tables/table1_anova_am_colonization.csv",
+      "bytes": 536,
+      "sha256": "90073e29083fadd47820d1772a87f4003f8522b62b81f55f7e46902e7ea39af7"
+    },
+    {
+      "path": "manuscript/tables/table2_planned_contrasts.csv",
+      "bytes": 373,
+      "sha256": "14d32f1dd7376dabbe304c0c86f9cdb933eaec6bd93cd95360b5f057ad2143b4"
+    },
+    {
+      "path": "manuscript/tables/table3_estimated_marginal_means.csv",
+      "bytes": 2303,
+      "sha256": "2469f351f0d0ecd3f837b7b278ed678a0e03cb6ffe4726ff1f4a35fd8a14aca3"
+    },
+    {
+      "path": "MANUSCRIPT_PLAN.md",
+      "bytes": 1638,
+      "sha256": "4b3d7addbc97a490eebefc0d0467cadd74ad061d727aacfa3d2c78fd5259d82a"
+    },
+    {
+      "path": "PROJECT_CHARTER.md",
+      "bytes": 2733,
+      "sha256": "e7b25f7624089645eb27ce63ee3049e18d2af02f9e8845d564d8a9630d6efd73"
+    },
+    {
+      "path": "raw/wheat_strigolactone_priming_trial.csv",
+      "bytes": 34773,
+      "sha256": "2dede1818f62dca62ef0c90accdcc83313a66090746a8b082a4719b24fca2f5f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1483,
+      "sha256": "7f740bbb927d538d1b73982341f66d5e9a17d15080eb0c4549cac2f8dae57263"
+    },
+    {
+      "path": "RESEARCH_QUESTION.md",
+      "bytes": 3013,
+      "sha256": "0188afad0315f680170e6c912706982ee79d8be4510cffd21dc8d8b55433a9f7"
+    },
+    {
+      "path": "SEARCH_PROTOCOL.md",
+      "bytes": 1821,
+      "sha256": "a3c570611c3a1a3809d473893ab3be28c2d84d9506e0d7c1bc5c62c422826724"
+    }
+  ]
+}

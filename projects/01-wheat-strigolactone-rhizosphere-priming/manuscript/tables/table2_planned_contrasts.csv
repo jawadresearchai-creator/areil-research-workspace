@@ -1,0 +1,7 @@
+"Hypothesis","Estimate","SE","DF","t_ratio","P_Value"
+"Diffusible_Priming",19.84,0.7,411,28.27,"< 1e-04"
+"Hyphal_Amplification",19.21,0.7,411,27.39,"< 1e-04"
+"Tis108_Abolition",18.58,0.7,411,26.49,"< 1e-04"
+"Receptor_Dependency_M1",19.22,0.7,411,27.4,"< 1e-04"
+"Receptor_Dependency_M2",31.83,0.7,411,45.38,"< 1e-04"
+"Barrier_Hermeticity",0.43,0.7,411,0.61,"0.54458"
