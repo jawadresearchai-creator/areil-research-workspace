@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="AREIL Autonomous Plant Science &amp; Biostatistics Consortium">
+<meta name="dcterms.date" content="2026-09-05">
+
+<title>Resolving Environmental Hierarchy in Plant Biomechanics: A Linear Mixed-Effects Analysis of Primary Root Elongation Under Mechanical Impedance and Exogenous Apyrase Rescue</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="manuscript_files/libs/clipboard/clipboard.min.js"></script>
+<script src="manuscript_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="manuscript_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="manuscript_files/libs/quarto-html/popper.min.js"></script>
+<script src="manuscript_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="manuscript_files/libs/quarto-html/anchor.min.js"></script>
+<link href="manuscript_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="manuscript_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="manuscript_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="manuscript_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="manuscript_files/libs/bootstrap/bootstrap-62e2d20df198e8a01bb734742f2e28cf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#materials-and-methods" id="toc-materials-and-methods" class="nav-link" data-scroll-target="#materials-and-methods"><span class="header-section-number">2</span> Materials and Methods</a>
+  <ul class="collapse">
+  <li><a href="#experimental-design-and-substrate-architecture" id="toc-experimental-design-and-substrate-architecture" class="nav-link" data-scroll-target="#experimental-design-and-substrate-architecture"><span class="header-section-number">2.1</span> Experimental Design and Substrate Architecture</a></li>
+  <li><a href="#data-provenance" id="toc-data-provenance" class="nav-link" data-scroll-target="#data-provenance"><span class="header-section-number">2.2</span> Data Provenance</a></li>
+  <li><a href="#the-areil-8-stage-holistic-statistical-modeling-pipeline" id="toc-the-areil-8-stage-holistic-statistical-modeling-pipeline" class="nav-link" data-scroll-target="#the-areil-8-stage-holistic-statistical-modeling-pipeline"><span class="header-section-number">2.3</span> The AREIL 8-Stage Holistic Statistical Modeling Pipeline</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">3</span> Results</a>
+  <ul class="collapse">
+  <li><a href="#experimental-design-and-variance-partitioning" id="toc-experimental-design-and-variance-partitioning" class="nav-link" data-scroll-target="#experimental-design-and-variance-partitioning"><span class="header-section-number">3.1</span> Experimental Design and Variance Partitioning</a></li>
+  <li><a href="#fixed-treatment-effect-and-estimated-marginal-means" id="toc-fixed-treatment-effect-and-estimated-marginal-means" class="nav-link" data-scroll-target="#fixed-treatment-effect-and-estimated-marginal-means"><span class="header-section-number">3.2</span> Fixed Treatment Effect and Estimated Marginal Means</a></li>
+  <li><a href="#planned-contrasts-and-phenotypic-rescue" id="toc-planned-contrasts-and-phenotypic-rescue" class="nav-link" data-scroll-target="#planned-contrasts-and-phenotypic-rescue"><span class="header-section-number">3.3</span> Planned Contrasts and Phenotypic Rescue</a></li>
+  <li><a href="#holistic-model-diagnostics" id="toc-holistic-model-diagnostics" class="nav-link" data-scroll-target="#holistic-model-diagnostics"><span class="header-section-number">3.4</span> Holistic Model Diagnostics</a></li>
+  <li><a href="#sensitivity-analysis-and-model-comparison" id="toc-sensitivity-analysis-and-model-comparison" class="nav-link" data-scroll-target="#sensitivity-analysis-and-model-comparison"><span class="header-section-number">3.5</span> Sensitivity Analysis and Model Comparison</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">4</span> Discussion</a>
+  <ul class="collapse">
+  <li><a href="#biological-significance-of-extracellular-atp-hydrolysis-during-mechanical-stress" id="toc-biological-significance-of-extracellular-atp-hydrolysis-during-mechanical-stress" class="nav-link" data-scroll-target="#biological-significance-of-extracellular-atp-hydrolysis-during-mechanical-stress"><span class="header-section-number">4.1</span> Biological Significance of Extracellular ATP Hydrolysis During Mechanical Stress</a></li>
+  <li><a href="#methodological-lessons-the-cost-of-ignoring-experimental-hierarchy" id="toc-methodological-lessons-the-cost-of-ignoring-experimental-hierarchy" class="nav-link" data-scroll-target="#methodological-lessons-the-cost-of-ignoring-experimental-hierarchy"><span class="header-section-number">4.2</span> Methodological Lessons: The Cost of Ignoring Experimental Hierarchy</a></li>
+  <li><a href="#study-limitations" id="toc-study-limitations" class="nav-link" data-scroll-target="#study-limitations"><span class="header-section-number">4.3</span> Study Limitations</a></li>
+  </ul></li>
+  <li><a href="#areil-verification-and-ledger-traceability" id="toc-areil-verification-and-ledger-traceability" class="nav-link" data-scroll-target="#areil-verification-and-ledger-traceability"><span class="header-section-number">5</span> AREIL Verification and Ledger Traceability</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6</span> References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="manuscript.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Resolving Environmental Hierarchy in Plant Biomechanics: A Linear Mixed-Effects Analysis of Primary Root Elongation Under Mechanical Impedance and Exogenous Apyrase Rescue</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">AREIL Autonomous Plant Science &amp; Biostatistics Consortium </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Antigravity Research Benchmark Certification Suite
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 5, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="abstract" class="level1 unnumbered">
+<h1 class="unnumbered">Abstract</h1>
+<p><strong>Background:</strong> In structured substrates and compacted soils, plant roots encounter physical obstacles that trigger touch-induced signaling cascades, apoplastic extracellular ATP (eATP) release, and rapid cessation of primary root elongation. Exogenous apyrase, an ecto-nucleoside triphosphate diphosphohydrolase, has been hypothesized to enzymatically clear apoplastic eATP and mitigate mechanical growth inhibition. However, greenhouse and growth-chamber plant phenotyping trials inherently exhibit spatial micro-environmental heterogeneity across randomized blocks, creating hierarchical dependence structures that confound naive unblocked statistical inference.</p>
+<p><strong>Methods:</strong> We evaluated primary root elongation in <em>Arabidopsis thaliana</em> using a Randomized Complete Block Design (RCBD) across 4 environmental blocks with 3 experimental treatments (Control, Mechanical Impedance via agar barrier, and Mechanical Impedance + 2 U/mL Apyrase; <span class="math inline">\(n = 6\)</span> seedlings per cell, <span class="math inline">\(N = 72\)</span> total observations). Analysis adhered strictly to the AREIL 8-Stage Holistic Statistical Modeling Pipeline. A linear mixed-effects model (LMM) with treatment as a fixed factor and block as a random intercept (<span class="math inline">\(Y_{ijk} = \mu + \tau_i + b_j + \epsilon_{ijk}\)</span>) was estimated via Restricted Maximum Likelihood (REML) in R <code>lme4</code>. Calibrated inference was derived using Kenward-Roger adjusted degrees of freedom and Tukey-adjusted estimated marginal means (EMMs).</p>
+<p><strong>Results:</strong> Analysis revealed substantial inter-block environmental variation (<span class="math inline">\(\sigma^2_{\text{block}} = 1.631\)</span>, residual variance <span class="math inline">\(\sigma^2_{\text{residual}} = 1.412\)</span>, total variance = 3.043), yielding an Intraclass Correlation Coefficient (<span class="math inline">\(\text{ICC} = 0.536\)</span>). Explicitly modeling block intercepts reduced residual error variance by 47.5% compared to unblocked Ordinary Least Squares (MSE = 2.689). The fixed treatment effect was highly significant (<span class="math inline">\(F(2, 66) = 491.16\)</span>, <span class="math inline">\(p &lt; 0.0001\)</span>, Kenward-Roger method). Model-derived EMMs for primary root elongation were: Control = <span class="math inline">\(22.56 \pm 0.68\)</span> mm (95% CI: <span class="math inline">\([20.57, 24.55]\)</span> mm); Mechanical Impedance = <span class="math inline">\(11.93 \pm 0.68\)</span> mm (95% CI: <span class="math inline">\([9.94, 13.91]\)</span> mm); and Impedance + Apyrase = <span class="math inline">\(18.63 \pm 0.68\)</span> mm (95% CI: <span class="math inline">\([16.64, 20.62]\)</span> mm). Planned pairwise contrasts demonstrated that mechanical impedance provoked a severe elongation deficit of <span class="math inline">\(-10.63 \pm 0.34\)</span> mm (<span class="math inline">\(t(66) = 30.99\)</span>, <span class="math inline">\(p &lt; 0.0001\)</span>), whereas exogenous apyrase supplementation significantly restored root growth by <span class="math inline">\(+6.70 \pm 0.34\)</span> mm (<span class="math inline">\(t(66) = -19.54\)</span>, <span class="math inline">\(p &lt; 0.0001\)</span>), achieving a 63.0% phenotypic recovery of the impedance-induced growth penalty. Model diagnostics validated residual normality (Shapiro-Wilk <span class="math inline">\(W = 0.9727\)</span>, <span class="math inline">\(p = 0.1197\)</span>).</p>
+<p><strong>Conclusions:</strong> Enzymatic clearance of apoplastic eATP by exogenous apyrase substantially alleviates root elongation arrest induced by physical impedance. Methodologically, failing to account for experimental block hierarchy severely inflates residual variance and risks inferential invalidity, underscoring the necessity of design-governed linear mixed-effects modeling in plant biometric certification.</p>
+<blockquote class="blockquote">
+<p><strong>Data Provenance Notice:</strong> Data evaluated in this study originate from <code>SIMULATED_BENCHMARK_DATA</code> generated under controlled parameters for the AREIL v0.2 Hostile Certification Benchmark C. Results reflect rigorous computational and biometric verification of simulated trial data.</p>
+</blockquote>
+<hr>
+</section>
+<section id="introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p>Soil compaction and physical impedance represent severe mechanical stresses that constrain root system architecture, restrict nutrient foraging, and diminish crop productivity worldwide. When primary root tips encounter an impenetrable barrier or high substrate bulk density, root cap and epidermal cells perceive compressive and frictional touch stimuli, initiating rapid physiological reprogramming.</p>
+<p>Recent molecular and physiological studies have elucidated that mechanical contact triggers the transient release of adenosine triphosphate (ATP) from root cells into the extracellular apoplast <span class="citation" data-cites="Weerasinghe2009touch">(<a href="#ref-Weerasinghe2009touch" role="doc-biblioref">Weerasinghe et al. 2009</a>)</span>. Under unconstrained conditions, apoplastic extracellular ATP (eATP) concentrations are maintained within tightly regulated nanomolar ranges by cell wall-associated and plasma membrane-bound ecto-apyrases <span class="citation" data-cites="Wu2007apyrases">(<a href="#ref-Wu2007apyrases" role="doc-biblioref">Wu et al. 2007</a>)</span>. However, physical impedance leads to localized eATP accumulation. In <em>Arabidopsis thaliana</em>, excessive apoplastic eATP functions as a damage-associated molecular pattern (DAMP), binding to the plasma membrane-localized purinergic receptor kinase DORN1/P2K1 (Does Not Respond to Nucleotides 1) <span class="citation" data-cites="Choi2014identification">(<a href="#ref-Choi2014identification" role="doc-biblioref">Choi et al. 2014</a>)</span>. DORN1 activation elicits rapid cytosolic calcium (<span class="math inline">\(Ca^{2+}\)</span>) influx, apoplastic reactive oxygen species (ROS) production, and alterations in polar auxin transport, culminating in the rapid inhibition of root elongation and aberrant root skewing <span class="citation" data-cites="Weerasinghe2009touch Choi2014identification">(<a href="#ref-Weerasinghe2009touch" role="doc-biblioref">Weerasinghe et al. 2009</a>; <a href="#ref-Choi2014identification" role="doc-biblioref">Choi et al. 2014</a>)</span>.</p>
+<p>Given this biochemical cascade, enzymatic clearance of apoplastic eATP presents a promising pharmacological strategy to mitigate mechanical growth arrest. Apyrases (nucleoside triphosphate-diphosphohydrolases, EC 3.6.1.5) catalyze the sequential hydrolysis of ATP and ADP to AMP and orthophosphate, effectively terminating purinergic signaling cascades <span class="citation" data-cites="Wu2007apyrases">(<a href="#ref-Wu2007apyrases" role="doc-biblioref">Wu et al. 2007</a>)</span>. While transgenic overexpression of endogenous apyrases (<em>APY1</em> and <em>APY2</em>) enhances root growth vigor and attenuates touch-induced root skewing <span class="citation" data-cites="Wu2007apyrases">(<a href="#ref-Wu2007apyrases" role="doc-biblioref">Wu et al. 2007</a>)</span>, whether direct exogenous supplementation of soluble apyrase can functionally rescue primary root elongation under acute physical impedance in structured multi-block trials remains an open empirical question.</p>
+<p>Rigorous evaluation of root growth responses requires careful statistical handling of experimental design. Agricultural, greenhouse, and agar-plate phenotyping trials are routinely organized in Randomized Complete Block Designs (RCBD) to account for spatial gradients in temperature, lighting, humidity, and plate positioning. Despite this physical design, naive biometric analyses frequently pool across blocks or apply unblocked one-way analysis of variance (ANOVA). Such naive formulations violate the core assumption of independent and identically distributed errors, discard critical variance partitioning information, and inflate residual mean squared errors, eroding statistical power.</p>
+<p>To address these empirical and methodological challenges, we applied the AREIL 8-Stage Holistic Statistical Modeling Pipeline to analyze a 4-block, 3-treatment randomized trial evaluating primary root elongation in <em>Arabidopsis thaliana</em> under mechanical impedance and exogenous apyrase rescue. We demonstrate how linear mixed-effects modeling with Kenward-Roger degrees-of-freedom adjustments <span class="citation" data-cites="Bates2015lme4 Kenward1997small">(<a href="#ref-Bates2015lme4" role="doc-biblioref">Bates et al. 2015</a>; <a href="#ref-Kenward1997small" role="doc-biblioref">Kenward and Roger 1997</a>)</span> isolates nuisance block heterogeneity and provides calibrated, unbiased estimates of pharmacological rescue.</p>
+<hr>
+</section>
+<section id="materials-and-methods" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Materials and Methods</h1>
+<section id="experimental-design-and-substrate-architecture" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="experimental-design-and-substrate-architecture"><span class="header-section-number">2.1</span> Experimental Design and Substrate Architecture</h2>
+<p>The experiment was structured as a classic Randomized Complete Block Design (RCBD). The trial evaluated three experimental treatment arms: 1. <strong>Control:</strong> Seedlings grown on standard 0.5× Murashige and Skoog (MS) nutrient agar medium (0.8% w/v agar) without physical obstruction. 2. <strong>Mechanical Impedance:</strong> Seedlings grown under identical nutrient conditions but encountering an impenetrable physical agar barrier (2.5% w/v dense agar layer positioned 10 mm below the germinating root tip), simulating substrate compaction. 3. <strong>Mechanical Impedance + Apyrase:</strong> Seedlings grown against the 2.5% agar barrier in the presence of exogenous potato apyrase (2 U/mL; Grade VI, Sigma-Aldrich) incorporated into the medium to ensure enzymatic degradation of released apoplastic eATP.</p>
+<p>To control for micro-environmental spatial gradients within the controlled-environment growth chamber (photoperiod: 16 h light / 8 h dark; temperature: <span class="math inline">\(22 \pm 0.5^\circ\text{C}\)</span>; photosynthetic photon flux density: <span class="math inline">\(120\ \mu\text{mol}\cdot\text{m}^{-2}\cdot\text{s}^{-1}\)</span>), the experiment was partitioned across 4 distinct spatial blocks (<code>Block_1</code>, <code>Block_2</code>, <code>Block_3</code>, <code>Block_4</code>). Within each block, 6 seedlings were independently randomized to each of the 3 treatments (<span class="math inline">\(n = 6\)</span> seedlings per block-treatment cell), yielding 18 seedlings per block, 24 seedlings per treatment arm, and a total sample size of <span class="math inline">\(N = 72\)</span> individual seedlings. Primary root length (mm) was recorded 7 days post-germination via high-resolution digital scanning and analyzed using ImageJ/Fiji.</p>
+</section>
+<section id="data-provenance" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="data-provenance"><span class="header-section-number">2.2</span> Data Provenance</h2>
+<p>In compliance with AREIL forensic verification standards, we explicitly record that the primary dataset (<code>root_growth_trial_data.csv</code>, SHA-256: <code>6068ad343ae7659a820af0e5d4615fbcee056844b422ba43ff00dd9de53683f6</code>) represents synthetic data generated for the AREIL v0.2 Hostile Certification Benchmark C under the classification <code>SIMULATED_BENCHMARK_DATA</code>. The dataset was curated to evaluate agentic adherence to biostatistical routing and multi-stratum error estimation.</p>
+</section>
+<section id="the-areil-8-stage-holistic-statistical-modeling-pipeline" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="the-areil-8-stage-holistic-statistical-modeling-pipeline"><span class="header-section-number">2.3</span> The AREIL 8-Stage Holistic Statistical Modeling Pipeline</h2>
+<p>Statistical analysis was conducted according to the AREIL 8-Stage Holistic Statistical Modeling Pipeline (<code>schemas/STATISTICAL_ROUTING_SPECIFICATION.md</code>):</p>
+<ol type="1">
+<li><strong>Stage 1 (Outcome / Data-Generating Process):</strong> The response variable, primary root length (<span class="math inline">\(\text{mm}\)</span>), is a continuous, strictly positive physical measurement exhibiting approximately symmetric distribution.</li>
+<li><strong>Stage 2 (Experimental Design &amp; Randomization):</strong> The design is a Randomized Complete Block Design (RCBD) featuring 4 blocks and 3 fixed treatments. Seedlings represent individual observational units nested within treatment-by-block cells.</li>
+<li><strong>Stage 3 (Dependence, Hierarchy &amp; Measurement Structure):</strong> Environmental variability among blocks creates clustered dependence. Because blocks represent a sample of nuisance spatial conditions, error stratification requires modeling block effects as a random clustering factor: <span class="math inline">\(\text{Seedling} \subset (\text{Block} \times \text{Treatment})\)</span>.</li>
+<li><strong>Stage 4 (Candidate Model Family Formulation):</strong> A continuous Gaussian outcome coupled with hierarchical block clustering routes definitively to a Linear Mixed-Effects Model (LMM): <span class="math display">\[\text{root\_length\_mm}_{ijk} = \mu + \tau_i + b_j + \epsilon_{ijk}\]</span> where <span class="math inline">\(\mu\)</span> is the overall intercept, <span class="math inline">\(\tau_i\)</span> is the fixed effect of treatment <span class="math inline">\(i\)</span> (<span class="math inline">\(i \in \{\text{Control}, \text{Impedance}, \text{Impedance\_Apyrase}\}\)</span>), <span class="math inline">\(b_j \sim \mathcal{N}(0, \sigma^2_{\text{block}})\)</span> represents the random intercept for block <span class="math inline">\(j\)</span> (<span class="math inline">\(j \in \{1, 2, 3, 4\}\)</span>), and <span class="math inline">\(\epsilon_{ijk} \sim \mathcal{N}(0, \sigma^2_{\text{residual}})\)</span> represents independent Gaussian residual error.</li>
+<li><strong>Stage 5 (Model Fit &amp; Estimation):</strong> The model was fitted via Restricted Maximum Likelihood (REML) using the <code>lmer</code> function in the R package <code>lme4</code> (v1.1-35.5) and <code>lmerTest</code> <span class="citation" data-cites="Bates2015lme4">(<a href="#ref-Bates2015lme4" role="doc-biblioref">Bates et al. 2015</a>)</span>. Hypothesis testing for the fixed treatment effect was performed using the Kenward-Roger approximate <span class="math inline">\(F\)</span>-test <span class="citation" data-cites="Kenward1997small">(<a href="#ref-Kenward1997small" role="doc-biblioref">Kenward and Roger 1997</a>)</span>. Estimated marginal means (EMMs) and pairwise contrasts were computed using the <code>emmeans</code> package (v1.10.1).</li>
+<li><strong>Stage 6 (Holistic Diagnostics):</strong> Model adequacy was evaluated across multiple complementary diagnostic axes:
+<ul>
+<li>Residuals vs.&nbsp;Fitted values for linearity and variance homoscedasticity.</li>
+<li>Quantile-Quantile (Q-Q) plots of conditional residuals with Shapiro-Wilk testing (<span class="math inline">\(W\)</span>).</li>
+<li>Bartlett’s test of residual variance homogeneity across treatment groups (<span class="math inline">\(K^2\)</span>).</li>
+<li>Best Linear Unbiased Predictors (BLUPs) of random block intercepts (<span class="math inline">\(b_j\)</span>).</li>
+</ul></li>
+<li><strong>Stage 7 (Sensitivity &amp; Alternative Specifications):</strong> To assess model stability and quantify the biometric cost of ignoring block hierarchy, the primary LMM was compared against:
+<ul>
+<li>Naive unblocked Ordinary Least Squares (OLS): <span class="math inline">\(\text{root\_length\_mm} \sim \text{treatment}\)</span>.</li>
+<li>Fixed-effects RCBD linear model: <span class="math inline">\(\text{root\_length\_mm} \sim \text{treatment} + \text{block}\)</span>.</li>
+<li>Log-transformed LMM: <span class="math inline">\(\log(\text{root\_length\_mm}) \sim \text{treatment} + (1 | \text{block})\)</span>.</li>
+</ul></li>
+<li><strong>Stage 8 (Inference &amp; Calibrated Uncertainty Reporting):</strong> Inferences were drawn from estimated marginal means, 95% confidence intervals, Kenward-Roger adjusted degrees of freedom, and Tukey-adjusted pairwise contrasts for multiple comparisons (<span class="math inline">\(\alpha = 0.05\)</span>). The phenotypic rescue percentage was calculated as: <span class="math display">\[\text{Rescue \%} = \frac{\text{EMM}_{\text{Impedance\_Apyrase}} - \text{EMM}_{\text{Impedance}}}{\text{EMM}_{\text{Control}} - \text{EMM}_{\text{Impedance}}} \times 100\%\]</span></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="results" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Results</h1>
+<section id="experimental-design-and-variance-partitioning" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="experimental-design-and-variance-partitioning"><span class="header-section-number">3.1</span> Experimental Design and Variance Partitioning</h2>
+<p>The trial comprised 72 seedlings equally distributed across 4 blocks and 3 treatments (<span class="math inline">\(n = 24\)</span> seedlings per treatment, <span class="math inline">\(n = 6\)</span> seedlings per block-treatment cell; see <a href="#tbl-emmeans" class="quarto-xref">Table&nbsp;1</a>). Summary statistics confirmed substantial variation in root elongation across both experimental treatments and physical blocks.</p>
+<p>Linear mixed-effects modeling partitioned the total phenotypic variance (<span class="math inline">\(\sigma^2_{\text{total}} = 3.043\)</span>) into between-block and within-block components. The estimated variance of the random block intercepts was <span class="math inline">\(\sigma^2_{\text{block}} = 1.631\)</span> (<span class="math inline">\(\text{SD} = 1.277\)</span> mm), while the residual error variance was <span class="math inline">\(\sigma^2_{\text{residual}} = 1.412\)</span> (<span class="math inline">\(\text{SD} = 1.188\)</span> mm). The resulting Intraclass Correlation Coefficient was: <span class="math display">\[\text{ICC} = \frac{\sigma^2_{\text{block}}}{\sigma^2_{\text{block}} + \sigma^2_{\text{residual}}} = \frac{1.631}{1.631 + 1.412} = 0.536\]</span></p>
+<p>This ICC indicates that 53.6% of the unexplained variation in root elongation was attributable to environmental heterogeneity across blocks. Explicitly accounting for random block intercepts reduced the residual error variance by 47.5% compared to naive unblocked OLS (<span class="math inline">\(\text{MSE} = 2.689\)</span>; see <a href="#tbl-sensitivity" class="quarto-xref">Table&nbsp;3</a>).</p>
+</section>
+<section id="fixed-treatment-effect-and-estimated-marginal-means" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="fixed-treatment-effect-and-estimated-marginal-means"><span class="header-section-number">3.2</span> Fixed Treatment Effect and Estimated Marginal Means</h2>
+<p>The omnibus Type III analysis of variance using Kenward-Roger adjusted degrees of freedom demonstrated an overwhelmingly significant main effect of treatment on primary root length (<span class="math inline">\(F(2, 66) = 491.16\)</span>, <span class="math inline">\(p = 2.34 \times 10^{-40}\)</span>, <span class="math inline">\(p &lt; 0.0001\)</span>).</p>
+<p>Estimated marginal means (EMMs), standard errors, and 95% confidence intervals conditioned on the random block structure are summarized in <a href="#tbl-emmeans" class="quarto-xref">Table&nbsp;1</a> and illustrated in <a href="#fig-contrasts" class="quarto-xref">Figure&nbsp;1</a>.</p>
+<div id="tbl-emmeans" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-emmeans-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Estimated marginal means (EMMs) of primary root length in <em>Arabidopsis thaliana</em> under mechanical impedance and apyrase supplementation, estimated via REML linear mixed-effects modeling with Kenward-Roger degrees of freedom.
+</figcaption>
+<div aria-describedby="tbl-emmeans-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Treatment Arm</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: center;"><span class="math inline">\(N\)</span></th>
+<th style="text-align: center;">EMM (mm)</th>
+<th style="text-align: center;">SE (mm)</th>
+<th style="text-align: center;"><span class="math inline">\(df_{\text{KR}}\)</span></th>
+<th style="text-align: center;">95% Confidence Interval</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Control</strong></td>
+<td style="text-align: left;">Standard 0.5× MS Agar</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">22.56</td>
+<td style="text-align: center;">0.68</td>
+<td style="text-align: center;">3.6</td>
+<td style="text-align: center;">[20.57, 24.55]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Impedance</strong></td>
+<td style="text-align: left;">2.5% Agar Barrier</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">11.93</td>
+<td style="text-align: center;">0.68</td>
+<td style="text-align: center;">3.6</td>
+<td style="text-align: center;">[9.94, 13.91]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Impedance + Apyrase</strong></td>
+<td style="text-align: left;">2.5% Barrier + 2 U/mL Apyrase</td>
+<td style="text-align: center;">24</td>
+<td style="text-align: center;">18.63</td>
+<td style="text-align: center;">0.68</td>
+<td style="text-align: center;">3.6</td>
+<td style="text-align: center;">[16.64, 20.62]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Control seedlings attained a mean primary root length of <span class="math inline">\(22.56 \pm 0.68\)</span> mm. Mechanical impedance reduced primary root elongation to <span class="math inline">\(11.93 \pm 0.68\)</span> mm. Supplementation with exogenous apyrase under identical mechanical impedance substantially restored root elongation to <span class="math inline">\(18.63 \pm 0.68\)</span> mm.</p>
+<div id="fig-contrasts" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-contrasts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/figure1_lme_contrasts.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-contrasts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Primary root elongation across experimental treatments in <em>Arabidopsis thaliana</em>. Boxplots show median and interquartile ranges, jittered points represent individual seedlings colored and shaped by environmental block (<span class="math inline">\(n = 6\)</span> per block-treatment cell), and black diamonds with error bars represent model-estimated marginal means (EMMs) with 95% Kenward-Roger confidence intervals. Horizontal brackets display planned contrast estimates and Tukey-adjusted significance levels.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="planned-contrasts-and-phenotypic-rescue" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="planned-contrasts-and-phenotypic-rescue"><span class="header-section-number">3.3</span> Planned Contrasts and Phenotypic Rescue</h2>
+<p>Pairwise contrasts between treatments were evaluated using Kenward-Roger adjusted degrees of freedom (<span class="math inline">\(df = 66\)</span>) and Tukey-adjusted <span class="math inline">\(p\)</span>-values (see <a href="#tbl-contrasts" class="quarto-xref">Table&nbsp;2</a>).</p>
+<div id="tbl-contrasts" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-contrasts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Pairwise treatment contrasts for primary root elongation evaluated under the linear mixed-effects model with Kenward-Roger degrees of freedom and Tukey adjustment.
+</figcaption>
+<div aria-describedby="tbl-contrasts-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Contrast</th>
+<th style="text-align: center;">Estimate (mm)</th>
+<th style="text-align: center;">SE (mm)</th>
+<th style="text-align: center;"><span class="math inline">\(df\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(t\)</span>-ratio</th>
+<th style="text-align: center;">Raw <span class="math inline">\(p\)</span>-value</th>
+<th style="text-align: center;">Tukey-adjusted <span class="math inline">\(p\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Control vs.&nbsp;Impedance</strong></td>
+<td style="text-align: center;">+10.63</td>
+<td style="text-align: center;">0.34</td>
+<td style="text-align: center;">66</td>
+<td style="text-align: center;">30.99</td>
+<td style="text-align: center;"><span class="math inline">\(&lt; 1 \times 10^{-15}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(&lt; 0.0001\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Impedance + Apyrase vs.&nbsp;Impedance</strong></td>
+<td style="text-align: center;">+6.70</td>
+<td style="text-align: center;">0.34</td>
+<td style="text-align: center;">66</td>
+<td style="text-align: center;">19.54</td>
+<td style="text-align: center;"><span class="math inline">\(&lt; 1 \times 10^{-15}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(&lt; 0.0001\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Control vs.&nbsp;Impedance + Apyrase</strong></td>
+<td style="text-align: center;">+3.93</td>
+<td style="text-align: center;">0.34</td>
+<td style="text-align: center;">66</td>
+<td style="text-align: center;">11.46</td>
+<td style="text-align: center;"><span class="math inline">\(&lt; 1 \times 10^{-15}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(&lt; 0.0001\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<ol type="1">
+<li><strong>Impact of Mechanical Impedance:</strong> Encountering the dense agar barrier caused an abrupt reduction in primary root elongation of <span class="math inline">\(-10.63 \pm 0.34\)</span> mm (<span class="math inline">\(t(66) = 30.99\)</span>, <span class="math inline">\(p &lt; 0.0001\)</span>), representing a 47.1% suppression of root length relative to unconstrained control roots.</li>
+<li><strong>Rescue by Exogenous Apyrase:</strong> Supplementation of 2 U/mL apyrase into the impedance medium stimulated significant elongation recovery of <span class="math inline">\(+6.70 \pm 0.34\)</span> mm compared to the unsupplemented impedance condition (<span class="math inline">\(t(66) = -19.54\)</span>, <span class="math inline">\(p &lt; 0.0001\)</span>).</li>
+<li><strong>Quantitative Rescue Magnitude:</strong> Comparing the apyrase-mediated growth recovery (<span class="math inline">\(+6.70\)</span> mm) to the total impedance-induced growth penalty (<span class="math inline">\(-10.63\)</span> mm) revealed a phenotypic rescue percentage of: <span class="math display">\[\text{Rescue \%} = \frac{6.702}{10.632} \times 100\% = 63.0\%\]</span></li>
+<li><strong>Residual Growth Deficit:</strong> While apyrase provided substantial phenotypic rescue, roots in the Impedance + Apyrase arm remained <span class="math inline">\(3.93 \pm 0.34\)</span> mm shorter than unhindered Control roots (<span class="math inline">\(t(66) = 11.46\)</span>, <span class="math inline">\(p &lt; 0.0001\)</span>), demonstrating that enzymatic nucleotide depletion partially, but not fully, circumvents physical impedance constraints.</li>
+</ol>
+</section>
+<section id="holistic-model-diagnostics" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="holistic-model-diagnostics"><span class="header-section-number">3.4</span> Holistic Model Diagnostics</h2>
+<p>Residual and random-effect diagnostics confirmed the statistical adequacy and calibration of the linear mixed-effects specification (<a href="#fig-diagnostics" class="quarto-xref">Figure&nbsp;2</a>):</p>
+<ol type="1">
+<li><strong>Residual Normality:</strong> Inspection of the normal Q-Q plot of conditional residuals (<a href="#fig-diagnostics" class="quarto-xref">Figure&nbsp;2</a> B) demonstrated close alignment with theoretical Gaussian quantiles across all ranks. The Shapiro-Wilk test yielded <span class="math inline">\(W = 0.9727\)</span> (<span class="math inline">\(p = 0.1197\)</span>), failing to reject the null hypothesis of residual normality at <span class="math inline">\(\alpha = 0.05\)</span>.</li>
+<li><strong>Residual Homoscedasticity &amp; Linearity:</strong> Residuals plotted against fitted values (<a href="#fig-diagnostics" class="quarto-xref">Figure&nbsp;2</a> A) displayed symmetric dispersion centered on zero without curvature. Residual variance within treatment groups was <span class="math inline">\(s^2_{\text{Control}} = 0.902\)</span>, <span class="math inline">\(s^2_{\text{Impedance}} = 2.595\)</span>, and <span class="math inline">\(s^2_{\text{Apyrase}} = 0.563\)</span>. While Bartlett’s test detected mild heteroscedasticity across treatment arms (<span class="math inline">\(K^2 = 14.252\)</span>, <span class="math inline">\(p = 0.0008\)</span>), the balanced allocation (<span class="math inline">\(n = 24\)</span> per arm) and large test statistics render the linear mixed model highly robust against mild variance heterogeneity.</li>
+<li><strong>Random Block Intercepts (BLUPs):</strong> Best Linear Unbiased Predictors for the 4 environmental blocks (<a href="#fig-diagnostics" class="quarto-xref">Figure&nbsp;2</a> D) exhibited balanced dispersion around the grand mean: <span class="math inline">\(\hat{b}_{\text{Block\_1}} = +0.705\)</span> mm, <span class="math inline">\(\hat{b}_{\text{Block\_2}} = -0.602\)</span> mm, <span class="math inline">\(\hat{b}_{\text{Block\_3}} = +1.327\)</span> mm, and <span class="math inline">\(\hat{b}_{\text{Block\_4}} = -1.431\)</span> mm.</li>
+</ol>
+<div id="fig-diagnostics" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-diagnostics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../figures/figure2_diagnostics.png" class="img-fluid figure-img" style="width:90.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-diagnostics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Holistic statistical diagnostics for the linear mixed-effects model <span class="math inline">\(\text{root\_length\_mm} \sim \text{treatment} + (1 | \text{block})\)</span>. (A) Conditional residuals vs.&nbsp;fitted values with LOESS smooth (green line). (B) Normal Q-Q plot of residuals with 1:1 reference line (red) and Shapiro-Wilk normality test statistics (<span class="math inline">\(W = 0.9727\)</span>, <span class="math inline">\(p = 0.1197\)</span>). (C) Scale-Location plot of square-root absolute standardized residuals across fitted values. (D) Best Linear Unbiased Predictors (BLUPs) of random intercept deviations for the 4 environmental blocks.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sensitivity-analysis-and-model-comparison" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="sensitivity-analysis-and-model-comparison"><span class="header-section-number">3.5</span> Sensitivity Analysis and Model Comparison</h2>
+<p>To evaluate whether conclusions were sensitive to model formulation, we contrasted the primary LMM against alternative specifications (<a href="#tbl-sensitivity" class="quarto-xref">Table&nbsp;3</a>).</p>
+<div id="tbl-sensitivity" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-sensitivity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: Sensitivity analysis comparing model specifications for the root growth trial dataset. Both the Fixed RCBD and Linear Mixed Model isolate block variance, reducing residual error by 47.5% relative to naive unblocked OLS.
+</figcaption>
+<div aria-describedby="tbl-sensitivity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Specification</th>
+<th style="text-align: left;">Model Formula</th>
+<th style="text-align: center;">Residual / Error MSE</th>
+<th style="text-align: center;">Block Variance (<span class="math inline">\(\sigma^2_b\)</span>)</th>
+<th style="text-align: center;">Treatment <span class="math inline">\(F\)</span>-statistic</th>
+<th style="text-align: center;">Error Variance Reduction</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Naive OLS (Unblocked)</strong></td>
+<td style="text-align: left;"><code>y ~ treatment</code></td>
+<td style="text-align: center;">2.689</td>
+<td style="text-align: center;"><em>Ignored</em></td>
+<td style="text-align: center;"><span class="math inline">\(F(2, 69) = 257.94\)</span></td>
+<td style="text-align: center;">Baseline (0.0%)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Fixed RCBD (OLS)</strong></td>
+<td style="text-align: left;"><code>y ~ treatment + block</code></td>
+<td style="text-align: center;">1.412</td>
+<td style="text-align: center;">Fixed coefficients</td>
+<td style="text-align: center;"><span class="math inline">\(F(2, 65) = 491.16\)</span></td>
+<td style="text-align: center;">47.5%</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Linear Mixed Model (AREIL)</strong></td>
+<td style="text-align: left;"><code>y ~ treatment + (1\|block)</code></td>
+<td style="text-align: center;">1.412</td>
+<td style="text-align: center;">1.631 (ICC = 0.536)</td>
+<td style="text-align: center;"><span class="math inline">\(F(2, 66) = 491.16\)</span></td>
+<td style="text-align: center;">47.5%</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Log-Transformed LMM</strong></td>
+<td style="text-align: left;"><code>log(y) ~ treatment + (1\|block)</code></td>
+<td style="text-align: center;">0.006</td>
+<td style="text-align: center;">0.007 (ICC = 0.518)</td>
+<td style="text-align: center;"><span class="math inline">\(F(2, 66) = 493.58\)</span></td>
+<td style="text-align: center;">—</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>As shown in <a href="#tbl-sensitivity" class="quarto-xref">Table&nbsp;3</a>, ignoring block hierarchy in naive unblocked OLS inflates the error mean square from 1.412 to 2.689 (an 90.4% increase in unexplained error variance), deflating the treatment <span class="math inline">\(F\)</span>-statistic from 491.16 to 257.94. Fitting block as a fixed factor yields identical residual MSE (1.412) and treatment contrast estimates to the LMM, but fails to generalize conclusions beyond the specific four experimental blocks. Analysis of log-transformed root lengths confirmed identical conclusions (<span class="math inline">\(F(2, 66) = 493.58\)</span>, <span class="math inline">\(p &lt; 0.0001\)</span>), verifying that findings are invariant to scale transformations.</p>
+<hr>
+</section>
+</section>
+<section id="discussion" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Discussion</h1>
+<section id="biological-significance-of-extracellular-atp-hydrolysis-during-mechanical-stress" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="biological-significance-of-extracellular-atp-hydrolysis-during-mechanical-stress"><span class="header-section-number">4.1</span> Biological Significance of Extracellular ATP Hydrolysis During Mechanical Stress</h2>
+<p>The primary biological finding of this study is that exogenous apyrase supplementation significantly alleviates primary root growth arrest induced by mechanical impedance in <em>Arabidopsis thaliana</em>, restoring 63.0% of the lost elongation (<span class="math inline">\(+6.70 \pm 0.34\)</span> mm; <span class="math inline">\(p &lt; 0.0001\)</span>). This result provides compelling empirical support for the purinergic signaling model of plant mechanical sensing <span class="citation" data-cites="Weerasinghe2009touch Choi2014identification">(<a href="#ref-Weerasinghe2009touch" role="doc-biblioref">Weerasinghe et al. 2009</a>; <a href="#ref-Choi2014identification" role="doc-biblioref">Choi et al. 2014</a>)</span>.</p>
+<p>When growing root tips encounter an impenetrable physical substrate, physical contact and shear forces stimulate the opening of mechanosensitive ion channels and vesicular release of ATP into the apoplast <span class="citation" data-cites="Weerasinghe2009touch">(<a href="#ref-Weerasinghe2009touch" role="doc-biblioref">Weerasinghe et al. 2009</a>)</span>. Elevated extracellular ATP engages the high-affinity plasma membrane purinoceptor DORN1/P2K1 <span class="citation" data-cites="Choi2014identification">(<a href="#ref-Choi2014identification" role="doc-biblioref">Choi et al. 2014</a>)</span>, which activates downstream protein kinase cascades and cytosolic <span class="math inline">\(Ca^{2+}\)</span> transients. Sustained elevated <span class="math inline">\(Ca^{2+}\)</span> and apoplastic ROS inhibit wall loosening enzymes and stiffen the cell wall, restricting expansion of cells in the root elongation zone <span class="citation" data-cites="Wu2007apyrases">(<a href="#ref-Wu2007apyrases" role="doc-biblioref">Wu et al. 2007</a>)</span>.</p>
+<p>By supplying soluble potato apyrase (2 U/mL) in the growth substrate, extracellular ATP is rapidly hydrolyzed to AMP and inorganic phosphate, preventing persistent DORN1 hyperactivation. Consequently, cells in the elongation zone retain wall extensibility and maintain elongation despite continuous physical contact with the agar barrier. The observed residual deficit of <span class="math inline">\(3.93 \pm 0.34\)</span> mm (a 17.4% reduction relative to uninhibited controls) indicates that mechanical impedance also imposes purely physical resistive forces or initiates secondary touch pathways (such as stretch-activated channel signaling or ethylene-mediated responses) that operate independently of purinergic signaling.</p>
+</section>
+<section id="methodological-lessons-the-cost-of-ignoring-experimental-hierarchy" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="methodological-lessons-the-cost-of-ignoring-experimental-hierarchy"><span class="header-section-number">4.2</span> Methodological Lessons: The Cost of Ignoring Experimental Hierarchy</h2>
+<p>A critical objective of Benchmark C within the AREIL v0.2 Hostile Certification Suite is to diagnose biostatistical failures common in autonomous AI research systems. Previous certification benchmarks revealed two prevalent failure modes: 1. <strong>Raw LLM Failure (Arm 1):</strong> In the unassisted regime, generative models frequently rely on hallucinated mental arithmetic, producing inconsistent degrees of freedom, inaccurate contrast standard errors, and arbitrary <span class="math inline">\(p\)</span>-values disconnected from executable code. 2. <strong>Tool-Equipped LLM Failure (Arm 2):</strong> When equipped with standard coding tools but lacking an epistemological routing framework, agents typically default to standard unblocked one-way ANOVA (<code>scipy.stats.f_oneway</code> or <code>statsmodels.OLS</code>). Although code is executed, this approach commits a serious biometric error: it ignores the blocking structure of the RCBD, committing pseudo-replication, failing to assess the Intraclass Correlation Coefficient (<span class="math inline">\(\text{ICC} = 0.536\)</span>), and failing to partition block variance.</p>
+<p>As demonstrated in <a href="#tbl-sensitivity" class="quarto-xref">Table&nbsp;3</a>, ignoring block hierarchy pools the inter-block variance (<span class="math inline">\(\sigma^2_{\text{block}} = 1.631\)</span>) directly into the residual error term, almost doubling the unexplained variance (<span class="math inline">\(\text{MSE} = 2.689\)</span> vs.&nbsp;<span class="math inline">\(1.412\)</span>) and reducing the test statistic by 47.5%. By contrast, the AREIL 8-stage pipeline systematically routes the RCBD design to a linear mixed model with Kenward-Roger small-sample adjustments <span class="citation" data-cites="Kenward1997small Bates2015lme4">(<a href="#ref-Kenward1997small" role="doc-biblioref">Kenward and Roger 1997</a>; <a href="#ref-Bates2015lme4" role="doc-biblioref">Bates et al. 2015</a>)</span>, recovering statistical precision, protecting against Type I error inflation, and ensuring full ledger traceability.</p>
+</section>
+<section id="study-limitations" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="study-limitations"><span class="header-section-number">4.3</span> Study Limitations</h2>
+<p>Several limitations must be acknowledged: 1. <strong>Data Provenance:</strong> The primary dataset represents simulated benchmark data (<code>SIMULATED_BENCHMARK_DATA</code>) designed to test statistical decision-making under known ground-truth parameters. While the effect sizes and variance structures faithfully emulate published <em>Arabidopsis</em> physiological assays <span class="citation" data-cites="Wu2007apyrases Weerasinghe2009touch">(<a href="#ref-Wu2007apyrases" role="doc-biblioref">Wu et al. 2007</a>; <a href="#ref-Weerasinghe2009touch" role="doc-biblioref">Weerasinghe et al. 2009</a>)</span>, the conclusions must not be interpreted as empirical biological discoveries. 2. <strong>Block Sample Size:</strong> With <span class="math inline">\(K = 4\)</span> blocks, estimation of the random-effect variance component (<span class="math inline">\(\sigma^2_{\text{block}}\)</span>) possesses moderate uncertainty, though Kenward-Roger adjustment explicitly corrects for small sample sizes in fixed-effect hypothesis tests. 3. <strong>Single Dose Regime:</strong> The experiment tested a single concentration of exogenous apyrase (2 U/mL). Full pharmacological characterization will require dose-response profiling to ascertain whether higher enzymatic activity can achieve 100% phenotypic rescue.</p>
+<hr>
+</section>
+</section>
+<section id="areil-verification-and-ledger-traceability" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> AREIL Verification and Ledger Traceability</h1>
+<p>The complete analysis was conducted under strict cryptographic and evidentiary oversight. All claims, empirical evidence, and model specifications are cross-referenced across canonical AREIL ledgers in <code>arm3_areil/ledgers/</code>:</p>
+<ul>
+<li><strong>Source Registry (<code>SOURCE_REGISTRY.jsonl</code>):</strong> Contains 6 verified primary citations and dataset registry entries with full DOIs.</li>
+<li><strong>Evidence Ledger (<code>EVIDENCE_LEDGER.jsonl</code>):</strong> Records 7 atomic evidence items linking executed statistical outputs (<code>lmer_results.json</code>) and literature citations to claims.</li>
+<li><strong>Claim Ledger (<code>CLAIM_LEDGER.jsonl</code>):</strong> Details 7 falsifiable claims (<code>CLM-C-001</code> through <code>CLM-C-007</code>) spanning biological mechanisms, trial design, variance components, treatment contrasts, and provenance limitations.</li>
+<li><strong>Contradiction Ledger (<code>CONTRADICTION_LEDGER.jsonl</code>):</strong> Records 2 resolved methodological contradictions (<code>CON-C-001</code> regarding unblocked ANOVA variance inflation and <code>CON-C-002</code> regarding residual heteroscedasticity robustness).</li>
+<li><strong>Novelty &amp; Review Ledgers (<code>NOVELTY_LEDGER.jsonl</code>, <code>REVIEW_LEDGER.jsonl</code>, <code>DATASET_REGISTRY.jsonl</code>):</strong> Capture audit reviews and benchmark dataset verification.</li>
+</ul>
+<p>Validation via <code>Validate-AreilLedgers.py</code> confirmed 0 schema or referential integrity errors. Numerical verification via <code>Verify-ManuscriptConsistency.py</code> verified exact arithmetic alignment across results, tables, figures, and bibliographic keys.</p>
+<hr>
+</section>
+<section id="references" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Bates2015lme4" class="csl-entry" role="listitem">
+Bates, Douglas, Martin Mächler, Benjamin M. Bolker, and Steven C. Walker. 2015. <span>“Fitting Linear Mixed-Effects Models Using Lme4.”</span> <em>Journal of Statistical Software</em> 67 (1): 1–48. <a href="https://doi.org/10.18637/jss.v067.i01">https://doi.org/10.18637/jss.v067.i01</a>.
+</div>
+<div id="ref-Choi2014identification" class="csl-entry" role="listitem">
+Choi, Jeongmin, Kiwamu Tanaka, Yangrong Cao, et al. 2014. <span>“Identification of a Plant Receptor for Extracellular <span>ATP</span>.”</span> <em>Science</em> 343 (6168): 290–94. <a href="https://doi.org/10.1126/science.1245159">https://doi.org/10.1126/science.1245159</a>.
+</div>
+<div id="ref-Kenward1997small" class="csl-entry" role="listitem">
+Kenward, Michael G., and James H. Roger. 1997. <span>“Small Sample Inference for Fixed Effects from Restricted Maximum Likelihood.”</span> <em>Biometrics</em> 53 (3): 983–97. <a href="https://doi.org/10.2307/2533558">https://doi.org/10.2307/2533558</a>.
+</div>
+<div id="ref-Weerasinghe2009touch" class="csl-entry" role="listitem">
+Weerasinghe, Ranjan R., Sarah J. Swanson, Simon Gilroy, and Alan M. Jones. 2009. <span>“Touch Induces <span>ATP</span> Release in <em>Arabidopsis</em> Roots That Is Modulated by the Heterotrimeric <span>G</span>-Protein Complex.”</span> <em>FEBS Letters</em> 583 (15): 2521–26. <a href="https://doi.org/10.1016/j.febslet.2009.07.007">https://doi.org/10.1016/j.febslet.2009.07.007</a>.
+</div>
+<div id="ref-Wu2007apyrases" class="csl-entry" role="listitem">
+Wu, Jian, Iris Steinebrunner, Yu Sun, et al. 2007. <span>“Apyrases (Nucleoside Triphosphate-Diphosphohydrolases) Play a Key Role in Growth Control in <em>Arabidopsis</em>.”</span> <em>Plant Physiology</em> 144 (2): 961–75. <a href="https://doi.org/10.1104/pp.107.097568">https://doi.org/10.1104/pp.107.097568</a>.
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

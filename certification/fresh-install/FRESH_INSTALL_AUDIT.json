@@ -1,0 +1,14 @@
+{
+  "fresh_install_root": "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL",
+  "zip_source": "E:\\Agriculture\\Antigravity Research\\AREIL_v0.2.1-bound.zip",
+  "zip_sha256": "13F72996F0EF0F9AD88779639A25B11AD53F34D1F7CF69F511987B73CAFCFF35",
+  "extracted_file_count": 16754,
+  "installer_exit_code": 0,
+  "init_project_exit_code": 0,
+  "self_test_exit_code": 0,
+  "ledger_validation_exit_code": 0,
+  "quarto_render_exit_code": 0,
+  "docx_generated": true,
+  "html_generated": true,
+  "fresh_install_status": "PASSED_100_PERCENT"
+}

@@ -1,0 +1,6 @@
+{
+  "condition": "CONTROL",
+  "benchmark": "BENCHMARK_B_HOLDOUT_STRIGOLACTONES",
+  "frozen_at": "2026-09-05T11:05:00Z",
+  "sha256": "845cb942843a0e98c0d1ecc15f0b2a5355a5e22b33089942df1c9cfa09ba87ea"
+}

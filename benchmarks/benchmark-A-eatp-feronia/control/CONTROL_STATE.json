@@ -1,0 +1,8 @@
+﻿{
+    "condition":  "CONTROL",
+    "benchmark":  "BENCHMARK_A_EATP_FERONIA",
+    "model":  "Gemini 3.8 Flash High (Plain)",
+    "frozen_at":  "2026-09-05T15:57:22.1826688+05:00",
+    "manuscript_path":  "E:\\Agriculture\\Antigravity Research\\benchmarks\\benchmark-A-eatp-feronia\\control\\manuscript.md",
+    "sha256":  "498A16E8FF3EB6BBE810DC51EB1AC0EAD3743BFD0BB7D3C202D87C5DE2EEB1C2"
+}

@@ -1,0 +1,11 @@
+# AREIL Research Workspace .gitignore
+*.zip
+.venv/
+**/__pycache__/
+**/*.pyc
+cache/
+tools/
+.Rproj.user/
+.system_generated/
+*.tmp
+*.log

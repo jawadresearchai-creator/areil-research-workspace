@@ -1,0 +1,76 @@
+{
+  "model": "root_length_mm ~ treatment + (1 | block)",
+  "data_provenance": "SIMULATED_BENCHMARK_DATA",
+  "design": "Randomized Complete Block Design (RCBD)",
+  "n_observations": 72,
+  "n_blocks": 4,
+  "n_treatments": 3,
+  "n_per_cell": 6,
+  "n_per_treatment": 24,
+  "f_statistic": 491.16,
+  "num_df": 2,
+  "den_df": 66,
+  "f_p_value": 2.3369e-40,
+  "shapiro_wilk_w": 0.9727,
+  "shapiro_wilk_p": 0.1197,
+  "residual_normality_pass": true,
+  "bartlett_k2": 14.252,
+  "bartlett_p": 0.0008,
+  "var_block": 1.631,
+  "var_residual": 1.412,
+  "var_total": 3.043,
+  "icc": 0.536,
+  "rescue_percentage": 63,
+  "emmeans": {
+    "Control": {
+      "mean": 22.56,
+      "se": 0.68,
+      "df": 3.6,
+      "lower_ci": 20.57,
+      "upper_ci": 24.55
+    },
+    "Impedance": {
+      "mean": 11.93,
+      "se": 0.68,
+      "df": 3.6,
+      "lower_ci": 9.94,
+      "upper_ci": 13.91
+    },
+    "Impedance_Apyrase": {
+      "mean": 18.63,
+      "se": 0.68,
+      "df": 3.6,
+      "lower_ci": 16.64,
+      "upper_ci": 20.62
+    }
+  },
+  "contrasts": {
+    "Control_vs_Impedance": {
+      "estimate": 10.63,
+      "se": 0.34,
+      "df": 66,
+      "t_ratio": 30.99,
+      "p_value": 0
+    },
+    "Control_vs_ImpedanceApyrase": {
+      "estimate": 3.93,
+      "se": 0.34,
+      "df": 66,
+      "t_ratio": 11.46,
+      "p_value": 0
+    },
+    "Impedance_vs_ImpedanceApyrase": {
+      "estimate": -6.7,
+      "se": 0.34,
+      "df": 66,
+      "t_ratio": -19.54,
+      "p_value": 0
+    }
+  },
+  "sensitivity": {
+    "unblocked_ols_mse": 2.689,
+    "lmm_residual_variance": 1.412,
+    "rcbd_fixed_mse": 1.412,
+    "error_variance_reduction_pct": 47.5
+  }
+}

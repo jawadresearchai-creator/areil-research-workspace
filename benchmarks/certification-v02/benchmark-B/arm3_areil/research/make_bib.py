@@ -1,0 +1,220 @@
+﻿import json
+from pathlib import Path
+
+bib_entries = [
+    {
+        "key": "Umehara2008Nature",
+        "author": "Umehara, Mikihisa and Hanada, Atsushi and Yoshida, Satoko and Akiyama, Kohki and Arite, Tomotsugu and Takeda-Kamiya, Noriko and Magome, Hiroyuki and Kamiya, Yuji and Shirasu, Ken and Yoneyama, Koichi and Kyozuka, Junko and Yamaguchi, Shinjiro",
+        "title": "Inhibition of shoot branching by new terpenoid plant hormones",
+        "journal": "Nature",
+        "volume": "455",
+        "number": "7210",
+        "pages": "195--200",
+        "year": "2008",
+        "doi": "10.1038/nature07272"
+    },
+    {
+        "key": "Akiyama2005Nature",
+        "author": "Akiyama, Kohki and Matsuzaki, Ken-ichi and Hayashi, Hideo",
+        "title": "Plant sesquiterpenes induce hyphal branching in arbuscular mycorrhizal fungi",
+        "journal": "Nature",
+        "volume": "435",
+        "number": "7043",
+        "pages": "824--827",
+        "year": "2005",
+        "doi": "10.1038/nature03608"
+    },
+    {
+        "key": "Jiang2013Nature",
+        "author": "Jiang, Liang and Liu, Xue and Xiong, Guosheng and Liu, Hanhui and Chen, Fan and Wang, Lei and Meng, Xiangbing and Liu, Guifu and Yu, Hong and Yuan, Yundong and Zhou, Wenxiu and Zhao, Fukun and Wang, Yonghong and Li, Jiayang",
+        "title": "DWARF 53 acts as a repressor of strigolactone signalling in rice",
+        "journal": "Nature",
+        "volume": "504",
+        "number": "7480",
+        "pages": "401--405",
+        "year": "2013",
+        "doi": "10.1038/nature12870"
+    },
+    {
+        "key": "Zhou2013Nature",
+        "author": "Zhou, Feng and Lin, Qibing and Zhu, Lihong and Ren, Yulong and Zhou, Kunneng and Shabek, Nitzan and Wu, Fuqing and Mao, Hong and Dong, Wei and Gan, Lu and Liu, Zhen and Lou, Fu and Chen, Jing and Lu, Zhitao and Xie, Jie and Wan, Jianmin",
+        "title": "D14--SCFD3-dependent degradation of D53 regulates strigolactone signalling",
+        "journal": "Nature",
+        "volume": "504",
+        "number": "7480",
+        "pages": "406--410",
+        "year": "2013",
+        "doi": "10.1038/nature12878"
+    },
+    {
+        "key": "Kapulnik2011Planta",
+        "author": "Kapulnik, Yoram and Delaux, Pierre-Marc and Resnick, Natalie and Mayzlish-Gati, Efrat and Wininger, Smadar and Bhattacharya, Chittaranjan and Séjalon-Delmas, Nathalie and Combier, Jean-Philippe and Bécard, Guillaume and Belausov, Eduard and Beeckman, Tom and Dor, Eyal and Hershenhorn, Joseph and Koltai, Hinanit",
+        "title": "Strigolactones affect lateral root formation and root-hair elongation in Arabidopsis",
+        "journal": "Planta",
+        "volume": "233",
+        "number": "1",
+        "pages": "209--216",
+        "year": "2011",
+        "doi": "10.1007/s00425-010-1310-y"
+    },
+    {
+        "key": "Kapulnik2011JXB",
+        "author": "Kapulnik, Yoram and Resnick, Natalie and Mayzlish-Gati, Efrat and Kaplan, Yonatan and Wininger, Smadar and Hershenhorn, Joseph and Koltai, Hinanit",
+        "title": "Strigolactones interact with ethylene and auxin in regulating root-hair elongation in Arabidopsis",
+        "journal": "Journal of Experimental Botany",
+        "volume": "62",
+        "number": "8",
+        "pages": "2915--2924",
+        "year": "2011",
+        "doi": "10.1093/jxb/erq464"
+    },
+    {
+        "key": "Sun2014JXB",
+        "author": "Sun, Hao and Tao, Jin and Liu, Shijia and Huang, Shuheng and Chen, Shanshan and Xie, Xiaonan and Yoneyama, Koichi and Zhang, Yong and Xu, Guohua",
+        "title": "Strigolactones are involved in phosphate- and nitrate-deficiency-induced root development and auxin transport in rice",
+        "journal": "Journal of Experimental Botany",
+        "volume": "65",
+        "number": "22",
+        "pages": "6735--6746",
+        "year": "2014",
+        "doi": "10.1093/jxb/eru029"
+    },
+    {
+        "key": "Alder2012Science",
+        "author": "Alder, Adrian and Jamil, Muhammad and Marzorati, Mauro and Bruno, Michael and Vermathen, Martina and Bigler, Peter and Ghisla, Sandro and Bouwmeester, Harro and Beyer, Peter and Al-Babili, Salim",
+        "title": "The Path from β-Carotene to Carlactone, a Strigolactone-Like Plant Hormone",
+        "journal": "Science",
+        "volume": "335",
+        "number": "6074",
+        "pages": "1348--1351",
+        "year": "2012",
+        "doi": "10.1126/science.1218094"
+    },
+    {
+        "key": "Lin2009PlantCell",
+        "author": "Lin, Hao and Wang, Renxiao and Qian, Qian and Yan, Ming and Meng, Xiangbing and Fu, Zhi-Ming and Yan, Chengcai and Jiang, Bo and Su, Zhen and Li, Jiayang and Wang, Yonghong",
+        "title": "DWARF27, an Iron-Containing Protein Required for the Biosynthesis of Strigolactones, Regulates Rice Tillering",
+        "journal": "The Plant Cell",
+        "volume": "21",
+        "number": "12",
+        "pages": "4012--4025",
+        "year": "2009",
+        "doi": "10.1105/tpc.109.065987"
+    },
+    {
+        "key": "Yao2016Nature",
+        "author": "Yao, Ruifeng and Ming, Zhenhua and Yan, Liming and Li, Shan and Wang, Fei and Ma, Shuai and Yu, Chunyan and Kobe, Bostjan and Qi, Jianxun and Lou, Zhiyong and Xie, Daoxin",
+        "title": "DWARF14 is a non-canonical hormone receptor for strigolactone",
+        "journal": "Nature",
+        "volume": "536",
+        "number": "7617",
+        "pages": "469--473",
+        "year": "2016",
+        "doi": "10.1038/nature19073"
+    },
+    {
+        "key": "Besserer2006PLoS",
+        "author": "Besserer, Arnaud and Puech-Pagès, Virginie and Kiefer, Patrick and Gomez-Roldan, Vladimir and Jauneau, Alain and Roy, Stéphane and Portais, Jean-Charles and Roux, Christophe and Bécard, Guillaume and Séjalon-Delmas, Nathalie",
+        "title": "Strigolactones Stimulate Arbuscular Mycorrhizal Fungi by Activating Mitochondria",
+        "journal": "PLoS Biology",
+        "volume": "4",
+        "number": "7",
+        "pages": "e226",
+        "year": "2006",
+        "doi": "10.1371/journal.pbio.0040226"
+    },
+    {
+        "key": "Lv2014PlantCell",
+        "author": "Lv, Qundan and Zhong, Yongjia and Wang, Yuguang and Wang, Zheng and Zhang, Liyan and Shi, Jing and Wu, Zhongchang and Liu, Ying and Mao, Chuanzao and Yi, Keke and Wu, Ping",
+        "title": "SPX4 Negatively Regulates Phosphate Signaling and Homeostasis through Its Interaction with PHR2 in Rice",
+        "journal": "The Plant Cell",
+        "volume": "26",
+        "number": "4",
+        "pages": "1586--1597",
+        "year": "2014",
+        "doi": "10.1105/tpc.114.123208"
+    },
+    {
+        "key": "Wild2016Science",
+        "author": "Wild, Rebekka and Gerasimaite, Ruta and Jung, Ji-Yul and Truffault, Vincent and Schäfer, Igor and Jevtic, Petar and Koulov, Atanas and Wittwer, Christian and Cui, Jing and Vagnoni, Sara and Tsai, Ting-Hua and Fiedler, Dorothea and Poirier, Yves and Hothorn, Michael",
+        "title": "Control of eukaryotic phosphate homeostasis by inositol polyphosphate sensor domains",
+        "journal": "Science",
+        "volume": "352",
+        "number": "6288",
+        "pages": "986--990",
+        "year": "2016",
+        "doi": "10.1126/science.aad9858"
+    },
+    {
+        "key": "Arite2009PCP",
+        "author": "Arite, Tomotsugu and Umehara, Mikihisa and Ishikawa, Shinji and Hanada, Atsushi and Maekawa, Masahiko and Yamaguchi, Shinjiro and Kyozuka, Junko",
+        "title": "d14, a Strigolactone-Insensitive Mutant of Rice, Shows an Accelerated Outgrowth of Tillers",
+        "journal": "Plant and Cell Physiology",
+        "volume": "50",
+        "number": "8",
+        "pages": "1416--1424",
+        "year": "2009",
+        "doi": "10.1093/pcp/pcp091"
+    },
+    {
+        "key": "Arite2007PlantJ",
+        "author": "Arite, Tomotsugu and Iwata, Hiroshi and Ohshima, Katsuhiko and Maekawa, Masahiko and Nakajima, Masatoshi and Kojima, Mikiko and Sakakibara, Hitoshi and Kyozuka, Junko",
+        "title": "DWARF10, an RMS1/MAX4/DAD1 ortholog, controls lateral bud outgrowth in rice",
+        "journal": "The Plant Journal",
+        "volume": "51",
+        "number": "6",
+        "pages": "1019--1029",
+        "year": "2007",
+        "doi": "10.1111/j.1365-313X.2007.03210.x"
+    },
+    {
+        "key": "Zou2006PlantJ",
+        "author": "Zou, Jun and Zhang, Shengbiao and Zhang, Weiping and Shen, Guangzhen and Chen, Zhiwei and Han, Bin and Zou, Ying and Wang, Zongyang",
+        "title": "The rice HIGH-TILLERING DWARF1 encoding an ortholog of Arabidopsis MAX3 is required for negative regulation of the outgrowth of axillary buds",
+        "journal": "The Plant Journal",
+        "volume": "48",
+        "number": "5",
+        "pages": "687--698",
+        "year": "2006",
+        "doi": "10.1111/j.1365-313X.2006.02916.x"
+    },
+    {
+        "key": "RuyterSpira2011PlantPhysiol",
+        "author": "Ruyter-Spira, Carolien and Kohlen, Wouter and Charnikhova, Tatiana and van Zeijl, Arjan and van Bezouwen, Laurens and Chiou, Chao-Yin and Vlčková, Kateřina and Dun, Elizabeth A. and Snoeck, Soraya and Lopez-Obando, Mauricio and Matusova, Radoslava and Beveridge, Christine A. and Bouwmeester, Harro J.",
+        "title": "Physiological Effects of the Synthetic Strigolactone Analog GR24 on Root System Architecture in Arabidopsis: Another Belowground Role for Strigolactones?",
+        "journal": "Plant Physiology",
+        "volume": "155",
+        "number": "2",
+        "pages": "721--734",
+        "year": "2011",
+        "doi": "10.1104/pp.110.166645"
+    },
+    {
+        "key": "Ried2021NatCommun",
+        "author": "Ried, Martina K. and Wild, Rebekka and Zhu, Jinsheng and Pipercevic, Jovana and Sturm, Kelly and Broger, Leo and Harmel, Robert K. and Abriata, Luciano A. and Hothorn, Ludwig A. and Fiedler, Dorothea and Hothorn, Michael",
+        "title": "Inositol pyrophosphates promote the interaction of SPX domains with the coiled-coil motif of PHR transcription factors to regulate plant phosphate homeostasis",
+        "journal": "Nature Communications",
+        "volume": "12",
+        "number": "1",
+        "pages": "359",
+        "year": "2021",
+        "doi": "10.1038/s41467-020-20681-4"
+    }
+]
+
+out = []
+for b in bib_entries:
+    out.append(f"@article{{{b['key']},")
+    out.append(f"  author = {{{b['author']}}},")
+    out.append(f"  title = {{{b['title']}}},")
+    out.append(f"  journal = {{{b['journal']}}},")
+    out.append(f"  volume = {{{b['volume']}}},")
+    out.append(f"  number = {{{b['number']}}},")
+    out.append(f"  pages = {{{b['pages']}}},")
+    out.append(f"  year = {{{b['year']}}},")
+    out.append(f"  doi = {{{b['doi']}}}")
+    out.append("}\n")
+
+bib_path = Path("E:/Agriculture/Antigravity Research/benchmarks/certification-v02/benchmark-B/arm3_areil/manuscript/references.bib")
+bib_path.write_text("\n".join(out), encoding="utf-8")
+print(f"Written {len(bib_entries)} BibTeX records to {bib_path}")

@@ -1,0 +1,17 @@
+{
+  "arm": "ARM_2_TOOL_EQUIPPED_GEMINI",
+  "benchmark": "BENCHMARK_D",
+  "data_classification": "REAL_PUBLIC_DATA",
+  "manuscript_sha256": "DAEA390C36C7271F4678A437B5984D7792E33EF4B04B9F2152BC0891CB3DCE4B",
+  "tool_calls_allowed": "UNRESTRICTED",
+  "tool_calls_executed": 3,
+  "tools_used": [
+    "R_lm",
+    "Quarto_CLI"
+  ],
+  "execution_time_sec": 28.1,
+  "code_executed": true,
+  "statistical_model": "Ordinary Linear Model (lm ignoring split-plot random block effects)",
+  "fatal_statistical_defects": 1,
+  "consistency_defects": 0
+}

@@ -1,0 +1,289 @@
+--- PAGE 1 ---
+Plant Signaling & Behavior
+ISSN: 1559-2324 (Online) Journal homepage: www.tandfonline.com/journals/kpsb20
+RRFT1 (Redox Responsive Transcription Factor 1)
+is involved in extracellular ATP-regulated gene
+expression in Arabidopsis thaliana seedlings
+Xiaoxia Dong, Ruojia Zhu, Erfang Kang & Zhonglin Shang
+To cite this article: Xiaoxia Dong, Ruojia Zhu, Erfang Kang & Zhonglin Shang (2020) RRFT1
+(Redox Responsive Transcription Factor 1) is involved in extracellular ATP-regulated gene
+expression in Arabidopsis thaliana seedlings, Plant Signaling & Behavior, 15:5, 1748282, DOI:
+10.1080/15592324.2020.1748282
+To link to this article:  https://doi.org/10.1080/15592324.2020.1748282
+View supplementary material 
+Published online: 05 Apr 2020.
+Submit your article to this journal 
+Article views: 1048
+View related articles 
+View Crossmark data
+Citing articles: 3 View citing articles 
+Full Terms & Conditions of access and use can be found at
+https://www.tandfonline.com/action/journalInformation?journalCode=kpsb20
+
+--- PAGE 2 ---
+SHORT COMMUNICATION
+RRFT1 (Redox Responsive Transcription Factor 1) is involved in extracellular
+ATP-regulated gene expression in Arabidopsis thaliana seedlings
+Xiaoxia Dong, Ruojia Zhu, Erfang Kang, and Zhonglin Shang
+Hebei Key Laboratory of Molecular and Cellular Biology, Key Laboratory of Molecular and Cellular Biology of the Ministry of Education, College of
+Life Sciences, Hebei Normal University, Shijiazhuang, Hebei, China
+ABSTRACT
+As an apoplast signal molecule, extracellular ATP (eATP) is involved in the growth regulation of Arabidopsis
+thaliana seedlings. Recently, RRFT1 was revealed to be involved in eATP- regulated seedling growth. To
+further verify the role of RRTF1 in seedlings' eATP response, expression of 20 eATP-responsive genes in wild
+type (Col-0) and RRTF1 null mutant (rrtf1-1) seedlings were investigated by using realtime quantitative PCR.
+After 0.5 mM ATP stimulation, the response of these genes' expression in rrtf1-1 seedlings was significantly
+different from that in Col-0 seedlings. Proteins which are encoded by these genes include transcription
+factors, plasma membrane receptors like kinases, ion influx/efflux transporters and hormone signaling
+components. The results indicated that RRTF1 may be involved in eATP regulated physiological responses
+via regulating the expression of some functional genes.
+ARTICLE HISTORY
+Received 23 February 2020
+Revised 22 March 2020
+Accepted 24 March 2020
+KEYWORDS
+Extracellular ATP; RRTF1;
+gene expression; Arabidopsis
+thaliana
+As an apoplast signal molecule, extracellular ATP (eATP) is
+involved in the growth regulation of Arabidopsis thaliana
+seedlings. Recently, RRFT1 was revealed to be involved in
+eATP- regulated seedling growth. To further verify the role
+of RRTF1 in seedlings ’ eATP response, expression of 20
+eATP-responsive genes in wild type (Col-0) and RRTF1 null
+mutant ( rrtf1-1) seedlings were investigated by using realtime
+quantitative PCR. After 0.5 mM ATP stimulation, the
+response of these genes ’ expression in rrtf1-1 seedlings was
+significantly different from that in Col-0 seedlings. Proteins
+which are encoded by these genes include transcription fac-
+tors, plasma membrane receptor-like kinases, ion influx/efflux
+transporters, and hormone signaling components. The results
+indicated that RRTF1 may be involved in eATP regulated
+physiological responses via regulating the expression of
+some functional genes.
+Extracellulr ATP, which is secreted from the cytoplasm,
+acts as a signaling molecule in the extracellular matrix. eATP
+is involved in regulating vegetative growth, reproductive pro-
+cesses, and stress responses. 1– 4 Functional gene expression
+and protein synthesis may be a central event in these eATP-
+stimulated responses.5,6 Hence, transcription factors may play
+a key role in eATP-regulated physiological processes as well.
+Some ethylene-responsive factors were reported to be induced
+by eATP and involved in eATP signaling. 7– 9 Recently, RRTF1,
+an ethylene-responsive transcription factor, was revealed to
+participate in eATP-regulated root & hypocotyl growth via
+regulating auxin transport and functional genes ’ expression.10
+In 2017, in an DNA microarray assay, we found some ATP
+responsive genes which may possibly be involved in eATP-
+regulated root growth. 9 To further clarify the role of RRTF1 in
+eATP signaling, expression of these genes in eATP-treated
+wild type (Col-0) and RRTF1 null mutant ( rrtf1-1) seedlings
+were detected by using realtime quantitative PCR.
+Arabidopsis thaliana seeds were surface-sterilized and
+sown on the surface of solid 1/2 MS medium (containing
+0.8% phytagel) in square culture dishes. After 2 days vernali-
+zation at 4°C, culture dishes were vertically placed in a growth
+chamber which was running at 22°C, 130 μmol/m2·s illumina-
+tion and 16/8 h light/dark ratio. 4-d-old seedlings were then
+transplanted onto 0.5 mM ATP-containing medium which
+was made according to Zhu et al. 10 1/2 MS medium was pre-
+adjusted to maintain the final pH value around 5.8. 2 or 3 h
+after transplantation, seedlings were harvested and rapidly
+frozen in liquid nitrogen for RNA extraction. Total RNA
+was isolated from 0.1 g root tissue using the RNAiso plus
+reagent, and 2 μg of total RNA was reverse-transcribed to
+cDNA using M-MLV reverse transcriptase. Realtime quanti-
+tative PCR was performed using an ABI7500 system, ACTIN2
+was used as the constitutive reference gene. The primers ’
+sequences are listed in Table S1.
+The results showed that, after ATP stimulation, 20 genes ’
+expression pattern were markedly different in Col-0 and rrtf1-
+1 seedlings. The responsiveness of these genes ’ expression can
+be sorted into three categories: (1) 14 genes ’ expression were
+remarkably up-regulated in Col-0 while not up-regulated or
+even down-regulated in rrtf1-1, e.g. ABCG39, ABCG40,
+XTH33, GH3.4 , etc.; (2) 3 genes ’ expression were not or
+only slightly up-regulated in Col-0 while remarkably down-
+regulated in rrtf1-1, e.g. LECRK13, XTH22 , and CRK5; (3) 3
+genes’ expression were remarkably down-regulated or not
+changed in Col-0 while markedly up-regulated in rrtf1-1,
+CONTACT Zhonglin Shang shangzhonglin@hebtu.edu.cn Hebei Key Laboratory of Molecular and Cellular Biology, Key Laboratory of Molecular and Cellular
+Biology of the Ministry of Education, College of Life Sciences, Hebei Normal University, Shijiazhuang, Hebei 05002, China
+Supplemental data for this article can be accessed on the publisher’s website .
+PLANT SIGNALING & BEHAVIOR
+2020, VOL. 15, NO. 5, e1748282 (4 pages)
+https://doi.org/10.1080/15592324.2020.1748282
+© 2020 Taylor & Francis Group, LLC
+
+--- PAGE 3 ---
+e.g., ACA13, SAUR68 , and At3g28580 ( Figure 1 ). The results
+indicated that RRTF1 may be involved in eATP regulated
+gene expression as a positive or negative regulator.
+Based on the data from the NCBI (National Center for
+Biotechnology Information) and UniProt (Universal Protein)
+website, proteins which are encoded by these genes can be
+categorized into five groups: (1) Transcription factors, 3 ethy-
+lene-responsive transcription factors (ERF018, ERF105, and
+ERF114) are included; (2) Cell wall construction involved
+enzymes, XTH22, and XTH33 are included; (3) Plasma mem-
+brane lectin-domain containing receptor kinases, LECRK13,
+and LECRK59 are included; (4) Plasma membrane transpor-
+ters, 4 ABC (ATP Binding Cassette) transporters (ABCA8,
+ABCG11, ABCG39, and ABCG40), an organic cation trans-
+porter (OCT1) and a Ca 2+ ATPase (ACA13) are included; (5)
+Hormone metabolism and signaling related proteins, an IAA-
+amido synthase (GH3.4), 3 auxin-responsive proteins
+(SAUR68, SAUR76, and ARGOS), 2 ABA signaling related
+proteins (PRN1 and At3G28580) and 1 cytokinin responsive
+factor (CRK5) are included ( Table 1 ).
+These proteins are involved in multiple physiological pro-
+cesses, including cell division & differentiation, and stress (or
+defense) responses. eATP-regulated expression of these genes
+m a yb ei n v o l v e di ne A T P - r e g u l a t e ds e e d l i n gg r o w t h ;h e n c e ,
+the different responses of Col-0 and rrtf1-1 seedlings to eATP
+stimulation10 may partially result from the differential expression
+Figure 1. The expression of 20 eATP responsive genes in Col-0 and rrtf1-1 seedlings. Expression of gene was detected by using realtime quantitative PCR, which
+Actin2 was used as a reference gene. The primers of these genes are listed in Table 2. Four-d seedlings were transplanted onto 0.5 mM ATP-containing medium and
+cultured under light for 2 or 3 h. Then, total RNA was extracted and expression of each gene was detected. Data from three biological replicates (each include three
+technical replicates) were used to calculate the mean ± SD and statistically analyzed. Student ’s t-test p-values: * p < .05, ** p < .01.
+e1748282-2 X. DONG ET AL.
+
+--- PAGE 4 ---
+pattern of these genes in seedlings. Recently, by using chromatin
+immunoprecipitation (CHIP) and high throughput sequencing
+analysis, 48 genes were screened out to be ATP responsive genes
+which may be directly regulated by RRTF1. 10 The results here
+provided additional evidence that RRTF1 may be involved in
+eATP signaling. Nevertheless, the 20 genes we detected here
+were not enriched in CHIP assay, soR R T F 1m a yp o s s i b l yr e g u l a t e
+the expression of these genes indirectly.
+During the past 2 decades, it was revealed that seedlings
+responded to the high concentration of eATP as a suppressed
+growth rate and changed the growth direction of roots or
+hypocotyls.7– 12 Plant hormone (auxin, jasmonic acid, ethylene)
+signaling components were revealed to be involved in eATP
+regulated seedling growth.6– 14 The 20 proteins had been proved
+or predicted to be involved in stimuli-regulated vegetative
+organs growth. Results here provided further evidence that
+these proteins may play roles in eATP signaling as well. RRTF1
+has been revealed to be involved in plant growth and stress
+responses.15,16 Results here provided new evidence to elucidate
+the role of RRTF1 in Arabidopsis seedlings’response to eATP. It
+is of good help for understanding the role of ethylene-responsive
+transcription factors in the signaling of apoplast messengers.
+Recently, it was revealed that MYC and CAMTA3 transcription
+factors play essential roles in regulating eATP responsive genes’
+expression.6 It is expected that the discovery of more transcrip-
+tion factors in eATP signaling will provide valuable information
+to elucidate the mechanism of eATP- regulated gene expression.
+Disclosure of potential conflicts of interest
+No potential conflicts of interest were disclosed.
+Funding
+This work was supported by National Natural Science Foundation of
+China (Grant No.31370319, 31871409, 31800233).
+ORCID
+Zhonglin Shang http://orcid.org/0000-0001-9279-0393
+References
+1. Tanaka K, Gilroy S, Jones AM, Stacey G. Extracellular ATP
+signaling in plants. Trends Cell Bio. 2010;20:601– 608.
+PMID:20817461. doi: 10.1016/j.tcb.2010.07.005.
+2. Clark G, Roux S. Apyrases, extracellular ATP and the regulation of
+growth. Curr Opin Plant Biol. 2011;14:700– 706. PMID:21855397.
+doi:10.1016/j.pbi.2011.07.013.
+3. Cao Y, Tanaka K, Nguyen C, Stacey G. Extracellular ATP is a central
+signaling molecule in plant stress responses. Curr Opin Plant Biol.
+2014;20:82– 87. PMID:24865948. doi:10.1016/j.pbi.2014.04.009.
+4 . C l a r kG ,M o r g a nR ,F e r n a n d e zM ,S a l m iM ,R o u xS .B r e a k t h r o u g h s
+spotlighting roles for extracellularn u c l e o t i d e sa n da p y r a s e si ns t r e s s
+responses and growth and development. Plant Sci.2014;225:107– 116.
+PMID:25017166. doi:10.1016/j.plantsci.2014.06.002.
+5. Chivasa S, Tome D, Hamilton J, Slabas A. Proteomic analysis of
+extracellular ATP-regulated proteins identifies ATP synthase β-
+subunit as a novel plant cell death regulator. Mol Cell Proteomics.
+2011;10:M110.003905. PMID:21156838. doi: 10.1074/mcp.M110.
+003905.
+6. Jewell J, Sowders J, He R, Willis M, Gang D, Tanaka K.
+Extracellular ATP shapes a defense-related transcriptome both
+independently and along with other defense signaling pathways.
+Plant Physiol. 2019;179:1144– 1158. PMID:30630869. doi: 10.1104/
+pp.18.01301.
+7. Liu X, Wu J, Clark G, Lundy S, Lim M, Arnold D, Chan J,
+Tang W, Muday GK, Gardner G, Roux SJ. Role for apyrases in
+polar auxin transport in Arabidopsis. Plant Physiol.
+2012;160:1985– 1995. PMID:23071251. doi: 10.1104/pp.112.202887.
+8 . L i mM ,W uJ ,Y a oJ ,G a l l a r d oI ,D u g g e rJ ,W e b bL ,H u a n gJ ,S a l m iM ,
+Song J, Clark G, Roux S. Apyrase suppression raises extracellular ATP
+levels and induces gene expression and cell wall changes characteristic
+of stress responses. Plant Physiol. 2014;164:2054– 2067.
+PMID:24550243. doi:10.1104/pp.113.233429.
+9. Zhu R, Dong X, Hao W, Gao W, Zhang W, Xia S, Liu T, Shang Z.
+Heterotrimeric G protein-regulated Ca 2+ influx and PIN2 asym-
+metric distribution are involved in Arabidopsis thaliana roots’
+Table 1. Function analysis of RRTF1-regulated eATP-responsive genes. Description of the genes ’ function is based on information from website of NCBI (The National
+Center for Biotechnology Information) and UniProt (Universal Protein).
+Gene Locus Name Summary for Possible Function
+Transcription Factors
+At5G51190 ERF105 ethylene responsive transcription factor, involved in ethylene signaling
+At5G61890 ERF114 ethylene responsive transcription factor, involved in ethylene signaling
+At1G74930 ERF018 a member of DREB transcription factor family, involved in ethylene signaling
+Cell Wall Construction
+At1G10550 XTH33 xyloglucan:xyloglucosyl transferase 33, involved in cell wall modification
+At5G57560 XTH22 xyloglucan endotransglucosylase/hydrolase 22, involved in cell wall construction
+Plasma Membrane Receptors
+At4G29050 LECRK59 L-type lectin-domain containing receptor serine/threonine kinase V.9
+At3G45410 LECRK13 LECRK I.3, involved in resistance to pathogenic fungus
+Cell Membrane Transporters
+At1G66950 ABCG39 involved in ABA transport and resistance to lead (Pb 2+)
+At1G15520 ABCG40 a pump to exclude Pb 2+ and/or Pb 2+-containing compounds from the cytoplasm
+At3G47790 ABCA8 ABC2 homolog 7, ATPase-coupled transmembrane transporter
+At1G17840 ABCG11 ABC transporter in charge of cutin transport to extracellular matrix
+At1G73220 OCT1 Organic Cation Transporter 1, involved in lateral root development
+At3G22910 ACA13 a putative plasma membrane-type calcium-transporting ATPase
+Plant hormone metabolism or signaling
+At3G59900 ARGOS involved in auxin-regulated cell proliferation, lateral organ growth
+At1G59500 GH3.4 an IAA-amido synthase, conjugates amino acids to IAA to inhibit its activity
+At1G29490 SAUR68 SAUR-like auxin-responsive protein, promote auxin-stimulated organ elongation
+At5G20820 SAUR76 SAUR-like auxin-responsive protein, positive regulator of cell growth
+At3G59220 PRN1 Pirin-1, involved in ABA induced responses
+At2G46310 CRK5 cytokinin responsive factor, involved in cotyledon, leaf & embryo development
+At3G28580 - an AAA-type ATPase, involved in response to ABA
+PLANT SIGNALING & BEHAVIOR e1748282-3
+
+--- PAGE 5 ---
+avoidance response to extracellular ATP. Front Plant Sci.
+2017;8:1522. PMID:28919907. doi: 10.3389/fpls.2017.01522.
+1 0 . Z h uR ,D o n gX ,X u eY ,X uJ ,Z h a n gA ,F e n gM ,Z h a oQ ,X i aS ,Y i nY ,
+He S, Li Y, Liu T, Kang E, Shang Z. REDOX RESPONSIVE
+TRANSCRIPTION FACTOR1 (RRFT1) is involved in extracellular
+ATP regulated Arabidopsis thaliana seedling growth. Plant Cell
+Physiol.2020;pii:pcaa014. PMID:32049334. doi:10.1093/pcp/pcaa014.
+11. Tang W, Brady S, Sun Y, Muday G, Roux S. Extracellular ATP
+inhibits root gravitropism at concentrations that inhibit polar
+auxin transport. Plant Physiol. 2003;131:147– 154. PMID:12529523.
+doi:10.1104/pp.013672.
+12. Tonón C, Cecilia Terrile M, Jose Iglesias M, Lamattina L,
+Casalongue C. Extracellular ATP, nitric oxide and superoxide
+act coordinately to regulate hypocotyl growth in etiolated
+Arabidopsis seedlings. J Plant Physiol. 2010;167:540– 546.
+PMID:19962212. doi: 10.1016/j.jplph.2009.11.002.
+13. Tripathi D, Zhang T, Koo A, Stacey G, Tanaka K. Extracellular
+ATP acts on jasmonate signaling to reinforce plant defense.
+Plant Physiol. 2018;176:511– 523. PMID:29180381. doi: 10.1104/
+pp.17.01477 .
+14. Yang X, Wang B, Farris B, Clark G, Roux S. Modulation of root
+skewing in Arabidopsis by apyrases and extracellular ATP. Plant
+Cell Physiol. 2015;56:2197– 2206. PMID:26412783. doi: 10.1093/
+pcp/pcv134.
+15. Matsuo M, Johnson J, Hieno A, Tokizawa M, Nomoto M,
+Tada Y, Godfrey R, Obokata J, Sherameti I, Yamamoto YY,
+Böhmer FD. High REDOX RESPONSIVE TRANSCRIPTION
+FACTOR1 levels result in accumulation of reactive oxygen
+species in Arabidopsis thaliana shoots and roots. Mol Plant.
+2015;8:1253– 1273. PMID:25882345. doi: 10.1016/j.molp.2015
+.03.011.
+16. Wang M, Dai W, Du J, Ming R, Dahro B, Liu J. ERF109 of
+trifoliate orange ( Poncirus trifoliata (L.) Raf.) contributes to cold
+tolerance by directly regulating expression of Prx1 involved in
+antioxidative process. Plant Biotechnol J. 2018;17:1316– 1332.
+PMID:30575255. doi: 10.1111/pbi.13056.
+e1748282-4 X. DONG ET AL.

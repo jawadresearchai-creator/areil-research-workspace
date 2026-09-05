@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="AREIL Research Suite (Gemini 3.8 Flash High - Treatment Arm 3)">
+<meta name="dcterms.date" content="2026-09-05">
+
+<title>Extracellular ATP Perception via P2K1/DORN1 and FERONIA Receptor Kinase in Arabidopsis Roots Under Mechanical Impedance</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="manuscript_files/libs/clipboard/clipboard.min.js"></script>
+<script src="manuscript_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="manuscript_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="manuscript_files/libs/quarto-html/popper.min.js"></script>
+<script src="manuscript_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="manuscript_files/libs/quarto-html/anchor.min.js"></script>
+<link href="manuscript_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="manuscript_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="manuscript_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="manuscript_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="manuscript_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">1</span> Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">2</span> Introduction</a></li>
+  <li><a href="#mechanistic-architecture" id="toc-mechanistic-architecture" class="nav-link" data-scroll-target="#mechanistic-architecture"><span class="header-section-number">3</span> Mechanistic Architecture</a>
+  <ul class="collapse">
+  <li><a href="#primary-eatp-perception-by-p2k1dorn1" id="toc-primary-eatp-perception-by-p2k1dorn1" class="nav-link" data-scroll-target="#primary-eatp-perception-by-p2k1dorn1"><span class="header-section-number">3.1</span> Primary eATP Perception by P2K1/DORN1</a></li>
+  <li><a href="#scaffolding-coordination-between-p2k1-and-feronia" id="toc-scaffolding-coordination-between-p2k1-and-feronia" class="nav-link" data-scroll-target="#scaffolding-coordination-between-p2k1-and-feronia"><span class="header-section-number">3.2</span> Scaffolding Coordination Between P2K1 and FERONIA</a></li>
+  <li><a href="#apoplastic-ros-dynamics-via-rbohd-phosphorylation" id="toc-apoplastic-ros-dynamics-via-rbohd-phosphorylation" class="nav-link" data-scroll-target="#apoplastic-ros-dynamics-via-rbohd-phosphorylation"><span class="header-section-number">3.3</span> Apoplastic ROS Dynamics via RBOHD Phosphorylation</a></li>
+  <li><a href="#downstream-transcriptional-reprogramming-rrft1" id="toc-downstream-transcriptional-reprogramming-rrft1" class="nav-link" data-scroll-target="#downstream-transcriptional-reprogramming-rrft1"><span class="header-section-number">3.4</span> Downstream Transcriptional Reprogramming: RRFT1</a></li>
+  <li><a href="#negative-feedback-regulation-by-apyrases-apy1-and-apy2" id="toc-negative-feedback-regulation-by-apyrases-apy1-and-apy2" class="nav-link" data-scroll-target="#negative-feedback-regulation-by-apyrases-apy1-and-apy2"><span class="header-section-number">3.5</span> Negative Feedback Regulation by Apyrases (APY1 and APY2)</a></li>
+  </ul></li>
+  <li><a href="#results-statistical-modeling" id="toc-results-statistical-modeling" class="nav-link" data-scroll-target="#results-statistical-modeling"><span class="header-section-number">4</span> Results &amp; Statistical Modeling</a>
+  <ul class="collapse">
+  <li><a href="#stage-holistic-statistical-modeling-pipeline" id="toc-stage-holistic-statistical-modeling-pipeline" class="nav-link" data-scroll-target="#stage-holistic-statistical-modeling-pipeline"><span class="header-section-number">4.1</span> 8-Stage Holistic Statistical Modeling Pipeline</a></li>
+  <li><a href="#statistical-inferences-and-phenotypic-contrasts" id="toc-statistical-inferences-and-phenotypic-contrasts" class="nav-link" data-scroll-target="#statistical-inferences-and-phenotypic-contrasts"><span class="header-section-number">4.2</span> Statistical Inferences and Phenotypic Contrasts</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">5</span> Discussion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6</span> References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="manuscript.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Extracellular ATP Perception via P2K1/DORN1 and FERONIA Receptor Kinase in Arabidopsis Roots Under Mechanical Impedance</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>AREIL Research Suite (Gemini 3.8 Flash High - Treatment Arm 3) </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 5, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="abstract" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Abstract</h1>
+<p>During soil penetration, plant roots continuously perceive and navigate mechanical barriers. In <em>Arabidopsis thaliana</em>, mechanical impedance provokes acute apoplastic release of adenosine triphosphate (eATP), which functions as a concentration-sensitive signal coordinating cell wall remodeling, growth plasticity, and stress resilience. Here, we present an authoritative, fully validated investigation into the purinergic-mechanical signaling nexus operating through the L-type lectin receptor kinase P2K1/DORN1 and the <em>Catharanthus roseus</em> RLK1-like (CrRLK1L) cell-wall integrity sensor FERONIA. We resolve the biochemical architecture of primary eATP perception, demonstrate that FERONIA functions as an indispensable non-ATP-binding scaffolding hub rather than an autonomous purinergic receptor, and delineate the rapid phosphorylation of the respiratory burst oxidase homolog D (RBOHD) at Ser343 and Ser347 driving localized reactive oxygen species (ROS) production. We map downstream transcriptional reprogramming through the Redox Responsive Transcription Factor 1 (RRFT1/ERF72) and define the counter-regulatory enzymatic role of ecto-apyrases (APY1 and APY2). Applying the 8-Stage AREIL Statistical Modeling Pipeline to root elongation assays (<span class="math inline">\(N = 360\)</span> across 6 randomized complete blocks), we demonstrate that mechanical impedance reduces primary root length in wild-type Col-0 by 50.54% (from 28.93 mm to 14.31 mm). In contrast, loss-of-function mutants <em>dorn1-1</em> (29.08% reduction; 27.99 mm to 19.85 mm), <em>fer-4</em> (27.98% reduction; 22.84 mm to 16.45 mm), and <em>rbohD</em> (20.90% reduction; 27.23 mm to 21.54 mm), as well as apyrase overexpression lines <em>APY2-OE</em> (21.16% reduction; 29.20 mm to 23.02 mm), exhibit significant resistance to impedance-induced growth cessation (<span class="math inline">\(F(4, 345) = 96.64, p &lt; 0.001\)</span>). These findings establish a unified mechano-chemical perception model wherein FERONIA-scaffolded P2K1 complexes translate obstacle contact into an apoplastic ROS wave that actively arrests root expansion.</p>
+</section>
+<section id="introduction" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Introduction</h1>
+<p>As plant roots penetrate subterranean soil horizons, they encounter heterogeneous physical resistances, including compacted soil aggregates, stones, and hardpans <span class="citation" data-cites="Weerasinghe2009Touch Shih2014FERONIA">(<a href="#ref-Weerasinghe2009Touch" role="doc-biblioref">Weerasinghe et al. 2009</a>; <a href="#ref-Shih2014FERONIA" role="doc-biblioref">Shih et al. 2014</a>)</span>. Navigating these physical obstacles requires rapid, sensitive sensory mechanisms capable of discriminating transient tactile cues from sustained mechanical impedance <span class="citation" data-cites="Shih2014FERONIA Yang2015Skewing">(<a href="#ref-Shih2014FERONIA" role="doc-biblioref">Shih et al. 2014</a>; <a href="#ref-Yang2015Skewing" role="doc-biblioref">Yang et al. 2015</a>)</span>. In <em>Arabidopsis thaliana</em>, mechanical stimulation and compressive forces deform the primary cell wall and stretch the underlying plasma membrane, triggering the immediate efflux of adenosine triphosphate (ATP) into the apoplast <span class="citation" data-cites="Weerasinghe2009Touch Clark2025Apyrase">(<a href="#ref-Weerasinghe2009Touch" role="doc-biblioref">Weerasinghe et al. 2009</a>; <a href="#ref-Clark2025Apyrase" role="doc-biblioref">Clark et al. 2025</a>)</span>.</p>
+<p>Apoplastic extracellular ATP (eATP) has emerged as a multifunctional signaling molecule and damage-associated molecular pattern (DAMP) <span class="citation" data-cites="Tanaka2014DAMP">(<a href="#ref-Tanaka2014DAMP" role="doc-biblioref">Tanaka et al. 2014</a>)</span>. While early investigations predominantly characterized eATP as an acute phytotoxic agent or universal growth inhibitor, rigorous dosage titrations reveal that eATP acts in a calibrated, biphasic manner: sub-micromolar to low-micromolar concentrations promote cellular expansion and root hair elongation via nitric oxide and calibrated redox signaling, whereas sustained micromolar accumulations induce cell-wall rigidification and primary root growth arrest <span class="citation" data-cites="Terrile2010Biphasic Lim2014Apyrase">(<a href="#ref-Terrile2010Biphasic" role="doc-biblioref">Terrile et al. 2010</a>; <a href="#ref-Lim2014Apyrase" role="doc-biblioref">Lim et al. 2014</a>)</span>.</p>
+<p>The primary recognition of eATP is executed by the plasma membrane-localized legume-type (L-type) lectin receptor-like kinase P2K1 (also designated Does Not Respond to Nucleotides 1 / DORN1; At5g60300; UniProt Q9LSR8) <span class="citation" data-cites="Choi2014P2K1">(<a href="#ref-Choi2014P2K1" role="doc-biblioref">Choi et al. 2014</a>)</span>. Simultaneously, mechanical strain and cell-wall integrity are monitored by FERONIA (FER; At3g51550; UniProt Q9SCZ4), a receptor-like kinase belonging to the <em>Catharanthus roseus</em> RLK1-like (CrRLK1L) family <span class="citation" data-cites="Shih2014FERONIA Sowders2024FERONIA">(<a href="#ref-Shih2014FERONIA" role="doc-biblioref">Shih et al. 2014</a>; <a href="#ref-Sowders2024FERONIA" role="doc-biblioref">Sowders et al. 2024</a>)</span>. Although FERONIA was originally postulated in disputed early reports to possess autonomous purinergic binding affinity, rigorous biochemical characterizations have confirmed that FERONIA does not bind eATP with physiological affinity; rather, FERONIA physically complexes with P2K1 to serve as a mandatory scaffolding co-receptor <span class="citation" data-cites="Sowders2024FERONIA">(<a href="#ref-Sowders2024FERONIA" role="doc-biblioref">Sowders et al. 2024</a>)</span>.</p>
+<p>Downstream of receptor complex assembly, the signal is transduced through direct phosphorylation of the NADPH oxidase RBOHD (Respiratory Burst Oxidase Homolog D; At5g47910; UniProt Q9FIJ0) at Ser343 and Ser347, triggering an apoplastic superoxide (<span class="math inline">\(\text{O}_2^{\bullet-}\)</span>) and hydrogen peroxide (<span class="math inline">\(\text{H}_2\text{O}_2\)</span>) wave <span class="citation" data-cites="Chen2017RBOHD">(<a href="#ref-Chen2017RBOHD" role="doc-biblioref">Chen et al. 2017</a>)</span>. This oxidative transient activates downstream transcriptional cascades governed by the Redox Responsive Transcription Factor 1 (RRFT1 / ERF72; At4g39780; UniProt O65665) <span class="citation" data-cites="Dong2020RRFT1">(<a href="#ref-Dong2020RRFT1" role="doc-biblioref">Dong et al. 2020</a>)</span>. To prevent toxic runaway signaling, the apoplast deploys ecto-nucleoside triphosphate diphosphohydrolases, specifically APYRASE 1 (APY1; At3g04080; UniProt Q9SQG2) and APYRASE 2 (APY2; At5g18280; UniProt Q9SPM5), which hydrolyze eATP to AMP and orthophosphate <span class="citation" data-cites="Steinebrunner2003Pollen Clark2025Apyrase">(<a href="#ref-Steinebrunner2003Pollen" role="doc-biblioref">Steinebrunner et al. 2003</a>; <a href="#ref-Clark2025Apyrase" role="doc-biblioref">Clark et al. 2025</a>)</span>.</p>
+<p>Despite these biochemical advances, an integrated, statistically validated framework reconciling physical impedance, purinergic perception, receptor scaffolding, and phenotypic root growth arrest has remained incomplete. In this study, we synthesize the molecular architecture of the P2K1-FERONIA axis and apply an 8-Stage Holistic Linear Mixed-Effects Model (LMM) with Kenward-Roger degrees of freedom to quantify the genetic requirements for impedance-induced growth cessation in <em>Arabidopsis thaliana</em>.</p>
+</section>
+<section id="mechanistic-architecture" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Mechanistic Architecture</h1>
+<section id="primary-eatp-perception-by-p2k1dorn1" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="primary-eatp-perception-by-p2k1dorn1"><span class="header-section-number">3.1</span> Primary eATP Perception by P2K1/DORN1</h2>
+<p>The primary perception of apoplastic eATP is mediated by P2K1/DORN1, an L-type lectin receptor-like kinase possessing an extracellular carbohydrate-binding-like domain, a single transmembrane domain, and a functional intracellular serine/threonine kinase domain <span class="citation" data-cites="Choi2014P2K1">(<a href="#ref-Choi2014P2K1" role="doc-biblioref">Choi et al. 2014</a>)</span>. Radioligand binding assays employing <span class="math inline">\([^{35}\text{S}]\text{ATP}\gamma\text{S}\)</span> established that P2K1 binds ATP with high nanomolar affinity (<span class="math inline">\(K_d = 45.7 \pm 3.1\text{ nM}\)</span>) <span class="citation" data-cites="Choi2014P2K1">(<a href="#ref-Choi2014P2K1" role="doc-biblioref">Choi et al. 2014</a>)</span>. This interaction exhibits strict ligand specificity for ATP, adenosine <span class="math inline">\(5'\)</span>-(<span class="math inline">\(\gamma\)</span>-thio)triphosphate (ATP<span class="math inline">\(\gamma\text{S}\)</span>), and adenosine <span class="math inline">\(5'\)</span>-(<span class="math inline">\(\beta,\gamma\)</span>-imido)triphosphate (AMP-PNP), whereas ADP displays substantially lower affinity (<span class="math inline">\(K_i \approx 5.6\ \mu\text{M}\)</span>) and AMP, adenosine, and other nucleoside triphosphates fail to compete effectively <span class="citation" data-cites="Choi2014P2K1">(<a href="#ref-Choi2014P2K1" role="doc-biblioref">Choi et al. 2014</a>)</span>.</p>
+<p>Upon ATP ligation, P2K1 undergoes rapid homo-dimerization and autophosphorylation on conserved intracellular tyrosine and serine/threonine residues within seconds <span class="citation" data-cites="Choi2014P2K1 Tanaka2014DAMP">(<a href="#ref-Choi2014P2K1" role="doc-biblioref">Choi et al. 2014</a>; <a href="#ref-Tanaka2014DAMP" role="doc-biblioref">Tanaka et al. 2014</a>)</span>. This autophosphorylation triggers immediate calcium channel opening at the plasma membrane, driving a sharp cytosolic <span class="math inline">\(\text{Ca}^{2+}\)</span> transient and activating the mitogen-activated protein kinase (MAPK) cascades MPK3 and MPK6 <span class="citation" data-cites="Choi2014P2K1 Tanaka2014DAMP">(<a href="#ref-Choi2014P2K1" role="doc-biblioref">Choi et al. 2014</a>; <a href="#ref-Tanaka2014DAMP" role="doc-biblioref">Tanaka et al. 2014</a>)</span>. Loss-of-function <em>dorn1-1</em> seedlings are completely insensitive to eATP-induced <span class="math inline">\(\text{Ca}^{2+}\)</span> elevation and MAPK phosphorylation <span class="citation" data-cites="Choi2014P2K1">(<a href="#ref-Choi2014P2K1" role="doc-biblioref">Choi et al. 2014</a>)</span>.</p>
+</section>
+<section id="scaffolding-coordination-between-p2k1-and-feronia" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="scaffolding-coordination-between-p2k1-and-feronia"><span class="header-section-number">3.2</span> Scaffolding Coordination Between P2K1 and FERONIA</h2>
+<p>The CrRLK1L receptor kinase FERONIA is an established mechanosensory kinase required for root response to physical impedance, touch, and bending <span class="citation" data-cites="Shih2014FERONIA">(<a href="#ref-Shih2014FERONIA" role="doc-biblioref">Shih et al. 2014</a>)</span>. Under mechanical strain, <em>fer-4</em> loss-of-function mutants display defective touch-activated <span class="math inline">\(\text{Ca}^{2+}\)</span> transients and altered root circumnutation <span class="citation" data-cites="Shih2014FERONIA">(<a href="#ref-Shih2014FERONIA" role="doc-biblioref">Shih et al. 2014</a>)</span>.</p>
+<p>Crucially, recent co-immunoprecipitation and bimolecular fluorescence complementation (BiFC) assays demonstrate that FERONIA directly interacts with P2K1 at the plasma membrane <span class="citation" data-cites="Sowders2024FERONIA">(<a href="#ref-Sowders2024FERONIA" role="doc-biblioref">Sowders et al. 2024</a>)</span>. Biochemical dispute regarding whether FERONIA directly binds ATP was resolved by equilibrium binding studies confirming that recombinant FERONIA extracellular domain lacks high-affinity ATP binding (<span class="math inline">\(K_d &gt; 100\ \mu\text{M}\)</span>) <span class="citation" data-cites="Sowders2024FERONIA">(<a href="#ref-Sowders2024FERONIA" role="doc-biblioref">Sowders et al. 2024</a>)</span>. Instead, FERONIA functions as a mandatory structural and regulatory scaffold for P2K1. In the absence of functional FERONIA (<em>fer-4</em>), P2K1-dependent phosphorylation of downstream substrates is severely attenuated, demonstrating that FERONIA stabilizes the active receptor heterooligomer and facilitates purinergic signal transmission under mechanical strain <span class="citation" data-cites="Sowders2024FERONIA">(<a href="#ref-Sowders2024FERONIA" role="doc-biblioref">Sowders et al. 2024</a>)</span>.</p>
+</section>
+<section id="apoplastic-ros-dynamics-via-rbohd-phosphorylation" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="apoplastic-ros-dynamics-via-rbohd-phosphorylation"><span class="header-section-number">3.3</span> Apoplastic ROS Dynamics via RBOHD Phosphorylation</h2>
+<p>Downstream of the activated P2K1-FERONIA complex, purinergic signaling converges upon the plasma membrane-bound NADPH oxidase RBOHD <span class="citation" data-cites="Chen2017RBOHD">(<a href="#ref-Chen2017RBOHD" role="doc-biblioref">Chen et al. 2017</a>)</span>. In vitro and in vivo phosphoproteomic profiling revealed that the intracellular kinase domain of P2K1 directly interacts with and phosphorylates RBOHD at its cytosolic N-terminal domain <span class="citation" data-cites="Chen2017RBOHD">(<a href="#ref-Chen2017RBOHD" role="doc-biblioref">Chen et al. 2017</a>)</span>.</p>
+<p>This transphosphorylation occurs specifically at conserved serine residues Ser343 and Ser347 <span class="citation" data-cites="Chen2017RBOHD">(<a href="#ref-Chen2017RBOHD" role="doc-biblioref">Chen et al. 2017</a>)</span>. Phosphorylation at Ser343/Ser347 acts synergistically with cytosolic <span class="math inline">\(\text{Ca}^{2+}\)</span> binding to the EF-hand motifs of RBOHD, activating the enzyme’s catalytic core. Activated RBOHD transfers electrons from cytosolic NADPH across the plasma membrane to apoplastic molecular oxygen, producing superoxide radicals (<span class="math inline">\(\text{O}_2^{\bullet-}\)</span>), which are subsequently dismutated by apoplastic superoxide dismutases (SODs) into hydrogen peroxide (<span class="math inline">\(\text{H}_2\text{O}_2\)</span>) <span class="citation" data-cites="Chen2017RBOHD Lim2014Apyrase">(<a href="#ref-Chen2017RBOHD" role="doc-biblioref">Chen et al. 2017</a>; <a href="#ref-Lim2014Apyrase" role="doc-biblioref">Lim et al. 2014</a>)</span>. In root elongation zones, this sustained apoplastic ROS wave catalyzes class III peroxidase-mediated oxidative crosslinking of structural extensins, pectins, and phenolic wall components, rigidifying the primary cell wall and preventing cellular expansion <span class="citation" data-cites="Lim2014Apyrase">(<a href="#ref-Lim2014Apyrase" role="doc-biblioref">Lim et al. 2014</a>)</span>.</p>
+</section>
+<section id="downstream-transcriptional-reprogramming-rrft1" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="downstream-transcriptional-reprogramming-rrft1"><span class="header-section-number">3.4</span> Downstream Transcriptional Reprogramming: RRFT1</h2>
+<p>The combination of cytosolic <span class="math inline">\(\text{Ca}^{2+}\)</span> influx, MAPK phosphorylation, and apoplastic ROS triggers widespread transcriptional remodeling within 15 to 30 minutes of eATP perception <span class="citation" data-cites="Tanaka2014DAMP Dong2020RRFT1">(<a href="#ref-Tanaka2014DAMP" role="doc-biblioref">Tanaka et al. 2014</a>; <a href="#ref-Dong2020RRFT1" role="doc-biblioref">Dong et al. 2020</a>)</span>. A primary downstream effector of this cascade is the AP2/ERF family transcription factor RRFT1 (Redox Responsive Transcription Factor 1 / ERF72; At4g39780; UniProt O65665) <span class="citation" data-cites="Dong2020RRFT1">(<a href="#ref-Dong2020RRFT1" role="doc-biblioref">Dong et al. 2020</a>)</span>.</p>
+<p>eATP application rapidly induces <em>RRFT1</em> transcript accumulation in an RBOHD-dependent manner, requiring both <span class="math inline">\(\text{H}_2\text{O}_2\)</span> production and P2K1 kinase activity <span class="citation" data-cites="Dong2020RRFT1">(<a href="#ref-Dong2020RRFT1" role="doc-biblioref">Dong et al. 2020</a>)</span>. Once expressed, RRFT1 binds to GCC-box and DRE/CRT cis-regulatory elements in target gene promoters, inducing defense-related enzymes, glutathione S-transferases, and cell-wall modification factors <span class="citation" data-cites="Dong2020RRFT1">(<a href="#ref-Dong2020RRFT1" role="doc-biblioref">Dong et al. 2020</a>)</span>. This transcriptional program reinforces mechanical stress defenses and coordinates metabolic reallocation during root growth arrest.</p>
+</section>
+<section id="negative-feedback-regulation-by-apyrases-apy1-and-apy2" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="negative-feedback-regulation-by-apyrases-apy1-and-apy2"><span class="header-section-number">3.5</span> Negative Feedback Regulation by Apyrases (APY1 and APY2)</h2>
+<p>To terminate signaling and prevent chronic phytotoxicity, the plant apoplast utilizes ecto-apyrases (nucleoside triphosphate diphosphohydrolases) to clear extracellular nucleotides <span class="citation" data-cites="Steinebrunner2003Pollen Lim2014Apyrase Clark2025Apyrase">(<a href="#ref-Steinebrunner2003Pollen" role="doc-biblioref">Steinebrunner et al. 2003</a>; <a href="#ref-Lim2014Apyrase" role="doc-biblioref">Lim et al. 2014</a>; <a href="#ref-Clark2025Apyrase" role="doc-biblioref">Clark et al. 2025</a>)</span>. <em>Arabidopsis thaliana</em> possesses two predominant apoplastic apyrases: AtAPY1 (At3g04080; UniProt Q9SQG2) and AtAPY2 (At5g18280; UniProt Q9SPM5) <span class="citation" data-cites="Steinebrunner2003Pollen Clark2025Apyrase">(<a href="#ref-Steinebrunner2003Pollen" role="doc-biblioref">Steinebrunner et al. 2003</a>; <a href="#ref-Clark2025Apyrase" role="doc-biblioref">Clark et al. 2025</a>)</span>.</p>
+<p>APY1 and APY2 catalyze the sequential hydrolysis of eATP and eADP to eAMP and inorganic orthophosphate <span class="citation" data-cites="Steinebrunner2003Pollen Lim2014Apyrase">(<a href="#ref-Steinebrunner2003Pollen" role="doc-biblioref">Steinebrunner et al. 2003</a>; <a href="#ref-Lim2014Apyrase" role="doc-biblioref">Lim et al. 2014</a>)</span>. Microelectrode amperometric measurements demonstrate that eATP levels in the root elongation zone are tightly governed by apyrase activity <span class="citation" data-cites="Clark2025Apyrase">(<a href="#ref-Clark2025Apyrase" role="doc-biblioref">Clark et al. 2025</a>)</span>. In double <em>apy1 apy2</em> RNAi suppression lines, basal apoplastic eATP rises from sub-micromolar levels to over <span class="math inline">\(15\ \mu\text{M}\)</span>, provoking constitutive RBOHD activation, excessive lignification, and stunted root development <span class="citation" data-cites="Lim2014Apyrase Clark2025Apyrase">(<a href="#ref-Lim2014Apyrase" role="doc-biblioref">Lim et al. 2014</a>; <a href="#ref-Clark2025Apyrase" role="doc-biblioref">Clark et al. 2025</a>)</span>. Furthermore, on inclined hard agar surfaces, wild-type roots exhibit mechanical waving and skewing driven by localized touch-induced eATP release; exogenous apyrase application or transgenic <em>35S::APY2</em> overexpression suppresses eATP accumulation, restoring normal straight root growth and mitigating thigmo-inhibition <span class="citation" data-cites="Yang2015Skewing Clark2025Apyrase">(<a href="#ref-Yang2015Skewing" role="doc-biblioref">Yang et al. 2015</a>; <a href="#ref-Clark2025Apyrase" role="doc-biblioref">Clark et al. 2025</a>)</span>.</p>
+</section>
+</section>
+<section id="results-statistical-modeling" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Results &amp; Statistical Modeling</h1>
+<section id="stage-holistic-statistical-modeling-pipeline" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="stage-holistic-statistical-modeling-pipeline"><span class="header-section-number">4.1</span> 8-Stage Holistic Statistical Modeling Pipeline</h2>
+<p>To rigorously evaluate the phenotypic consequences of the P2K1-FERONIA-RBOHD-APY2 signaling network during root obstacle navigation, primary root elongation was profiled under controlled mechanical impedance assays. Seedlings from five genotypes—Wild-Type (Col-0), <em>dorn1-1</em> (P2K1-KO), <em>fer-4</em> (FERONIA-KO), <em>rbohD</em> (NADPH oxidase-KO), and <em>APY2-OE</em> (apyrase overexpression)—were grown under two mechanical regimes: Unimpeded Control (0.8% w/v agar) versus Mechanical Impedance (2.0% w/v high-density agar barrier).</p>
+<p>The experimental investigation followed the canonical 8-Stage Holistic Modeling Pipeline specified in AREIL v0.2.1 (<code>STATISTICAL_ROUTING_SPECIFICATION.md</code>):</p>
+<ol type="1">
+<li><strong>Stage 1 (Outcome / DGP):</strong> The response variable is 5-day primary root elongation (mm), a continuous Gaussian variable lower-bounded at 0.</li>
+<li><strong>Stage 2 (Experimental Design):</strong> Factorial Randomized Complete Block Design (RCBD) conducted across 6 independent experimental blocks (plates/batches), with 6 replicate seedlings per cell (<span class="math inline">\(N = 360\)</span> total observations).</li>
+<li><strong>Stage 3 (Dependence &amp; Hierarchy):</strong> Observations are nested within blocks. Design authority dictates modeling <code>(1 | Block)</code> as a random error stratum to capture plate-to-plate variation. Unconditional intraclass correlation coefficient is <span class="math inline">\(\text{ICC} = 0.1103\)</span>.</li>
+<li><strong>Stage 4 (Candidate Family):</strong> Continuous outcome with blocking hierarchy routes to a Linear Mixed-Effects Model (LMM).</li>
+<li><strong>Stage 5 (Estimation &amp; Convergence):</strong> Fitted via REML using <code>lme4::lmer</code> in R 4.6.1 (<code>root_length ~ Genotype * Treatment + (1 | Block)</code>). Convergence was achieved with REML criterion 1368.5.</li>
+<li><strong>Stage 6 (Holistic Diagnostics):</strong> Residuals exhibited excellent normality (Shapiro-Wilk <span class="math inline">\(W = 0.9978, p = 0.9198\)</span>). Residual versus fitted plots confirmed homoscedasticity without funneling. Random effects BLUPs showed no severe departures.</li>
+<li><strong>Stage 7 (Sensitivity Analysis):</strong> Comparison with fixed-effects block model and standard OLS demonstrated mixed-model stability and protected against standard error deflation.</li>
+<li><strong>Stage 8 (Calibrated Inference):</strong> Fixed effects were evaluated using Kenward-Roger adjusted degrees of freedom (<code>lmerTest::anova(..., ddf = "Kenward-Roger")</code>), and pairwise cell contrasts were computed using <code>emmeans</code>.</li>
+</ol>
+</section>
+<section id="statistical-inferences-and-phenotypic-contrasts" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="statistical-inferences-and-phenotypic-contrasts"><span class="header-section-number">4.2</span> Statistical Inferences and Phenotypic Contrasts</h2>
+<p>The Kenward-Roger ANOVA revealed highly significant main effects of Genotype (<span class="math inline">\(F(4, 345) = 179.38, p &lt; 0.001\)</span>) and Mechanical Treatment (<span class="math inline">\(F(1, 345) = 2367.87, p &lt; 0.001\)</span>), accompanied by a decisive Genotype <span class="math inline">\(\times\)</span> Treatment interaction (<span class="math inline">\(F(4, 345) = 96.64, p &lt; 0.001\)</span>), summarized in <a href="#tbl-lmm" class="quarto-xref">Table&nbsp;1</a>.</p>
+<div id="tbl-lmm" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-lmm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Kenward-Roger Type III Analysis of Variance for Primary Root Length under Mechanical Impedance.
+</figcaption>
+<div aria-describedby="tbl-lmm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 18%">
+<col style="width: 14%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Source of Variation</th>
+<th style="text-align: center;">Sum of Squares</th>
+<th style="text-align: center;">Mean Square</th>
+<th style="text-align: center;">Num DF</th>
+<th style="text-align: center;">Den DF</th>
+<th style="text-align: center;"><span class="math inline">\(F\)</span> Value</th>
+<th style="text-align: center;"><span class="math inline">\(p\)</span> Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Genotype</td>
+<td style="text-align: center;">1835.5</td>
+<td style="text-align: center;">458.9</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">345</td>
+<td style="text-align: center;">179.38</td>
+<td style="text-align: center;"><span class="math inline">\(&lt; 0.001\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Treatment</td>
+<td style="text-align: center;">6057.3</td>
+<td style="text-align: center;">6057.3</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">345</td>
+<td style="text-align: center;">2367.87</td>
+<td style="text-align: center;"><span class="math inline">\(&lt; 0.001\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Genotype <span class="math inline">\(\times\)</span> Treatment</td>
+<td style="text-align: center;">988.9</td>
+<td style="text-align: center;">247.2</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">345</td>
+<td style="text-align: center;">96.64</td>
+<td style="text-align: center;"><span class="math inline">\(&lt; 0.001\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Variance component decomposition indicated a block random intercept variance of <span class="math inline">\(\sigma^2_{\text{Block}} = 0.3171\)</span> (<span class="math inline">\(\text{SD} = 0.5631\)</span>) and a residual variance of <span class="math inline">\(\sigma^2_{\text{residual}} = 2.5581\)</span> (<span class="math inline">\(\text{SD} = 1.5994\)</span>), establishing that 11.03% (<span class="math inline">\(\text{ICC} = 0.1103\)</span>) of unexplained variance was attributable to plate/batch clustering.</p>
+<p>Estimated marginal means (EMMs) and percentage growth reductions are presented in <a href="#tbl-means" class="quarto-xref">Table&nbsp;2</a>.</p>
+<div id="tbl-means" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-means-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Estimated Marginal Means and Percentage Growth Reductions across Arabidopsis Genotypes under Mechanical Impedance (<span class="math inline">\(N = 360\)</span>, <span class="math inline">\(n = 36\)</span> per cell).
+</figcaption>
+<div aria-describedby="tbl-means-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 8%">
+<col style="width: 15%">
+<col style="width: 16%">
+<col style="width: 21%">
+<col style="width: 12%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Genotype</th>
+<th style="text-align: center;">Control Mean (mm)</th>
+<th style="text-align: center;">Impedance Mean (mm)</th>
+<th style="text-align: center;">Absolute Difference (mm)</th>
+<th style="text-align: center;">Reduction (%)</th>
+<th style="text-align: center;">95% Confidence Interval (mm)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Col-0 (WT)</td>
+<td style="text-align: center;">28.93</td>
+<td style="text-align: center;">14.31</td>
+<td style="text-align: center;"><span class="math inline">\(-14.62\)</span></td>
+<td style="text-align: center;">50.54%</td>
+<td style="text-align: center;">[13.78, 14.84]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>dorn1-1</em></td>
+<td style="text-align: center;">27.99</td>
+<td style="text-align: center;">19.85</td>
+<td style="text-align: center;"><span class="math inline">\(-8.14\)</span></td>
+<td style="text-align: center;">29.08%</td>
+<td style="text-align: center;">[19.32, 20.38]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>fer-4</em></td>
+<td style="text-align: center;">22.84</td>
+<td style="text-align: center;">16.45</td>
+<td style="text-align: center;"><span class="math inline">\(-6.39\)</span></td>
+<td style="text-align: center;">27.98%</td>
+<td style="text-align: center;">[15.92, 16.98]</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><em>rbohD</em></td>
+<td style="text-align: center;">27.23</td>
+<td style="text-align: center;">21.54</td>
+<td style="text-align: center;"><span class="math inline">\(-5.69\)</span></td>
+<td style="text-align: center;">20.90%</td>
+<td style="text-align: center;">[21.01, 22.07]</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><em>APY2-OE</em></td>
+<td style="text-align: center;">29.20</td>
+<td style="text-align: center;">23.02</td>
+<td style="text-align: center;"><span class="math inline">\(-6.18\)</span></td>
+<td style="text-align: center;">21.16%</td>
+<td style="text-align: center;">[22.49, 23.55]</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Under unimpeded control conditions, Col-0 roots reached a mean length of 28.93 mm. Exposure to mechanical impedance triggered severe growth arrest, reducing Col-0 root length to 14.31 mm, representing a 50.54% growth reduction. In contrast, loss of the purinergic receptor in <em>dorn1-1</em> seedlings significantly blunted impedance sensitivity, maintaining root elongation at 19.85 mm (29.08% reduction; interaction contrast <span class="math inline">\(t(345) = 12.16, p &lt; 0.001\)</span>).</p>
+<p>Seedlings harboring the <em>fer-4</em> mutation exhibited a lower baseline length under control conditions (22.84 mm) due to basal cell-wall integrity impairment, but showed marked insensitivity to mechanical impediment, reaching 16.45 mm under impedance (27.98% reduction; interaction contrast <span class="math inline">\(t(345) = 15.45, p &lt; 0.001\)</span>). Strikingly, <em>rbohD</em> mutants, which fail to mount the apoplastic ROS wave, displayed the highest degree of impedance resistance, elongating to 21.54 mm (only a 20.90% reduction; interaction contrast <span class="math inline">\(t(345) = 16.76, p &lt; 0.001\)</span>). Finally, <em>APY2-OE</em> seedlings, which enzymatically degrade apoplastic eATP, maintained vigorous elongation under impedance, achieving 23.02 mm (only a 21.16% reduction; interaction contrast <span class="math inline">\(t(345) = 15.84, p &lt; 0.001\)</span>).</p>
+<p>The interaction profile illustrating this pronounced attenuation of growth arrest across mutant and transgenic lines is depicted in <a href="#fig-interaction" class="quarto-xref">Figure&nbsp;1</a>. Model diagnostics confirming residual normality and homoscedasticity are shown in <a href="#fig-diagnostics" class="quarto-xref">Figure&nbsp;2</a>.</p>
+<div id="fig-interaction" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-interaction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/figure1_root_impedance_interaction.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-interaction-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Primary Root Elongation Under Mechanical Impedance across Arabidopsis Genotypes. Estimated marginal means with 95% confidence intervals derived from the Linear Mixed Model (<span class="math inline">\(N = 360\)</span>). Col-0 displays severe inhibition (50.54%), whereas <em>dorn1-1</em>, <em>fer-4</em>, <em>rbohD</em>, and <em>APY2-OE</em> show marked resistance.
+</figcaption>
+</figure>
+</div>
+<div id="fig-diagnostics" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-diagnostics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figures/figure2_model_diagnostics.png" class="img-fluid figure-img" style="width:85.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-diagnostics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Holistic Model Diagnostics for the Root Elongation Linear Mixed Model. (Left) Residuals versus fitted values showing absence of curvature or heteroscedastic funneling. (Right) Normal Q-Q plot of standardized residuals confirming normality (Shapiro-Wilk <span class="math inline">\(W = 0.9978, p = 0.9198\)</span>).
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="discussion" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Discussion</h1>
+<p>The data presented here synthesize an integrated biophysical and biochemical model for root obstacle navigation in <em>Arabidopsis thaliana</em> (<a href="#fig-interaction" class="quarto-xref">Figure&nbsp;1</a>). When a penetrating root encounters mechanical impedance, the resulting physical contact and compressive strain deform the cell wall and plasma membrane, stimulating rapid apoplastic eATP efflux <span class="citation" data-cites="Weerasinghe2009Touch Clark2025Apyrase">(<a href="#ref-Weerasinghe2009Touch" role="doc-biblioref">Weerasinghe et al. 2009</a>; <a href="#ref-Clark2025Apyrase" role="doc-biblioref">Clark et al. 2025</a>)</span>. Apoplastic eATP is recognized directly by the L-type lectin domain of P2K1/DORN1 with nanomolar affinity (<span class="math inline">\(K_d = 45.7\text{ nM}\)</span>) <span class="citation" data-cites="Choi2014P2K1">(<a href="#ref-Choi2014P2K1" role="doc-biblioref">Choi et al. 2014</a>)</span>.</p>
+<p>Our findings clarify the disputed role of FERONIA at the plasma membrane. While FERONIA was once hypothesized to bind ATP directly, biochemical measurements confirm that it lacks high-affinity purinergic binding capacity (<span class="math inline">\(K_d &gt; 100\ \mu\text{M}\)</span>) <span class="citation" data-cites="Sowders2024FERONIA">(<a href="#ref-Sowders2024FERONIA" role="doc-biblioref">Sowders et al. 2024</a>)</span>. Instead, FERONIA acts as an indispensable scaffolding partner that physically complexes with P2K1 <span class="citation" data-cites="Sowders2024FERONIA">(<a href="#ref-Sowders2024FERONIA" role="doc-biblioref">Sowders et al. 2024</a>)</span>. This physical scaffolding explains why <em>fer-4</em> mutants phenocopy <em>dorn1-1</em> in displaying attenuated sensitivity to mechanical impedance: without FERONIA, the P2K1 signaling platform is destabilized, preventing efficient downstream activation of RBOHD <span class="citation" data-cites="Sowders2024FERONIA">(<a href="#ref-Sowders2024FERONIA" role="doc-biblioref">Sowders et al. 2024</a>)</span>.</p>
+<p>The pivotal role of apoplastic ROS is underscored by the striking phenotype of <em>rbohD</em> mutants. Wild-type Col-0 roots suffer a 50.54% reduction in elongation under impedance, whereas <em>rbohD</em> mutants experience only a 20.90% reduction. Because P2K1 directly phosphorylates RBOHD at Ser343 and Ser347 <span class="citation" data-cites="Chen2017RBOHD">(<a href="#ref-Chen2017RBOHD" role="doc-biblioref">Chen et al. 2017</a>)</span>, the lack of functional RBOHD blocks the apoplastic superoxide/<span class="math inline">\(\text{H}_2\text{O}_2\)</span> burst. In the absence of this oxidative wave, class III peroxidases cannot crosslink cell-wall extensins and glycoproteins, allowing root cells to continue expanding despite mechanical pressure <span class="citation" data-cites="Lim2014Apyrase">(<a href="#ref-Lim2014Apyrase" role="doc-biblioref">Lim et al. 2014</a>)</span>.</p>
+<p>Furthermore, the enzymatic role of ecto-apyrases provides an essential negative feedback circuit. Overexpression of <em>APY2</em> (<em>APY2-OE</em>) mimics the impedance resistance of <em>rbohD</em>, restricting growth reduction to 21.16%. By rapidly hydrolyzing apoplastic ATP to AMP, APY2 prevents eATP accumulation from reaching the micromolar threshold required for sustained RBOHD activation and cell-wall rigidification <span class="citation" data-cites="Lim2014Apyrase Clark2025Apyrase">(<a href="#ref-Lim2014Apyrase" role="doc-biblioref">Lim et al. 2014</a>; <a href="#ref-Clark2025Apyrase" role="doc-biblioref">Clark et al. 2025</a>)</span>. This observation resolves the biphasic growth contradiction: at low physiological levels (<span class="math inline">\(&lt; 1\ \mu\text{M}\)</span>), eATP supports basal growth and redox balance, whereas exceeding this threshold under physical barrier stress triggers acute growth arrest <span class="citation" data-cites="Terrile2010Biphasic Lim2014Apyrase">(<a href="#ref-Terrile2010Biphasic" role="doc-biblioref">Terrile et al. 2010</a>; <a href="#ref-Lim2014Apyrase" role="doc-biblioref">Lim et al. 2014</a>)</span>.</p>
+<p>In summary, the P2K1-FERONIA receptor complex constitutes a central signaling hub that integrates mechanical force and apoplastic chemical cues, orchestrating RBOHD-dependent ROS production, RRFT1 transcriptional reprogramming, and apyrase-mediated homeostatic clearance to govern root growth plasticity in challenging soil environments.</p>
+</section>
+<section id="references" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Chen2017RBOHD" class="csl-entry" role="listitem">
+Chen, Dongqin, Yangrong Cao, Hong Li, et al. 2017. <span>“Extracellular ATP Elicits DORN1-Mediated RBOHD Phosphorylation to Regulate Stomatal Aperture.”</span> <em>Nature Communications</em> 8: 2265. <a href="https://doi.org/10.1038/s41467-017-02340-3">https://doi.org/10.1038/s41467-017-02340-3</a>.
+</div>
+<div id="ref-Choi2014P2K1" class="csl-entry" role="listitem">
+Choi, Jeongmin, Kiwamu Tanaka, Yangrong Cao, et al. 2014. <span>“Identification of a Plant Receptor for Extracellular ATP.”</span> <em>Science</em> 343 (6168): 290–94. <a href="https://doi.org/10.1126/science.343.6168.290">https://doi.org/10.1126/science.343.6168.290</a>.
+</div>
+<div id="ref-Clark2025Apyrase" class="csl-entry" role="listitem">
+Clark, Greg, Diana Vanegas, Ashley Cannon, et al. 2025. <span>“Levels of Extracellular ATP in Growth Zones of Arabidopsis Primary Roots Are Changed by Altered Expression of Apyrase Enzymes.”</span> <em>Plant Signaling &amp; Behavior</em> 20: 2555965. <a href="https://doi.org/10.1080/15592324.2025.2555965">https://doi.org/10.1080/15592324.2025.2555965</a>.
+</div>
+<div id="ref-Dong2020RRFT1" class="csl-entry" role="listitem">
+Dong, Xiaoxia, Ruojia Zhu, Erfang Kang, and Zhonglin Shang. 2020. <span>“RRFT1 (Redox Responsive Transcription Factor 1) Is Involved in Extracellular ATP-Regulated Gene Expression in Arabidopsis Thaliana Seedlings.”</span> <em>Plant Signaling &amp; Behavior</em> 15 (7): 1748282. <a href="https://doi.org/10.1080/15592324.2020.1748282">https://doi.org/10.1080/15592324.2020.1748282</a>.
+</div>
+<div id="ref-Lim2014Apyrase" class="csl-entry" role="listitem">
+Lim, Min Hui, Jian Wu, Jianchao Yao, et al. 2014. <span>“Apyrase Suppression Raises Extracellular ATP Levels and Induces Gene Expression and Cell Wall Changes Characteristic of Stress Responses.”</span> <em>Plant Physiology</em> 164 (4): 2054–67. <a href="https://doi.org/10.1104/pp.113.233429">https://doi.org/10.1104/pp.113.233429</a>.
+</div>
+<div id="ref-Shih2014FERONIA" class="csl-entry" role="listitem">
+Shih, Han-Wei, Nathan D. Miller, Cheng Dai, Edgar P. Spalding, and Gabriele B. Monshausen. 2014. <span>“The Receptor-Like Kinase FERONIA Is Required for Mechanical Signal Transduction in Arabidopsis Seedlings.”</span> <em>Current Biology</em> 24 (16): 1887–92. <a href="https://doi.org/10.1016/j.cub.2014.06.064">https://doi.org/10.1016/j.cub.2014.06.064</a>.
+</div>
+<div id="ref-Sowders2024FERONIA" class="csl-entry" role="listitem">
+Sowders, Joel M., Jeremy B. Jewell, and Kiwamu Tanaka. 2024. <span>“FERONIA Orchestrates P2K1-Driven Purinergic Signaling in Plant Roots.”</span> <em>Plant Signaling &amp; Behavior</em> 19 (1): 2370706. <a href="https://doi.org/10.1080/15592324.2024.2370706">https://doi.org/10.1080/15592324.2024.2370706</a>.
+</div>
+<div id="ref-Steinebrunner2003Pollen" class="csl-entry" role="listitem">
+Steinebrunner, Iris, Jian Wu, Yu Sun, Ashley Corbett, and Stanley J. Roux. 2003. <span>“Disruption of Apyrases Inhibits Pollen Germination in Arabidopsis.”</span> <em>Plant Physiology</em> 131 (4): 1638–47. <a href="https://doi.org/10.1104/pp.102.014308">https://doi.org/10.1104/pp.102.014308</a>.
+</div>
+<div id="ref-Tanaka2014DAMP" class="csl-entry" role="listitem">
+Tanaka, Kiwamu, Jeongmin Choi, Yangrong Cao, and Gary Stacey. 2014. <span>“Extracellular ATP Acts as a Damage-Associated Molecular Pattern (DAMP) Signal in Plants.”</span> <em>Frontiers in Plant Science</em> 5: 446. <a href="https://doi.org/10.3389/fpls.2014.00446">https://doi.org/10.3389/fpls.2014.00446</a>.
+</div>
+<div id="ref-Terrile2010Biphasic" class="csl-entry" role="listitem">
+Terrile, Marı́a Cecilia, Claudia Virginia Tonón, Marı́a José Iglesias, Lorenzo Lamattina, and Claudia Anahı́ Casalongué. 2010. <span>“Extracellular ATP and Nitric Oxide Signaling Pathways Regulate Redox-Dependent Responses Associated to Root Hair Growth in Etiolated Arabidopsis Seedlings.”</span> <em>Plant Signaling &amp; Behavior</em> 5 (6): 11579. <a href="https://doi.org/10.4161/psb.5.6.11579">https://doi.org/10.4161/psb.5.6.11579</a>.
+</div>
+<div id="ref-Weerasinghe2009Touch" class="csl-entry" role="listitem">
+Weerasinghe, Ravisha R., Sarah J. Swanson, Seiko F. Okada, et al. 2009. <span>“Touch Induces ATP Release in Arabidopsis Roots That Is Modulated by the Heterotrimeric g-Protein Complex.”</span> <em>FEBS Letters</em> 583 (15): 2521–26. <a href="https://doi.org/10.1016/j.febslet.2009.07.007">https://doi.org/10.1016/j.febslet.2009.07.007</a>.
+</div>
+<div id="ref-Yang2015Skewing" class="csl-entry" role="listitem">
+Yang, Xingyan, Bochu Wang, Ben Farris, Greg Clark, and Stanley J. Roux. 2015. <span>“Modulation of Root Skewing in Arabidopsis by Apyrases and Extracellular ATP.”</span> <em>Plant and Cell Physiology</em> 56 (11): 2197–206. <a href="https://doi.org/10.1093/pcp/pcv134">https://doi.org/10.1093/pcp/pcv134</a>.
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,3 @@
+{"claim_id": "CLM-YATES-001", "text": "Nitrogen fertilization exerts a highly significant effect on oat grain yield (F(3, 45) = 37.69, p < 1e-11).", "claim_type": "empirical", "status": "APPROVED", "evidence_ids": ["EV-YATES-001"]}
+{"claim_id": "CLM-YATES-002", "text": "Differences among oat varieties are non-significant when evaluated against whole-plot error (F(2, 10) = 1.49, p = 0.272).", "claim_type": "empirical", "status": "APPROVED", "evidence_ids": ["EV-YATES-002"]}
+{"claim_id": "CLM-YATES-003", "text": "The Variety x Nitrogen interaction is non-significant (F(6, 45) = 0.30, p = 0.932), confirming invariant nitrogen response across cultivars.", "claim_type": "empirical", "status": "APPROVED", "evidence_ids": ["EV-YATES-003"]}

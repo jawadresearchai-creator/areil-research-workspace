@@ -1,0 +1,12 @@
+{
+  "benchmark": "BENCHMARK_A",
+  "arm": "ARM_2_TOOL_EQUIPPED_GEMINI",
+  "subagent_id": "87d5c727-a98e-4ca5-8c1d-9c60e7b16455",
+  "model": "Gemini 3.8 Flash High",
+  "execution_mode": "Standard research tools (Python/Crossref/PubMed queries)",
+  "tool_calls_executed": 33,
+  "status": "COMPLETED",
+  "recorded_at": "2026-09-05T11:56:57.064314+00:00",
+  "prompt_sha256": "953EB87008D839C16514947BEC8FE350C7D855244854D1ACFF4C9436F39AAD20",
+  "output_sha256": "F54663BAA32A550820C0A8DA5E0E6095EF37DE7E6670F8FEF4DC0EE91889554A"
+}

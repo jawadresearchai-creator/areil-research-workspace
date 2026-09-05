@@ -1,0 +1,695 @@
+--- PAGE 1 ---
+Plant Signaling & Behavior
+ISSN: 1559-2324 (Online) Journal homepage: www.tandfonline.com/journals/kpsb20
+Levels of extracellular ATP in growth zones of
+Arabidopsis primary roots are changed by altered
+expression of apyrase enzymes
+Greg Clark, Diana Vanegas, Ashley Cannon, Miranda Jankovik, Ryan Huang,
+Katherine A. Brown, Eric McLamore & Stanley J. Roux
+To cite this article: Greg Clark, Diana Vanegas, Ashley Cannon, Miranda Jankovik, Ryan Huang,
+Katherine A. Brown, Eric McLamore & Stanley J. Roux (2025) Levels of extracellular ATP in
+growth zones of Arabidopsis primary roots are changed by altered expression of apyrase
+enzymes, Plant Signaling & Behavior, 20:1, 2555965, DOI: 10.1080/15592324.2025.2555965
+To link to this article:  https://doi.org/10.1080/15592324.2025.2555965
+© 2025 The Author(s). Published with
+license by Taylor & Francis Group, LLC.
+View supplementary material 
+Published online: 17 Sep 2025.
+ Submit your article to this journal 
+Article views: 719
+ View related articles 
+View Crossmark data
+ Citing articles: 3 View citing articles 
+Full Terms & Conditions of access and use can be found at
+https://www.tandfonline.com/action/journalInformation?journalCode=kpsb20
+
+--- PAGE 2 ---
+PLANT SIGNALING & BEHAVIOR 
+2025, VOL. 20, NO. 1, 2555965 
+https://doi.org/10.1080/15592324.2025.2555965 
+RESEARCH ARTICLE 
+Levels of extracellular ATP in growth zones of Arabidopsis primary roots 
+are changed by altered expression of apyrase enzymes 
+Greg Clarka, Diana Vanegasb, Ashley Cannona, Miranda Jankovika, Ryan Huanga, Katherine A. Brownc,d, 
+Eric McLamoreb and Stanley J. Rouxa
+aDepartment of Molecular Biosciences, University of Texas at Austin, Austin, USA; bDepartment of Environmental Engineering and 
+Earth Science, Clemson University, Clemson, USA; cThe Oden Institute for Computational Engineering and Sciences, University of 
+Texas at Austin, Austin, USA; dCavendish Laboratory, University of Cambridge, Cambridge, UK 
+ABSTRACT 
+In both animal and plant cells extracellular nucleotides act as hormone-like signals 
+regulating many important physiological and developmental responses. In plants, many 
+of these responses have been studied in roots. Here we used an enzyme-based 
+microsensor to measure the concentrations of extracellular ATP (eATP) within 2 µm 
+of epidermal cell surfaces in growth zones of primary roots of wild-type and transgenic 
+Arabidopsis seedlings. The concentration of eATP outside of growing wild-type roots 
+was in the nanomolar range and was highest in in the elongation zone. The concentra-
+tions of eATP in wild-type roots were altered in two kinds of mutants, those that were 
+overexpressing AtAPY1 or AtAPY2, which encode apyrases (NTPDases) that regulate root 
+and root hair growth, and those that were suppressed in the expression of these two 
+transcripts. Our results indicate that the [eATP] measured varies inversely with the level 
+of expression of these apyrases. Structural modeling of these two apyrases predicts 
+active site configurations capable of binding ATP. Taken together these results favor the 
+hypothesis that AtAPY1 and AtAPY2 regulate eATP levels in primary roots. 
+ARTICLE HISTORY 
+Received 15 July 2025 
+Revised 5 August 2025 
+Accepted 7 August 2025 
+KEYWORDS 
+AtAPY1; AtAPY2; 
+ectoapyrase; extracellular 
+matrix; microsensor; 
+transgenic 
+Introduction 
+Extracellular ATP (eATP) regulates a variety of physiological processes both in animals1 and plants.2,3 In 
+animals, eATP can bind to and activate two different kinds of purinoceptors, P2X and P2Y.4 In plants, at 
+least two protein kinase receptors have been identified,5 and ongoing research may lead to the discovery of 
+still more receptors. An increase in cytoplasmic calcium levels is a common early step in signal transduc-
+tion pathways induced by activating the purinoceptors in both animals6 and plants.7‐9 
+In plants, eATP plays a critical role in regulating growth and development. For example, root hairs and 
+cotton fibers have a biphasic response to applied eATP or eATPγS, with lower levels promoting growth 
+and higher levels inhibiting growth.10,11 Abundant evidence also indicates that eATP is a wound signal and 
+participates in biotic stress responses in plants.12 
+As with all signaling pathways, it is important for cells to control the level of the signal. In both animal 
+and plant cells, nucleotide-mediated signaling is controlled in part by the activity of ectoapyrase (ecto- 
+NTPDase) enzymes that regulate the level of extracellular nucleotides by catalyzing the conversion of NTPs 
+to NDPs and NMPs.4 Among the earliest of these enzymes to be well characterized in plants was an 
+apyrase in potatoes that is targeted to the extracellular matrix (ECM) and functions to limit levels of 
+eATP.13 
+In Arabidopsis there is a family of seven apyrase genes.14 Two of these apyrases, AtAPY1 
+and AtAPY2, favor ATP as their substrate,15 and reports have indicated they can function as 
+ectoapyrases. 16,17 However, other reports have suggested that these two apyrases are mainly localized 
+Supplemental data for this article can be accessed online at https://doi.org/10.1080/15592324.2025.2555965. 
+© 2025 The Author(s). Published with license by Taylor & Francis Group, LLC. 
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/), which permits 
+unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited. The terms on which this article has been published allow 
+the posting of the Accepted Manuscript in a repository by the author(s) or with their consent. 
+CONTACT Stanley J. Roux 
+ sroux@austin.utexas.edu 
+ Department of Molecular Biosciences, University of Texas at Austin, Austin 
+78712, USA 
+
+--- PAGE 3 ---
+in the Golgi,18‐20 and that AtAPY1, in contrast to the potato apyrase, favors UDP and GDP over ATP as 
+a substrate.21,22 These studies, which utilized tagged versions of AtAPY1 and AtAPY2, found no 
+evidence for the localization of either of these two apyrases in the plasma membrane or ECM. A genetic 
+approach to resolving this controversy would be to test how the suppression or over expression of 
+AtAPY1 and AtAPY2 affects the [eATP] in Arabidopsis tissue that secretes ATP as it grows. This 
+approach would require sensitive methods to quantify the low µM levels of eATP,23 and various methods 
+have been used to do this. 
+Early approaches to measuring eATP in plant cells were done using a luciferase-based detection 
+system. Extracellular ATP was first visualized in Medicago truncatula seedlings using a bacterially 
+expressed cellulose binding domain (CBD)-luciferase. 24 Subsequently, expressing luciferase targeted to 
+the ECM by the addition of a signal peptide to the N-terminus of the enzyme in wild-type Arabidopsis 
+was used to examine eATP levels both in roots,25 and in guard cells.26 This method allowed evaluation of 
+the relative [eATP] in the ECM of these tissues, but did not quantify the [eATP]. More recently, a 
+genetically encoded FRET based fluorescent eATP sensor was used to show that wounding and salt 
+treatment induced an increase in eATP levels in Arabidopsis seedlings.27 In Arabidopsis roots, a 
+histochemical approach that used glucuronidase fused with five different eATP-inducible genes revealed 
+that expression of these genes was highly responsive to ATP treatment in the meristem and elongation 
+zones of Arabidopsis primary roots.28 A third strategy for measuring eATP has been to use a 
+self-referencing electro-chemical biosensor based on the ATP-dependent reactions of immobilized 
+glycerol kinase and glycerol-3-phosphate oxidase on the surface of a metal electrode. This approach 
+was first tested on plant tissue in wounding experiments. 29 Cannon et al.30 used this same biosensor 
+system to document a gravity-directed release of ATP that plays a role in polarization of Ceratopteris 
+richardii fern spores. 
+In this study we used the self-referencing electrode to assay the levels of ATP outside the primary roots 
+of 4-d old Arabidopsis seedlings growing on agar plates. We confirmed that the method could detect 
+nanomolar concentrations of eATP outside the apical zones of wild-type roots, and that these levels varied 
+in different regions of these roots, with the highest levels being in the root cap and elongation zones, as had 
+been previously reported.24,25 We then utilized loss- and gain-of-function mutants for AtAPY1 and 
+AtAPY2 to quantitatively evaluate whether changing their level of expression altered the [eATP] in the 
+major growth zones of primary roots. Our results clarify the role of these two apyrases in maintaining the 
+[eATP] at low enough levels to sustain the growth of primary roots. 
+Methods 
+Plant material 
+Arabidopsis thaliana ecotype Wassilewskija (Ws) were used as wild-type control for this study. The 
+transgenic mutants used in this study were R2-4A, APY1 OE and APY2 OE. The RNAi mutant, R2-4A, 
+is null for APY2 and has an estradiol-inducible RNAi construct which suppresses APY1 expression. 
+RNAi construction and generation of the R2-4A line were as previously described. 17Apyrase 1 and 2 
+overexpressing transgenic mutants, APY1 OE and APY2 OE, were previously characterized. 31,32 
+Seeds were surface sterilized by soaking them in 70% (v/v) ethanol for 1 min, then 20% (v/v) bleach 
+for 10 min, and then washing them 4–5 times in sterilized water. Sterilized seeds were stratified at 4 °C 
+for 3−4 d and grown on vertical plates containing solid ½ Murashige Skoog (MS) medium with 
+0.5% (w/v) MES and 1.0% (w/v) agar raised to pH 5.7 with 1 M KOH. For experiments with 
+R2-4A, both Ws wild-type seeds and R2-4A seeds were germinated and grown in the same growth 
+media with a final concentration of 4 μM estradiol. A 40 mM stock of estradiol (Sigma) in DMSO was 
+diluted 10,000-fold in ½ MS plates for a final treatment concentration of 4 μM estradiol and 0.01% (v/v) 
+DMSO. Plates were wrapped with 3 M Micropore, placed vertically in a growth chamber and grown for 
+4 d at 23 °C under 16 h light–8 h dark cycle. For the root growth assay, images were taken after 
+4 d of growth with a Nikon Coolpix 990 digital camera and ImageJ was used to measure primary 
+root length. 
+2
+ G. CLARK ET AL. 
+
+--- PAGE 4 ---
+Materials and reagents 
+ATP, Chloroplatinic acid 8% (w/v), lead acetate 30% (w/v), Nafion 117 solution, cerium (IV) oxide 
+nanoparticles dispersion (mean particle size of 12 nm, 10% (w/v) in H2O), S-nitroso-N- acetyl-D L- 
+penicillamine (SNAP), and MS media were purchased from Sigma-Aldrich (St. Louis, MO). Glycerol 
+kinase (GK), and glycerol-3-phosphate oxidase (G3PO) were purchased from MP Biomedicals (Solon, 
+OH). Glycerol, L-ascorbic acid was purchased from Fisher Scientific (Pittsburgh, PA). Laponite RD was 
+obtained from Southern Clay Products Inc. (Austin, TX). Tetraethyl orthosilicate (TEOS), potassium 
+nitrate (KNO3), o-phenylenediamine and hydrochloric acid (37% (w/v) HCl) were obtained from Acros 
+Organics (New Jersey, NY). Single-layer graphene oxide (GO) (Thickness: 0.8 to 1.2 nm; purity 99%) was 
+procured from ACS Material (Medford, MA). Potassium ferrocyanide trihydrate (K3Fe(CN)6) was pur-
+chased from EMD chemicals (Billerica, MA). PBS and TRIZMA buffers were procured from Mediatech, 
+Inc. (Manassas, VA). Pt/Ir microelectrodes (PI20033.0A10, 1–2 mm tip diameter) were obtained from 
+MicroProbes, Inc (Gaithersburg, MD). 
+ATP electrode fabrication 
+All details for electrode preparation can be found in Vanegas et al.29,33 First, a nanocomposite of reduced 
+graphene oxide and nanoplatinum was first deposited on the tip of a Pt/Ir microelectrode through a series 
+of dip coating and sonoelectrodeposition. To inhibit transport of root exudate organic acids (ascorbic acid, 
+etc.), a Nafion membrane was incorporated on top of the graphene/platinum layer. The stratified bi- 
+enzyme composite (i.e. distinct GK and G3PO layers) was immobilized on the surface of the modified 
+microelectrode using a layered encapsulation/entrapment approach with a laponite nanoshell as the 
+separation barrier. Electrodes were stored in TRIZMA buffer at 4 °C until used. 
+NO electrode fabrication 
+A composite of reduced graphene oxide (rGO), nanoceria (nCe), and nanoplatinum (nPt) was deposited 
+on the tip of each Pt/Ir microelectrode based on the methods described by Chaturvedi et al.34,35 As 
+described above, a Nafion membrane was included to facilitate charge exclusion of organic acids. After 
+formation of the Nafion membrane, a size exclusion membrane was electrodeposited by polarizing the 
+electrode at +900 mV in a solution of 5 mM o-phenylenediamine and 0.1 mM ascorbic acid for 120 min. 
+All electrodes were stored in PBS at 4 °C until used. 
+H2O2 electrode fabrication 
+The sandwich metal-nanocarbon structure developed by Vanegas et al.29 was used for preparing all H2O2 
+electrodes. Nanoplatinum was deposited using pulsed sonoelectrodeposition at 10 V and a pulsing 
+frequency of 500 mHz. A layer of rGO was deposited, and then a second layer of nanoplatinum (nPt) 
+was immediately formed to create a sandwich rGO-nPt-rGO hybrid material. A Nafion layer was deposited 
+on the electrode prior to use; all electrodes were stored in PBS at 4 °C until used. 
+Microelectrode calibration 
+All electrodes were calibrated in liquid ½ Murashige Skoog (MS) medium with 0.5% (w/v) MES raised to 
+pH 5.7 with 1 M KOH at room temperature by recording DC potential oxidative current after addition of 
+the target analyte prepared from stock solution. For calibration, ATP stock solutions (1 mM) were 
+prepared in nanopure water by dissolving ATP salt and vortex mixing for one minute. NO stock solutions 
+were prepared based on SNAP degradation.36 Briefly, decomposition to NO was initiated by a Cu(I) 
+catalyst to produce a stock solution of 0.1 mM NO; stock solutions were stored in the dark when not in use 
+and all calibrations were performed in the dark. H2O2 stock solutions were prepared by diluting 
+electrograde peroxide solution to 0.1% (v/v) in nanopure water. 
+PLANT SIGNALING & BEHAVIOR
+ 3 
+
+--- PAGE 5 ---
+Root profiling experiments 
+Flux measurements were conducted using a self-referencing (SR) microelectrode assembly composed 
+of a vibration isolation table with faraday cage, camera/zoomscope, and supporting electronic equip-
+ment described in detail by McLamore and Porterfield. 37 All flux measurements were taken by 
+continuously recording differential oxidative current (Δi) during oscillation of the microelectrode 
+from a position within 1μm of the root surface (called the near pole) to a position 20 μm away 
+from the root surface (called the far pole). Fick's first law was then used to calculate eATP or NO flux 
+as follows: 
+( )
+J D
+C
+ X
+D
+ X
+=
+=
+i i
+m
+near far
+where: J is the analyte flux (pmol cm−2 s−1), D is the molecular diffusion constant of ATP 
+(2.6 × 10−6 cm2 s−1) or NO (3.3 × 10−5 cm2 s−1), ΔC is the differential analyte concentration, ΔX is 
+the excursion distance of the oscillating electrode, inear is the oxidative current measured at the near 
+pole, ifar is the oxidative current measured at the far pole, and m is the linear slope of the sensors 
+calibration curve (pA nM−1). 
+All flux measurements were repeated in triplicate and validated with abiotic experiments as described by 
+Chaturvedi et al.35 and Vanegas et al.33 Distances from root tips were normalized for roots measured using 
+methods described in McLamore et al.38 
+Control experiments 
+To ensure oxidative current measured with the ATP microsensor was not due to endogenous H2O2 or NO 
+produced by the roots, control studies were conducted using 4-d-old Ws wild-type roots. First, H2O2 or 
+NO flux was recorded along the root surface to determine the endogenous levels present. Next, the ATP 
+microsensor was used to measure oxidative current during stepwise injection of either ATP, H2O2 or NO 
+(i.e., calibration). 
+Bioinformatics and modeling 
+Bioinformatics and three-dimensional modeling studies were undertaken using protein sequences for 
+AtAPY1 and AtAPY2 (GenBank accessions AAF66599.1 and Q9SPM5.1, respectively). 15 Sequence 
+alignments were produced used the Clustal Omega multiple sequence alignment program.39 
+N-terminal regions of AtAPY1 and AtAPY2 were analyzed using the TOPCONS, a consensus prediction 
+server for membrane protein topology and signal peptides.40 For both AtAPY1 and AtAPY2, the first 
+N-terminal 42-residues as these residues were removed to eliminate false positives as these residues 
+were predicted to contain a transit peptide and/or a membrane anchoring helix. These same 42 N- 
+terminal residues were also removed for template-based modelling using the I-TASSER web server.41,42 
+Structure-based ligand-binding site predictions were undertaken using ATPbind43 and the COACH 
+meta-server. 44,45 
+Propidium iodide root staining and microscopy 
+Propidium iodide stain was prepared using propidium iodide solution (Sigma) to make a 100 mM stock. 
+Before imaging, seedlings were submerged in the solution for 45 s then washed three times to remove any 
+residual stain. Seedlings were then placed on a slide in liquid MS media and covered with a cover glass and 
+sealed with clear nail polish. Images were obtained using a Zeiss Axiovert Fluorescent Light Microscope 
+with a Cy5 cube at 10× magnification. 
+4
+ G. CLARK ET AL. 
+
+--- PAGE 6 ---
+Results 
+Roots suppressed in apyrase expression show higher [eATP] compared to wild-type roots 
+Nanomolar concentrations of extracellular ATP (eATP) are detected outside of Ws wild-type and apyrase 
+loss-of-function roots of 4-d old Arabidopsis seedlings. There are differences in eATP levels in different 
+zones of the wild-type roots, with the highest concentrations in the root cap region and in the elongation 
+zone (Figure 1, Supplemental Table S1). R2-4A seedlings are null for AtAPY2 and, when grown in the 
+presence of 4 μM estradiol, their expression of AtAPY1 is suppressed by 70% after 2 d of growth.16 In 
+estradiol-induced R2-4A seedlings, the concentration of eATP outside of primary roots ranges from 3- to 
+100-fold higher compared to that in Ws wild-type roots (Figure 1, Supplemental Table S1, Supplemental 
+Figure S1). There are differences in the level of eATP along the R2-4A roots, with highest levels at the root 
+tip in the root cap region and the elongation zone, which correlates with the regions of highest [eATP] 
+found in Ws wild-type roots. Supplemental Figure S1 shows the microprofiles of [eATP] of Ws wild-type 
+and R2-4A primary roots over the entire length of the root. Supplemental Figure S2 shows primary roots of 
+Ws wild-type 4-d old seedlings stained with propidium iodide to confirm the location of the root cap, 
+meristem, transition zone and elongation zone, based on description of these zones by Verbelen et al.46 
+Primary root growth was significantly inhibited in 4-d old seedlings grown in the presence of 4 μM 
+estradiol as previously reported (Supplemental Figure S3). 
+Roots overexpressing AtAPY1 or AtAPY2 have lower [eATP] than wild-type roots 
+The concentration of eATP outside of the primary roots of AtAPY1 OE and AtAPY2 OE seedlings ranged 
+from 0.4 to 0.6 nM at each location outside of the root (Table 1; also see Supplemental Figures S4, S5). In 
+contrast to Ws wild-type roots, there are also no observable differences in [eATP] in the different regions 
+of the primary roots for AtAPY1 OE and AtAPY2 OE seedlings. 
+Microelectrode measurements of extracellular H2O2, NO and ATP indicate eATP measurements 
+along primary roots are accurate 
+In order to test the accuracy of flux microelectrode measurements we performed a control study and also 
+measured the flux of H2O2 and NO to rule out any false positives with the eATP flux experiments. The flux 
+of eATP was measured by utilizing an electrode developed by Vanegas et al.33 The self-referencing (SR) 
+ATP microsensor developed by Vanegas et al.33 has been previously used to study eATP flux in 
+germinating spores and growing Zea mays L. roots following touch stimulus33 and determine eATP 
+flux/levels in germinating Ceratopteris richardii spores responding to gravity.30 The biosensor is based on 
+the activity of two enzymes (glycerol kinase (GK) and glycerol-3-phosphate oxidase (G3PO)) organized in 
+a stratified thin film that is segregated by a silica nanoshell; a graphene layer is used to enhance 
+electrochemical signal transduction and improve sensitivity and response time. Chaturvedi et al.35 devel-
+oped a NO-selective microelectrode based on a graphene-nanoceria hybrid composite and used the sensor 
+in the SR modality to record NO flux from in three model organisms, including: bacteria, plant, and an 
+invertebrate animal. Vanegas et al.29 developed a graphene-nanoplatinum electrode that has been used as a 
+highly sensitive H2O2 electrode in biological studies. 
+When used in the SR modality (see McLamore and Porterfield),37 ATP, H2O2, or NO flux can be 
+directly measured without addition of external reagents or contact with the plant tissue. Furthermore, the 
+detection limit of each sensor is significantly lower than other published microelectrodes for studying plant 
+roots.29,33,34 
+H2O2 is an endogenous radical that is electroactive and thus can possibly be measured as a false positive 
+when using an oxidative potential of +700mV for detecting eATP. NO is also electroactive but cannot 
+be measured below oxidative potentials of +720 mV and is less of a concern as a false positive for 
+experiments herein. Nonetheless, control studies were conducted for both H2O2 and NO to determine 
+if endogenous radicals were diffusing across the biomembrane on the tip of the electrode and causing false 
+positive signals. 
+PLANT SIGNALING & BEHAVIOR
+ 5 
+
+--- PAGE 7 ---
+Figure 1. Representation of eATP concentrations outside an estradiol-treated primary root of 4-d old Arabidopsis 
+seedlings at different distances from the tip of Ws wild-type and R2-4A apyrase loss-of-function plants. Levels of eATP 
+outside of roots in which RNAi is induced to suppress expression of AtAPY1 in the atapy2 null mutant background (R2-4A) 
+are higher at each location assayed compared to wild-type eATP levels. Average eATP concentrations determined for wild- 
+type roots (n = 9) and for R2-4A roots (n = 7). Refer to Supplemental Table S1 for standard deviation values. *[eATP] at 
+these root sites are < 4 nM. 
+Table 1. Average concentration of eATP along the root surface of 4-d old Arabidopsis Ws wild-type and AtAPY2 and 
+AtAPY2 overexpressing transgenic seedlings. Extracellular ATP (eATP) levels are greatly reduced outside of growing roots 
+overexpressing either AtAPY1 (APY1 OE) or AtAPY2 (APY2 OE). Average eATP concentrations determined for Ws wild-type 
+roots (n = 9) and for APY1 OE and APY2 OE roots (n = 4−8, SD = standard deviation. All error bars represent standard 
+deviation of the arithmetic mean (n = 9 for wild-type, n = 4−8 for APY1 OE and APY2 OE; α = 0.05). 
+Wild-type APY1 OE APY2 OE 
+Distance from root tip - μm [eATP] nM SD Distance from root tip - μm [eATP] nM SD Distance from root tip - μm [eATP] nM SD 
+0 2.3 0.35 0 0.48 0.18 0 0.44 0.20 
+19 12.2 1.5 20 0.31 0.18 20 0.56 0.21 
+143 2.2 1.4 140 0.45 0.19 130 0.49 0.26 
+287 3.3 2.5 307 0.50 0.29 332 0.51 0.23 
+603 28.8 0.38 603 0.44 0.32 606 0.56 0.17 
+2000 1.8 0.29 1503 0.41 0.28 1233 0.63 0.21 
+6
+ G. CLARK ET AL. 
+
+--- PAGE 8 ---
+Using H2O2- or NO-specific microelectrodes,29,35 the concentration and flux of H2O2 and NO were 
+recorded along the root surface to determine the endogenous levels near Ws wild-type roots (n = 5 roots). 
+The maximum concentration of H2O2 and NO were recorded at a position that was approximately 150 μm 
+from the root tip, normalized for root curvature (Figure 2A). The concentration of hydrogen and nitrogen 
+radicals was exponentially lower in the shootward direction and had a value near 1 nM at the root tip. As 
+shown by Vanegas et al.,33 the ATP biosensor is insensitive to H2O2 or NO due to a stratified bi-enzyme 
+layer on the surface, which deters diffusion of these radicals from the liquid to the electrode surface 
+(Figure 2B). Analytical selectivity of the ATP sensor over H2O2 or NO is shown in Supplemental Figure S6. 
+Because the average concentration of H2O2 150 μm from the tip (3.1 ± 0.3 nM) was higher than the 
+endogenous NO level (1.4 ± 0.2 nM) and both of these levels were similar to eATP levels measured for Ws 
+wild-type roots (2.1 ± 1.4 nM), we tested whether these endogenous levels of H2O2 and NO lead to signal 
+artifact for the ATP microsensor. Comparing the ATP biosensor output in the presence of endogenous 
+radical levels and with the response to the calibration plot for ATP, the sensor specificity toward ATP is 
+approximately 97% higher than the response produced by H2O2 or NO (Supplemental Table S2). 
+Although H2O2 and NO radicals are electroactive and can be measured with an oxidative potential of 
++700 mV, the control studies indicate that the signal error due to the presence of endogenous 
+oxygen–nitrogen radicals is minimal and the reported ATP concentration and flux data is minimally 
+affected by these radicals. 
+This selectivity for ATP over the radicals is due to the relatively thick enzyme membrane on the tip of 
+the electrode. To produce a false positive signal, radicals are required to diffuse from the buffer into the 
+outer enzyme membrane (glycerol kinase and laponite gel), across the orthosilicate nanoshell, through the 
+second enzyme membrane (glycerol 3 phosphate oxidase and laponite gel), and finally across the Nafion 
+membrane that coats the conductive nanomaterials (graphene and platinum). Diffusion of the radicals to 
+the electrode surface is thus not energetically favorable, and we speculate that the radicals disassociate in 
+solution (based on the short half-life of each compound). Although ATP is larger (i.e., higher diffusion 
+coefficient) and also less electroactive than the radicals and is larger, the ATP is not required to diffuse 
+across these four layers to produce an electrical signal. Rather, ATP interacts only with glycerol kinase in 
+the outermost stratified layer on the electrode surface; a subsequent cascade of enzymatic reactions occurs 
+within the membrane that produces electrical signal for the ATP biosensor. 
+Bioinformatic analyses predict potential binding and catalysis of ATP 
+Based on our microelectrode data indicating that the expression of AtAPY1 and AtAPY2 can control the 
+[eATP] outside of roots, we performed bioinformatic analyses to assess the potential of the AtAPY1 and 
+AtAPY2 enzymes to bind ATP. Figure 3 shows alignments of protein sequences of apyrases AtAPY1 and 
+AtAPY2 with three structurally related NTPDases (Vigna unguiculata and Trifolium repens 47,48 and 
+Legionella pneumophilia, 49 for which crystal structures exist. TOPCONS prediction40 of AtAPY1 indi-
+cated that its N-terminal sequence is likely to be a single-pass transmembrane helix,50 with an inside-to- 
+outside orientation contained within the N-terminal 42 residues. A similar result was obtained for AtAPY2 
+(annotated in Figure 3). Both of these proteins could therefore be anchored in membranes with a globular 
+C-terminal ecto-domain. 
+Template-based homology models for the predicted globular domains of AtAPY1 and AtAPY2 were 
+generated use the I-TASSER webserver.41,42 The three-dimensional folds of both these models are most 
+similar to the crystal structure of the legume Vigna unguiculata NTPDase (RCSB PDB entry 5u7x).47 An 
+RMSD of 0.26 Å was reported for structurally aligned residues between 5u7X with either the AtAPY1 or 
+AtAPY2 model. Both models share the same two-domain structure characteristic of apyrases. Apyrase 
+folds are formed from two modified RNAase-H motifs assembled from alpha-helical and beta-sheet 
+subdomains.47 This fold belongs to the Nucleotide Binding-Domain (NBD) of the sugar kinase/HSP70/ 
+actin superfamily.51 In this superfamily, substrate binding is associated with the conformational changes 
+that close the active site cleft, and cleft closure can be modulated by allosteric effectors.52 
+The predicted active sites of both AtAPY1 and AtAPY2 contain a number of features consistent with 
+substrate binding and catalysis typical of NTPDases. These include apyrase conserved regions (ACRs) – 
+five conserved protein motifs associated with the functional properties of the enzymes (annotated in 
+PLANT SIGNALING & BEHAVIOR
+ 7 
+
+--- PAGE 9 ---
+Figure 3; Zebisch and Strater, 1996).51,53 Seven residues within these ACRs have been identified to be 
+mechanistically important in the diphosphohydrolase reaction of NTPDases and are present in the active 
+sites of the V. unguiculata and T. repens legume NTPDase crystal structures.47 These residues are also 
+Figure 2. (A) Representative measurements of extracellular hydrogen peroxide concentrations ([H2O2]), nitric oxide 
+concentrations ([NO]) and ATP along Ws wild-type roots measured with SR microelectrodes. (B) ATP interaction with 
+glycerol kinase in the outermost layer leads to an enzymatic cascade that produces electrochemical signal. The laponite 
+and silica protein nanoshells serve as barriers for NO or H2O2 diffusion. GK = glycerol kinase; G3PO = glycerol-3-phosphate- 
+oxidase. 
+Figure 3. Alignment of AtAPY1 and AtAPY2 with sequences of related apyrases for which there is a crystal structure. 
+Sequence alignment of residues of the full-length sequences for AtAPY1 and AtAPY2 are shown with sequences of 
+residues in the primary structure of V. unguiculata (5U7X_Vu; Summers et al. 47), T. repens (5U7P_Tp; Summers et al. 47) and 
+L. pneumophila (4BRA_Lp; Vivian et al. 49). The predicted single-pass outward-facing transmembrane helix in the AtAPY1 
+and AtAPY2 sequences is highlighted in green. ACR sequence motifs are indicated by the bar beneath the 5 ACR labels, 
+and the seven highly conserved residues required for diphosphohydrolase activity are highlighted in yellow. 
+8
+ G. CLARK ET AL. 
+
+--- PAGE 10 ---
+conserved in the AtAPY1 and AtAPY2 protein sequences (Figure 3). Their homology models share a 
+similar spatial arrangement with the same residues in the V. unguiculata and T. repens legume NTPDase 
+crystal structures.47 Analysis of the homology models using the ATPbind meta-server43 predicted the 
+presence of an ATP binding site in both AtAPY1 and AtAPY2. Additionally, the COACH meta-server44 
+identified ligand-binding sites in both AtAPY models for nonhydrolyzable analogues of ATP (AMP-PNP; 
+5′-O-(hydroxy{[hydroxy(phosphonoamino)phosphoryl]oxy}phosphoryl)adenosine) and ADP (annotated 
+in Figure 4). 
+A representative modelled complex of AtAPY1 with AMP-PNP is shown in Figure 4. These binding 
+sites share structure-based similarity with the active sites in the crystal structures of NTPDases from L. 
+pneumophilia and Toxoplasma gondii. 49,54,55 Clustering results also indicated some shared structural 
+similarities with binding sites for AMP and nonhydrolyzable analogues of ADP, GTP and UTP observed in 
+crystal structures of complexes with L. pneumophilia, T. gondii and rat NTPDases.55,56 Putative ligand- 
+binding sites for Mg2+, used for nucleotide co-ordination, were also identified in the active sites of AtAPY1 
+and AtAPY2. 
+Discussion 
+Many different root growth responses to eATP have been documented in seedling roots, including the 
+elongation of primary roots and root hairs, lateral root formation and growth, root skewing, and root 
+avoidance.11,17,20,32,57,58 eATP also induces multiple physiological responses in primary roots, including a 
+rapid depolarization of root hair cells,59 changes in auxin transport and accumulation,60,61 and the 
+induction of Ca2+ waves that are modified by phosphate nutrition status.62‐64 Using a microelectrode 
+approach we directly measured nanomolar [eATP] along primary root tips and determined that [eATP] 
+varies in different tip regions. In order to better understand the role of apyrases in eATP signaling during 
+plant root responses, we quantified how different levels of apyrase expression affected eATP concentrations 
+in different zones of growing roots of wild-type Arabidopsis seedlings. 
+A major way ATP is transported into the ECM is by its release from ATP-containing secretory vesicles 
+that cells deliver to the ECM during their growth.17,65 High [eATP] can inhibit auxin transport and 
+growth,16,60,61 but the increased apyrase activity observed in the ECM of growing cells helps to keep the 
+[eATP] below inhibitory levels.16,17 Correspondingly, the inhibition of ectoapyrase activity allows the 
+concentration of ATP released into the ECM during growth to increase to levels that inhibit auxin 
+transport,60 which results in the inhibition of growth. However, the dual inhibition of apyrase expression 
+and auxin transport also increases the delivery to the ECM of secretory vesicles containing wall peroxidases 
+that promote cross linking and decrease wall extensibility,16 and the delivery of these vesicles would further 
+increase [eATP]. 
+The nanomolar ATP concentrations (1−30 nM) outside the epidermal cells of WT roots are in the range 
+that could initiate signaling responses, based on the dissociation constant [Kd] of the two ATP receptors; 
+i.e., 45.7 ± 3.1 nM for P2K1 and 44.7 ± 15.73 nM for P2K2.5,66 The observation of differences in the eATP 
+level depending on the tissue-type, with higher levels of eATP in the root cap and elongation zone of the 
+root, is consistent with the hypothesis that more ATP is released from cells that are actively secreting or 
+expanding.65 The highest concentration of eATP was found near 600 µm from the root tip, which is in the 
+rapid elongation zone, containing cells with the fastest growth rate in the root tip.46 Notably, an eATP 
+treatment was found to induce a transient depolarization of plasma membrane voltage and an increase in 
+[Ca2+]cyt in epidermal cells in the elongation zone of Arabidopsis seedlings.7 Our results generally correlate 
+with the findings of Kim et al.24 but provide more detailed information about the eATP concentrations 
+outside different growth zones of seedling primary roots. 
+Currently the question of whether Arabidopsis AtAPY1 and AtAPY2 are capable of using ATP as a 
+substrate is controversial. The original biochemical studies of these two Arabidopsis apyrases found that 
+after they were expressed in bacteria and highly purified, they showed highest NTPDase activity using ATP 
+as the substrate,15 and a more recent dissertation report found that untagged AtAPY1 that was highly 
+purified from the nuclei of etiolated Arabidopsis seedlings favored ATP as its substrate.67 Another study 
+documented a two-fold increase in the level of eATP in samples from the media of liquid-grown R2-4A 
+AtAPY1/AtAPY2 loss-of-function seedlings compared to samples from the media of liquid-grown wild- 
+PLANT SIGNALING & BEHAVIOR
+ 9 
+
+--- PAGE 11 ---
+type seedlings.16 Consistent with these reports, the modelling studies presented here suggest that both 
+enzymes appear to have residues distributed within a binding pocket that would predict their ability to 
+bind ATP as well as AMP, ADP, GTP and UTP based on comparisons with existing crystal structure 
+complexes. Other studies, however, found that a GFP-tagged version of AtAPY1 isolated from light-grown 
+Arabidopsis, or a His-tagged version of AtAPY1 isolated from HEK293 cells had little or no activity toward 
+ATP substrates, but, instead, favored GDP and UDP substrates, indicative of a Golgi-related apyrase 
+function.68 
+Even minor modifications of apyrases can alter their substrate preference.4 Thus, the addition of GFP or 
+His tags to AtAPY1, or the post-translationally modified state of AtAPY1, depending on the source cell, 
+tissue, or organelle from which it is isolated, could bias which nucleotide it favored as its substrate. More 
+studies relating the structural state of apyrases to which substrate nucleotides they favor are needed, but 
+the different structural states of the AtAPY1 tested in prior reports could help explain the contrasting 
+conclusions in these reports about its role in regulating the [eATP]. 
+Conclusions 
+Microelectrode measurements of eATP along the outside of the primary roots of Arabidopsis seedlings 
+directly quantified nanomolar concentrations of eATP that are consistent with the well-documented role 
+of eATP as a hormone-like signal in plants. Different [eATP] were found in different regions of wild-type 
+roots with the highest levels in the root cap and elongation zone. Compared to wild-type roots, there were 
+large increases in eATP levels in all regions of R2-4A loss-of-function roots; in contrast, constitutive 
+overexpression of AtAPY1 or AtAPY2 resulted in much lower eATP levels all along the root. The new data 
+provided in this study supports the conclusion that AtAPY1 and AtAPY2 function to limit root eATP 
+levels in Arabidopsis seedlings. These in vivo results show an inverse correlation of the expression of 
+Figure 4. Model of AtAPY1 in complex with an ATP analog. The predicted fold of AtAPY1 is displayed as green ribbon. 
+AMP-PNP, a non-hydrolyzable analog of ATP, is shown as spheres (image produced using the PyMOL Molecular Graphics 
+System, Version 3.1, Schrödinger, LLC). 
+10
+ G. CLARK ET AL. 
+
+--- PAGE 12 ---
+AtAPY1 and AtAPY2 with the [eATP] in primary roots. Together with new structural evidence that these 
+enzymes are capable of binding ATP to use as a substrate, they favor the hypothesis that these apyrases can 
+play a major role in controlling the [eATP] in Arabidopsis seedings. 
+Disclosure statement 
+SJR and GC are consultants to Texas Crop Science which partially funded the research presented here. No 
+other authors have conflicts of interest to declare. 
+Acknowledgments 
+We want to thank Dr. Anna-Lisa Paul and Jordan Callaham for use of their growth chambers and help 
+growing Arabidopsis seedlings used for all the experiments. We thank the UT ICMB Microscopy Facility 
+for fluorescence microscopy. We also thank Marianna Grenadier for creating some of the final figures. 
+Funding 
+ESM and DV were supported by the Science and Technologies for Phosphorus Sustainability Center, a 
+National Science Foundation Science and Technology Center (CBET-2019435). Any opinions, findings, 
+and conclusions or recommendations expressed are those of the author(s) and do not necessarily reflect 
+the views of the National Science Foundation. KAB was supported by The University of Texas Planet Texas 
+2050 Bridging Barriers Initiative. This work was also partially supported by a grant from Texas Crop 
+Science to SJR and GC (Award Number: UTA13-000682). 
+Author contributions 
+Conceptualization – SJR, GC, AC, EM, DV. Methodology – DV: microelectrode fabrication, testing; EM: 
+microelectrode measurements; GC: seedling preparation; KAB: structure analyses; MJ: root PI staining/ 
+microscopy; RH: primary root growth assay. Data analyses – EM, GC, SJR. Writing – GC, SJR, KAB, EM. 
+ORCID 
+Stanley J. Roux 
+ 0000-0001-7984-7105 
+References 
+1. Huang Z, Xie N, Illes P, Di Virgilio F, Ulrich H, Semyanov A, Verkhratsky A, Sperlagh B, Yu SG, Huang C, 
+et al. From purines to purinergic signalling: molecular functions and human diseases. Sig Transduct Target 
+Ther. 2021;6:162. doi: 10.1038/s41392-021-00553-z. 
+2. Clark G, Roux SJ. Apyrases, extracellular ATP and the regulation of growth. Curr Opin Plant Biol. 
+2011;14:700–706. doi: 10.1016/j.pbi.2011.07.013. 
+3. Cao Y, Tanaka K, Nguyen CT, Stacey G. Extracellular ATP is a central signaling molecule in plant stress 
+responses. Curr Opin Plant Biol. 2014;20:82–87. doi: 10.1016/j.pbi.2014.04.009. 
+4. Knowles AF. The GDA1_CD39 superfamily: NTPDases with diverse functions. Purinergic Signal. 2011;7:21–45. 
+doi: 10.1007/s11302-010-9214-7. 
+5. Pham AQ, Cho S-H, Nguyen CT, Stacey G. Arabidopsis lectin receptor kinase P2K2 is a second plant receptor 
+for extracellular ATP and contributes to innate immunity. Plant Physiol. 2020;183:1364–1375. doi: 10.1104/ 
+pp.19.01265. 
+6. Ollivier M, Beudez J, Linck N, Grutter T, Compan V, Rassendren F. P2X-GCaMPs as versatile tools for imaging 
+extracellular ATP signaling. eNeuro. 2020;8(1). doi: 10.1523/ENEURO.0185-20.2020. 
+7. Wang L, Ning Y, Sun J, Wilkins KA, Matthus E, McNelly RE, Dark A, Rubio L, Moeder W, Yoshioka K, et al. 
+Arabidopsis thaliana CYCLIC NUCLEOTIDE‐GATED CHANNEL2 mediates extracellular ATP signal trans-
+duction in root epidermis. New Phytol. 2022;234(2):412–421. doi: 10.1111/nph.17987. 
+8. Demidchik V, Nichols C, Oliynyk M, Dark A, Glover BJ, Davies JM. Is ATP a signaling agent in plants? Plant 
+Physiol. 2003;133(2):456–461. doi: 10.1104/pp.103.024091. 
+PLANT SIGNALING & BEHAVIOR
+ 11 
+
+--- PAGE 13 ---
+9. Jeter CR, Henaff E, Tang W, Butterfield T, Roux SJ. Evidence of a novel cell signaling role for extracellular 
+adenosine triphosphates and diphosphates in Arabidopsis. Plant Cell. 2004;16:2652–2664. doi: 10.1105/ 
+tpc.104.023945. 
+10. Clark G, Torres J, Finlayson S, Guan XY, Handley C, Lee J, Kays JE, Chen ZJ, Roux SJ. Apyrase (nucleoside 
+triphosphate-diphosphohydrolase) and extracellular nucleotides regulate cotton fiber elongation in cultured 
+ovules. Plant Physiol. 2010;152:1073–1083. doi: 10.1104/pp.109.147637. 
+11. Clark G, Wu M, Wat N, Onyirimba J, Pham T, Herz N, Ogoti J, Gomez D, Canales AA, Aranda G, et al. Both 
+the stimulation and inhibition of root hair growth induced by extracellular nucleotides in Arabidopsis are 
+mediated by nitric oxide and reactive oxygen species. Plant Mol Biol. 2010;74:423–435. doi: 10.1007/s11103- 
+010-9683-7. 
+12. Tanaka K, Heil M. Damage-associated molecular patterns (DAMPs) in plant innate immunity: applying the 
+danger model and evolutionary perspectives. Ann Rev Phytopath. 2021;59:53–75. doi: 10.1146/annurev-phyto- 
+082718-100146. 
+13. Handa M, Guidotti G. Purification and cloning of a soluble ATP-diphosphohydrolase (apyrase) from potato 
+tubers (solanum tuberosum). Biochem Biophys Res Commun. 1996;218:916–923. doi: 10.1006/bbrc.1996.0162. 
+14. Clark G, Morgan RO, Fernandez M-P, Salmi ML, Roux S. Review: breakthroughs spotlighting roles for 
+extracellular nucleotides and apyrases in stress responses and growth and development. Plant Sci. 
+2014;225:107–116. doi: 10.1016/j.plantsci.2014.06.002. 
+15. Steinebrunner I, Jeter C, Song C, Roux SJ. Molecular and biochemical comparison of two different apyrases 
+from Arabidopsis thaliana. Plant Physiol Biochem. 2000;38:913–922. doi: 10.1016/S0981-9428(00)01209-2. 
+16. Lim MH, Wu J, Yao JC, Gallardo IF, Dugger JW, Webb LJ, Huang J, Salmi ML, Song J, Clark G, et al. Apyrase 
+suppression raises extracellular ATP levels and induces gene expression and cell wall changes characteristic of 
+stress responses. Plant Physiol. 2014;164:2054–2067. doi: 10.1104/pp.113.233429. 
+17. Wu J, Steinebrunner I, Sun Y, Butterfield T, Torres J, Arnold D, Gonzalez A, Jacob F, Reichler S, Roux SJ. 
+Apyrases (nucleoside triphosphate-diphosphohydrolases) play a key role in growth control in Arabidopsis. 
+Plant Physiol. 2007;144:961–975. doi: 10.1104/pp.107.097568. 
+18. Chiu TY, Christiansen K, Moreno I, Lao J, Loqué D, Orellana A, Heazlewood JL, Clark G, Roux SJ. AtAPY1 and 
+AtAPY2 function as Golgi-localized nucleoside diphosphatases in Arabidopsis thaliana. Plant Cell Physiol. 
+2012;53:1913–1925. doi: 10.1093/pcp/pcs131. 
+19. Schiller M, Massalski C, Kurth T, Steinebrunner I. The Arabidopsis apyrase AtAPY1 is localized in the Golgi 
+instead of the extracellular space. BMC Plant Biol. 2012;12:123. doi: 10.1186/1471-2229-12-123. 
+20. Zhang Z, Yao J, Jiang Z, Huang X, Wang S, Xu F. Golgi-localized APYRASE 1 is critical for Arabidopsis growth 
+by affecting cell wall integrity under boron deficiency. Physiol Plant. 2024;176(3):e14320. doi: 10.1111/ 
+ppl.14320. 
+21. Chiu T-Y, Lao J, Manalansan B, Loqué D, Roux SJ, Heazlewood JL. Biochemical characterization of Arabidopsis 
+APYRASE family reveals their roles in regulating endomembrane NDP/NMP homoeostasis. Biochem J. 
+2015;472:43–54. doi: 10.1042/BJ20150235. 
+22. Massalski C, Bloch J, Zebisch M, Steinebrunner I. The biochemical properties of the Arabidopsis ecto- 
+nucleoside triphosphate diphosphohydrolase AtAPY1 contradict a direct role in purinergic signaling. Plos 
+One. 2015;10:e0115832. doi: 10.1371/journal.pone.0115832. 
+23. Song, CJ, Steinebrunner, I, Wang, X, Stout, SC, Roux , SJ. Extracellular ATP induces the accumulation of 
+superoxide via NADPH oxidases in Arabidopsis. Plant Physiol. 2006;140(4):1222–1232. doi: 10.1104/ 
+pp.105.073072. 
+24. Kim S-Y, Sivaguru M, Stacey G. Extracellular ATP in plants. Visualization, localization, and analysis of 
+physiological significance in growth and signaling. Plant Physiol. 2006;142:984–992. doi: 10.1104/pp.106. 
+085670. 
+25. Roux S, Wu J, Henaff E, Torres J, Clark G. Regions of growth are regions of highest release of ATP and highest 
+expression of ectonucleotidases AtAPY1 and AtAPY2 in Arabidopsis. Purinergic Signal. 2008;4:S112–S112. 
+26. Clark G, Fraley D, Steinebrunner I, Cervantes A, Onyirimba J, Liu A, Torres J, Tang W, Kim J, Roux SJ. 
+Extracellular nucleotides and apyrases regulate stomatal aperture in Arabidopsis. Plant Physiol. 2011; 
+156:1740–1753. doi: 10.1104/pp.111.174466. 
+27. Shi Z, Zhang Y, Wang X, Pang H, Jia L, Sun K, Zhang J, Du J, Feng H. Extracellular ATP sensing in living plant 
+tissues with a genetically encoded, ratiometric fluorescent sensor. New Phytol. 2023;238:1343–1350. doi: 
+10.1111/nph.18868. 
+28. Sowders JM, Tanaka K. A histochemical reporter system to study extracellular ATP response in plants. Front 
+Plant Sci. 2023;14:1183335. doi: 10.3389/fpls.2023.1183335. 
+29. Vanegas DC, Taguchi M, Chaturvedi P, Burns S, Tan M, Yamaguchi H, McLamore ES. A comparative study of 
+carbon-platinum hybrid nanostructure architecture for amperometric biosensing. Analyst. 2014;139:660–667. 
+doi: 10.1039/C3AN01718D. 
+30. Cannon AE, Vanegas DC, Sabharwal T, Salmi ML, Wang J, Clark G, McLamore ES, Roux SJ. Polarized 
+distribution of extracellular nucleotides promotes gravity-directed polarization of development in spores of 
+ceratopteris richardii. Front Plant Sci. 2023;14:1265458. doi: 10.3389/fpls.2023.1265458. 
+12
+ G. CLARK ET AL. 
+
+--- PAGE 14 ---
+31. Weeraratne G, Wang H, Weeraratne TP, Sabharwal T, Jiang H-W, Cantero A, Clark G, Roux SJ. APYRASE1/2 
+mediate red light-induced de-etiolation growth in Arabidopsis seedlings. Plant Physiol. 2022;189:1728–1740. 
+doi: 10.1093/plphys/kiac150. 
+32. Yang X, Wang B, Farris B, Clark G, Roux SJ. Modulation of root skewing in Arabidopsis by apyrases and 
+extracellular ATP. Plant Cell Physiol. 2015;56:2197–2206. doi: 10.1093/pcp/pcv134. 
+33. Vanegas DC, Clark G, Cannon AE, Roux S, Chaturvedi P, Mclamore ES. A self-referencing biosensor for real- 
+time monitoring of physiological ATP transport in plant systems. Biosens Bioelectron. 2015;74:37–44. doi: 
+10.1016/j.bios.2015.05.027. 
+34. Chaturvedi P, Vanegas D, Taguchi M, Burns SL, Sharma P, McLamore E. A nanoceria-platinum-graphene 
+nanocomposite for electrochemical biosensing. Biosens Bioelectron. 2014;58:179–185. doi: 10.1016/ 
+j.bios.2014.02.021. 
+35. Chaturvedi P, Vanegas D, Hauser BA, Foster J, Sepulveda M, McLamore E. Microprofiling real time nitric oxide 
+flux for field studies using a stratified nanohybrid carbon-metal electrode. Anal Methods. 2017;9:6061–6072. 
+doi: 10.1039/C7AY01964E. 
+36. Zhang XJ, Kislyak Y, Lin H, Dickson A, Cardosa L, Broderick M, Fein H. Nanometer size electrode for nitric 
+oxide and S-nitrosothiols measurement. Electrochem Commun. 2002;4:11–16. doi: 10.1016/S1388-2481(01) 
+00265-X. 
+37. McLamore ES, Porterfield DM. Non-invasive tools for measuring metabolism and biophysical analyte trans-
+port: self-referencing physiological sensing. Chem Soc Rev. 2011;40:5308–5320. doi: 10.1039/c0cs00173b. 
+38. McLamore ES, Diggs A, Calvo Marzal P, Shi J, Blakeslee JJ, Peer WA, Murphy AS, Porterfield DM. Non- 
+invasive quantification of endogenous root auxin transport using an integrated flux microsensor technique. 
+Plant J. 2010;63:1004–1016. doi: 10.1111/j.1365-313X.2010.04300.x. 
+39. Sievers F, Higgins DG. The clustal omega multiple alignment package. Methods Mol Biol. 2021;2231:3–16. doi: 
+10.1007/978-1-0716-1036-7_1. 
+40. Tsirigos KD, Peters C, Shu N, Kall L, Elofsson A. The TOPCONS web server for consensus prediction of 
+membrane protein topology and signal peptides. Nucleic Acids Res. 2015;43(W1):W401–W407. doi: 10.1093/ 
+nar/gkv485. 
+41. Zhang C, Freddolino L, Zhang Y. COFACTOR: improved protein function prediction by combining structure, 
+sequence and protein-protein interaction information. Nucleic Acids Res. 2017;45(W1):W291–W299. doi: 
+10.1093/nar/gkx366. 
+42. Zhou X, Zheng W, Li Y, Pearce R, Zhang C, Bell EW, Zhang G, Zhang Y. I-TASSER-MTD: a deep-learning-based 
+platform for multi-domain protein structure and function prediction. Nat Protocols. 2022;17(10):2326–2353. doi: 
+10.1038/s41596-022-00728-0. 
+43. Hu J, Li Y, Zhang Y, Yu DJ. ATPbind: accurate protein-ATP binding site prediction by combining sequence- 
+profiling and structure-based comparisons. J Chem Info Model. 2018;58:501–510. doi: 10.1021/acs.jcim.7b00397. 
+44. Wu Q, Peng Z, ZhangY, Yang J. COACH-D: improved protein-ligand binding sites prediction with refined ligand- 
+binding poses through molecular docking. Nucleic Acids Res. 2018;46(W1):W438–W442. doi: 10.1093/nar/gky439. 
+45. Yang J, Roy A, Zhang Y. Protein-ligand binding site recognition using complementary binding-specific 
+substructure comparison and sequence profile alignment. Bioinformatics. 2013;29:2588–2595. doi: 10.1093/ 
+bioinformatics/btt447. 
+46. Verbelen J-P, De Cnodder T, Le J, Vissenberg K, Baluška F. The root apex of Arabidopsis thaliana consists of 
+four distinct zones of growth activities. Plant Sig Behav. 2006;1(6):296–304. 
+47. Summers EL, Cumming MH, Oulavallickal T, Roberts NJ, Arcus VL. Structures and kinetics for plant 
+nucleoside triphosphate diphosphohydrolases support a domain motion catalytic mechanism. Protein Sci. 
+2017;26:1627–1638. doi: 10.1002/pro.3199. 
+48. Tripathy MK, Wang H, Slocum RD, Jiang HW, Nam JC, Sabharwal T, Veerappa R, Brown KA, Cai X, Faull PA, 
+et al. Modified pea apyrase has altered nuclear functions and enhances the growth of yeast and Arabidopsis. 
+Front Plant Sci. 2025;16:1584871. doi: 10.3389/fpls.2025.1584871. 
+49. Vivian JP, Riedmaier P, Ge H, Le Nours J, Sansom FM, Wilce MCJ, Byres E, Dias M, Schmidberger JW, Cowan 
+PJ, et al. Crystal structure of a Legionella pneumophila ecto-triphosphate diphosphohydrolase, a structural and 
+functional homolog of the eukaryotic NTPDases. Structure. 2010;18:228–238. doi: 10.1016/j.str.2009.11.014. 
+50. Clark G, Brown KA, Tripathy MK, Roux SJ. Recent advances clarifying the structure and function of plant 
+apyrases (nucleoside triphosphate diphosphohydrolases). Int J Mol Sci. 2021;22:3283. doi: 10.3390/ 
+ijms22063283. 
+51. Hurley JH. The sugar kinase heat shock protein 70 actin superfamily: implications of conserved structure for 
+mechanism. Ann Rev Biophys Biomol Struct. 1996;25:137–162. doi: 10.1146/annurev.bb.25.060196.001033. 
+52. Pettigrew DW. Oligomeric interactions provide alternatives to direct steric modes of control of sugar kinase/ 
+actin/hsp70 superfamily functions by heterotropic allosteric effectors: inhibition of E. coli glycerol kinase. Arch 
+Biochem Biophys. 2009;492:29–39. doi: 10.1016/j.abb.2009.10.001. 
+53. Smith, TM, Kirley, TL. Site-directed mutagenesis of a human brain ecto-apyrase: evidence that the E-type 
+ATPases are related to the actin/heat shock 70/sugar kinase superfamily. Biochem. 1999;38(1):321–328. doi: 
+10.1021/bi9820457. 
+PLANT SIGNALING & BEHAVIOR
+ 13 
+
+--- PAGE 15 ---
+54. Krug U, Totzauer R, Zebisch M, Sträter N. The ATP/ADP substrate specificity switch between Toxoplasma 
+gondii NTPDase1 and NTPDase3 is caused by an altered mode of binding of the substrate base. Chembiochem. 
+2013;14:2292–2300. doi: 10.1002/cbic.201300441. 
+55. Zebisch M, Krauss M, Schäfer P, Lauble P, Sträter N. Crystallographic snapshots along the reaction pathway of 
+nucleoside triphosphate diphosphohydrolases. Structure. 2013;21:1460–1475. doi: 10.1016/j.str.2013.05.016. 
+56. Zebisch M, Strater N. Structural insight into signal conversion and inactivation by NTPDase2 in purinergic 
+signaling. Proc Natl Acad Sci USA. 2008;105(19):6882–6887. doi: 10.1073/pnas.0802535105. 
+57. Weerasinghe RR, Swanson SJ, Okada SF, Garrett MB, Kim S-Y, Stacey G, Boucher RC, Gilroy S, Jones AM. 
+Touch induces ATP release in Arabidopsis roots that is modulated by the heterotrimeric G-protein complex. 
+FEBS Lett. 2009;583:2521–2526. doi: 10.1016/j.febslet.2009.07.007. 
+58. Zhu R, Dong X, Hao W, Gao W, Zhang W, Xia S, Liu T, Shang Z. Heterotrimeric G protein-regulated Ca2+ 
+influx and PIN2 asymmetric distribution are involved in Arabidopsis thaliana roots' avoidance response to 
+extracellular ATP. Front Plant Sci. 2017;8:1522. doi: 10.3389/fpls.2017.01522. 
+59. Lew RR, Dearnaley JDW. Extracellular nucleotide effects on the electrical properties of growing Arabidopsis 
+thaliana root hairs. Plant Sci. 2000;153:1–6. doi: 10.1016/S0168-9452(99)00242-3. 
+60. Liu X, Wu J, Clark G, Lundy S, Lim M, Arnold D, Chan J, Tang W, Muday GK, Gardner G, et al. Role for 
+apyrases in polar auxin transport in arabidopsis. Plant Physiology. 2012;160:1985–1995. doi: 10.1104/ 
+pp.112.202887. 
+61. Tang WQ, Brady SR, Sun Y, Muday GK, Roux SJ. Extracellular ATP inhibits root gravitropism at concentra-
+tions that inhibit polar auxin transport. Plant Physiol. 2003;131:147–154. doi: 10.1104/pp.013672. 
+62. Matthus E, Sun J, Wang L, Bhat MG, Mohammad-Sidik AB, Wilkins KA, Leblanc-Fournier N, Legué V, Moulia 
+B, Stacey G, et al. DORN1/P2K1 and purino-calcium signalling in plants: making waves with extracellular ATP. 
+Ann Bot. 2019;124:1227–1242. doi: 10.1093/aob/mcz135. 
+63. Matthus E, Ning Y, Shafiq F, Davies JM. Phosphate-deprivation and damage signalling by extracellular ATP. 
+Front Plant Sci. 2023;13:1098146. doi: 10.3389/fpls.2022.1098146. 
+64. Matthus E, Wilkins K, Mohammad‐Sidik A, Ning Y, Davies JM. Spatial origin of the extracellular ATP‐induced 
+cytosolic calcium signature in Arabidopsis thaliana roots: wave formation and variation with phosphate 
+nutrition. Plant Biol. 2022;24(5):863–873. doi: 10.1111/plb.13427. 
+65. Roux SJ, Steinebrunner I. Extracellular ATP: an unexpected role as a signaler in plants. Trends Plant Sci. 
+2007;12(11):522–527. 
+66. Choi J, Tanaka K, Cao YR, Qi Y, Qiu J, Liang Y, Lee SY, Stacey G. Identification of a plant receptor for 
+extracellular ATP. Science. 2014;343:290–294. doi: 10.1126/science.343.6168.290. 
+67. Weeraratne G. Genetic and biochemical studies of the function of apyrase 1 and apyrase 2 in etiolated seedlings 
+of Arabidopsis thaliana. [PhD dissertation]. 2019. The University of Texas at Austin. 
+68. Abeijon C, Yanagisawa K, Mandon EC, Häusler A, Moremen K, Hirschberg CB, Robbins PW. Guanosine 
+diphosphatase is required for protein and sphingolipid glycosylation in the golgi lumen of Saccharomyces 
+cerevisiae. J Cell Biol. 1993;122:307–323. doi: 10.1083/jcb.122.2.307. 
+14
+ G. CLARK ET AL. 

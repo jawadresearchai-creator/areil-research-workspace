@@ -1,0 +1,448 @@
+--- PAGE 1 ---
+Plant Signaling & Behavior
+ISSN: 1559-2324 (Online) Journal homepage: www.tandfonline.com/journals/kpsb20
+Computational prediction and in vitro analysis
+of the potential ligand binding site within the
+extracellular ATP receptor, P2K2
+Sung-Hwan Cho, Cuong the Nguyen, an Quoc Pham & Gary Stacey
+To cite this article: Sung-Hwan Cho, Cuong the Nguyen, an Quoc Pham & Gary Stacey
+(2023) Computational prediction and in vitro analysis of the potential ligand binding site
+within the extracellular ATP receptor, P2K2, Plant Signaling & Behavior, 18:1, 2173146, DOI:
+10.1080/15592324.2023.2173146
+To link to this article:  https://doi.org/10.1080/15592324.2023.2173146
+© 2023 The Author(s). Published with
+license by Taylor & Francis Group, LLC.
+Published online: 01 Feb 2023.
+Submit your article to this journal 
+Article views: 2274
+View related articles 
+View Crossmark data
+Citing articles: 3 View citing articles 
+Full Terms & Conditions of access and use can be found at
+https://www.tandfonline.com/action/journalInformation?journalCode=kpsb20
+
+--- PAGE 2 ---
+SHORT COMMUNICATION
+Computational prediction and in vitro analysis of the potential ligand binding site 
+within the extracellular ATP receptor, P2K2
+Sung-Hwan Choa,b†, Cuong the Nguyena,c†, an Quoc Phama,d, and Gary Stacey
+ a
+aDivisions of Plant Science and Biochemistry, Christopher S. Bond Life Sciences Center, University of Missouri, Columbia, MO, USA; bPlant Genomics 
+and Breeding Institute, Seoul National University, Seoul, Republic of Korea; cCenter for Applied Biotechnology and Agricultural High-Tech, Cuu Long 
+Delta Rice Research Institute, Can Tho, Vietnam; dFaculty of Biology and Biotechnology, VNUHCM-University of Sciences, Ho Chi Minh City, Vietnam
+ABSTRACT
+The plant extracellular ATP (eATP) receptor, P2K2, binds eATP with strong ligand affinity through its 
+extracellular lectin domain. Ligand binding activates the intracellular kinase domain of P2K2 resulting in 
+a variety of intracellular responses and, ultimately, increased plant immunity to invading fungal and 
+bacterial pathogens. Here, using a computational prediction approach, we developed a tertiary structure 
+model of the P2K2 extracellular lectin domain. In silico target docking of ATP to the P2K2-binding site 
+predicted interaction with several residues through hydrophobic interactions and hydrogen bonding. Our 
+confirmation of the modeling was obtained by showing that H99, R144, and S256 are key residues 
+essential for in vitro binding of ATP by P2K2.
+ARTICLE HISTORY 
+Received 22 November 2022 
+Revised 8 January 2023 
+Accepted 10 January 2023 
+KEYWORDS 
+Extracellular ATP; P2K2; 
+purinoreceptor; lectin 
+receptor kinase; in silico 
+model
+Text
+Adenosine 5’-triphosphate (ATP) is widely known for its roles 
+in biosynthetic reactions, intracellular signaling, and energy 
+metabolism, but is also a crucial extracellular signaling mole-
+cule. In mammals, extracellular ATP (eATP) is recognized by 
+P2-type purinergic receptors: ionotropic P2X receptors and 
+G-protein-coupled P2Y receptors.1 Given the importance of 
+purinergic receptors in cellular processes such as muscle con-
+traction, taste signal transduction, and macrophage 
+activation,1–3 studies of the ATP-binding sites of P2Xs and 
+P2Ys have provided important information for developing 
+potential drugs targeting these receptors.4,5
+In contrast to our understanding of purinergic signaling in 
+animals, much less is known about the role of eATP in plants. 
+However, several papers have implicated eATP in a variety of 
+plant physiological roles, including cell viability,6 pollen 
+growth,7 root hair development,8 thigmotropism,9 and 
+gravitropism.10 In plants, instead of canonical P2X and P2Y 
+receptors, Arabidopsis recognizes eATP through plasma mem-
+brane-localized P2K receptors that encode L-type lectin recep-
+tor kinases (LecRK).11,12 The first plant eATP receptor, P2K1 
+(LecRK-I.9), regulates ROS production by phosphorylation of 
+RBOHD that controls the stomatal aperture and controls plant 
+defense against Pseudomonas syringae and Phytophthora 
+species.13,14 P2K1 is also involved in plant immune responses 
+through S-acylation.15 It was reported that eATP signaling via 
+P2K1 induces plant defense by activating jasmonate 
+signaling.16 In addition, P2K1 directly controls defense meta-
+bolites via activation of mevalonate kinase in the mevalonate 
+pathway.17 P2K1 was also shown to interact and phosphorylate 
+a second eATP receptor P2K2 and contribute to plant defense 
+against pathogens.12 A recent study showed that the ROS wave 
+induced by eATP during wounding requires P2K receptors.18 
+Most recently, CYCLIC NUCLEOTIDE GATED ION 
+CHANNEL2 (CNGC2) and CNGC6 were reported to be 
+involved in eATP-regulated calcium influx.19,20
+The Arabidopsis LecRK gene family is represented by 45 
+members. It was proposed that gene transposition duplication 
+and tandem duplication events gave rise to this diverse LecRK 
+family.21,22 Various members of this LecRK family have been 
+shown to play crucial roles in plants. For example, LecRK-I.1 
+functions in the regulation of cell death following insect egg 
+recognition.23 LecRK-I.8 was shown to be an extracellular 
+nicotinamide adenine dinucleotide (NAD+) receptor and was 
+also involved in early steps of egg perception.23,24 LecRK-IX.1 
+and LecRK-IX.2 regulate Phytophthora resistance and plant cell 
+death.25 In addition, LecRK-IX.2 is required for the activation 
+of flg22-induced pathogen associated molecular pattern 
+(PAMP) triggered immunity (PTI).26 LecRK-VI.2 promotes 
+plant defense against both biotrophic and necrotrophic patho-
+gens as a positive regulator of PTI.27 LecRK-V.2 and LecRK- 
+VII.1 are involved in JA-mediated stomatal immunity.28
+The P2K purinoreceptors consist of an extracellular 
+legume-lectin-like domain that can bind ATP with high 
+affinity, a single transmembrane domain, and an intracel-
+lular serine/threonine kinase domain.11,12,29 The first plant 
+purinergic receptor to be isolated, P2K1 from Arabidopsis 
+thaliana , exhibited high ATP binding affinity (Kd 
+CONTACT Gary Stacey 
+ staceyg@missouri.edu 
+ Divisions of Plant Science and Biochemistry, Christopher S. Bond Life Sciences Center, University of Missouri, 
+Columbia, MO, 65211, USA
+†These authors contributed equally to this work
+PLANT SIGNALING & BEHAVIOR                        
+2023, VOL. 18, NO. 1, e2173146 (6 pages) 
+https://doi.org/10.1080/15592324.2023.2173146
+© 2023 The Author(s). Published with license by Taylor & Francis Group, LLC.  
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, 
+distribution, and reproduction in any medium, provided the original work is properly cited.
+
+--- PAGE 3 ---
+= 45.7 ± 3.1 nM, Bmax = 488.0 ± 6.3 pmol/mg). 11 
+Subsequently, a second purinergic receptor P2K2 
+(LecRK-I.5) was identified by complementation of the 
+p2k1 mutant phenotype. 12 P2K2 belongs to the LecRK 
+clade I, which also includes P2K1. Interestingly, P2K2 
+binds to ATP with slightly higher binding affinity (Kd 
+= 44.5 ± 15.73 nM, Bmax = 625.8 ± 86.48 pmol/mg) than 
+P2K1.12
+In a previous study, we performed an in silico study of 
+the molecular interaction between P2K1 and ATP with the 
+reported crystal structure data sets from 54 L-type lectin 
+proteins. 30,31 The blind docking analysis demonstrated 
+that ATP binds to four loops (loops A, B, C, and D) of 
+the P2K1 lectin domain with high affinity.30 The compu-
+tational target docking model of ATP to the P2K1-binding 
+site predicted interaction with 12 residues on the four 
+loops.30 The model was validated by in vitro ATP- 
+binding assays with the purified extracellular lectin 
+domain of wild-type and various mutant forms of 
+P2K1.30 This study implicated two loops (loops B and C) 
+within the P2K1 structure as being critical for ATP 
+binding. 30 However, specific details about the location 
+and composition of the ATP binding site remain to be 
+elucidated.
+In order to define the putative ATP-binding site within 
+the P2K2 lectin domain, we used computational approaches 
+to predict the protein structure of P2K2 and to dock eATP 
+to the protein to identify the key amino acids involved in 
+binding. Among 40 P2K2 homologous crystal structures 
+present in the Protein Data Bank (www.rcsb.org), P2K1 
+and four candidates with the highest sequence identity to 
+P2K2 were chosen: 1G7Y (lectin from the legume Dolichos 
+biflorus, 26%), 1DBN (lectin from the legume tree Maackia 
+amurensis, 26.3%), 1HQL (lectin from the legume Griffonia 
+simplicifolia, 26.7%), and 1AVB (lectin from common bean 
+Phaseolus vulgaris, 25.1%) (Figure 1). P2K1 and P2K2 share 
+9, predicted ATP-binding residues including E96, H99, 
+T117, R118, V143 (I143 in P2K1), R144 (W144 in P2K1), 
+G244 (G245 in P2K1), T245 (T246 in P2K1), and S246 
+(A247 in P2K1) over 15 and 11 putative ATP-binding 
+residues of P2K2 and P2K1, respectively (Figure 1). The 
+larger number of ATP-binding residues in P2K2 may reflect 
+the higher binding affinity for ATP than P2K1.
+Starting from these structures, Modeler v9.21 (https:// 
+salilab.org/modeler/) was used to predict the P2K2 extra-
+cellular domain structure. The quality of the raw P2K2 
+modeling structure was checked with Ramachandran plots 
+(https://bip.weizmann.ac.il/toolbox/structure/validation. 
+htm). Finally, the refined P2K2 structure model was visua-
+lized. As expected, the putative extracellular domain struc-
+ture of P2K2 is very similar to that of P2K1, containing 13 
+β-strands, four defined loops (named loop A, B, C, and D), 
+two β-turns, and an extended loop (Figure 2a). Sequence- 
+based and structural-based methods were used to predict 
+the ATP binding site within P2K2. Using four prediction 
+tools (COACH, COFACTOR, FindSite, and TM-Site), we 
+obtained similar binding site prediction (Table 1).
+The putative ATP binding site is located between four 
+defined loops with nine consensus-binding residues 
+(Figure 2 and Table 1). This predicted binding site was 
+used to predict ATP-P2K2 target docking using 
+AutoDockVina (http://vina.scripps.edu/ ). In the ATP-P2K2 
+target docking model, ATP is predicted to bind to 15 
+residues located within loops A, B, C, D, and the extended 
+loop (Figure 2b and Table 2). Based on all analyses, the best 
+putative ATP-P2K2 binding complex model showed the 
+lowest energy score (−8.1 kcal/mol) within 4 predicted 
+residues (Figure 3a and 3B).
+In order to determine whether the four predicted resi-
+dues [histidine 99 (H99), arginine 144 (R144), threonine 
+245 (T245), and serine 246 (S246)] are critical for ATP 
+binding, we performed site-directed mutagenesis to pro-
+duct alanine substitutions for each of these four residues, 
+specifically H99A, R144A, T245A, and S246A. The wild- 
+type and mutated constructs were transformed into E. coli 
+BL21-AI. We then purified the GST-fused extracellular 
+domain proteins and conducted in vitro binding assays 
+using radiolabeled γ32P-ATP. We previously showed that 
+P2K2 had a slightly higher ATP binding affinity than 
+P2K1.12 Similar to the previous result (Kd 
+= 44.5 ± 15.73 nM, Bmax = 625.8 ± 86.48 pmol/mg),12 
+the wild-type P2K2 protein showed a typical saturation 
+curve for ATP binding with high affinity (Kd 
+= 41.6 ± 13.8 nM, Bmax = 659.9 ± 83.1 pmol/mg) 
+(Figure 3d).
+Of those key amino acid residues predicted to interact 
+with ATP in the P2K2 structure, mutation of the H99 
+residue resulted in a significant reduction in ATP binding 
+ability (Figure 3d). Interestingly, the region of H99 is 
+structurally close to the predicted region for binding of 
+the gamma-phosphate of ATP, suggesting that H99 may 
+be a critical residue for ATP-P2K2 binding. Many carbo-
+hydrate-binding lectin proteins have a conserved aspartic 
+acid at this site, instead of H99 in P2K1 and P2K2, per-
+haps explaining why these P2K proteins recognize nucleo-
+tides and not sugars. 32–34 Consistent with such 
+a possibility, LecRK-I.8 with N99, instead of H99, was 
+shown to bind to NAD+, and not ATP.24 Mutation in 
+R144 and S246 resulted in a significant reduction in the 
+binding activity, which further confirms our predicted 
+P2K2 structure (Figure 3d). The S246 residue is predicted 
+to interact with the beta-phosphate of ATP, which can be 
+essential for the binding of ADP. Interestingly, the amino 
+acid 247 at P2K1, which is located with S246 of P2K2, has 
+an alanine (Figure 1). Previously, the deletion from G245 
+to A247 in P2K1 showed no effect on ATP binding affinity 
+compared to the wild-type.30 Therefore, it is possible that 
+the higher ATP binding affinity of P2K2 than P2K1 may 
+e2173146-2
+ S.-H. CHO ET AL.
+
+--- PAGE 4 ---
+Figure 1. Multiple sequence alignments of P2K2 and P2K1 extracellular domains by comparing four crystalized lectin proteins. 1AVB (Phaseolus vulgaris), 1DBN (Maackia 
+amurensis), 1G7Y (Dolichos biflorus) and 1HQL (Griffonia simplicifolia). The figure was generated using Bioedit.
+PLANT SIGNALING & BEHAVIOR
+ e2173146-3
+
+--- PAGE 5 ---
+be affected by S246 residue. However, mutation in T245 
+showed a similar ATP binding affinity compared to the 
+wild-type P2K2 (Figure 3d).
+Mammals have several P2 receptors; for example, seven 
+P2X and eight P2Y receptors have been cloned from 
+mammals.35 Hence, it is quite possible that plants possess 
+other receptors, in addition to P2K1 and P2K2, better knowl-
+edge of the requirements for ATP binding by plant receptors 
+will be helpful in the identification of possible, novel plant 
+receptors. In addition, a forward-genetic screen strategy with 
+an eATP-antagonist, such as Suramin and PPRAD, may be 
+helpful to isolate new P2K receptors.
+Figure 2. Computational prediction of the ATP binding within the P2K2 extracellular domain (ectodomain). (a) P2K2 ectodomain 3D structure was predicted using 
+homology modeling. The putative backbone alpha-carbon trace of P2K2 includes 13 β-strands (brown); 4 defined loops (A-blue; B-magenta; C-Orange; D-green); an 
+extended loop (light blue) and 2 β-turns (purple). The bar shows relative scale (1 angstrom = 10−10 m). (b) A detailed map of interaction between P2K2 and ATP in the 
+docking complex was predicted using target docking. ATP resides in the middle of the map and is surrounded by interacting residues, green dashed-lines with green 
+numbers are hydrogen bonds with bond distances in angstroms shared with atoms of ATP, where black residues with a red crown denote hydrophobic and Van der 
+Waals interactions. Numbered residues represent their actual position in the P2K2 full-length sequence.
+Table 1. List of predicted P2K2 interacting residues with ATP ligand obtained from different prediction tools.
+Prediction tools LOOP A LOOP B LOOP C LOOP D Score*
+COACH Gly98, His99 Gln115, Thr117, Arg118 Val143, Asn145 Gly244, Thr245, Ser246 0.56
+COFACTOR Gly98, His99 Thr117, Arg118 Val143, Asn145 Gly244, Thr245, Ser246 0.52
+FindSite Gly98, His99 Thr117, Arg118 Val143, Asn145 Gly244, Thr245, Ser246 0.55
+TM-Site Gly98, His99 Thr117, Arg118 Val143, Asn145 Gly244, Thr245, Ser246 0.40
+Consensus residues Gly98, His99 Thr117, Arg118 Val143, Asn145 Gly244, Thr245, Ser246
+* Values range in between [0–1]; where a higher score indicates a more reliable ligand-binding site prediction.
+Table 2. List of P2K2 interacting residues with the ATP ligand obtained from target docking.
+Loop Hydrogen bonds Hydrophobic and Val de Waals interactions
+A His99 Phe95, Glu96, Gly97
+B - Thr117, Arg118
+C Arg144 Val143, Asn152, Phe174, Ser175, Lys176
+D Thr245, Ser246 Gly244
+Total 4 11
+e2173146-4
+ S.-H. CHO ET AL.
+
+--- PAGE 6 ---
+Disclosure statement
+No potential conflict of interest was reported by the author(s).
+Funding
+The research was supported by the National Institutes of National 
+Institute of General Medical Sciences (grant no. R01GM121445), the 
+Next-Generation BioGreen 21 Program Systems and Synthetic 
+Agrobiotech Center, Rural Development Administration, PJ013254, 
+PJ01116604 (grant nos. PJ013254 and PJ01116604), and the 3rd Call of 
+the ERA-NET for Coordinating Action in Plant Sciences, with funding 
+from the US National Science Foundation (grant no. 1826803).
+ORCID
+Gary Stacey 
+ http://orcid.org/0000-0001-5914-2247
+References
+1. Burnstock G. Purine and purinergic receptors. Brain Neurosci 
+Adv. 2018;2:2398212818817494. doi:10.1177/2398212818817494.
+2. Surprenant A, North RA. Signaling at purinergic P2X receptors. 
+Annu Rev Physiol. 2009;71(1):333–359. doi:10.1146/annurev.phy 
+siol.70.113006.100630.
+3. Kasuya G, Fujiwara Y, Tsukamoto H, Morinaga S, Ryu S, 
+Touhara K, Ishitani R, Furutani Y, Hattori M, Nureki O, et al. 
+Structural insights into the nucleotide base specificity of P2X 
+receptors. Sci Rep. 2017;7(1):45208. doi:10.1038/srep45208.
+4. Zhang K, Zhang J, Gao Z-G, Zhang D, Zhu L, Han GW, Moss SM, 
+Paoletta S, Kiselev E, Lu W, et al. Structure of the human P2Y12 
+receptor in complex with an antithrombotic drug. Nature. 
+2014;509(7498):115–118. doi:10.1038/nature13083.
+5. Jiang LH, Caseley EA, Muench SP, Roger S. Structural basis for the 
+functional properties of the P2X7 receptor for extracellular ATP. 
+Purinergic Signal. 2021;17(3):331–344. doi:10.1007/s11302-021- 
+09790-x.
+6. Chivasa S, Ndimba BK, Simon WJ, Lindsey K, Slabas AR. 
+Extracellular ATP functions as an endogenous external metabolite 
+regulating plant cell viability. Plant Cell. 2005;17(11):3019–3034. 
+doi:10.1105/tpc.105.036806.
+7. Reichler SA, Torres J, Rivera AL, Cintolesi VA, Clark G, Roux SJ. 
+Intersection of two signalling pathways: extracellular nucleotides 
+regulate pollen germination and pollen tube growth via nitric 
+oxide. J Exp Bot. 2009;60(7):2129–2138. doi:10.1093/jxb/erp091.
+8. Clark G, Wu M, Wat N, Onyirimba J, Pham T, Herz N, Ogoti J, 
+Gomez D, Canales AA, Aranda G, et al. Both the stimulation and 
+Figure 3. Cartoon representations of the predicted ATP-binding site and interaction map between ATP and residues of P2K2. P2K2 binds ATP in vitro. (a) A close-up of 
+the P2K2-binding loops and ATP molecule in ball and stick mode. (b) A close up of the electrostatic potential molecular surface of the P2K2-binding pocket and ATP 
+molecule in ball and stick mode. (c) SDS-PAGE gel showing GST-tag purified proteins expressed in E. coli cells expressing GST-tagged P2K2-extracellular domain WT, 
+H99A, R144A, T254A, and S246A. GST proteins were used as control. The protein was measured by Coomassie Brilliant Blue staining. (d) In vitro binding of 32P-labeled 
+ATP to ectodomain of P2K2 wild-type and mutant versions. After incubating P2K2 wild-type or mutant versions with indicated concentrations of 32P-labeled ATP 
+(PerkinElmer, specific activity 800 Ci mmol−1) in a 100 µl reaction buffer including 10 mM HEPES (pH 7.5), 5 mM MgCl2. The bound ATP and free ATP were separated by 
+Sephadex PD MiniTrap G-25 gel filtration columns (GE Healthcare). The bound radio ligand collected in scintillation vials. After mixing with scintillation cocktail (MP 
+Biomedicals), the signal of bound radio ligand was measured using liquid scintillation counting (Tri-Carb 2810TR, PerkinElmer). Data were plotted as a specific binding 
+with SEs of three replications. The dissociation constant (Kd) and maximum binding capacity (Bmax) were calculated by a non-linear regression model analysis using 
+GraphPad Prism 7. P-value shows statistical difference of mutant versions to the wild-type.
+PLANT SIGNALING & BEHAVIOR
+ e2173146-5
+
+--- PAGE 7 ---
+inhibition of root hair growth induced by extracellular nucleotides 
+in Arabidopsis are mediated by nitric oxide and reactive oxygen 
+species. Plant Mol Biol. 2010;74(4–5):423–435. doi:10.1093/jxb/ 
+erp091.
+9. Weerasinghe RR, Swanson SJ, Okada SF, Garrett MB, Kim S-Y, 
+Stacey G, Boucher RC, Gilroy S, Jones AM. Touch induces ATP 
+release in Arabidopsis roots that is modulated by the heterotri-
+meric G-protein complex. FEBS Lett. 2009;583(15):2521–2526. 
+doi:10.1016/j.febslet.2009.07.007.
+10. Tang W, Brady SR, Sun Y, Muday GK, Roux SJ. Extracellular ATP 
+inhibits root gravitropism at concentrations that inhibit polar auxin 
+transport. Plant Physiol. 2003;131(1):147–154. doi:10.1104/pp.013672.
+11. Choi J, Tanaka K, Cao Y, Qi Y, Qiu J, Liang Y, Lee SY, Stacey G. 
+Identification of a plant receptor for extracellular ATP. Science. 
+2014;343(6168):290–294. doi:10.1126/science.343.6168.290.
+12. Pham AQ, Cho SH, Nguyen CT, Stacey G. Arabidopsis Lectin 
+Receptor Kinase P2K2 Is a Second Plant Receptor for 
+Extracellular ATP and Contributes to Innate Immunity. Plant 
+Physiol. 2020;183(3):1364–1375. doi:10.1104/pp.19.01265.
+13. Chen D, Cao Y, Li H, Kim D, Ahsan N, Thelen J, Stacey G. 
+Extracellular ATP elicits DORN1-mediated RBOHD phosphoryla-
+tion to regulate stomatal aperture. Nat Commun. 2017;8(1):2265. 
+doi:10.1038/s41467-017-02340-3.
+14. Bouwmeester K, de Sain M, Weide R, Gouget A, Klamer S, 
+Canut H, Govers F. The lectin receptor kinase LecRK-I.9 is 
+a novel Phytophthora resistance component and a potential host 
+target for a RXLR effector. PLoS Pathog. 2011;7(3):e1001327. 
+doi:10.1371/journal.ppat.1001327.
+15. Chen D, Ahsan N, Thelen JJ, Stacey G. S-Acylation of plant 
+immune receptors mediates immune signaling in plasma mem-
+brane nanodomains. bioRxiv. 2019:720482. doi:10.1101/720482.
+16. Tripathi D, Zhang T, Koo AJ, Stacey G, Tanaka K. Extracellular 
+ATP Acts on Jasmonate Signaling to Reinforce Plant Defense. 
+Plant Physiol. 2018;176(1):511–523. doi:10.1104/pp.17.01477.
+17. Cho S-H, Tóth K, Kim D, Vo PH, Lin C-H, Handakumbura PP, 
+Ubach AR, Evans S, Paša-Tolić L, Stacey G, et al. Activation of the 
+plant mevalonate pathway by extracellular ATP. Nat Commun. 
+2022;13(1):450. doi:10.1038/s41467-022-28150-w.
+18. Myers RJ, Fichman Y, Stacey G, Mittler R. Extracellular ATP plays 
+an important role in systemic wound response activation. Plant 
+Physiol. 2022;189(3):1314–1325. doi:10.1093/plphys/kiac148.
+19. Duong HN, Cho S-H, Wang L, Pham AQ, Davies JM, Stacey G. 
+Cyclic nucleotide-gated ion channel 6 is involved in extracellular 
+ATP signaling and plant immunity. Plant J. 2022;109 
+(6):1386–1396. doi:10.1111/tpj.15636.
+20. Wang L, Ning Y, Sun J, Wilkins KA, Matthus E, McNelly RE, 
+Dark A, Rubio L, Moeder W, Yoshioka K, et al. Arabidopsis 
+thaliana CYCLIC NUCLEOTIDE-GATED CHANNEL2 mediates 
+extracellular ATP signal transduction in root epidermis. New 
+Phytol. 2022;234(2):412–421. doi:10.1111/nph.17987.
+21. Bouwmeester K, Govers F. Arabidopsis L-type lectin receptor 
+kinases: phylogeny, classification, and expression profiles. J Exp 
+Bot. 2009;60(15):4383–4396. doi:10.1093/jxb/erp277.
+22. Hofberger JA, Nsibo DL, Govers F, Bouwmeester K, Schranz ME. 
+A complex interplay of tandem- and whole-genome duplication 
+drives expansion of the L-type lectin receptor kinase gene family in 
+the brassicaceae. Genome Biol Evol. 2015;7(3):720–734. doi:10. 
+1093/gbe/evv020.
+23. Groux R, Stahl E, Gouhier-Darimont C, Kerdaffrec E, Jimenez- 
+Sandoval P, Santiago J, Reymond P. Arabidopsis natural variation 
+in insect egg-induced cell death reveals a role for LECTIN 
+RECEPTOR KINASE-I.1. Plant Physiol. 2021;185(1):240–255. 
+doi:10.1093/plphys/kiaa022.
+24. Wang C, Zhou M, Zhang X, Yao J, Zhang Y, Mou Z. A lectin 
+receptor kinase as a potential sensor for extracellular nicotinamide 
+adenine dinucleotide in Arabidopsis thaliana. Elife. 2017:6. doi:10. 
+7554/eLife.25474.
+25. Wang Y, Cordewener JH, America AH, Shan W, Bouwmeester K, 
+Govers F. Arabidopsis Lectin Receptor Kinases LecRK-IX.1 and 
+LecRK-IX.2 Are Functional Analogs in Regulating Phytophthora 
+Resistance and Plant Cell Death. Mol Plant Microbe Interact. 
+2015;28(9):1032–1048. doi:10.1094/MPMI-02-15-0025-R.
+26. Luo X, Xu N, Huang J, Gao F, Zou H, Boudsocq M, Coaker G, 
+Liu J. A Lectin Receptor-Like Kinase Mediates Pattern-Triggered 
+Salicylic Acid Signaling. Plant Physiol. 2017;174(4):2501–2514. 
+doi:10.1104/pp.17.00404.
+27. Singh P, Kuo YC, Mishra S, Tsai CH, Chien CC, Chen CW, 
+Desclos-Theveniau M, Chu PW, Schulze B, Chinchilla D, et al. 
+The Lectin Receptor Kinase-VI.2 Is Required for Priming and 
+Positively Regulates Arabidopsis Pattern-Triggered Immunity. 
+Plant Cell. 2012;24(3):1256–1270. doi:10.1105/tpc.112.095778.
+28. Yekondi S, Liang F-C, Okuma E, Radziejwoski A, Mai H-W, 
+Swain S, Singh P, Gauthier M, Chien H-C, Murata Y, et al. 
+Nonredundant functions of Arabidopsis LecRK-V.2 and 
+LecRK-VII.1 in controlling stomatal immunity and 
+jasmonate-mediated stomatal closure. New Phytol. 2018;218 
+(1):253–268. doi:10.1111/nph.14953.
+29. Cho SH, Nguyen CT, Choi J, Stacey G. Molecular Mechanism of 
+Plant Recognition of Extracellular ATP. Adv Exp Med Biol. 
+2017;1051:233–253. doi:10.1007/5584_2017_110.
+30. Nguyen CT, Tanaka K, Cao Y, Cho S-H, Xu D, Stacey G. 
+Computational Analysis of the Ligand Binding Site of the 
+Extracellular ATP Receptor, DORN1. PLoS One. 2016;11(9): 
+e0161894. doi:10.1371/journal.pone.0161894.
+31. Rose PW, Bi C, Bluhm WF, Christie CH, Dimitropoulos D, 
+Dutta S, Green RK, Goodsell DS, Prlić A, Quesada M, et al. The 
+RCSB Protein Data Bank: new resources for research and 
+education. Nucleic Acids Res. 2013;41(D1):D475–482. doi:10. 
+1093/nar/gks1200.
+32. Adar R, Sharon N. Mutational studies of the amino acid residues in 
+the combining site of Erythrina corallodendron lectin. Eur 
+J Biochem. 1996;239(3):668–674. doi:10.1111/j.1432-1033.1996. 
+0668u.x.
+33. Gouget A, Senchou V, Govers F, Sanson A, Barre A, Rougee P, 
+Pont-Lezica R, Canut H. Lectin receptor kinases participate in 
+protein-protein interactions to mediate plasma membrane-cell 
+wall adhesions in Arabidopsis. Plant Physiol. 2006;140(1):81–90. 
+doi:10.1104/pp.105.066464.
+34. Sharon N. Lectins: carbohydrate-specific reagents and biological 
+recognition molecules. J Biol Chem. 2007;282(5):2753–2764. 
+doi:10.1074/jbc.X600004200.
+35. Xing S, Grol MW, Grutter PH, Dixon SJ, Komarova SV. Modeling 
+Interactions among Individual P2 Receptors to Explain Complex 
+Response Patterns over a Wide Range of ATP Concentrations. 
+Front Physiol. 2016;7:294. doi:10.3389/fphys.2016.00294.
+e2173146-6
+ S.-H. CHO ET AL.

@@ -1,0 +1,277 @@
+{
+  "created_at": "2026-09-05T12:46:36.887088+00:00",
+  "project_root": "E:\\Agriculture\\Antigravity Research\\benchmarks\\certification-v02\\benchmark-B\\arm3_areil",
+  "environment": {
+    "platform": "Windows-11-10.0.22631-SP0",
+    "python_version": "3.13.1",
+    "processor": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel"
+  },
+  "total_files_hashed": 53,
+  "files": [
+    {
+      "path": "analysis/results/strigolactone_lmm_results.json",
+      "bytes": 2554,
+      "sha256": "10be9b7f2d75bdf82fc9371ae1af4fe3f0f46c37e9ac09e6bb31146a70b2d1b7"
+    },
+    {
+      "path": "analysis/scripts/run_strigolactone_lmm.R",
+      "bytes": 21957,
+      "sha256": "cc96f3b0c038ecd2d178150dce43af38dec2e496175dabdbd3ce798a44d4f662"
+    },
+    {
+      "path": "ARM_STATE.json",
+      "bytes": 893,
+      "sha256": "940ac9cda819a7938bd0b3d2fbd41cd9058e3b1d6a75a0b8c3a21ec0a41a6770"
+    },
+    {
+      "path": "audits/citation_audit.jsonl",
+      "bytes": 9987,
+      "sha256": "99ec22f31c228a358837db4ea38880ab0dddca56a8a68b5febb390e15316414c"
+    },
+    {
+      "path": "data/raw/strigolactone_rsa_trial_data.csv",
+      "bytes": 46085,
+      "sha256": "8fd17954f2fad33fac303945eba8146e5bbf90f0fa97b8e1c51e1069bd4bb7d6"
+    },
+    {
+      "path": "execution_metadata.json",
+      "bytes": 552,
+      "sha256": "433aeea0eba082939c51f9584e344a9c8d075badc04d4f408b13cb12f8a19261"
+    },
+    {
+      "path": "figures/figure1_root_hair_epistasis_interaction.png",
+      "bytes": 59571,
+      "sha256": "c50ec0d4ea5359a470e51df6c2400f80f7ecf346ca31f5065e012c65b378ffed"
+    },
+    {
+      "path": "figures/figure2_primary_root_and_crown_roots.png",
+      "bytes": 69059,
+      "sha256": "3b43120bf212e4edac8ead3e342d28b7258dd049152ab9e8d850586e1d8a1cc2"
+    },
+    {
+      "path": "figures/figure3_model_diagnostics.png",
+      "bytes": 73292,
+      "sha256": "e0f282df9994cd57feb9872277214161986f94445757a3d241829f882200a4ae"
+    },
+    {
+      "path": "ledgers/CLAIM_LEDGER.jsonl",
+      "bytes": 4139,
+      "sha256": "09e5b192523aa329aa1a1fe13833ca325c0d8c8ac5fd96cfeaadaaff2117c1e7"
+    },
+    {
+      "path": "ledgers/CONTRADICTION_LEDGER.jsonl",
+      "bytes": 1593,
+      "sha256": "fa58fa855245662755b9758f11f3607b6e9eab1d5b013135a1421dc33034ea6c"
+    },
+    {
+      "path": "ledgers/EVIDENCE_LEDGER.jsonl",
+      "bytes": 7887,
+      "sha256": "87c1aaa4c8842d6ee97fa7abc1c95592ba9944d13a6d71405137e1aaf0d21bec"
+    },
+    {
+      "path": "ledgers/NOVELTY_LEDGER.jsonl",
+      "bytes": 829,
+      "sha256": "1a765a19f1335c07b8ab2a1fec160c8cb5bb25ac1582ecee6a6527eb9b584bdb"
+    },
+    {
+      "path": "ledgers/REVIEW_LEDGER.jsonl",
+      "bytes": 751,
+      "sha256": "125da78de5598b43edc9d060c9ec5e9d32842c56ed62a11c461cec55f270626a"
+    },
+    {
+      "path": "ledgers/SOURCE_REGISTRY.jsonl",
+      "bytes": 8705,
+      "sha256": "7e380f58380ad2f1ed828634affebbec731d2333b03910d41d4e1c22a692c1aa"
+    },
+    {
+      "path": "manuscript/figures/figure1_root_hair_epistasis_interaction.png",
+      "bytes": 59571,
+      "sha256": "c50ec0d4ea5359a470e51df6c2400f80f7ecf346ca31f5065e012c65b378ffed"
+    },
+    {
+      "path": "manuscript/figures/figure2_primary_root_and_crown_roots.png",
+      "bytes": 69059,
+      "sha256": "3b43120bf212e4edac8ead3e342d28b7258dd049152ab9e8d850586e1d8a1cc2"
+    },
+    {
+      "path": "manuscript/figures/figure3_model_diagnostics.png",
+      "bytes": 73292,
+      "sha256": "e0f282df9994cd57feb9872277214161986f94445757a3d241829f882200a4ae"
+    },
+    {
+      "path": "manuscript/manuscript.docx",
+      "bytes": 187330,
+      "sha256": "608cafc4a5301c672bc8c16c84c1774353f795aa05ef3a7528f29595daa6413e"
+    },
+    {
+      "path": "manuscript/manuscript.html",
+      "bytes": 84259,
+      "sha256": "521997dcf8ed8224da5d202a9823bb32cd5699b8eb5596ff26d63ed02c62f04f"
+    },
+    {
+      "path": "manuscript/manuscript.qmd",
+      "bytes": 29000,
+      "sha256": "1870477779b6688e53143d7e09733402793be9fe9f03acc9affb3c248a783124"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css",
+      "bytes": 431263,
+      "sha256": "b50905abc3c4f5beb8dd568cf2793f49ca0aaced72810e1388165a179f4b2e98"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-icons.css",
+      "bytes": 99464,
+      "sha256": "01253947f506e030589e4f33fc7ec7ccdfb9505e2e596dedf16445f12e243c0a"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-icons.woff",
+      "bytes": 180288,
+      "sha256": "f55513b7b591cb84a3b87ff0e34ea24d4831d6fedc22e54b911ca64b5b544a15"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap.min.js",
+      "bytes": 80668,
+      "sha256": "d2ea6c1e0cabca20d18e924b25a1cd0187c38ba7c33f60ab06e1b0402b9bcdb5"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/clipboard/clipboard.min.js",
+      "bytes": 9160,
+      "sha256": "e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/anchor.min.js",
+      "bytes": 5888,
+      "sha256": "69098e105d990f834cff1b7886d873444228ff63c590e5ff834d568f1115ed8b"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/popper.min.js",
+      "bytes": 20084,
+      "sha256": "4d50586b184724d39ddfe0f6582861664eddd5e806e5a79e0dbaa832361414d0"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css",
+      "bytes": 3678,
+      "sha256": "4973a76eb0de3b99bc67687ab2ecea249e552bae328dd8a952dad89732e9ec18"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/quarto.js",
+      "bytes": 26830,
+      "sha256": "4ecb60f215d96b2af0fe9d985c71e32863b1c993a64725a416ac18b5991c59c6"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tabsets/tabsets.js",
+      "bytes": 2882,
+      "sha256": "a9c226bf70e82eaf5476f619cecfb70b4446b87ce4d1634d6404b0b2ba006d15"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tippy.css",
+      "bytes": 1409,
+      "sha256": "5969f497d9158d7682f8219c6f13fa67269cdf5bf50a3931d95327151dee5678"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tippy.umd.min.js",
+      "bytes": 24033,
+      "sha256": "41181eeec6d7ba64cb9165f0e95563e34e026bde79e7c13aeec83270429b6fae"
+    },
+    {
+      "path": "manuscript/references.bib",
+      "bytes": 8948,
+      "sha256": "142ae57f226289a2939fa205cbbdeadecb1c57fd9ba805dce0dad2b1709f83ce"
+    },
+    {
+      "path": "manuscript.md",
+      "bytes": 34618,
+      "sha256": "b5d9079714c1b803c07dea6166a062b9d185c490ff55b4b6cdc51c9ddaf8dacf"
+    },
+    {
+      "path": "raw_prompt.txt",
+      "bytes": 1702,
+      "sha256": "1cdcdb0beb71506b4270819d32bdb40f375113dc1d98947eabc4245de8be1d5b"
+    },
+    {
+      "path": "research/build_areil_ledgers.py",
+      "bytes": 27356,
+      "sha256": "4155084989df020f64426548462169e408e4694dcc386b8226beec5b52aca7cc"
+    },
+    {
+      "path": "research/check_core_dois.py",
+      "bytes": 1811,
+      "sha256": "fc1300ab97994568ed0df11ee5dd6170cd839f47679d136f65869aeb3e15f7a4"
+    },
+    {
+      "path": "research/crossref_verified_dois.json",
+      "bytes": 8478,
+      "sha256": "e21cd125e9ceed3adee6af35ea08649efd7f19da53fb061003fa730cbe118137"
+    },
+    {
+      "path": "research/make_bib.py",
+      "bytes": 10871,
+      "sha256": "c2e1fd6234d06ba262be8aa12531af784677c67c31cc459bc40cfcd6a510c03a"
+    },
+    {
+      "path": "research/query_apis.py",
+      "bytes": 6464,
+      "sha256": "4f0d1506759cee129f47a610d73baaed28a68fc2451881ecacf4941000c0ee70"
+    },
+    {
+      "path": "research/search_arite_d10.py",
+      "bytes": 1077,
+      "sha256": "21e027a8d73a4f8f6be66f0c4cf24547722e4b67e27a8e248b288608e93132e6"
+    },
+    {
+      "path": "research/search_d10.py",
+      "bytes": 1104,
+      "sha256": "413c63249cfd193703de72ad9f6f060e4fa41a1176ceb843a83029ea44dcebaf"
+    },
+    {
+      "path": "research/search_exact_dois.py",
+      "bytes": 4186,
+      "sha256": "e2e8c0d530717aba900870c8099d8a6e20519b248830e85a63c548014fa1a476"
+    },
+    {
+      "path": "research/search_proteins.py",
+      "bytes": 2299,
+      "sha256": "6bc0af1bbd044e7ad811ff4bd19cf85fd2cbb4f1d8c1aef5457975480adde6e4"
+    },
+    {
+      "path": "research/search_pubmed_arite.py",
+      "bytes": 1190,
+      "sha256": "9c68322a648d9498e3a3e726e680f1d15d0141076b6ab70e96bbdb19f5c86f90"
+    },
+    {
+      "path": "research/search_ruyter_spira.py",
+      "bytes": 1182,
+      "sha256": "3edf9b8ab0e4ed8b30838250e399ec205c025a3e761063d8e0cafec2a9e9830e"
+    },
+    {
+      "path": "research/search_ruyter_spira2.py",
+      "bytes": 1181,
+      "sha256": "216a553bd253c4904ed4060ef906ff5ed62b640af1fc7dc81ebe930651ca1934"
+    },
+    {
+      "path": "research/search_sun_papers.py",
+      "bytes": 1027,
+      "sha256": "349da77203b4be1ad193b67979f5856541e2b99b23ec1fc198f7b8bc786e2766"
+    },
+    {
+      "path": "research/search_sun_rice.py",
+      "bytes": 1076,
+      "sha256": "2d66705956986b917d0ab4772365bcbf176229b7d9e37340eb71a2b1af216d65"
+    },
+    {
+      "path": "research/uniprot_proteins.json",
+      "bytes": 1700,
+      "sha256": "dc88f3d81c8ef99923a7b613226581712b6c65b9d17d118ea906a5ec0a3eb090"
+    },
+    {
+      "path": "research/verified_sources.json",
+      "bytes": 9612,
+      "sha256": "a684cad9927b78c1944698d182308c06713d0b9d5e4c8948c01be1b48e0929d1"
+    },
+    {
+      "path": "research/verify_all_18_dois.py",
+      "bytes": 1666,
+      "sha256": "4b4e31d846360bcfd4232b82e9b5d492fe6832f524342f5a00b37af2c08d8e2c"
+    }
+  ]
+}

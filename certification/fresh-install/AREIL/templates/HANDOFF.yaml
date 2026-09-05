@@ -1,0 +1,15 @@
+project: "<name>"
+goal: "<goal>"
+current_stage: "init"
+question_version: null
+completed: []
+in_progress: []
+pending: []
+decisions: []
+open_claims: []
+open_review_findings: []
+known_failures: []
+do_not_retry: []
+authoritative_artifacts: []
+next_critical_path: []
+last_verified_at: null

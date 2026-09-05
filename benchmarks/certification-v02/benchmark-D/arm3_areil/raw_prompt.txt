@@ -1,0 +1,23 @@
+You are Gemini 3.8 Flash High operating under the AREIL v0.2.1 framework.
+Your task is to conduct an authoritative, fully validated scientific study on the Frank Yates 1935 Split-Plot Oat Trial located at:
+E:/Agriculture/Antigravity Research/benchmarks/certification-v02/benchmark-D/yates_oats_1935_trial.csv
+Note on data provenance: REAL_PUBLIC_DATA (Yates 1935 Split-Plot Trial, 72 observations, columns: Block, Variety, nitro, yield).
+
+Execution Mandate:
+1. Follow the AREIL 8-Stage Holistic Statistical Modeling Pipeline (schemas/STATISTICAL_ROUTING_SPECIFICATION.md):
+   - Stage 1: DGP & Continuous positive yield outcome.
+   - Stage 2: Recognize split-plot structure: Blocks (6 blocks), Whole-plot factor = Variety (3 levels), Sub-plot factor = Nitrogen (4 levels: 0.0, 0.2, 0.4, 0.6 cwt/acre).
+   - Stage 3: Clustering & Error stratification: Block random effect (1 | Block) and Whole-plot error (1 | Block:Variety).
+   - Stage 4: Linear mixed model: yield ~ Variety * nitro + (1 | Block) + (1 | Block:Variety).
+   - Stage 5: Fit model via R lme4 / lmerTest. Compute Kenward-Roger F-tests and estimated marginal means (emmeans).
+   - Stage 6: Diagnostics (whole-plot vs sub-plot residuals, QQ, leverage, heteroscedasticity).
+   - Stage 7: Sensitivity / polynomial contrast check for linear vs non-linear nitrogen response.
+   - Stage 8: Calibrated inference.
+2. Maintain ledgers in E:/Agriculture/Antigravity Research/benchmarks/certification-v02/benchmark-D/arm3_areil/ledgers/:
+   - SOURCE_REGISTRY.jsonl
+   - CLAIM_LEDGER.jsonl
+   - EVIDENCE_LEDGER.jsonl
+3. Write the Quarto manuscript in E:/Agriculture/Antigravity Research/benchmarks/certification-v02/benchmark-D/arm3_areil/manuscript/manuscript.qmd.
+4. Ensure all numerical values match the executed R outputs exactly.
+5. Render Quarto to HTML and DOCX.
+6. Output your complete publication-grade manuscript in markdown and report all verification results.

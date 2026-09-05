@@ -1,0 +1,35 @@
+{
+  "accuracy_percentage": 100.0,
+  "passed_points": 8,
+  "total_points": 8,
+  "reconstruction": {
+    "project_objective": "Evaluate oat grain yield response to nitrogen fertilizer under split-plot / RCBD design",
+    "current_stage": "FRESH_INSTALL_CERTIFIED",
+    "completed_stages": [
+      "INSTALLATION",
+      "LEDGER_INITIALIZATION",
+      "SELF_TEST",
+      "QUARTO_RENDER"
+    ],
+    "authoritative_data": [
+      "10.2307/2983638"
+    ],
+    "active_claims": [
+      "CLM-DUMMY-001"
+    ],
+    "unresolved_contradictions": [],
+    "blockers": [],
+    "next_logical_action": "Execute statistical analysis in analysis/scripts/ and update manuscript"
+  },
+  "checks": {
+    "objective_reconstructed": true,
+    "stage_matches_handoff": true,
+    "completed_stages_grounded": true,
+    "sources_traced": true,
+    "claims_traced": true,
+    "contradictions_checked": true,
+    "blockers_accurate": true,
+    "next_action_falsifiable": true
+  },
+  "status": "PASS"
+}

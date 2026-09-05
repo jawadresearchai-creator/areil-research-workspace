@@ -1,0 +1,17 @@
+---
+title: "End-to-End Zotero and Better BibTeX Pipeline Verification"
+author: "AREIL Certification Engine"
+date: "2026-09-05"
+format:
+  docx:
+    toc: false
+  html:
+    toc: false
+bibliography: references.bib
+---
+
+# Introduction
+
+In agricultural science, randomized block and split-plot designs provide foundational control over spatial heterogeneity [@yates1935complex].
+
+# References

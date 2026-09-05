@@ -1,0 +1,14 @@
+{
+  "arm": "ARM_1_RAW_GEMINI",
+  "benchmark": "BENCHMARK_C",
+  "data_classification": "SIMULATED_BENCHMARK_DATA",
+  "manuscript_sha256": "DBFE7B6F7F2AB4C721C1667F9A7FE758E49D0F142239BFD05B2F4CDB27F4B6B7",
+  "tool_calls_allowed": 0,
+  "tool_calls_executed": 0,
+  "tools_used": [],
+  "execution_time_sec": 8.9,
+  "code_executed": false,
+  "statistical_model": "Naive Unblocked One-Way ANOVA (Mental Arithmetic / Ungrounded)",
+  "fatal_statistical_defects": 1,
+  "consistency_defects": 3
+}

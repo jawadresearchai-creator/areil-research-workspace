@@ -1,0 +1,137 @@
+- benchmark: Benchmark A (eATP / P2K1 / FERONIA)
+  arm: ARM 1 (Raw Gemini)
+  model: Gemini 3.8 Flash High
+  classification: MODEL_EXECUTION_VERIFIED_SUBAGENT
+  subagent_id: 34e171de-0eab-4ed9-9ebd-6bc5a5710f93
+  provenance: Genuine subagent run in raw inference mode (zero external tools)
+  tools_executed: 0
+  manuscript_path: benchmarks/certification-v02/benchmark-A/arm1_raw/manuscript.md
+  manuscript_sha256: 14FF1406E29B390EEF4C1491C0FE7EB085F140802412FA46942AE0A78F17C581
+  raw_prompt_sha256: FILE_NOT_FOUND
+  tool_call_log: benchmarks/certification-v02/benchmark-A/arm1_raw/tool_call_log.jsonl
+- benchmark: Benchmark A (eATP / P2K1 / FERONIA)
+  arm: ARM 2 (Tool-Equipped Gemini)
+  model: Gemini 3.8 Flash High
+  classification: MODEL_EXECUTION_VERIFIED_SUBAGENT
+  subagent_id: 87d5c727-a98e-4ca5-8c1d-9c60e7b16455
+  provenance: Genuine subagent run equipped with Python/Crossref/PubMed tools
+  tools_executed: 33
+  manuscript_path: benchmarks/certification-v02/benchmark-A/arm2_tools/manuscript.md
+  manuscript_sha256: F54663BAA32A550820C0A8DA5E0E6095EF37DE7E6670F8FEF4DC0EE91889554A
+  raw_prompt_sha256: 953EB87008D839C16514947BEC8FE350C7D855244854D1ACFF4C9436F39AAD20
+  tool_call_log: benchmarks/certification-v02/benchmark-A/arm2_tools/tool_call_log.jsonl
+- benchmark: Benchmark A (eATP / P2K1 / FERONIA)
+  arm: ARM 3 (Gemini + AREIL v0.2.1)
+  model: Gemini 3.8 Flash High
+  classification: MODEL_EXECUTION_VERIFIED_SUBAGENT
+  subagent_id: 83d81ce3-f0c3-4662-8872-33f394b9e81c
+  provenance: AREIL orchestrated execution using ledgers, Crossref API audit, and
+    Quarto render
+  tools_executed: 87
+  manuscript_path: benchmarks/certification-v02/benchmark-A/arm3_areil/raw_model_output.md
+  manuscript_sha256: A4F0267171E8760F3DD3C603A640CB1D308CB2F41B24C1ED0575D644CAD879EA
+  raw_prompt_sha256: 079ADB45687AC35AD0BF5AF5AE1CDC607012E2DAA33EEA37E77FC7CE1FBF9F45
+  tool_call_log: benchmarks/certification-v02/benchmark-A/arm3_areil/tool_call_log.jsonl
+- benchmark: Benchmark B (Strigolactones & AM Symbiosis)
+  arm: ARM 1 (Raw Gemini)
+  model: Gemini 3.8 Flash High
+  classification: MODEL_EXECUTION_VERIFIED_SUBAGENT
+  subagent_id: c215f880-45a5-475a-a3ef-2ffa430fa648
+  provenance: Genuine subagent run in raw inference mode (zero external tools)
+  tools_executed: 0
+  manuscript_path: benchmarks/certification-v02/benchmark-B/arm1_raw/manuscript.md
+  manuscript_sha256: 33B4DD69A2E61D8C3D06D2A0E11943F8F63442C9C42B8E1E480D5F9AF8F65EDC
+  raw_prompt_sha256: 756EF310FFC07B493615A56AD1D7E08CA9EA98868DD44C388E213FA83A70E95F
+  tool_call_log: benchmarks/certification-v02/benchmark-B/arm1_raw/tool_call_log.jsonl
+- benchmark: Benchmark B (Strigolactones & AM Symbiosis)
+  arm: ARM 2 (Tool-Equipped Gemini)
+  model: Gemini 3.8 Flash High
+  classification: MODEL_EXECUTION_VERIFIED_SUBAGENT
+  subagent_id: daef5b17-6df1-40a7-8676-e85c07990ced
+  provenance: Genuine subagent run equipped with Python/Crossref/PubMed tools
+  tools_executed: 20
+  manuscript_path: benchmarks/certification-v02/benchmark-B/arm2_tools/manuscript.md
+  manuscript_sha256: C6C59FCBF48FF216D655353B111D5049CEE8553AF93B3FC47FD2A69922954645
+  raw_prompt_sha256: 2A4FD562478DE18B600D25B38AB71ED8995F52953B5187ACFDD4CED2784FCD8E
+  tool_call_log: benchmarks/certification-v02/benchmark-B/arm2_tools/tool_call_log.jsonl
+- benchmark: Benchmark B (Strigolactones & AM Symbiosis)
+  arm: ARM 3 (Gemini + AREIL v0.2.1)
+  model: Gemini 3.8 Flash High
+  classification: MODEL_EXECUTION_VERIFIED_SUBAGENT
+  subagent_id: 3b49a144-d99d-4b95-8499-47edd4577d84
+  provenance: AREIL orchestrated execution with 18 Crossref verified sources, 74 tracked
+    metrics, and Quarto render
+  tools_executed: 142
+  manuscript_path: benchmarks/certification-v02/benchmark-B/arm3_areil/raw_model_output.md
+  manuscript_sha256: C8A1542D2DA8E45EC885B6C8C68D6971DFB6CA650C7B700CBD9FF88C1EB1CAB7
+  raw_prompt_sha256: 1CDCDB0BEB71506B4270819D32BDB40F375113DC1D98947EABC4245DE8BE1D5B
+  tool_call_log: benchmarks/certification-v02/benchmark-B/arm3_areil/tool_call_log.jsonl
+- benchmark: Benchmark C (RCBD Root Growth - Simulation)
+  arm: ARM 1 (Raw Gemini)
+  model: Gemini 3.8 Flash High
+  classification: MODEL_EXECUTION_VERIFIED_SUBAGENT
+  subagent_id: 045c13b1-69af-40c8-9335-40703fc75910
+  provenance: Genuine subagent run in raw inference mode (zero external tools)
+  tools_executed: 0
+  manuscript_path: benchmarks/certification-v02/benchmark-C/arm1_raw/manuscript.md
+  manuscript_sha256: 98418FECC0089F1D16912D1DA5D74D040152BD191CF15D65E6CC14883B71E329
+  raw_prompt_sha256: 3AEC2C225F95D0FCEC31EE5A7CF5A6ECD08EFC60EFF11500D1A2BE3EEC5051AF
+  tool_call_log: benchmarks/certification-v02/benchmark-C/arm1_raw/tool_call_log.jsonl
+- benchmark: Benchmark C (RCBD Root Growth - Simulation)
+  arm: ARM 2 (Tool-Equipped Gemini)
+  model: Gemini 3.8 Flash High
+  classification: MODEL_EXECUTION_VERIFIED_SUBAGENT
+  subagent_id: c18975fe-e859-47db-b68d-fe37570dee43
+  provenance: Genuine subagent run executing Python/scipy/statsmodels analysis & figures
+  tools_executed: 15
+  manuscript_path: benchmarks/certification-v02/benchmark-C/arm2_tools/manuscript.md
+  manuscript_sha256: E8C4B9ADE3A95E43642CB249ADE49A5EDFD3CAD3AFE6CE17ACD6F15068334FC9
+  raw_prompt_sha256: 8B23E03AADE14A215F98A12ADDBB7B944A7A69B160335BDA8B8C2545A0072A5C
+  tool_call_log: benchmarks/certification-v02/benchmark-C/arm2_tools/tool_call_log.jsonl
+- benchmark: Benchmark C (RCBD Root Growth - Simulation)
+  arm: ARM 3 (Gemini + AREIL v0.2.1)
+  model: Gemini 3.8 Flash High
+  classification: MODEL_EXECUTION_VERIFIED_SUBAGENT
+  subagent_id: 1fe8aa28-bdec-482c-a3da-76ebee6a33d3
+  provenance: AREIL orchestrated execution using 8-stage pipeline, R lme4, Kenward-Roger
+    df, ledgers, Quarto render
+  tools_executed: 101
+  manuscript_path: benchmarks/certification-v02/benchmark-C/arm3_areil/raw_model_output.md
+  manuscript_sha256: 345359EC8A28B14A0CC1B16834543888BC76B5FA108BC7EE9207BB4321F2EBFF
+  raw_prompt_sha256: C6A6113487B83BD0EE0D75E92EAB62CAAB8D81552B4513C9DF5A0E418ECECC65
+  tool_call_log: benchmarks/certification-v02/benchmark-C/arm3_areil/tool_call_log.jsonl
+- benchmark: Benchmark D (Yates 1935 Oats - Real Public Data)
+  arm: ARM 1 (Raw Gemini)
+  model: Gemini 3.8 Flash High
+  classification: MODEL_EXECUTION_VERIFIED_SUBAGENT
+  subagent_id: eeddacc5-7dad-44a0-8e24-ea0c72b0e0c6
+  provenance: Genuine subagent run in raw parametric mode (zero external tools)
+  tools_executed: 0
+  manuscript_path: benchmarks/certification-v02/benchmark-D/arm1_raw/manuscript.md
+  manuscript_sha256: 958B58825F1BD13E36729DC51A1593C95102EA33EBB1994344FC8483CB1897F4
+  raw_prompt_sha256: F8FA89154519D704AA277529183057C66350CC7ED9ADDB70E3A716E1BCA03C9B
+  tool_call_log: benchmarks/certification-v02/benchmark-D/arm1_raw/tool_call_log.jsonl
+- benchmark: Benchmark D (Yates 1935 Oats - Real Public Data)
+  arm: ARM 2 (Tool-Equipped Gemini)
+  model: Gemini 3.8 Flash High
+  classification: MODEL_EXECUTION_VERIFIED_SUBAGENT
+  subagent_id: 97fcfb01-715a-4fc5-b15c-45fe61459521
+  provenance: Genuine subagent run executing Python/R statistical analysis on Yates
+    dataset
+  tools_executed: 31
+  manuscript_path: benchmarks/certification-v02/benchmark-D/arm2_tools/manuscript.md
+  manuscript_sha256: 020AE1A96BE65A1981FB25CEEB5C86D7ABAA5420603F013D1A9751E4624DC614
+  raw_prompt_sha256: 08B968A22ED21A30D58CDA1B61C69E50445E188C7A6D74AEB48765CB20F32176
+  tool_call_log: benchmarks/certification-v02/benchmark-D/arm2_tools/tool_call_log.jsonl
+- benchmark: Benchmark D (Yates 1935 Oats - Real Public Data)
+  arm: ARM 3 (Gemini + AREIL v0.2.1)
+  model: Gemini 3.8 Flash High
+  classification: MODEL_EXECUTION_VERIFIED_SUBAGENT
+  subagent_id: 3f9807e3-e28a-47ac-bf4a-18f7d8db5d95
+  provenance: AREIL orchestrated execution using 8-stage statistical pipeline, R lme4,
+    ledgers, Quarto render
+  tools_executed: 36
+  manuscript_path: benchmarks/certification-v02/benchmark-D/arm3_areil/raw_model_output.md
+  manuscript_sha256: 039BA2E02CECE781F05E0B0FE6A31D25715ADA2D23CD1A37EAB648898B0CB136
+  raw_prompt_sha256: 55C60920B022DBD40316C111CA4CA54F94005781BC08E6FBB0CBC8080A4CF0F3
+  tool_call_log: benchmarks/certification-v02/benchmark-D/arm3_areil/tool_call_log.jsonl

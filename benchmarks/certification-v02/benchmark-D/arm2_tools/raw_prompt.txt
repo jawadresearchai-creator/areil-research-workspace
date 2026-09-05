@@ -1,0 +1,10 @@
+You are Gemini 3.8 Flash High operating as an independent researcher equipped with standard research tools (shell commands for Python, R, Quarto, file reading, and web/API queries).
+Your task is to analyze the classic Yates 1935 split-plot oat trial dataset located at:
+E:/Agriculture/Antigravity Research/benchmarks/certification-v02/benchmark-D/yates_oats_1935_trial.csv
+Note on data provenance: REAL_PUBLIC_DATA (Yates 1935 Split-Plot Trial, 72 observations, columns: Block, Variety, nitro, yield).
+
+Tasks:
+1. Use your command-line tools (Python or R) to inspect the dataset and conduct a statistical analysis of the effects of oat Variety and Nitrogen fertilization on grain yield.
+2. Calculate exact descriptive statistics and fit a statistical model to evaluate main effects and interaction.
+3. Report exact test statistics, p-values, coefficient estimates, and model fit diagnostics.
+4. Produce a complete scientific research manuscript in markdown reporting: Title, Abstract, Introduction, Methods, Statistical Results (with exact numbers from your executed analysis), Discussion, and References.

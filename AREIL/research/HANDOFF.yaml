@@ -1,0 +1,36 @@
+handoff_version: "2.0.0"
+date_updated: "2026-09-05T16:15:00Z"
+authoritative_archive: "E:\Agriculture\Antigravity Research\AREIL_v0.1-research.zip"
+current_distribution: "E:\Agriculture\Antigravity Research\AREIL_v0.2-bound.zip"
+root_workspace: "E:\Agriculture\Antigravity Research\AREIL"
+
+system_state:
+  installation: "COMPLETE"
+  hardening: "VALIDATED"
+  self_test_status: "23_OF_23_PASSED"
+  preflight_status: "PASSED"
+  r_toolchain: "R-4.6.1_VERIFIED"
+  quarto_toolchain: "QUARTO_1.10.18_VERIFIED"
+  python_venv: "AREIL_VENV_60_PACKAGES_LOCKED"
+  zotero_integration: "ZOTERO_10_BBT_9_INSTALLED"
+
+benchmarks_completed:
+  - id: "BENCHMARK_A"
+    topic: "eATP, P2K1/DORN1 and FERONIA Signaling"
+    status: "COMPLETE"
+    control_doi_validity: "0.0%"
+    areil_doi_validity: "100.0%"
+  - id: "BENCHMARK_B"
+    topic: "Strigolactones, Root Architecture, and AM Fungi"
+    status: "COMPLETE"
+    control_doi_validity: "50.0%"
+    areil_doi_validity: "100.0%"
+  - id: "BENCHMARK_C"
+    topic: "Randomized Complete Block Root Growth Trial"
+    status: "COMPLETE"
+    control_stats: "Naive unblocked ANOVA (ICC 0.536 ignored)"
+    areil_stats: "Linear mixed-effects model lmer (normal residuals, Satterthwaite df)"
+
+reproducibility:
+  manifest_generated: true
+  all_benchmarks_hashed: true

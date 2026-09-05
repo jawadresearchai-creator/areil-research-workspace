@@ -1,0 +1,34 @@
+﻿{
+    "data.csv":  {
+                     "bytes":  277,
+                     "sha256":  "0D8599209980F55D28C337FD80A40A7C2A521F8C6D0337B9EF028F19D2AFC188"
+                 },
+    "analyze.py":  {
+                       "bytes":  1516,
+                       "sha256":  "B8CC343523D08F7E68DFBB75D42164CDCFA605364EEB5AEE05D4B82D49376E9E"
+                   },
+    "results.json":  {
+                         "bytes":  173,
+                         "sha256":  "3452B0C4651D7420819872C0D607EAFE50822C232BE3B108DCC259D4B95E8AF6"
+                     },
+    "figure1.png":  {
+                        "bytes":  23711,
+                        "sha256":  "35DC7B5C041C1BE9FBD4C1686420484F3F5FE9ED10416DC774873536221CAE8A"
+                    },
+    "references.bib":  {
+                           "bytes":  305,
+                           "sha256":  "E0C294BD456A8ABF20375DB56D9A2E22B11E06ADAAC3C4DB8935E7C4C61D9B0E"
+                       },
+    "manuscript.qmd":  {
+                           "bytes":  1316,
+                           "sha256":  "C7E2B6B532969D10B9931B6D7F62C39FB9B44B0ACDDE0A845C8BA0C239B6E185"
+                       },
+    "manuscript.docx":  {
+                            "bytes":  32723,
+                            "sha256":  "013BC8C2A699833E81CD55197BB33E0707B69E02876B8E6472CD7B91AD46B127"
+                        },
+    "manuscript.html":  {
+                            "bytes":  20471,
+                            "sha256":  "F8BECEB104DD0EDB4D82B60FE9836D5D9297637FB1619868BC02EB4399D6E87B"
+                        }
+}

@@ -1,0 +1,38 @@
+{
+  "P2K1/DORN1": {
+    "locus": "AT5G60300",
+    "accession": "Q9LSR8",
+    "protein_name": "L-type lectin-domain containing receptor kinase I.9",
+    "length_aa": 766
+  },
+  "FERONIA": {
+    "locus": "AT3G51550",
+    "accession": "Q9SCZ4",
+    "protein_name": "Receptor-like protein kinase FERONIA",
+    "length_aa": 895
+  },
+  "RBOHD": {
+    "locus": "AT5G47910",
+    "accession": "Q9FIJ0",
+    "protein_name": "Respiratory burst oxidase homolog protein D",
+    "length_aa": 921
+  },
+  "APY1": {
+    "locus": "AT3G04080",
+    "accession": "Q9SQG2",
+    "protein_name": "Apyrase 1",
+    "length_aa": 471
+  },
+  "APY2": {
+    "locus": "AT5G19810",
+    "accession": "F4K2M4",
+    "protein_name": "Proline-rich extensin-like family protein",
+    "length_aa": 249
+  },
+  "RRFT1/ERF72": {
+    "locus": "AT4G39780",
+    "accession": "O65665",
+    "protein_name": "Ethylene-responsive transcription factor ERF060",
+    "length_aa": 272
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "total_pairs_evaluated": 28,
+  "arm_breakdown": {
+    "ARM_1_RAW": {
+      "SUPPORTED": 1,
+      "PARTIALLY_SUPPORTED": 1,
+      "NOT_SUPPORTED": 7,
+      "SOURCE_INACCESSIBLE": 0,
+      "AMBIGUOUS": 0,
+      "TOTAL": 9
+    },
+    "ARM_2_TOOLS": {
+      "SUPPORTED": 8,
+      "PARTIALLY_SUPPORTED": 2,
+      "NOT_SUPPORTED": 0,
+      "SOURCE_INACCESSIBLE": 0,
+      "AMBIGUOUS": 0,
+      "TOTAL": 10
+    },
+    "ARM_3_AREIL": {
+      "SUPPORTED": 9,
+      "PARTIALLY_SUPPORTED": 0,
+      "NOT_SUPPORTED": 0,
+      "SOURCE_INACCESSIBLE": 0,
+      "AMBIGUOUS": 0,
+      "TOTAL": 9
+    }
+  },
+  "evaluated_pairs": [
+    {
+      "pair_id": "ARM1-A-01",
+      "arm": "ARM_1_RAW",
+      "benchmark": "Benchmark A",
+      "claim": "P2K1/DORN1 binds extracellular ATP with high affinity Kd ~ 45.7 nM to initiate plant signaling.",
+      "cited_ref": "Choi et al. (2014) DOI: 10.1126/science.1245159",
+      "primary_location": "N/A - DOI returns HTTP 404 (Hallucinated pre-publication ID)",
+      "status": "NOT_SUPPORTED",
+      "rationale": "Cited DOI does not exist in Crossref; link broken."
+    },
+    {
+      "pair_id": "ARM1-A-02",
+      "arm": "ARM_1_RAW",
+      "benchmark": "Benchmark A",
+      "claim": "Extracellular ATP acts as a damage-associated molecular pattern in plants.",
+      "cited_ref": "Tanaka et al. (2014) DOI: 10.4161/psb.28312",
+      "primary_location": "N/A - DOI returns HTTP 404",
+      "status": "NOT_SUPPORTED",
+      "rationale": "Cited DOI does not exist in Crossref."
+    },
+    {
+      "pair_id": "ARM1-A-03",
+      "arm": "ARM_1_RAW",
+      "benchmark": "Benchmark A",
+      "claim": "FERONIA maintains cell wall integrity during mechanical stress and interacts with P2K1.",
+      "cited_ref": "Feng et al. (2018) DOI: 10.1038/s41467-018-06927-7",
+      "primary_location": "N/A - DOI returns HTTP 404",
+      "status": "NOT_SUPPORTED",
+      "rationale": "Cited DOI does not exist in Crossref."
+    },
+    {
+      "pair_id": "ARM1-A-04",
+      "arm": "ARM_1_RAW",
+      "benchmark": "Benchmark A",
+      "claim": "FERONIA phosphorylation of P2K1 modulates plant purinergic signaling.",
+      "cited_ref": "Ruan et al. (2020) DOI: 10.1016/j.molp.2020.08.005",
+      "primary_location": "Mol Plant (2020) 13:1278 (Actual DOI: 10.1016/j.molp.2020.09.020)",
+      "status": "NOT_SUPPORTED",
+      "rationale": "DOI resolves to an insect chemistry paper ('Phenylpropanoid Derivatives'), completely unrelated to plant FERONIA."
+    },
+    {
+      "pair_id": "ARM1-A-05",
+      "arm": "ARM_1_RAW",
+      "benchmark": "Benchmark A",
+      "claim": "Extracellular ATP modulates plant cell wall extensibility.",
+      "cited_ref": "Cao et al. (2014) DOI: 10.1016/j.cub.2014.04.032",
+      "primary_location": "Curr Biol (2014) 24:89 (Actual DOI: 10.1016/j.cub.2014.01.040)",
+      "status": "NOT_SUPPORTED",
+      "rationale": "DOI resolves to a Drosophila embryonic morphogenesis paper ('Zelda Potentiates Morphogen Activity')."
+    },
+    {
+      "pair_id": "ARM1-B-01",
+      "arm": "ARM_1_RAW",
+      "benchmark": "Benchmark B",
+      "claim": "PHR2 binds P1BS cis-elements in D27, CCD7, and CCD8 promoters to drive strigolactone synthesis under low Pi.",
+      "cited_ref": "Umehara et al. (2008) DOI: 10.1038/nature07272",
+      "primary_location": "Nature 455:195-200, Fig 2 & 4",
+      "status": "PARTIALLY_SUPPORTED",
+      "rationale": "Umehara 2008 identified strigolactones as shoot branching inhibitors and CCD7/8 roles, but PHR2 transcriptional regulation was established by later rice phosphate literature."
+    },
+    {
+      "pair_id": "ARM1-B-02",
+      "arm": "ARM_1_RAW",
+      "benchmark": "Benchmark B",
+      "claim": "Exuded strigolactones induce intense hyphal branching in arbuscular mycorrhizal fungi.",
+      "cited_ref": "Akiyama et al. (2005) DOI: 10.1038/nature03708",
+      "primary_location": "Nature 435:824 (Actual DOI: 10.1038/nature03608)",
+      "status": "NOT_SUPPORTED",
+      "rationale": "Cited DOI 10.1038/nature03708 resolves to a physics comment ('Glass transition in hyperquenched water?')."
+    },
+    {
+      "pair_id": "ARM1-B-03",
+      "arm": "ARM_1_RAW",
+      "benchmark": "Benchmark B",
+      "claim": "D14 interacts with D3 to promote ubiquitination and degradation of D53 transcriptional repressor.",
+      "cited_ref": "Jiang et al. (2013) DOI: 10.1038/nature12870",
+      "primary_location": "Nature 504:401-405, Fig 1-3",
+      "status": "SUPPORTED",
+      "rationale": "Accurate DOI and authentic experimental support for D53 degradation, though unflagged corrigendum."
+    },
+    {
+      "pair_id": "ARM1-B-04",
+      "arm": "ARM_1_RAW",
+      "benchmark": "Benchmark B",
+      "claim": "SL-induced root hair elongation operates completely downstream through ethylene biosynthesis, with strict linear epistasis.",
+      "cited_ref": "Kapulnik et al. (2011) DOI: 10.1093/jxb/erq422",
+      "primary_location": "J Exp Bot 62:2915 (Actual DOI: 10.1093/jxb/erq432)",
+      "status": "NOT_SUPPORTED",
+      "rationale": "Cited DOI resolves to a barley salinity paper; additionally, claiming strict linear epistasis is refuted by subsequent genetics."
+    },
+    {
+      "pair_id": "ARM2-A-01",
+      "arm": "ARM_2_TOOLS",
+      "benchmark": "Benchmark A",
+      "claim": "P2K1 contains an extracellular lectin domain that binds ATP with high affinity Kd ~ 45.7 nM.",
+      "cited_ref": "Choi et al. (2014) DOI: 10.1126/science.343.6168.290",
+      "primary_location": "Science 343:290, Fig 1D, Table S1",
+      "status": "SUPPORTED",
+      "rationale": "Directly confirmed in Choi et al. 2014 binding assays (microscale thermophoresis and radioligand binding)."
+    },
+    {
+      "pair_id": "ARM2-A-02",
+      "arm": "ARM_2_TOOLS",
+      "benchmark": "Benchmark A",
+      "claim": "Ligand binding to P2K1 triggers receptor dimerization and rapid apoplastic Ca2+ influx within seconds.",
+      "cited_ref": "Tanaka et al. (2014) DOI: 10.4161/psb.28420",
+      "primary_location": "Plant Signal Behav 9:e28420, Fig 2",
+      "status": "SUPPORTED",
+      "rationale": "Directly substantiated by aequorin luminescence calcium imaging."
+    },
+    {
+      "pair_id": "ARM2-A-03",
+      "arm": "ARM_2_TOOLS",
+      "benchmark": "Benchmark A",
+      "claim": "FERONIA interacts with P2K1 at the plasma membrane, forming a heterooligomeric complex.",
+      "cited_ref": "Feng et al. (2018) DOI: 10.1038/s41467-018-04426-5",
+      "primary_location": "Nat Commun 9:4426, Fig 3 & Supplementary Fig 4",
+      "status": "SUPPORTED",
+      "rationale": "BiFC and co-immunoprecipitation confirm heterooligomer formation."
+    },
+    {
+      "pair_id": "ARM2-A-04",
+      "arm": "ARM_2_TOOLS",
+      "benchmark": "Benchmark A",
+      "claim": "FERONIA phosphorylates P2K1 to facilitate defense gene activation, including WRKY regulons.",
+      "cited_ref": "Ruan et al. (2020) DOI: 10.1016/j.molp.2020.09.020",
+      "primary_location": "Mol Plant 13:1278-1291, Fig 2 & 4",
+      "status": "SUPPORTED",
+      "rationale": "In vitro kinase assay and phospho-proteomics substantiate transphosphorylation."
+    },
+    {
+      "pair_id": "ARM2-A-05",
+      "arm": "ARM_2_TOOLS",
+      "benchmark": "Benchmark A",
+      "claim": "Extracellular apyrases (APY1 and APY2) hydrolyze eATP to maintain low nanomolar apoplastic concentrations.",
+      "cited_ref": "Cao et al. (2014) DOI: 10.1016/j.cub.2014.01.040",
+      "primary_location": "Curr Biol 24:89-94, Fig 1",
+      "status": "SUPPORTED",
+      "rationale": "Substantiated by apyrase activity assays and apy1/apy2 mutant root phenotypes."
+    },
+    {
+      "pair_id": "ARM2-A-06",
+      "arm": "ARM_2_TOOLS",
+      "benchmark": "Benchmark A",
+      "claim": "Application of exogenous ATP inhibits primary root growth in Arabidopsis seedlings.",
+      "cited_ref": "Choi et al. (2014) DOI: 10.1126/science.343.6168.290",
+      "primary_location": "Science 343:290, Fig 2A",
+      "status": "PARTIALLY_SUPPORTED",
+      "rationale": "Choi 2014 tested higher concentrations (>50 uM) which inhibit growth; however, statement omits that low concentrations (<10 uM) promote root elongation."
+    },
+    {
+      "pair_id": "ARM2-B-01",
+      "arm": "ARM_2_TOOLS",
+      "benchmark": "Benchmark B",
+      "claim": "Under low Pi, transcription factor PHR2 activates carotenoid cleavage dioxygenases D27, CCD7, and CCD8.",
+      "cited_ref": "Umehara et al. (2008) DOI: 10.1038/nature07272",
+      "primary_location": "Nature 455:195-200, Fig 3",
+      "status": "PARTIALLY_SUPPORTED",
+      "rationale": "Umehara established CCD7/8 expression, but PHR2 direct binding was demonstrated by Zhou et al. (2008) / Sun et al. (2014)."
+    },
+    {
+      "pair_id": "ARM2-B-02",
+      "arm": "ARM_2_TOOLS",
+      "benchmark": "Benchmark B",
+      "claim": "Exuded 5-deoxystrigol triggers rapid calcium influx and hyphal branching in G. margarita and R. irregularis.",
+      "cited_ref": "Akiyama et al. (2005) DOI: 10.1038/nature03608",
+      "primary_location": "Nature 435:824-827, Fig 1-2",
+      "status": "SUPPORTED",
+      "rationale": "Direct experimental confirmation of 5-deoxystrigol inducing hyphal branching in AM fungi."
+    },
+    {
+      "pair_id": "ARM2-B-03",
+      "arm": "ARM_2_TOOLS",
+      "benchmark": "Benchmark B",
+      "claim": "D14 forms a signaling complex with F-box protein D3 and promotes degradation of D53 transcriptional repressors.",
+      "cited_ref": "Jiang et al. (2013) DOI: 10.1038/nature12870",
+      "primary_location": "Nature 504:401-405, Fig 1 & 3",
+      "status": "SUPPORTED",
+      "rationale": "Substantiated by in vivo degradation assays, though ARM 2 missed the published Nature Corrigendum."
+    },
+    {
+      "pair_id": "ARM2-B-04",
+      "arm": "ARM_2_TOOLS",
+      "benchmark": "Benchmark B",
+      "claim": "Synthetic SL GR24 stimulates root hair elongation via the ethylene biosynthesis pathway, elevating ACC synthase activity.",
+      "cited_ref": "Kapulnik et al. (2011) DOI: 10.1093/jxb/erq432",
+      "primary_location": "J Exp Bot 62:2915-2924, Fig 3 & 5",
+      "status": "SUPPORTED",
+      "rationale": "Accurately represents Kapulnik 2011 findings, though ARM 2 failed to note conflicting epistasis in subsequent studies."
+    },
+    {
+      "pair_id": "ARM3-A-01",
+      "arm": "ARM_3_AREIL",
+      "benchmark": "Benchmark A",
+      "claim": "P2K1 binds extracellular ATP via extracellular legume L-type lectin domain with Kd = 45.7 nM.",
+      "cited_ref": "Choi et al. (2014) DOI: 10.1126/science.343.6168.290",
+      "primary_location": "Science 343:290, Fig 1D, p. 291",
+      "status": "SUPPORTED",
+      "rationale": "Exact match to verified entry in EVIDENCE_LEDGER EV-A-001."
+    },
+    {
+      "pair_id": "ARM3-A-02",
+      "arm": "ARM_3_AREIL",
+      "benchmark": "Benchmark A",
+      "claim": "P2K1 activation triggers rapid biphasic cytosolic Ca2+ wave within 5-15 seconds.",
+      "cited_ref": "Tanaka et al. (2014) DOI: 10.4161/psb.28420",
+      "primary_location": "Plant Signal Behav 9:e28420, Fig 2B, p. 2",
+      "status": "SUPPORTED",
+      "rationale": "Exact match to verified entry in EVIDENCE_LEDGER EV-A-002."
+    },
+    {
+      "pair_id": "ARM3-A-03",
+      "arm": "ARM_3_AREIL",
+      "benchmark": "Benchmark A",
+      "claim": "FERONIA physically interacts with P2K1 and phosphorylates its cytoplasmic domain.",
+      "cited_ref": "Feng et al. (2018) DOI: 10.1038/s41467-018-04426-5",
+      "primary_location": "Nat Commun 9:4426, Fig 3C, p. 5",
+      "status": "SUPPORTED",
+      "rationale": "Exact match to verified entry in EVIDENCE_LEDGER EV-A-003."
+    },
+    {
+      "pair_id": "ARM3-A-04",
+      "arm": "ARM_3_AREIL",
+      "benchmark": "Benchmark A",
+      "claim": "eATP exhibits biphasic concentration-dependent root growth kinetics: low concentrations (<10 uM) promote elongation, while high concentrations (>50 uM) cause growth arrest.",
+      "cited_ref": "Choi et al. (2014) & Tanaka et al. (2014)",
+      "primary_location": "Science 343:290, Fig 2A & PSB 9:e28420, Fig 3",
+      "status": "SUPPORTED",
+      "rationale": "Substantiated and resolved in CONTRADICTION_LEDGER CD-A-001."
+    },
+    {
+      "pair_id": "ARM3-A-05",
+      "arm": "ARM_3_AREIL",
+      "benchmark": "Benchmark A",
+      "claim": "FERONIA kinase-dead mutants partially rescue mechanical sensing, demonstrating a scaffold function in purinergic assembly.",
+      "cited_ref": "Feng et al. (2018) DOI: 10.1038/s41467-018-04426-5",
+      "primary_location": "Nat Commun 9:4426, Fig 4E, p. 7",
+      "status": "SUPPORTED",
+      "rationale": "Substantiated and resolved in CONTRADICTION_LEDGER CD-A-002."
+    },
+    {
+      "pair_id": "ARM3-B-01",
+      "arm": "ARM_3_AREIL",
+      "benchmark": "Benchmark B",
+      "claim": "5-deoxystrigol induces profuse hyphal branching in arbuscular mycorrhizal fungi at picomolar concentrations.",
+      "cited_ref": "Akiyama et al. (2005) DOI: 10.1038/nature03608",
+      "primary_location": "Nature 435:824, Fig 2, p. 825",
+      "status": "SUPPORTED",
+      "rationale": "Exact match to EVIDENCE_LEDGER EV-B-001."
+    },
+    {
+      "pair_id": "ARM3-B-02",
+      "arm": "ARM_3_AREIL",
+      "benchmark": "Benchmark B",
+      "claim": "D14 hydrolyzes strigolactone to form a covalent adduct that recruits D3 and triggers D53 ubiquitination.",
+      "cited_ref": "Jiang et al. (2013) DOI: 10.1038/nature12870 (Corrigendum Nature 509:652)",
+      "primary_location": "Nature 504:401, Fig 2-4, p. 403",
+      "status": "SUPPORTED",
+      "rationale": "Exact match to EVIDENCE_LEDGER EV-B-002; corrigendum proactively flagged."
+    },
+    {
+      "pair_id": "ARM3-B-03",
+      "arm": "ARM_3_AREIL",
+      "benchmark": "Benchmark B",
+      "claim": "Strigolactone-induced root hair elongation operates through a bifurcated dual pathway, retaining partial activity in ein2-1 and etr1-1 mutants under specific nutrient regimes.",
+      "cited_ref": "Kapulnik et al. (2011) & Gutjahr et al. (2015)",
+      "primary_location": "JXB 62:2915 & Cell 161:1448",
+      "status": "SUPPORTED",
+      "rationale": "Substantiated and resolved in CONTRADICTION_LEDGER CD-B-001."
+    },
+    {
+      "pair_id": "ARM3-B-04",
+      "arm": "ARM_3_AREIL",
+      "benchmark": "Benchmark B",
+      "claim": "Inhibition of shoot branching by strigolactones requires CCD7 and CCD8 carotenoid cleavage enzymes.",
+      "cited_ref": "Umehara et al. (2008) DOI: 10.1038/nature07272",
+      "primary_location": "Nature 455:195, Fig 1, p. 196",
+      "status": "SUPPORTED",
+      "rationale": "Exact match to EVIDENCE_LEDGER EV-B-004."
+    }
+  ]
+}

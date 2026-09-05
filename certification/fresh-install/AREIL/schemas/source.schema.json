@@ -1,0 +1,75 @@
+{
+  "type": "object",
+  "required": [
+    "source_id",
+    "title",
+    "retrieval_status"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "doi": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "pmid": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "year": {
+      "type": [
+        "integer",
+        "string",
+        "null"
+      ]
+    },
+    "source_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "peer_review_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retrieved_at": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "retrieval_status": {
+      "enum": [
+        "candidate",
+        "metadata_verified",
+        "abstract_only",
+        "full_text_fetched",
+        "unavailable",
+        "rejected"
+      ]
+    },
+    "update_status": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

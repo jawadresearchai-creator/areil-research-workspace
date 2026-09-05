@@ -1,0 +1,19 @@
+﻿{
+    "timestamp":  "2026-09-05T16:32:05.6782500+05:00",
+    "workspace":  "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL",
+    "commands":  {
+                     "python":  "C:\\Users\\ThinkPad\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+                     "git":  "C:\\Users\\ThinkPad\\AppData\\Local\\OpenClaw\\deps\\portable-git\\mingw64\\bin\\git.exe",
+                     "graphify":  "C:\\Users\\ThinkPad\\.local\\bin\\graphify.exe",
+                     "quarto":  null,
+                     "pandoc":  null,
+                     "Rscript":  null,
+                     "docker":  null,
+                     "wsl":  "C:\\Windows\\system32\\wsl.exe",
+                     "java":  "C:\\Program Files\\Microsoft\\jdk-17.0.20.8-hotspot\\bin\\java.exe"
+                 },
+    "zotero_local_api":  false,
+    "notes":  [
+
+              ]
+}

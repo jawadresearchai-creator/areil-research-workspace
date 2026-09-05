@@ -1,0 +1,225 @@
+{
+  "generated_at": "2026-09-05T10:52:21.389290+00:00",
+  "environment": {
+    "os": "Microsoft Windows 11 Pro (10.0.22631)",
+    "cpu": "Intel(R) Core(TM) i5-8365U CPU @ 1.60GHz (4 cores / 8 threads)",
+    "ram_total_gb": 15.79,
+    "ram_free_gb": 4.2,
+    "storage_e_free_gb": 62.08,
+    "target_model": "Gemini 3.8 Flash High (Google Antigravity)"
+  },
+  "tier_1_toolchain": {
+    "python": {
+      "discovered": true,
+      "installed": true,
+      "configured": true,
+      "authenticated": true,
+      "end_to_end_tested": true,
+      "version": "3.13.1 (virtualenv)",
+      "path": "E:\\Agriculture\\Antigravity Research\\AREIL\\.venv\\Scripts\\python.exe"
+    },
+    "uv": {
+      "discovered": true,
+      "installed": true,
+      "configured": true,
+      "authenticated": true,
+      "end_to_end_tested": true,
+      "version": "0.12.9",
+      "path": "C:\\Users\\ThinkPad\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\uv.exe"
+    },
+    "git": {
+      "discovered": true,
+      "installed": true,
+      "configured": true,
+      "authenticated": true,
+      "end_to_end_tested": true,
+      "version": "2.44+",
+      "path": "C:\\Users\\ThinkPad\\AppData\\Local\\OpenClaw\\deps\\portable-git\\mingw64\\bin\\git.exe"
+    },
+    "R": {
+      "discovered": true,
+      "installed": true,
+      "configured": true,
+      "authenticated": true,
+      "end_to_end_tested": true,
+      "version": "4.6.1 (2026-06-24 ucrt)",
+      "path": "C:\\Program Files\\R\\R-4.6.1\\bin\\R.exe"
+    },
+    "Rscript": {
+      "discovered": true,
+      "installed": true,
+      "configured": true,
+      "authenticated": true,
+      "end_to_end_tested": true,
+      "version": "4.6.1 (2026-06-24 ucrt)",
+      "path": "C:\\Program Files\\R\\R-4.6.1\\bin\\Rscript.exe"
+    },
+    "quarto": {
+      "discovered": true,
+      "installed": true,
+      "configured": true,
+      "authenticated": true,
+      "end_to_end_tested": true,
+      "version": "1.10.18",
+      "path": "C:\\Program Files\\Quarto\\bin\\quarto.exe"
+    },
+    "pandoc": {
+      "discovered": true,
+      "installed": true,
+      "configured": true,
+      "authenticated": true,
+      "end_to_end_tested": true,
+      "version": "3.10",
+      "path": "C:\\Program Files\\Quarto\\bin\\tools\\pandoc.exe"
+    },
+    "graphify": {
+      "discovered": true,
+      "installed": true,
+      "configured": true,
+      "authenticated": true,
+      "end_to_end_tested": true,
+      "version": "0.9.53",
+      "path": "C:\\Users\\ThinkPad\\.local\\bin\\graphify.exe"
+    },
+    "zotero": {
+      "discovered": true,
+      "installed": true,
+      "configured": true,
+      "authenticated": true,
+      "end_to_end_tested": true,
+      "version": "10.0.1",
+      "path": "C:\\Program Files\\Zotero\\zotero.exe"
+    },
+    "better_bibtex": {
+      "discovered": true,
+      "installed": true,
+      "configured": true,
+      "authenticated": true,
+      "end_to_end_tested": true,
+      "version": "9.0.63",
+      "path": "C:\\Users\\ThinkPad\\AppData\\Roaming\\Zotero\\Zotero\\Profiles\\yp9w6lfm.default\\extensions\\better-bibtex@iris-advies.com.xpi"
+    },
+    "java": {
+      "discovered": true,
+      "installed": true,
+      "configured": true,
+      "authenticated": true,
+      "end_to_end_tested": true,
+      "version": "17.0.20.8",
+      "path": "C:\\Program Files\\Microsoft\\jdk-17.0.20.8-hotspot\\bin\\java.exe"
+    }
+  },
+  "r_bioconductor_stack": {
+    "status": "VERIFIED_AND_LOADED",
+    "library_path": "E:\\Agriculture\\Antigravity Research\\tools\\R-library",
+    "packages": {
+      "lme4": "2.0.6",
+      "ggplot2": "4.0.3",
+      "emmeans": "2.0.4",
+      "agricolae": "1.3.7",
+      "Biobase": "2.72.0",
+      "limma": "3.68.4",
+      "edgeR": "4.10.1",
+      "SummarizedExperiment": "1.42.0",
+      "GEOquery": "2.80.0",
+      "AnnotationDbi": "1.74.0",
+      "DESeq2": "1.52.0",
+      "sva": "3.56.0",
+      "fgsea": "1.34.0"
+    }
+  },
+  "scholarly_apis": {
+    "Crossref": {
+      "status": "END_TO_END_TESTED",
+      "updates_and_retractions": true
+    },
+    "DataCite": {
+      "status": "END_TO_END_TESTED",
+      "dataset_dois": true
+    },
+    "OpenCitations": {
+      "status": "END_TO_END_TESTED",
+      "forward_backward_graphs": true
+    },
+    "SemanticScholar": {
+      "status": "END_TO_END_TESTED",
+      "graph_recommendations": true
+    },
+    "Unpaywall": {
+      "status": "END_TO_END_TESTED",
+      "legal_oa_urls": true
+    },
+    "EuropePMC": {
+      "status": "END_TO_END_TESTED",
+      "biomedical_search": true
+    },
+    "OpenAlex": {
+      "status": "END_TO_END_TESTED",
+      "scholarly_entities": true
+    }
+  },
+  "antigravity_science_skills": {
+    "pubmed-database": "END_TO_END_TESTED",
+    "literature-search-europepmc": "END_TO_END_TESTED",
+    "literature-search-openalex": "END_TO_END_TESTED",
+    "literature-search-arxiv": "END_TO_END_TESTED",
+    "literature-search-biorxiv": "END_TO_END_TESTED",
+    "clinical-trials-database": "CONFIGURED",
+    "ncbi-sequence-fetch": "CONFIGURED",
+    "ensembl-database": "CONFIGURED",
+    "uniprot-database": "CONFIGURED",
+    "string-database": "CONFIGURED",
+    "chembl-database": "CONFIGURED",
+    "pubchem-database": "CONFIGURED",
+    "alphafold-database-fetch-and-analyze": "CONFIGURED",
+    "pdb-database": "CONFIGURED",
+    "gtex-database": "CONFIGURED",
+    "clinvar-database": "CONFIGURED",
+    "encode-ccres-database": "CONFIGURED",
+    "reactome-database": "CONFIGURED",
+    "quickgo-database": "CONFIGURED",
+    "opentargets-database": "CONFIGURED"
+  },
+  "public_omics_classification": {
+    "NCBI SRA Toolkit (prefetch, fasterq-dump)": {
+      "classification": "DATASET_DEPENDENT",
+      "installed": false,
+      "rationale": "Direct HTTPS / GEOquery / E-utilities handle targeted public datasets; CLI install on demand if multi-GB raw SRA reads needed"
+    },
+    "fastp": {
+      "classification": "DATASET_DEPENDENT",
+      "installed": false,
+      "rationale": "Evaluated on demand for raw sequencing read trimming"
+    },
+    "FastQC / MultiQC": {
+      "classification": "RECOMMENDED",
+      "installed": false,
+      "rationale": "MultiQC available via pip if local read QC is triggered"
+    },
+    "Salmon / kallisto": {
+      "classification": "DATASET_DEPENDENT",
+      "installed": false,
+      "rationale": "Pseudoalignment for bulk RNA-seq on demand"
+    },
+    "samtools / bedtools": {
+      "classification": "RECOMMENDED",
+      "installed": false,
+      "rationale": "Genomic interval operations on demand"
+    },
+    "pigz / aria2": {
+      "classification": "RECOMMENDED",
+      "installed": false,
+      "rationale": "Multi-threaded downloads/compression on demand"
+    },
+    "STAR / HISAT2": {
+      "classification": "HEAVY_OPTIONAL",
+      "installed": false,
+      "rationale": "Heavy splice-aware aligners require >30 GB RAM for plant reference genomes; deferred to preserve 16GB host stability"
+    },
+    "GROBID": {
+      "classification": "DEFERRED",
+      "installed": false,
+      "rationale": "Heavy JVM/Docker daemon deferred; native PyMuPDF/pdfplumber used for local extraction"
+    }
+  }
+}

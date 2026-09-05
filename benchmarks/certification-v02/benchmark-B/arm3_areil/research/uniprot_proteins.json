@@ -1,0 +1,65 @@
+[
+  {
+    "symbol": "OsPHR2",
+    "accession": "Q69XJ0",
+    "id": "SPX1_ORYSJ",
+    "name": "SPX domain-containing protein 1",
+    "length": 295,
+    "molecular_weight": 33112,
+    "organism": "Oryza sativa subsp. japonica"
+  },
+  {
+    "symbol": "OsSPX4",
+    "accession": "Q6Z156",
+    "id": "PHR2_ORYSJ",
+    "name": "Protein PHOSPHATE STARVATION RESPONSE 2",
+    "length": 426,
+    "molecular_weight": 46232,
+    "organism": "Oryza sativa subsp. japonica"
+  },
+  {
+    "symbol": "OsD27",
+    "accession": "B8BLE6",
+    "id": "B8BLE6_ORYSI",
+    "name": "Beta-carotene isomerase D27-like C-terminal domain-containing protein",
+    "length": 274,
+    "molecular_weight": 30500,
+    "organism": "Oryza sativa subsp. japonica"
+  },
+  {
+    "symbol": "OsCCD7_D17",
+    "accession": "Q7XU29",
+    "id": "CCD7_ORYSJ",
+    "name": "Carotenoid cleavage dioxygenase 7, chloroplastic",
+    "length": 609,
+    "molecular_weight": 68188,
+    "organism": "Oryza sativa subsp. japonica"
+  },
+  {
+    "symbol": "OsD14",
+    "accession": "Q2RBP2",
+    "id": "D53_ORYSJ",
+    "name": "Protein DWARF 53",
+    "length": 1131,
+    "molecular_weight": 122532,
+    "organism": "Oryza sativa subsp. japonica"
+  },
+  {
+    "symbol": "OsD3",
+    "accession": "Q10QA5",
+    "id": "D14_ORYSJ",
+    "name": "Strigolactone esterase D14",
+    "length": 318,
+    "molecular_weight": 33508,
+    "organism": "Oryza sativa subsp. japonica"
+  },
+  {
+    "symbol": "OsD53",
+    "accession": "Q10QA5",
+    "id": "D14_ORYSJ",
+    "name": "Strigolactone esterase D14",
+    "length": 318,
+    "molecular_weight": 33508,
+    "organism": "Oryza sativa subsp. japonica"
+  }
+]

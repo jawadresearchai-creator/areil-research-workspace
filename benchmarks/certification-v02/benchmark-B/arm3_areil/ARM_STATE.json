@@ -1,0 +1,23 @@
+{
+  "arm": "ARM_3_GEMINI_PLUS_AREIL_V02_1",
+  "benchmark": "BENCHMARK_B",
+  "manuscript_sha256": "1870477779B6688E53143D7E09733402793BE9FE9F03ACC9AFFB3C248A783124",
+  "tool_calls_allowed": "UNRESTRICTED",
+  "tools_used": [
+    "Crossref_API",
+    "PubMed_EUtils_API",
+    "UniProt_REST_API",
+    "R_lme4_lmerTest_emmeans_cowplot",
+    "Audit-Citations.py",
+    "Validate-AreilLedgers.py",
+    "Verify-ManuscriptConsistency.py",
+    "Create-ReproducibilityManifest.py",
+    "Quarto_CLI"
+  ],
+  "citations_audited": 18,
+  "citations_valid_doi": 18,
+  "contradictions_found": 3,
+  "consistency_defects": 0,
+  "statistical_pipeline": "8-Stage Holistic Linear Mixed-Effects Model (LMM) with Kenward-Roger df",
+  "reproducibility_manifest": "E:\\Agriculture\\Antigravity Research\\benchmarks\\certification-v02\\benchmark-B\\arm3_areil\\audits\\reproducibility_manifest.json"
+}

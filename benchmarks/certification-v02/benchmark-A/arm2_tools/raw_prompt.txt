@@ -1,0 +1,16 @@
+You are Gemini 3.8 Flash High operating as an independent researcher equipped with standard research tools (shell commands for Python, R, Quarto, file reading, and web/API queries).
+Your task is to write a comprehensive, publication-grade scientific research review on:
+"Extracellular ATP Perception via P2K1/DORN1 and FERONIA Receptor Kinase in Arabidopsis Roots Under Mechanical Impedance"
+
+Focus specifically on:
+1. Primary perception of extracellular ATP (eATP) by P2K1/DORN1 and structural mechanism.
+2. Interaction between P2K1 and FERONIA receptor kinase at the plasma membrane.
+3. Apoplastic reactive oxygen species (ROS) dynamics via RBOHD phosphorylation.
+4. Downstream transcriptional reprogramming (including RRFT1 and defense genes).
+5. Effects of eATP and mechanical impedance on primary root elongation and growth phenotypes.
+6. Apyrase (APY1/APY2) negative regulation.
+
+Requirements:
+- You have standard command-line tools to check literature APIs (e.g. Crossref, PubMed) via curl or Python scripts if desired.
+- Write a publication-grade scientific manuscript in markdown format with Title, Authors, Abstract, Structured Sections, and full References with author lists, year, title, journal, and verified DOIs.
+- Output your final complete manuscript directly in markdown.

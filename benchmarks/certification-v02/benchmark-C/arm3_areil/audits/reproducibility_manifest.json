@@ -1,0 +1,177 @@
+{
+  "created_at": "2026-09-05T12:55:27.179127+00:00",
+  "project_root": "E:\\Agriculture\\Antigravity Research\\benchmarks\\certification-v02\\benchmark-C\\arm3_areil",
+  "environment": {
+    "platform": "Windows-11-10.0.22631-SP0",
+    "python_version": "3.13.1",
+    "processor": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel"
+  },
+  "total_files_hashed": 33,
+  "files": [
+    {
+      "path": "analysis/results/lmer_results.json",
+      "bytes": 1711,
+      "sha256": "1114f980f0af905cb9f6cdeb92bd534324c80ce9c7d58a9fdeecc4580bfd242d"
+    },
+    {
+      "path": "analysis/scripts/fit_lmer_model.R",
+      "bytes": 12309,
+      "sha256": "021eb97f6aac2aeed0e8baa598139ff44f96217811221c1e5a9360b4398f30b5"
+    },
+    {
+      "path": "ARM_STATE.json",
+      "bytes": 953,
+      "sha256": "cab4a592f6401fec03195d253d2e924ba4c67fd6a634d14444e67d74512cb9a2"
+    },
+    {
+      "path": "audits/citation_audit.jsonl",
+      "bytes": 2945,
+      "sha256": "74d23587ea6b22a4f3c7d14008eb7dd8f41ec4372fbf7725f46a381d9a214e83"
+    },
+    {
+      "path": "data/raw/root_growth_trial_data.csv",
+      "bytes": 3135,
+      "sha256": "6068ad343ae7659a820af0e5d4615fbcee056844b422ba43ff00dd9de53683f6"
+    },
+    {
+      "path": "figures/figure1_lme_contrasts.png",
+      "bytes": 65364,
+      "sha256": "3637853ba0ebd02144c3a772d2452a22521d7b94fc3722e5ad3f9467af098aec"
+    },
+    {
+      "path": "figures/figure2_diagnostics.png",
+      "bytes": 78051,
+      "sha256": "9fafea2cc9352661b8508a566a2fbc2cbadca97302f5a362c4ba2c6c27d87082"
+    },
+    {
+      "path": "ledgers/CLAIM_LEDGER.jsonl",
+      "bytes": 2629,
+      "sha256": "47d1c3a786f0cdc22cbb4a93b1c24e24d64bda37f8ec8e28d34a522eba35175c"
+    },
+    {
+      "path": "ledgers/CONTRADICTION_LEDGER.jsonl",
+      "bytes": 962,
+      "sha256": "a7a5eb59d270876c8a55785594030f2ad703d043de8d742efdf794247c2f6327"
+    },
+    {
+      "path": "ledgers/DATASET_REGISTRY.jsonl",
+      "bytes": 333,
+      "sha256": "49187ef38d638adb99d125b3349da19074de8114303e882b110d47082676def0"
+    },
+    {
+      "path": "ledgers/EVIDENCE_LEDGER.jsonl",
+      "bytes": 2553,
+      "sha256": "2c630967d8f7e71cba21167e11609af132b9108ea7678fd8d69e4cf5ec40fdfa"
+    },
+    {
+      "path": "ledgers/NOVELTY_LEDGER.jsonl",
+      "bytes": 350,
+      "sha256": "2df029d500f6c0c993fe348e82edf4aa3df1cde37938f482f10593424054bfb3"
+    },
+    {
+      "path": "ledgers/REVIEW_LEDGER.jsonl",
+      "bytes": 496,
+      "sha256": "dd8ac1a8854a5c5bfa5cfae99242776a47817d241ced3e4b6b3686d6f961bb38"
+    },
+    {
+      "path": "ledgers/SOURCE_REGISTRY.jsonl",
+      "bytes": 2079,
+      "sha256": "adfcca1aff296e85c0a8d4534803d150d1974a3f3f7857be2c4a5e81411efd39"
+    },
+    {
+      "path": "manuscript/manuscript.docx",
+      "bytes": 148014,
+      "sha256": "32066eacb75e57e8c0c997ece710c00198079029ece6fff46026ee53863f93c3"
+    },
+    {
+      "path": "manuscript/manuscript.html",
+      "bytes": 73168,
+      "sha256": "d81ebce27452cfbfbd38c5e2c388b9f88314bcbfbbfb87a0b0a2fb832de41469"
+    },
+    {
+      "path": "manuscript/manuscript.md",
+      "bytes": 29192,
+      "sha256": "a6d956a8ff506c2853b1876df8eadc15d2757b6e751d1de1d6c217a5defd9300"
+    },
+    {
+      "path": "manuscript/manuscript.qmd",
+      "bytes": 28090,
+      "sha256": "14065079aac1ecea6959e7e7f9d3a959d0561229ba8b1289b34db7ebe2493cf0"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css",
+      "bytes": 431263,
+      "sha256": "b50905abc3c4f5beb8dd568cf2793f49ca0aaced72810e1388165a179f4b2e98"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-62e2d20df198e8a01bb734742f2e28cf.min.css",
+      "bytes": 421064,
+      "sha256": "31b3b18b6d5ebc2c59503fe8a7468b51f0fe1a3b76d7571b22ec90a4140ab983"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-icons.css",
+      "bytes": 99464,
+      "sha256": "01253947f506e030589e4f33fc7ec7ccdfb9505e2e596dedf16445f12e243c0a"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-icons.woff",
+      "bytes": 180288,
+      "sha256": "f55513b7b591cb84a3b87ff0e34ea24d4831d6fedc22e54b911ca64b5b544a15"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap.min.js",
+      "bytes": 80668,
+      "sha256": "d2ea6c1e0cabca20d18e924b25a1cd0187c38ba7c33f60ab06e1b0402b9bcdb5"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/clipboard/clipboard.min.js",
+      "bytes": 9160,
+      "sha256": "e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/anchor.min.js",
+      "bytes": 5888,
+      "sha256": "69098e105d990f834cff1b7886d873444228ff63c590e5ff834d568f1115ed8b"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/popper.min.js",
+      "bytes": 20084,
+      "sha256": "4d50586b184724d39ddfe0f6582861664eddd5e806e5a79e0dbaa832361414d0"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css",
+      "bytes": 3678,
+      "sha256": "4973a76eb0de3b99bc67687ab2ecea249e552bae328dd8a952dad89732e9ec18"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/quarto.js",
+      "bytes": 26830,
+      "sha256": "4ecb60f215d96b2af0fe9d985c71e32863b1c993a64725a416ac18b5991c59c6"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tabsets/tabsets.js",
+      "bytes": 2882,
+      "sha256": "a9c226bf70e82eaf5476f619cecfb70b4446b87ce4d1634d6404b0b2ba006d15"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tippy.css",
+      "bytes": 1409,
+      "sha256": "5969f497d9158d7682f8219c6f13fa67269cdf5bf50a3931d95327151dee5678"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tippy.umd.min.js",
+      "bytes": 24033,
+      "sha256": "41181eeec6d7ba64cb9165f0e95563e34e026bde79e7c13aeec83270429b6fae"
+    },
+    {
+      "path": "manuscript/references.bib",
+      "bytes": 1925,
+      "sha256": "483ad3f4ecfe8786d117f4cfea830ccea97a6775d4fdd43bb8e62e98a7c2bbc9"
+    },
+    {
+      "path": "raw_prompt.txt",
+      "bytes": 1880,
+      "sha256": "c6a6113487b83bd0ee0d75e92eab62caab8d81552b4513c9df5a0e418ececc65"
+    }
+  ]
+}

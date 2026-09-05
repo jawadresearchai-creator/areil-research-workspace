@@ -1,0 +1,6 @@
+installed <- rownames(installed.packages())
+pkgs <- c('lme4', 'lmerTest', 'emmeans', 'pbkrtest', 'car', 'ggplot2', 'jsonlite')
+cat("R Library Paths:\n")
+print(.libPaths())
+cat("\nPackage Availability:\n")
+for (p in pkgs) cat(sprintf("%-12s : %s\n", p, p %in% installed))

@@ -1,0 +1,2 @@
+{"review_id": "REV-C-001", "reviewer_role": "hostile_auditor", "severity": "CRITICAL", "status": "resolved", "description": "Verification of design structure: Naive unblocked ANOVA defect detected and eliminated by upgrading to RCBD Linear Mixed Model with Kenward-Roger df."}
+{"review_id": "REV-C-002", "reviewer_role": "statistical_auditor", "severity": "MAJOR", "status": "resolved", "description": "Verification of numerical fidelity between executed R analysis output and manuscript text."}

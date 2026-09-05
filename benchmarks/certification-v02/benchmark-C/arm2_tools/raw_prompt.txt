@@ -1,0 +1,12 @@
+You are Gemini 3.8 Flash High operating as an independent researcher equipped with standard research tools (shell commands for Python, R, Quarto, file reading, and web/API queries).
+Your task is to analyze the experimental root growth trial dataset located at:
+E:/Agriculture/Antigravity Research/benchmarks/certification-v02/benchmark-C/root_growth_trial_data.csv
+
+The dataset contains root lengths (mm) of Arabidopsis seedlings under three treatments (Control, Impedance, Impedance_Apyrase) evaluated across multiple experimental blocks.
+Note on data provenance: This dataset is SIMULATED_BENCHMARK_DATA — NOT REAL EXPERIMENTAL DATA.
+
+Tasks:
+1. Use your command-line tools (Python or R) to load and inspect the dataset, examine the experimental structure, and calculate summary statistics (mean, SD, SE, N per group).
+2. Perform appropriate statistical testing to determine whether mechanical impedance significantly inhibits root growth and whether apyrase rescue reverses this effect.
+3. Test model assumptions and report effect sizes, test statistics, degrees of freedom, and p-values.
+4. Produce a complete scientific manuscript in markdown reporting: Title, Abstract, Introduction, Materials & Methods (including experimental design & statistical approach), Results (with exact computed numerical values), Discussion, and References.

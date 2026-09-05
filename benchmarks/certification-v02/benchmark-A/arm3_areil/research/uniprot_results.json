@@ -1,0 +1,37 @@
+{
+  "P2K1_ARATH": {
+    "id": "Q9LQ52",
+    "gene": "",
+    "name": "",
+    "length": 0,
+    "function": ""
+  },
+  "FER_ARATH": {
+    "id": "Q9M1K5",
+    "gene": "PAT04",
+    "name": "Probable protein S-acyltransferase 4",
+    "length": 477,
+    "function": "Palmitoyl acyltransferase"
+  },
+  "RBOHD_ARATH": {
+    "id": "Q9FI00",
+    "gene": "MLO11",
+    "name": "MLO-like protein 11",
+    "length": 573,
+    "function": "May be involved in modulation of pathogen defense and leaf cell death. Activity seems to be regulated by Ca(2+)-dependent calmodulin binding and does not seem to require heterotrimeric G proteins (By "
+  },
+  "APY1_ARATH": {
+    "id": "Q9LYT6",
+    "gene": "",
+    "name": "F-box protein At3g59000",
+    "length": 491,
+    "function": "Component of SCF(ASK-cullin-F-box) E3 ubiquitin ligase complexes, which may mediate the ubiquitination and subsequent proteasomal degradation of target proteins"
+  },
+  "APY2_ARATH": {
+    "id": "Q9LX93",
+    "gene": "ATL55",
+    "name": "E3 ubiquitin-protein ligase RING1",
+    "length": 301,
+    "function": "E3 ubiquitin-protein ligase that may be involved in positive regulation of programmed cell death (PCD) by facilitating degradation of negative regulators of PCD. May be involved in the early steps of "
+  }
+}

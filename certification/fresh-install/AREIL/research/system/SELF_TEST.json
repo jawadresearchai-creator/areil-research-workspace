@@ -1,0 +1,124 @@
+﻿{
+    "timestamp":  "2026-09-05T16:33:04.6130365+05:00",
+    "workspace":  "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL",
+    "overall_pass":  true,
+    "passed_checks":  23,
+    "failed_checks":  0,
+    "checks":  [
+                   {
+                       "check":  "file_exists:GEMINI.md",
+                       "pass":  true,
+                       "details":  "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL\\GEMINI.md"
+                   },
+                   {
+                       "check":  "file_exists:AGENTS.md",
+                       "pass":  true,
+                       "details":  "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL\\AGENTS.md"
+                   },
+                   {
+                       "check":  "file_exists:AREIL_MASTER_SPECIFICATION.md",
+                       "pass":  true,
+                       "details":  "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL\\AREIL_MASTER_SPECIFICATION.md"
+                   },
+                   {
+                       "check":  "file_exists:README.md",
+                       "pass":  true,
+                       "details":  "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL\\README.md"
+                   },
+                   {
+                       "check":  "file_exists:QUICKSTART.md",
+                       "pass":  true,
+                       "details":  "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL\\QUICKSTART.md"
+                   },
+                   {
+                       "check":  "file_exists:research\\CURRENT_STATE.md",
+                       "pass":  true,
+                       "details":  "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL\\research\\CURRENT_STATE.md"
+                   },
+                   {
+                       "check":  "file_exists:research\\HANDOFF.yaml",
+                       "pass":  true,
+                       "details":  "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL\\research\\HANDOFF.yaml"
+                   },
+                   {
+                       "check":  "file_exists:model-manuals\\PORTABILITY_SYNTHESIS.md",
+                       "pass":  true,
+                       "details":  "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL\\model-manuals\\PORTABILITY_SYNTHESIS.md"
+                   },
+                   {
+                       "check":  "file_exists:model-manuals\\DESIGN_TRACEABILITY.md",
+                       "pass":  true,
+                       "details":  "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL\\model-manuals\\DESIGN_TRACEABILITY.md"
+                   },
+                   {
+                       "check":  "file_exists:scripts\\Validate-AreilLedgers.py",
+                       "pass":  true,
+                       "details":  "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL\\scripts\\Validate-AreilLedgers.py"
+                   },
+                   {
+                       "check":  "file_exists:scripts\\Audit-Citations.py",
+                       "pass":  true,
+                       "details":  "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL\\scripts\\Audit-Citations.py"
+                   },
+                   {
+                       "check":  "file_exists:scripts\\Verify-ManuscriptConsistency.py",
+                       "pass":  true,
+                       "details":  "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL\\scripts\\Verify-ManuscriptConsistency.py"
+                   },
+                   {
+                       "check":  "file_exists:scripts\\Create-ReproducibilityManifest.py",
+                       "pass":  true,
+                       "details":  "E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL\\scripts\\Create-ReproducibilityManifest.py"
+                   },
+                   {
+                       "check":  "python_scientific_stack",
+                       "pass":  true,
+                       "details":  "Python 3.13 (E:\\Agriculture\\Antigravity Research\\certification\\fresh-install\\AREIL\\.venv\\Scripts\\python.exe)"
+                   },
+                   {
+                       "check":  "r_bioconductor_stack",
+                       "pass":  true,
+                       "details":  "R 4.6.1 ucrt + BiocManager 3.23"
+                   },
+                   {
+                       "check":  "quarto_cli",
+                       "pass":  true,
+                       "details":  "Quarto 1.10.18"
+                   },
+                   {
+                       "check":  "pandoc_cli",
+                       "pass":  true,
+                       "details":  "pandoc 3.10"
+                   },
+                   {
+                       "check":  "graphify_cli",
+                       "pass":  true,
+                       "details":  "Graphify graphify 0.9.53"
+                   },
+                   {
+                       "check":  "zotero_installation",
+                       "pass":  true,
+                       "details":  "C:\\Program Files\\Zotero\\zotero.exe"
+                   },
+                   {
+                       "check":  "better_bibtex_extension",
+                       "pass":  true,
+                       "details":  "Better BibTeX 9.0.63 (.xpi verified)"
+                   },
+                   {
+                       "check":  "ledger_validator_execution",
+                       "pass":  true,
+                       "details":  "Schema and integrity checks clean"
+                   },
+                   {
+                       "check":  "citation_auditor_execution",
+                       "pass":  true,
+                       "details":  "Audit script operational"
+                   },
+                   {
+                       "check":  "reproducibility_manifest_generator",
+                       "pass":  true,
+                       "details":  "SHA256 manifest computed"
+                   }
+               ]
+}

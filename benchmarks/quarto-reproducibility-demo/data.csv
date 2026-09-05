@@ -1,0 +1,11 @@
+﻿sample_id,treatment,plant_height_cm,chlorophyll_spad
+P01,Control,14.2,35.1
+P02,Control,15.1,36.4
+P03,Control,14.8,34.8
+P04,Control,13.9,35.5
+P05,Control,15.5,37.0
+P06,Treated,18.4,42.1
+P07,Treated,19.1,43.5
+P08,Treated,17.9,41.8
+P09,Treated,18.8,44.0
+P10,Treated,19.5,45.2

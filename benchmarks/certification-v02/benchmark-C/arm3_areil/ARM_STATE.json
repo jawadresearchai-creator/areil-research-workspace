@@ -1,0 +1,26 @@
+{
+  "arm": "ARM_3_GEMINI_PLUS_AREIL_V02",
+  "benchmark": "BENCHMARK_C",
+  "data_classification": "SIMULATED_BENCHMARK_DATA",
+  "manuscript_sha256": "A6D956A8FF506C2853B1876DF8EADC15D2757B6E751D1DE1D6C217A5DEFD9300",
+  "tool_calls_allowed": "UNRESTRICTED",
+  "tool_calls_executed": 16,
+  "tools_used": [
+    "R_lme4",
+    "R_lmerTest",
+    "R_emmeans",
+    "Validate-AreilLedgers.py",
+    "Audit-Citations.py",
+    "Verify-ManuscriptConsistency.py",
+    "Create-ReproducibilityManifest.py",
+    "Quarto_CLI"
+  ],
+  "execution_time_sec": 48.6,
+  "code_executed": true,
+  "statistical_model": "Linear Mixed-Effects Model: lmer(root_length_mm ~ treatment + (1 | block))",
+  "icc_checked": true,
+  "block_effect_accounted": true,
+  "fatal_statistical_defects": 0,
+  "consistency_defects": 0,
+  "reproducibility_manifest": "E:\\Agriculture\\Antigravity Research\\benchmarks\\certification-v02\\benchmark-C\\arm3_areil\\audits\\reproducibility_manifest.json"
+}

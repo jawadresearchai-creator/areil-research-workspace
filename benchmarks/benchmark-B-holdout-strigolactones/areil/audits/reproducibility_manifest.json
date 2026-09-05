@@ -1,0 +1,127 @@
+{
+  "created_at": "2026-09-05T11:01:36.946832+00:00",
+  "project_root": "E:\\Agriculture\\Antigravity Research\\benchmarks\\benchmark-B-holdout-strigolactones\\areil",
+  "environment": {
+    "platform": "Windows-11-10.0.22631-SP0",
+    "python_version": "3.13.1",
+    "processor": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel"
+  },
+  "total_files_hashed": 23,
+  "files": [
+    {
+      "path": "audits/citation_audit.jsonl",
+      "bytes": 2431,
+      "sha256": "5ba2f9477d90c05c57a46f6ee3288af6cbf167aac24ea8fdf4f580908618f297"
+    },
+    {
+      "path": "ledgers/CLAIM_LEDGER.jsonl",
+      "bytes": 1301,
+      "sha256": "c917d516aca38bd9a0ff8e402fcccf4c4a4c3296fc19c3c6f7db278000d90bb0"
+    },
+    {
+      "path": "ledgers/CONTRADICTION_LEDGER.jsonl",
+      "bytes": 469,
+      "sha256": "56c8bb94600743c15851f42d1747a99939466a2f2fe181a9838a67753af1742b"
+    },
+    {
+      "path": "ledgers/EVIDENCE_LEDGER.jsonl",
+      "bytes": 1836,
+      "sha256": "7600a49eb4e3524ce61ba7616bf9d2ab51412f307d4a9aff637b8c0039e12f4f"
+    },
+    {
+      "path": "ledgers/NOVELTY_LEDGER.jsonl",
+      "bytes": 256,
+      "sha256": "cf21fcd437354dd720901727141e94787ac8c20c31608d8b111918560a92c936"
+    },
+    {
+      "path": "ledgers/REVIEW_LEDGER.jsonl",
+      "bytes": 324,
+      "sha256": "4a7d0d4ab65225114444e4a5df0b61c428fcee993004ea3fbde71665f77a2858"
+    },
+    {
+      "path": "ledgers/SOURCE_REGISTRY.jsonl",
+      "bytes": 1506,
+      "sha256": "4de5555b0f01495cc7a72f9b769b6a89616e0070027230df9712ece21e762130"
+    },
+    {
+      "path": "manuscript/manuscript.docx",
+      "bytes": 13525,
+      "sha256": "6c03466a7efe660170459cab26095b001c6f0c6e6365463ca546a42c01a29583"
+    },
+    {
+      "path": "manuscript/manuscript.html",
+      "bytes": 27039,
+      "sha256": "dffa27213260b39fe37a45662450d8cc4083554002964ff320b9c214d40687a8"
+    },
+    {
+      "path": "manuscript/manuscript.qmd",
+      "bytes": 2848,
+      "sha256": "f3531766fabe7e7545ad8f42c6d7fc999bcdd7314d63b33d1392b28956ae9f71"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css",
+      "bytes": 431263,
+      "sha256": "b50905abc3c4f5beb8dd568cf2793f49ca0aaced72810e1388165a179f4b2e98"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-icons.css",
+      "bytes": 99464,
+      "sha256": "01253947f506e030589e4f33fc7ec7ccdfb9505e2e596dedf16445f12e243c0a"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-icons.woff",
+      "bytes": 180288,
+      "sha256": "f55513b7b591cb84a3b87ff0e34ea24d4831d6fedc22e54b911ca64b5b544a15"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap.min.js",
+      "bytes": 80668,
+      "sha256": "d2ea6c1e0cabca20d18e924b25a1cd0187c38ba7c33f60ab06e1b0402b9bcdb5"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/clipboard/clipboard.min.js",
+      "bytes": 9160,
+      "sha256": "e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/anchor.min.js",
+      "bytes": 5888,
+      "sha256": "69098e105d990f834cff1b7886d873444228ff63c590e5ff834d568f1115ed8b"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/popper.min.js",
+      "bytes": 20084,
+      "sha256": "4d50586b184724d39ddfe0f6582861664eddd5e806e5a79e0dbaa832361414d0"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css",
+      "bytes": 3678,
+      "sha256": "4973a76eb0de3b99bc67687ab2ecea249e552bae328dd8a952dad89732e9ec18"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/quarto.js",
+      "bytes": 26830,
+      "sha256": "4ecb60f215d96b2af0fe9d985c71e32863b1c993a64725a416ac18b5991c59c6"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tabsets/tabsets.js",
+      "bytes": 2882,
+      "sha256": "a9c226bf70e82eaf5476f619cecfb70b4446b87ce4d1634d6404b0b2ba006d15"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tippy.css",
+      "bytes": 1409,
+      "sha256": "5969f497d9158d7682f8219c6f13fa67269cdf5bf50a3931d95327151dee5678"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tippy.umd.min.js",
+      "bytes": 24033,
+      "sha256": "41181eeec6d7ba64cb9165f0e95563e34e026bde79e7c13aeec83270429b6fae"
+    },
+    {
+      "path": "manuscript/references.bib",
+      "bytes": 1783,
+      "sha256": "256c99bff38bba0d8489accd54c7cdba1d13066a3e5d8eb8ddb0b0cc89c9173e"
+    }
+  ]
+}

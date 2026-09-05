@@ -1,0 +1,11 @@
+You are Gemini 3.8 Flash High operating in raw inference mode with zero external tools. Answer the user's scientific research prompt thoroughly, accurately, and completely based solely on your internal parametric knowledge. Do not attempt to use any tools or access external databases.
+
+Prompt:
+Analyze the classic agricultural field experiment from Frank Yates (1935): "Complex experiments" (Journal of the Royal Statistical Society, Supplement, 2(2), 181-247).
+The experiment evaluates oat grain yield (in 1/4 lbs per sub-plot, or converted bushels) across 6 agricultural Blocks, testing 3 oat Varieties (Golden Rain, Marvellous, Victory) as whole-plot factors and 4 Nitrogen fertilization levels (0.0, 0.2, 0.4, 0.6 cwt/acre) as sub-plot factors. Total N = 72 plots.
+Note on data provenance: REAL_PUBLIC_DATA (Yates 1935 Split-Plot Trial).
+
+Based on your parametric knowledge of the Yates 1935 trial and split-plot agronomic experiments:
+1. Explain the historical context, agronomic question, and split-plot experimental design.
+2. Provide your best scientific synthesis and quantitative estimation of the variety and nitrogen effects, the expected ANOVA structure, error terms (whole-plot error vs sub-plot error), and main conclusions.
+3. Write a complete, publication-grade research manuscript in markdown format with Title, Abstract, Introduction, Experimental Design & Statistical Theory, Anticipated/Reconstructed Results, Discussion of Agronomic Implications, and References with full bibliographic citations.

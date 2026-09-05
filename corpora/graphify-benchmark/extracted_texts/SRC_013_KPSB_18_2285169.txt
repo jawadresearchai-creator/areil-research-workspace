@@ -1,0 +1,882 @@
+--- PAGE 1 ---
+Cold acclimation alleviates photosynthetic inhibition and oxidative damage induced 
+by cold stress in citrus seedlings
+Chao Xua,b, Yuting Wanga, Huidong Yanga, Yuqing Tanga, Buchun Liub, Xinlong Hua, and Zhongdong Hua
+aNanchang Key Laboratory of Germplasm Innovation and Utilization of Fruit and Tea, Jiangxi Academy of Agricultural Sciences, Nanchang, P. R. China; 
+bInstitute of Environment and Sustainable Development in Agriculture, CAAS, Beijing, P. R. China
+ABSTRACT
+Cold stress seriously inhibits plant growth and development, geographical distribution, and yield stability 
+of plants. Cold acclimation (CA) is an important strategy for modulating cold stress, but the mechanism by 
+which CA induces plant resistance to cold stress is still not clear. The purpose of this study was to 
+investigate the effect of CA treatment on the cold resistance of citrus seedlings under cold stress 
+treatment, and to use seedlings without CA treatment as the control (NA). The results revealed that CA 
+treatment increased the content of photosynthetic pigments under cold stress, whereas cold stress 
+greatly reduced the value of gas exchange parameters. CA treatment also promoted the activity of 
+Rubisco and FBPase, as well as led to an upregulation of the transcription levels of photosynthetic related 
+genes (rbcL and rbcS), compared to the NA group without cold stress. In addition, cold stress profoundly 
+reduced photochemical chemistry of photosystem II (PSII), especially the maximum quantum efficiency (Fv 
+/Fm) in PSII. Conversely, CA treatment improved the chlorophyll a fluorescence parameters, thereby 
+improving electron transfer efficiency. Moreover, under cold stress, CA treatment alleviated oxidative 
+stress damage to cell membranes by inhibiting the concentration of H2O2 and MDA, enhancing the 
+activities of superoxide dismutase (SOD), catalase (CAT), ascorbic acid peroxidase (APX) and glutathione 
+reductase (GR), accompanied by an increase in the expression level of antioxidant enzyme genes 
+(CuZnSOD1, CAT1, APX and GR). Additionally, CA also increased the contents of abscisic acid (ABA) and 
+salicylic acid (SA) in plants under cold stress. Overall, we concluded that CA treatment suppressed the 
+negative effects of cold stress by enhancing photosynthetic performance, antioxidant enzymes functions 
+and plant hormones contents.
+ARTICLE HISTORY 
+Received 17 September 2023  
+Revised 6 November 2023  
+Accepted 11 November 2023 
+KEYWORDS 
+Citrus; cold acclimation; cold 
+stress; oxidative stress; 
+photosynthesis
+Introduction
+Plants have evolved many positive and effective multifaceted 
+acclimation strategies to cope with their changing surroundings 
+during their growth and development, especially the unfavorable 
+environmental stresses.1,2 Cold stress is one of the important 
+environmental stress factors, which not only affects the nutri-
+tional and reproductive growth of plants, but also limits their 
+yield. Cold acclimation refers to the process in which plants 
+acquire stronger cold resistance after being treated with non- 
+lethal low temperatures for a short period of time. Exposure of 
+plants to non-lethal low temperatures for a short period of time 
+modulates their physiological and biochemical processes, 
+thereby inducing cold stress resistance, which is called cold 
+acclimation (CA).3 To alleviate the adverse effects of cold stress, 
+plants have evolved CA mechanisms, which is associated with 
+physiological and biochemical alterations, including modifica-
+tions of photosynthesis or photosynthetic electron transport, 
+reactive oxygen species variations, osmotic regulation, as well 
+as changes of gene expression and metabolism.4,5
+Photosynthesis is a crucial physiological process, through 
+which plants convert carbon dioxide and water into complex 
+organic compounds and release oxygen.6 The photosynthetic 
+apparatus in plants incorporates diverse components, such as 
+photosynthetic pigments for light absorption, photosystems 
+and the light reactions for NADPH and ATP generation, and 
+the dark reactions for CO2 assimilation.7 Among these, PSII is 
+considered as the most cold-sensitive component in the photo-
+synthetic apparatus. Cold stress reduces the photosynthetic 
+capacity by inhibiting PSII activity, which leads to a decrease 
+in its Fv/Fm and an increase in non-photochemical quenching 
+(NPQ).8
+When plants exposed to cold stress, the concentration of 
+chlorophyll in its leaves also decreases. In addition, the chlor-
+ophyll biosynthesis is affected, resulting in an imbalance 
+between the PSII and antenna complex.9 As an urge to increase 
+photon capture, plants under cold stress typically accumulate 
+higher concentrations of auxiliary pigments, such as chloro-
+phyll b and carotenoids, compared to chlorophyll a.7 
+Photosynthetic enzymes including Rubisco, directly participate 
+in CO2 fixation, which are vulnerable to low temperatures.10 
+The synthesis rate of ribose-1,5-diphosphate (RuBP) and the 
+carboxylation sites of Rubisco are highly sensitive to tempera-
+ture changes.11 There is considerable evidence to suggest that 
+genes like rbcL and rbcS drive the basic function of CO2 
+assimilation. CA can limit low-temperature induced 
+CONTACT Zhongdong Hu 
+ huzhongdong@jxaas.cn 
+ Nanchang Key Laboratory of Germplasm Innovation and Utilization of Fruit and Tea, Jiangxi Academy of 
+Agricultural Sciences, Nanchang, P. R. China
+PLANT SIGNALING & BEHAVIOR                        
+2023, VOL. 18, NO. 1, e2285169 (12 pages) 
+https://doi.org/10.1080/15592324.2023.2285169
+© 2023 The Author(s). Published with license by Taylor & Francis Group, LLC.  
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, 
+distribution, and reproduction in any medium, provided the original work is properly cited. The terms on which this article has been published allow the posting of the Accepted Manuscript in a 
+repository by the author(s) or with their consent.
+
+--- PAGE 2 ---
+photoinhibition and promote PSII recovery.12 For instance, 
+CA reduces susceptibility to photoinhibition by causing several 
+metabolic changes and producing variations in chloroplast 
+levels that may restore energy balance. Moreover, CA can 
+also enhance the capacity of plants to maintain metabolism 
+under low temperature by making the main quinone electron 
+acceptor QA more oxidized.13,14 More importantly, CA treat-
+ment enhances a series of Calvin cycle enzymes (such as 
+FBPase and Rubisco) activities and greatly improves D1 synth-
+esis ability in cucumber seedlings under low temperature 
+conditions.15
+Chlorophyll a fluorescence analysis is a nondestructive, effi-
+cient and sensitive tool for monitoring the mechanisms of 
+photosynthetic apparatus in diverse environments.16 and also 
+use to assess the consequences of plant stress induced photo-
+synthesis, which allows to get detail information about the 
+photosynthetic process without damaging the experimental 
+sample.17,18 The analysis of OJIP kinetics, referred to as the 
+“JIP-test”, is a useful technique for evaluating the function of 
+the photosystem, which may also be helpful for providing 
+direct information on the status and function of PSII reaction 
+centers, light-harvesting antenna complexes, and the donor 
+and receptor sides of PSII.19 Further, JIP-test has been used 
+to study stress alleviation. In current study, the JIP-test has 
+been used to obtain detailed information on the negative effects 
+of cold stress on different sites in photosynthetic machinery 
+and to reveal that whether the stress effects alleviated in the CA 
+treatment plants of citrus, and the photosynthetic performance 
+based on light absorption in CA group was higher than that of 
+the cold stress group.
+The most severe sequel of cold stress is the excessive 
+production of reactive oxygen species (ROS), which can 
+lead to oxidative damage to plant cells at high concentra-
+tions. To minimize ROS concentration and control redox 
+homeostasis, plants have developed an array of efficient 
+defense strategies, including effective enzymatic antioxi-
+dants and non-enzymatic antioxidants, such as SOD, 
+CAT, APX, glutathione GR, DHAR, AsA and GSH20. 
+Beside, CA also induces other biochemical mechanisms, 
+such as transcription of genes encoding stress proteins, 
+non-structural carbohydrate content, and lipid composi-
+tion.CA increases the proportion of non-structural carbo-
+hydrates (Starch and sugar) contents in tobacco leaves and 
+improves the activity of antioxidant enzymes and accumu-
+lating antioxidants, alleviating the damage of membrane 
+peroxidation under cold stress.3 Cold stress regulates Ca2+ 
+channels, induce Ca2+ transients, cross-talks with nitric 
+oxide (NO), ROS and mitogen-activated protein kinases 
+(MAPKs) signaling pathways, thereby enhancing plant 
+cold resistance.21 Meanwhile, CA is a polygenic inheritance 
+that involves a large number of gene interactions, among 
+which CBF transcription factors are the core of cold accli-
+mation regulation.22,23 There are three tandemly arranged 
+CBF genes in Arabidopsis thaliana, and overexpression of 
+CBF1, CBF2, and CBF3 can significantly improve the cold 
+resistance in plants.23 Zhao et al24 revealed that the CBF 
+genes regulate the expression of 414 downstream cold- 
+responsive (COR) genes, of which 346 are CBF-activated 
+genes and 68 are CBF-repressed genes, enhancing the cold 
+resistance of transgenic plants.25 Moreover, the studies have 
+found that CA also improves the cold tolerance of plants 
+by regulating hormone metabolism like GA3, CTK and IAA 
+or stimulating the transcription level of potential antifreeze 
+protein genes.26,27
+Citrus is a typical tropical and subtropical fruit tree, 
+which is susceptible to the effects of cold and freezing28. 
+During early spring, when citrus seedlings are planted in 
+field, they are often damaged by low temperatures or frost, 
+leading to slow growth and development, and even death. 
+Therefore, before seedlings transplantation, a portion of the 
+greenhouse plastic film is usually uncovered to maintain 
+a stable temperature of around 7–11, used for CA treat-
+ment, thereby enhancing the cold tolerance of citrus seed-
+lings. This study assessed the photosynthetic performance 
+and antioxidant enzyme activity of citrus seedlings under 
+and cold stress with/without CA treatment, thereby reveal-
+ing the potential physiological and biochemical mechan-
+isms underlying these phenomena. Besides, the 
+mechanism of oxidative damage and energy transfer in 
+PSII reaction center of citrus leaves under cold stress con-
+ditions was also analyzed. Our research results provide 
+necessary theoretical support for improving the cold toler-
+ance of citrus seedlings and developing reasonable cultiva-
+tion measures.
+Materials and methods
+Experimental materials and treatments
+This study used 3-year-old, healthy, and consistently growing 
+Nanfeng Tangerine (Citrus reticulata Blanco cv. Kinokuni) 
+seedlings as experimental materials, which is the widely cul-
+tivated citrus variety in Nanfeng County, Jiangxi Province, 
+China. The seedlings were planted into the pot with 
+a diameter of 50 cm both at the top and bottom, and 
+a height of 70 cm, filled with citrus specialized cultivation 
+substrate with an organic matter content of 3%-5%, an avail-
+able phosphorus content of 0.09%, an available potassium 
+content of 1%, a hydrolyzed nitrogen content of 0.2%, and 
+a pH value between 5.5 and 6.5. Before the experiment, 
+healthy and uniform citrus seedlings were cultivated in the 
+artificial climate chamber for 7d, with the temperature is 28/ 
+18°C (day/night), and the light intensity is 800 μmol m−2 s−1, 
+the photoperiod is 12/12 hours (day/night) and the relative 
+humidity is about 65%.
+After pre-treatment was completed, all citrus seedlings were 
+then randomly arranged into two groups. One group of seed-
+lings were grown in the artificial climate chamber (A1000, 
+Conviron, Canada) and undergo cold acclimation treatment 
+at a temperature of 7/10°C (night/day) for 3d was recorded as 
+CA. The other group of seedlings that were not cold acclima-
+tion was recorded as NA. Both the CA and NA groups of 
+seedlings were then subjected to cold stress treatment at 
+a low temperature of 4/7°C (night/day) (recorded as CA + 4/ 
+7°C stress and NA + 4/7°C stress, respectively) for 3d. During 
+the experiment, the environmental conditions in the climate 
+chamber, except for temperature, were the same as normal 
+e2285169-2
+ C. XU ET AL.
+
+--- PAGE 3 ---
+growth conditions. The indicators were measured on the 
+3rd day after CA and cold stress treatment.
+Photosynthetic pigment concentrations and gas exchange 
+measurements
+The concentration determination of chlorophyll and carote-
+noids by using the method of Xu et al.,29 Healthy leaf samples 
+were ground and extracted with 25 mL of acetone. Then, the 
+mixture was centrifuged at room temperature at 4000 × g for 
+25 min.The absorbance was measured at 448 and 428 nm by 
+using an ultraviolet spectrophotometer (UV-9100, LabTech, 
+China). Chlorophyll and carotenoid concentrations were then 
+calculated. The unit of Chl was expressed as mg g−1 (FM).
+The gas exchange of citrus leaves was measured by using the 
+Li-6400XT (Li-COR Inc., USA) from 9:00 to 11:00 based on the 
+method of.30 Before the measurement, we conducted a 20 min 
+light induction on the measured leaves. During the measure-
+ment process, the leaf chamber temperature was maintained at 
+25 ± 1°C, the relative humidity was 50 ± 5%, and the light 
+intensity was 800 μmol m−2 s−1. Net photosynthetic rate (PN), 
+stomatal conductance (gs), intercellular CO2 concentration (Ci) 
+and transpiration rate (Tr) were automatically recorded by the 
+instrument after equilibration to steady state.
+Chlorophyll a fluorescence elements measurements
+Chlorophyll a fluorescence parameters were monitored by the 
+plant efficiency analyzer (Handy PEA fluorimeter, Hansatech 
+instruments Ltd. England). Prior to the measurement, the 
+leaves were adapted to darkness at 25◦C for 20 min. The 
+abbreviations, formulas, and definitions of the JIP experimen-
+tal parameters used in this study are shown in Table S1.31
+Malondialdehyde and H2O2 contents measurements
+The content of malondialdehyde (MDA) was measured using 
+the thiobarbituric acid (TBA)-based colorimetric method, as 
+described in He et al.,32 with slight modifications. The concen-
+tration of H2O2 in leaves was measured using the method of Xu 
+et al.33 with almost no modification. The unit of MDA and H2 
+O2 was expressed as μmol g−1 FM.
+Antioxidant enzyme activities measurements
+Briefly, fresh green citrus leaves were ground in liquid nitrogen 
+and extracted with 5 ml extraction buffer (50 mM K-phosphate 
+buffer (pH 7.6) and 0.1 mMNa2-EDTA). The mixture was 
+centrifuged at 4000×g for 25 min and then the antioxidant 
+enzymes e activities were measured using the supernatant 
+following the method of Mohammadrezakhani et al.34 The 
+activity of SOD, APX and GR was expressed as units mg−1 
+protein, while the activity of CAT was expressed as nmol min−1 
+mg−1 protein.
+Rubisco and FBPase activity determinations
+The activity of Rubisco and FBPase was measured using 
+enzyme-linked immunosorbent assay (ELISA)35,36. Rubisco 
+activity was measured using an ELX800 ELISA reader 
+(BioTek, USA), while FBPase activity was measured using 
+a ultraviolet spectrophotometer. The absorbance values of the 
+samples at 450 nm and 340 nm wavelengths were measured, 
+and their concentrations were calculated. The unit of Rubisco 
+and FBPase was expressed as μmol g−1 s−1.
+Determination of abscisic acid and salicylic acid
+HPLC (Thermo-separation product, model Spectra System 
+P 2000, CA, USA) was used for abscisic acid and salicylic acid 
+estimation. Detailed measurement steps according to the 
+method by Agarwal et al.37
+Transcription levels of genes measurement
+The gene transcription levels involved in the article were 
+determined by Nanjing Huazhihai Biotechnology Co., Ltd. In 
+briefly, a mass of approximately 0.2 g citrus leaves, which were 
+previously and macerated in liquid nitrogen, was used for the 
+extraction of total RNA using an RNAsimple Total RNA Kit 
+(Tiangen Biotech, Co., Ltd., Beijing, China). The 2−ΔΔCt 
+method was used to calculate relative gene expression. The 
+sequences of the primers used for quantitative real-time PCR 
+were shown in Table S2
+Statistical analysis
+The experiments were repeated three replicates containing 
+three plants each. Data are analyzed by two-way analysis of 
+variance (ANOVA) using the statistical software SPSS 17.0 
+(SPSS Inc. Ver.16, Chicago, IL, USA) and are presented as 
+the means ± SEs. The differences were considered statistically 
+significant at the 5% level by Duncan’s test. Figures were drawn 
+with Graph Pad Prism version 7.05 for Windows (Graph Pad 
+Software, San Diego, CA, USA).
+Results
+Photosynthetic pigments and gas exchange parameters
+According to Table 1, CA slightly decreased chlorophyll 
+content and increased carotenoid content in the citrus 
+Table 1. Effects of cold acclimation on chlorophyll and carotenoid concentrations in citrus seedling leaves under cold stress. Note. The data in the table is the average 
+value of three replicated samples. Different letters indicate significant differences among different treatments at P < .05.
+Treatments
+Chlorophyll Carotenoid
+Chlorophyll/carotenoidMean (mg g−1 FM) Percentage of NA (%) Mean (mg g−1 FM) Percentage of NA (%)
+NA 3.21 ± 0.12a / 0.82 ± 0.02c / 3.91 ± 0.13a
+CA 3.17 ± 0.14a 98.75 0.81 ± 0.01c 98.78 3.91 ± 0.11a
+NA + 4/7°C 2.17 ± 0.09c 67.60 0.91 ± 0.03a 110.97 2.38 ± 0.09c
+CA + 4/7°C 2.84 ± 0.11b 88.47 0.86 ± 0.02b 104.87 3.30 ± 0.12b
+PLANT SIGNALING & BEHAVIOR
+ e2285169-3
+
+--- PAGE 4 ---
+leaves compared to the NA group before exposure to cold 
+stress. However, prior to the cold stress, there were no 
+significant differences in the chlorophyll and carotenoid 
+contents between the NA and CA groups. Moreover, the 
+cold stress greatly reduced chlorophyll content and 
+increased carotenoid content of CA and NA groups in 
+citrus seedlings. The chlorophyll content in the CA + cold 
+stress group was 23.59% higher and the carotenoid content 
+was 5.81% lower than that of the NA + cold stress group, 
+respectively. In addition, the chlorophyll/carotenoid ratio 
+was progressively decreased by 4/7°C cold stress in both the 
+CA and NA plants.
+The gas exchange parameters including PN, Ci, gs, and Tr 
+were slightly reduced in CA treatment compared to that in the 
+NA group before exposure to cold stress (Figure 1a–d). 
+However, the reductions were not more pronounced in NA 
+or CA seedlings. Under cold stress, CA treatment decreased the 
+negative effects of extreme temperatures on these parameters 
+and showed higher levels of PN, Ci, gs, and Tr by 61%, 73%, 9% 
+and 72%, respectively, compared to that in the NA group. 
+There were significant differences between the CA + cold stress 
+group and the NA + cold stress group regarding these para-
+meters of gas exchange.
+Rubisco and FBPase activities and transcription levels of 
+rbcL and rbcS genes
+Compared to the NA group before cold stress, CA treatment 
+slightly reduced the activities of Rubisco and FBPase in citrus 
+leaves, but did not exhibit significant cold damage (Figure 2a, 
+b). Moreover, cold stress reduced the Rubisco and FBPase 
+activities of CA and NA plants. The difference in Rubisco 
+and FBPase activity between the CA group and the NA group 
+under cold stress widened greatly. The transcription levels of 
+rbcL and rbcS in citrus leaves treated with CA immensely 
+decreased by 15.38% and 29.41%, respectively, compared to 
+the NA group before cold stress (Figure 2c, d). In addition, the 
+cold stress significantly decreased the transcript levels of rbcL 
+and rbcS in both NA and CA plants. However, compared to the 
+NA + cold stress group, the transcript levels of rbcL and rbcS 
+were higher in the CA + cold stress group by 28.57% and 
+40.09%, respectively.
+Chlorophyll a fluorescence parameters
+As shown in Figure 3, The Area, Fo, Fv, PIabs, Sm, Fv/Fo and Fm 
+values in the CA and NA groups without cold stress were 
+significantly different, with the values of CA group significantly 
+higher than those in the NA group. Old stress reduced chlor-
+ophyll a fluorescence parameters in both CA and NA plants. 
+Although Fv and PIabs values in the CA + cold stress group 
+were smaller than those in the NA + cold stress group, there 
+Figure 1. Effects of cold acclimation on PN, Ci, gs and Tr under cold stress in citrus seedling leaves. Note. PN – net photosynthetic rate, gs – stomatal conductance, 
+Ci – intercellular CO2 concentration, Tr – transpiration rate, NA – without cold acclimation, CA – cold acclimation. The data in the figure is the average value of three 
+replicated samples. Different letters indicate significant differences among different treatments at P < .05.
+e2285169-4
+ C. XU ET AL.
+
+--- PAGE 5 ---
+was no significant difference. Moreover, the value of Area, Fo, 
+Sm, Fv/Fo and Fm in the CA + cold stress group was signifi-
+cantly higher than those in the NA + cold stress group.
+Phenomenological energy fluxes i.e. ABS/CSm, TRo/CSm, 
+ETo/CSm and DIo/CSm are shown in Figure 4. In phenomen-
+ological fluxes per cross-section and the leaf model, The ABS/ 
+CSm, TR/CSm, ETo/CSm, and DIo/CSm of plants in the CA 
+group were significantly affected compared to those in the NA 
+group. The cold stress treatment significantly decreased ABS/ 
+CSm, TR/CSm, ETo/CSm, and DIo/CSm. However, ABS/CSm, 
+TR/CSm, ETo/CSm, and DIo/CSm were greatly higher in the 
+CA+ cold stress group, compared to those in the NA+ cold 
+stress group.
+H2O2 and MDA contents
+CA slightly increased the production rate of H2O2 content in 
+citrus leaves (Figure 5). However, before cold stress treatment, 
+there was no significant difference in the production rate of H2O2 
+content between the NA group and the CA group. In addition, 
+compared to the NA group before cold stress, the MDA content in 
+the CA group slightly increased. The contents of H2O2 and MDA 
+in the CA and NA plants were greatly increased under cold stress. 
+However, the contents of H2O2 and MDA in the CA + cold stress 
+group decreased by 19.04% and 22.38%, respectively, in compar-
+ison to the NA + cold stress group.
+Antioxidant enzyme activity
+Compared to the NA group before cold stress, CA slightly 
+increased the activities of SOD and CAT in citrus leaves, but 
+there was no significant difference in the activities of SOD and 
+CAT between the NA group and the CA group (Figure 6). 
+Moreover, CA significantly increased the activities of APX and 
+GR, compared to the NA group before exposure to cold stress. 
+The activities of SOD, CAT, APX, and GR in the CA and NA 
+plants were significantly increased under cold stress. However, 
+compared with NA + cold stress group, the CA + cold stress 
+group showed significantly higher CAT, APX, and GR activ-
+ities, while SOD activities showed relatively stable.
+Transcription levels of genes encoding antioxidant 
+enzymes
+As shown in Figure 7, only 5.26% of the CuZnSOD1 tran-
+script level was reduced in the CA group, compared to that 
+in the NA group before cold stress. Cold stress greatly 
+increased the transcription level of CuZnSOD1 , and 
+Figure 2. Effects of cold acclimation on the activities of Rubisco and FBPase and the relative transcription levels of rbcL and rbcS genes under cold stress in citrus 
+seedlings leaves. Note. Rubisco – ribulose-1,5-bisphosphate carboxylase/oxygenase, FBPase – Fructose1,6-bisphosphatase, rbcS – photosynthesis related gene, 
+rbcL – photosynthesis related gene, NA – without cold acclimation, CA – cold acclimation. The data in the figure is the average value of three replicated samples. 
+Different letters indicate significant differences among different treatments at P < .05.
+PLANT SIGNALING & BEHAVIOR
+ e2285169-5
+
+--- PAGE 6 ---
+compared to the NA + cold stress group, the transcription 
+level of CuZnSOD1 in the CA+ cold stress group was 
+pronouncedly higher. Moreover, CA significantly increased 
+the CAT1, APX and GR transcript levels compared to the 
+NA group before cold stress. The cold stress greatly 
+increased CAT1, APX and GR transcript levels in both CA 
+and NA plants, with the transcription levels of CAT1, APX 
+and GR in CA + cold stress group being 21.74%, 31.92%, 
+and 24.07% higher than those in NA + cold stress group, 
+respectively.
+ABA and SA contents
+As shown in Figure 8, prior to cold stress treatment, the citrus 
+leaves in the CA group exhibited a slight increase in ABA 
+content compared to the NA group, although the difference 
+was not statistically significant. Conversely, when subjected to 
+cold stress conditions, the ABA content in the NA group sig-
+nificantly increased, and the CA + cold stress group demon-
+strated an 52.56% increase in ABA content compared to the 
+NA + cold stress group. Regarding SA, prior to cold stress treat-
+ment, the SA concentration in the CA group exhibited 
+a statistically significant elevation compared to the NA group. 
+Following exposure to cold stress, the SA concentration in NA 
+plants experienced a significant augmentation, and the ABA 
+concentration in the NA + cold stress group was 1.42 times 
+higher than that in the CA + cold stress group.
+Discussion
+Chlorophylls (Chl) are essential for light-harvesting during 
+photosynthesis.38 A drop in temperature, without freezing, 
+causes a serious slowdown or even degradation of chlorophyll 
+synthesis, which is not conducive to the normal growth and 
+development of plants. In this experiment, we confirmed that 
+CA pretreatment reduced the degradation of chlorophyll and 
+carotenoid content induced by cold stress (Table 1), indicating 
+that CA can effectively stimulate chlorophyll synthesis and 
+alleviate the harsh effects of stress factors under cold stress 
+conditions. Photosynthesis is the most fundamental physiolo-
+gical process in plants, and it is an important source of power 
+for its growth, development, and physiological metabolic activ-
+ities. However, any biotic and abiotic stress that changes the 
+components of photosynthetic will lead to the decline of PN.39 
+Our study showed that citrus seedlings subjected to cold stress 
+exhibit a significant decrease in photosynthesis, but plants with 
+CA pretreated exhibit an increase in photosynthesis (Figure 1). 
+The decrease in PN under cold stress may be due to the 
+disruption of the dynamic balance between gs and Ci. When 
+gs and Ci. decrease together, the stomatal conductivity is a key 
+factor limiting PN.40 On the other hand, under cold stress, PN 
+increased in citrus seedlings treated with CA, which may be the 
+result of simultaneous positive induction of gs and Ci. 
+Photosynthesis disruption by cold stress is also reflected in 
+photosynthetic enzymes. Rubisco is a rate-limiting enzyme 
+for the carboxylation of RuBP, and is also one of the main 
+Figure 3. Effects of cold acclimation on chlorophyll a fluorescence parameters under cold stress in citrus seedlings leaves. Note. Area – total complementary area 
+between the fluorescence, Fo – minimal fluorescence, Fv – maximal variable fluorescence, PIabs – performance index (potential) for energy conservation from exciton to 
+the reduction of intersystem electron acceptors, Sm – normalized total area above the OJIP curve, Fv/Fo – ratio of rate constants for photochemical and 
+nonphotochemical use of RC excitation energy, Fm – maximal fluorescence, when all PSII RCs are closed, NA – without cold acclimation, CA – cold acclimation. The 
+data in the figure is the average value of three replicated samples.
+e2285169-6
+ C. XU ET AL.
+
+--- PAGE 7 ---
+centers under any stress condition.10 In current study, cold 
+stress significantly reduced the activity of RuBP leading to the 
+downregulation of photosynthesis. However, the CA treatment 
+before imposing cold stress greatly elevated the activity of 
+RuBP (Figure 2), which improves photosynthetic CO2 assim-
+ilation rates. In plants, FBPase activity is the main stromal 
+diphosphatase that monitors photosynthesis at low tempera-
+tures, and its activity is closely related to the redox state of the 
+chloroplast41. According to Daems et al42 confirmed that 
+FBPase activity was inhibited in chilling-stressed plants. Our 
+study showed that in cold-stressed citrus plants, CA increased 
+FBPase activity, suggesting that CA alleviates inhibitory effects 
+of FBPase activity in citrus seedlings under cold conditions. 
+Our study also measured the transcript levels of two genes that 
+encode Rubisco, namely rbcL and rbcS, which were reduced in 
+citrus leaves under cold stress, but the decrease was mitigated 
+by CA treatment before cold stress (Figure 2). Therefore, CA 
+treatment before cold stress enhanced the transcript levels of 
+rbcL and rbcS, thereby enhancing the ability of citrus seedlings 
+to resist cold stress and reducing the inhibition to photosyn-
+thetic capacity.
+Chlorophyll fluorescence has emerged as a vital tool for 
+assessing the photosynthetic process/systems in plants under 
+various stressful conditions.16 An extreme-stress condition 
+Figure 4. Effects of cold acclimation on phenomological energy flux per unit area under cold stress. Note. ABS/CSm – light energy absorbed per unit area, TRo/CSm – light 
+energy captured per unit area for electron transport, ETo/CSm – quantum yield for electron transport per unit area, DIo/CSm – thermal energy dissipation per unit area, 
+NA – without cold acclimation, CA – cold acclimation. The data in the figure is the average value of three replicated samples.
+Figure 5. Effects of cold acclimation on H2O2 and MDA under cold stress in citrus seedling leaves. Note. H2O2 – hydrogen peroxide, MDA – malondialdehyde, 
+NA – without cold acclimation, CA – cold acclimation. The data in the figure is the average value of three replicated samples. Different letters indicate significant 
+differences among different treatments at P < .05.
+PLANT SIGNALING & BEHAVIOR
+ e2285169-7
+
+--- PAGE 8 ---
+result in significant photoinhibition of the PSII reaction 
+center.43 Fv/Fm is the most widely used photo-oxidative stress 
+markers. In healthy leaves, the value of Fv/Fm is very stable, 
+ranging from 0.80 to 0.83, which is also related to the max-
+imum quantum yield of photosynthesis.44 When the value of 
+Fv/Fm is lower than 0.75, it indicates that PSII is damaged, 
+photoinhibition, and therefore it is very useful stress marker.33 
+In our experiment, cold stress greatly reduced the value of Fv/ 
+Fm, but CA treatment before the cold stress protects the PSII 
+form photoinhibition (Figure 3). Area parameter represents 
+the total complementary area between the fluorescence induc-
+tion curve and Fm
+45 which was higher in CA+ cold plants than 
+in only cold treated plants (Figure 3). The Area is relative to the 
+pool size of the electron acceptors QA on the reducing side of 
+PSII. According to previous reports, the decrease in area para-
+meters will be due to the blocking of electron transfer from RC 
+to the quinone pool46. Hence, CA treatment helps to increase 
+the electron transfer from the RC to the quinone pool before 
+cold stress. PIabs is calculated on energy absorption basis47 and 
+PIabs value is higher in the plant under CA+cold group 
+(Figure 3). PIabs is increased due to increased activity of the 
+RC so the overall activity of the RC is increased. Sm, assessing 
+of the electron transporter PQ pool between PS II and PSI,48 is 
+also increase in the plant under CA+ cold stress group dis-
+played an increased electron transport between these photo-
+systems. As a result of photosynthetic electron transport, 
+precise rhythms of photosynthesis are maintained and an 
+optimal energy flow is ensured, which contributes to plant 
+growth and development as well as stress responses.49
+The decreases in ABS/CSm, DIo/CSm, TRo/CSm, and ETo/ 
+CSm suggested substantial interference with the active reaction 
+centers of PSII under cold without CA treatment. However, the 
+plants under CA+ cold group have the higher values of ABS/ 
+CSm, DIo/CSm, TRo/CSm, and ETo/CSm, which may be due 
+to the help of CA in maintaining the balance of energy transfer 
+from the light harvesting complex to the chlorophyll reaction 
+center in the photosystem.
+H2O2 is an oxidant and is involved in the production of 
+many other ROS.50 The amount of ROS gives us information 
+about the status of the imbalance during a stress response. 
+MDA is the final product of membrane lipid peroxidation, 
+which is used to examine the oxidative damage in the cell 
+membranes.51 Our research results indicated that cold stress 
+caused damage to the membrane of citrus leaves and increased 
+the content of H2O2 (Figure 5). The plants in CA + cold stress 
+group lowered this trend by a decrease of MDA and H2O2 
+levels, compared to that in the NA + cold stress group, suggest-
+ing that CA treatment has a certain protective effect on mem-
+brane damage under cold stress induced conditions. This 
+conclusion was similar to the research results of Ruelland et -
+al.52 To prevent from oxidative stress and maintain cell activity, 
+plants respond to stress by regulating the expression of scaven-
+ger enzymes (SOD, CAT, APX, GR) in the cell membrane 
+system to prevent oxidative damage.53 SOD play the most 
+Figure 6. Effects of cold acclimation on SOD, CAT, APX and GR activity under cold stress in citrus seedling leaves. Note. SOD – superoxide dismutase, CAT – catalase, 
+APX – ascorbate peroxidase, GR – glutathione reductase, NA – without cold acclimation, CA – cold acclimation. The data in the figure is the average value of three 
+replicated samples. Different letters indicate significant differences among different treatments at P < .05.
+e2285169-8
+ C. XU ET AL.
+
+--- PAGE 9 ---
+potential role in protecting cell membrane degradation and 
+scavenging ROS, which is the first defense mechanism of the 
+antioxidant system.54 By converting O2
+− to H2O2, which is then 
+rapidly detoxified by CAT by transferring H2O2 to H2O and 
+O2
+55, and thereafter, CAT, POD and APX. The above enzymes 
+effectively enhance the scavenging of ROS and free radicals, 
+thereby protecting seedlings from cell damage caused by oxi-
+dative stress. Our research showed that under cold stress 
+conditions, the activities of CAT, SOD, APX, and GR signifi-
+cantly increased, while the pre-treatment of CA actively stimu-
+lated the activity of these enzymes to provoke the cold 
+resistance of citrus seedlings (Figure 6), indicating that the 
+cumulative effect of all antioxidant enzymes promotes the 
+efficacy of scavenger by increasing antioxidant functions, 
+thereby playing a protective role in the cell membrane. Our 
+study also investigated the transcript levels of redox enzymes- 
+Figure 7. Effects of cold acclimation on the relative transcription levels of CuZnSOD1, CAT1, APX, GR genes in citrus seedlings leaves under cold stress. Note. CuZnsod1 – encoding 
+gene of SOD, CAT1 – encoding gene of CAT, APX – encoding gene of APX, GR – encoding gene of GR, NA – without cold acclimation, CA – cold acclimation. The data in the figure 
+is the average value of three replicated samples. Different letters indicate significant differences among different treatments at P < .05.
+Figure 8. Effects of cold acclimation on ABA and SA in citrus seedlings leaves under cold stress. Note. ABA – abscisic acid, SA – salicylic acid, NA – without cold 
+acclimation, CA – cold acclimation. The data in the figure is the average value of three replicated samples. Different letters indicate significant differences among 
+different treatments at P < .05.
+PLANT SIGNALING & BEHAVIOR
+ e2285169-9
+
+--- PAGE 10 ---
+related genes such as CuZnSOD1, CAT1, APX, and GR, which 
+were higher in the CA+ cold stress group, compared to that in 
+the NA+ cold stress group, suggesting that CA treatment prior 
+to cold stress enhances redox enzymes-related genes expres-
+sion levels and prevents antioxidant enzymes inactivation, thus 
+improving cold tolerance of citrus seedlings.
+Conclusion
+The model of cold acclimation treatment before cold stress 
+improving the cold resistance of citrus seedlings was shown 
+in Figure 9. The conclusions of this study indicated that 
+exposure to cold stress resulted in an increase in the con-
+centration of photosynthetic pigments and enhanced the 
+activities of Rubisco and FBPase, as well as led to an 
+upregulation of transcription levels of photosynthetic 
+related genes (rbcL and rbcS). The treatment of cold accli-
+mation significantly improved the photochemical efficiency 
+of photosystem II (PSII), particularly the maximum quan-
+tum efficiency (Fv/Fm) of PSII, and enhanced the efficiency 
+of electron transfer. Moreover, cold acclimation alleviated 
+oxidative stress damage to the cell membrane by inhibiting 
+the concentrations of H2O2 and MDA, enhancing the activ-
+ities of superoxide dismutase (SOD), catalase (CAT), ascor-
+bate peroxidase (APX), and glutathione reductase (GR), 
+and increasing the expression levels of antioxidant enzyme 
+genes (CuZnSOD1, CAT1, APX, and GR). Additionally, 
+cold acclimation also increased the contents of abscisic 
+acid (ABA) and salicylic acid (SA) in plants under cold 
+stress.
+In summary, when subjected to cold stress at tempera-
+tures below 4/7°C, the process of cold acclimation demon-
+strates its potential in mitigating the photoinhibition of PSII 
+and oxidative harm to citrus leaves. This is achieved 
+through the enhancement of photosynthetic apparatus per-
+formance, augmentation of antioxidant enzyme and photo-
+synthetic enzyme activities, optimization of energy 
+distribution within PSII reaction centers, and reduction in 
+the accumulation of reactive oxygen species (ROS) and 
+malondialdehyde (MDA).
+Disclosure statement
+No potential conflict of interest was reported by the author(s).
+Figure 9. Schematic representation of the positive role of cold acclimation (CA) on cold tolerance in citrus plant.
+e2285169-10
+ C. XU ET AL.
+
+--- PAGE 11 ---
+Funding
+This work was supported by the Modern Agricultural Research 
+Collaborative Innovation Program of Jiangxi Province 
+(JXXTCXBSJJ202206, JXXTCX202203), the Major Scientific and 
+Technological Research and Development Program of Jiangxi, China 
+(20203ABC28W014), the Earmarked Fund for the China Agriculture 
+Research System (CARS-26), and the Earmarked Fund for Jiangxi 
+Agriculture Research System (JXARS-07), the Breed Improvement 
+Project of Nanfeng Tangerine(FZ-2022-8).
+References
+1. Zhou J, Wang J, Shi K, Xia XJ, Zhou YH, Yu JQ. Hydrogen 
+peroxide is involved in the cold acclimation-induced chilling tol-
+erance of tomato plants. Plant Physiol Bioch. 2012;60:141–149. 
+doi:10.1016/j.plaphy.2012.07.010.
+2. Petruccelli R, Bartolini G, Ganino T, Zelasco S, Lombardo L, 
+Perri E, Durante M, Bernardi R. Cold Stress, Freezing 
+Adaptation, Varietal Susceptibility of Olea europaea L.: A Review. 
+Plants. 2022;11(10):1367. doi:10.3390/plants11101367.
+3. Wei Y, Chen H, Wang L, Zhao Q, Wang D, Zhang T. Cold 
+acclimation alleviates cold stress-induced PSII inhibition and oxi-
+dative damage in tobacco leaves. Plant Signal Behav. 
+2022;17:2013638. doi:10.1080/15592324.2021.2013638.
+4. Gao Y, Thiele W, Saleh O, Scossa F, Arabi F, Zhang H, 
+Sampathkumar A, Kühn K, Fernie A, Bock R, et al. Chloroplast 
+translational regulation uncovers nonessential photosynthesis 
+genes as key players in plant cold acclimation. Plant Cell. 2022;34 
+(5):2056–2079. doi:10.1093/plcell/koac056.
+5. Gusain S, Joshi S, Joshi R. Sensing, signalling, and regulatory 
+mechanism of cold-stress tolerance in plants. Plant Physiol. 
+2023;197(197):107646. doi:10.1016/j.plaphy.2023.107646.
+6. Kitashova A, Schneider K, Fürtauer L, Schröder L, 
+Scheibenbogen T, Fürtauer S, Nägele T. Impaired chloroplast posi-
+tioning affects photosynthetic capacity and regulation of the cen-
+tral carbohydrate metabolism during cold acclimation. Photosynth 
+Res. 2021;147(1):49–60. doi:10.1007/s11120-020-00795-y.
+7. Gu L, Han J, Wood JD, Chang CYY, Sun Y. Sun‐induced Chl 
+fluorescence and its importance for biophysical modeling of photo-
+synthesis based on light reactions. New Phytol. 2019;223 
+(3):1179–1191. doi:10.1111/nph.15796.
+8. Wang H, Li Z, Yuan L, Zhou H, Hou X, Liu T. Cold acclimation 
+can specifically inhibit chlorophyll biosynthesis in young leaves of 
+Pakchoi. BMC Plant Biol. 2021;21(1):172. doi:10.1186/s12870-021- 
+02954-2.
+9. Zhao Y, Han Q, Ding C, Huang Y, Liao J, Chen T, Feng S, Zhou L, 
+Zhang Z, Chen Y, et al. Effect of low temperature on chlorophyll 
+biosynthesis and chloroplast biogenesis of rice seedlings during 
+greening. Intel J Mol Sci. 2020;21(4):1390. doi:10.3390/ 
+ijms21041390.
+10. Galmés J, Aranjuelo I, Medrano H, Flexas J. Variation in Rubisco 
+content and activity under variable climatic factors. Photosynth 
+Res. 2013;117(1–3):73–90. doi:10.1007/s11120-013-9861-y.
+11. Yamori W, Suzuki K, Noguchi K, Nakai M, Terashima I. Effects of 
+Rubisco kinetics and Rubisco activation state on the temperature 
+dependence of the photosynthetic rate in spinach leaves from 
+contrasting growth temperatures. Plant, Cell & Environ. 2006;29 
+(8):1659–1670. doi:10.1111/j.1365-3040.2006.01550.x.
+12. Bascuñán-Godoy L, Sanhueza C, Cuba M, Zuñiga GE, Corcuera LJ, 
+Bravo LA. SSR markers in transcripts of genes linked to 
+post-transcriptional and transcriptional regulatory functions dur-
+ing vegetative and reproductive development of Elaeis guineensis. 
+BMC Plant Biol. 2012;12:1–15. doi:10.1186/1471-2229-12-1.
+13. Allen DJ, Ort DR. Impacts of chilling temperatures on photosynth-
+esis in warm-climate plants. Trends Plant Sci. 2001;6(1):36–42. 
+doi:10.1016/S1360-1385(00)01808-2.
+14. Savitch LV, Barker-Åstrom J, Ivanov AG, Hurry V, Öquist G, 
+Huner NP, Gardeström P. Cold acclimation of Arabidopsis thali-
+ana results in incomplete recovery of photosynthetic capacity, 
+associated with an increased reduction of the chloroplast stroma. 
+Planta. 2001;214(2):295–303. doi:10.1007/s004250100622.
+15. Soualiou S, Duan F, Li X, Zhou W. Crop production under cold 
+stress: an understanding of plant responses, acclimation processes, 
+and management strategies. Plant Physiol. 2022;190(190):47–61. 
+doi:10.1016/j.plaphy.2022.08.024.
+16. Maxwell K, Johnson GN. Chlorophyll fluorescence—a practical 
+guide. J Exp Bot. 2000;51(345):659–668. doi:10.1093/jexbot/51. 
+345.659.
+17. Guidi L, Lo Piccolo E, Landi M. Chlorophyll fluorescence, photo-
+inhibition and abiotic stress: does it make any difference the fact to 
+be a C3 or C4 species? Front Plant Sci. 2019;10:174. doi:10.3389/ 
+fpls.2019.00174.
+18. Pérez-Bueno ML, Pineda M, Barón M. Phenotyping plant 
+responses to biotic stress by chlorophyll fluorescence imaging. 
+Front Plant Sci. 2019;10:1135. doi:10.3389/fpls.2019.01135.
+19. Kalaji HM, Jajoo A, Oukarroum A, Brestic M, Zivcak M, 
+Samborska IA, Cetner MD, Łukasik I, Goltsev V, Ladle RJ. 
+Chlorophyll a fluorescence as a tool to monitor physiological status 
+of plants under abiotic stress conditions. Acta Physiol Plant. 
+2016;38(4):102. doi:10.1007/s11738-016-2113-y.
+20. Janská A, Maršík P, Zelenková S, Ovesná J. Cold stress and accli-
+mation–what is important for metabolic adjustment?[J]. Plant biol. 
+2010;12(3):395–405. doi:10.1111/j.1438-8677.2009.00299.x.
+21. Yuan P, Yang T, Poovaiah BW. Calcium signaling-mediated Plant 
+response to cold stress. Int J Mol Sci. 2018;19:3896. doi:10.3390/ 
+ijms19123896.
+22. Liu Y, Dang P, Liu L, He C. Cold acclimation by the CBF–COR 
+pathway in a changing climate: lessons from Arabidopsis thaliana. 
+Plant Cell Rep. 2019;38(5):511–519. doi:10.1007/s00299-019- 
+02376-3.
+23. Shi Y, Ding Y, Yang S. Molecular regulation of CBF signaling in 
+cold acclimation. Trends Plant Sci. 2018;23(7):623–637. doi:10. 
+1016/j.tplants.2018.04.002.
+24. Zhao C, Zhang Z, Xie S, Si T, Li Y, Zhu J-K. Mutational evidence 
+for the critical role of CBF transcription factors in cold acclimation 
+in Arabidopsis. Plant Physiol. 2016;171(4):2744–2759. doi:10.1104/ 
+pp.16.00533.
+25. Adhikari L, Baral R, Paudel D, Min D, Makaju O, Poudel P, 
+Acharya P, Missaoui A. Cold stress in plants: strategies to improve 
+cold tolerance in forage species. Plant Stress. 2022;4:100081. doi:10. 
+1016/j.stress.2022.100081.
+26. Raza A, Charagh S, Najafi-Kakavand S, Abbas S, Shoaib Y, 
+Anwar S, Sharifi S, Lu G, Siddique M. Role of phytohormones in 
+regulating cold stress tolerance: physiological and molecular 
+approaches for developing cold-smart crop plants. Plant Stress. 
+2023;8:100152. doi:10.1016/j.stress.2023.100152.
+27. Zhang Y, Cao Y, Zheng H, Feng W, Qu J, Fu F, Li W, Yu H. Ectopic 
+expression of antifreeze protein gene from ammopiptanthus nanus 
+confers chilling tolerance in maize. Crop J. 2021;9(4):924–933. 
+doi:10.1016/j.cj.2020.08.011.
+28. Primo-Capella A, Martínez-Cuenca M-R, Forner-Giner MÁ. Cold 
+stress in citrus: a molecular, physiological and biochemical 
+perspective. Horticulturae. 2021;7(10):340. doi:10.3390/horti 
+culturae7100340.
+29. Xu C, Yang Z, Yang S, Wang L, Wang M. High humidity alleviates 
+photosynthetic inhibition and oxidative damage of tomato seed-
+lings under heat stress. Photosynthetica. 2020b;58(1):146–155. 
+doi:10.32615/ps.2019.168.
+30. Budiarto R, Poerwanto R, Santosa E, Efendi D, Agusta A. 
+Comparative and correlation analysis of young and Mature Kaffir 
+Lime (Citrus Hystrix DC) leaf characteristics. Int J Plant Biol. 
+2022;13(3):270–280. doi:10.3390/ijpb13030023.
+31. Strasser RJ, Tsimilli-Michael M, Qiang S, Goltsev V. Simultaneous 
+in vivo recording of prompt and delayed fluorescence and 820-nm 
+reflection changes during drying and after rehydration of the 
+resurrection plant haberlea rhodopensis. BBA-Bioenergetics. 
+2010;1797(6–7):1313–1326. doi:10.1016/j.bbabio.2010.03.008.
+32. He Z, Zhao T, Yin Z, Liu J, Cheng Y, Xu J. The 
+phytochrome-interacting transcription factor CsPIF8 contributes 
+PLANT SIGNALING & BEHAVIOR
+ e2285169-11
+
+--- PAGE 12 ---
+to cold tolerance in citrus by regulating superoxide dismutase 
+expression. Plant Sci. 2020;298:110584. doi:10.1016/j.plantsci. 
+2020.110584.
+33. Xu C, Wang M, Yang Z, Zheng Q. Low temperature and low 
+irradiation induced irreversible damage of strawberry seedlings. 
+Photosynthetica. 2020a;58(1):156–164. doi:10.32615/ps.2020.001.
+34. Mohammadrezakhani S, Hajilou J, Rezanejad F, Zaare-Nahandi F. 
+Assessment of exogenous application of proline on antioxidant 
+compounds in three citrus species under low temperature stress. 
+J Plant Interact. 2019;14(1):347–358. doi:10.1080/17429145.2019. 
+1629033.
+35. Jahan MS, Guo S, Sun J, Shu S, Wang Y, Abou El-Yazied A, 
+Alabdallah NM, Hikal M, Mohamed MH, Ibrahim MF. Melatonin- 
+mediated photosynthetic performance of tomato seedlings under 
+high-temperature stress. Plant Physiol. 2021;167(167):309–320. 
+doi:10.1016/j.plaphy.2021.08.002.
+36. Xiong H, Ma H, Zhao H, Yang L, Hu B, Wang J, Shi X, Zhang Y, 
+Rennenberg H, Street N. Integrated physiological, proteome and 
+gene expression analyses provide new insights into nitrogen remo-
+bilization in citrus trees. Tree Physiol. 2022;42(8):1628–1645. 
+doi:10.1093/treephys/tpac024.
+37. Agarwal S, Sairam RK, Srivastava GC, Meena RC. Changes in 
+antioxidant enzymes activity and oxidative stress by abscisic acid 
+and salicylic acid in wheat genotypes. Biol Plantarum. 2005;49 
+(4):541–550. doi:10.1007/s10535-005-0048-z.
+38. Hoober JK, Eggink LL, Chen M. Chlorophylls, ligands and assem-
+bly of light-harvesting complexes in chloroplasts. Photosynth Res. 
+2007;94(2–3):387–400. doi:10.1007/s11120-007-9181-1.
+39. Ashraf M, Harris PJ. Photosynthesis under stressful environments: 
+an overview. Photosynthetica. 2013;51(2):163–190. doi:10.1007/ 
+s11099-013-0021-6.
+40. Amin B, Atif MJ, Meng H, Ghani MI, Ali M, Wang X, Ding Y, Li X, 
+Cheng Z. Biochemical and physiological responses of Cucumis 
+sativus cultivars to different combinations of low-temperature 
+and high humidity. J Plant Growth Regul. 2023;42(1):390–406. 
+doi:10.1007/s00344-021-10556-3.
+41. Cai B, Ning Y, Li Q, Li Q, Ai X. Effects of the chloroplast 
+fructose-1, 6-bisphosphate aldolase gene on growth and 
+low-temperature tolerance of tomato. Int J Mol Sci. 2022;23 
+(2):728. doi:10.3390/ijms23020728.
+42. Daems S, Ceusters N, Valcke R, Ceusters J. Effects of chilling on the 
+photosynthetic performance of the CAM orchid phalaenopsis. 
+Front Plant Sci. 2022;13. doi:10.3389/fpls.2022.981581.
+43. Chen X, Zhang X, Chen H, Xu X. Physiology and proteomics reveal 
+fulvic acid mitigates cadmium adverse effects on growth and 
+photosynthetic properties of lettuce. Plant Sci. 2022;323:111418. 
+doi:10.1016/j.plantsci.2022.111418.
+44. Kalaji HM, Schansker G, Ladle RJ, Goltsev V, Bosa K, 
+Allakhverdiev SI, Brestic M, Bussotti F, Calatayud A, 
+Dąbrowski P. Frequently asked questions about in vivo chlorophyll 
+fluorescence: practical issues. Photosynth Res. 2014;122 
+(2):121–158. doi:10.1007/s11120-014-0024-6.
+45. Faseela P, Sinisha A, Brestič M, Puthur J. Chlorophyll 
+a fluorescence parameters as indicators of a particular abiotic 
+stress in rice. Photosynthetica. 2019;57:108–115. doi:10.32615/ 
+ps.2019.147.
+46. Tóth SZ, Schansker G, Strasser RJ. A non-invasive assay of the 
+plastoquinone pool redox state based on the OJIP-transient. 
+Photosynth Res. 2007;93(1–3):193–203. doi:10.1007/s11120-007- 
+9179-8.
+47. Rodriguez AA, Vilas JM, Sartore GD, Bezus R, Colazo J, Maiale SJ. 
+Field and genetic evidence support the photosynthetic perfor-
+mance index (PIABS) as an indicator of rice grain yield. bioRxiv. 
+2023; 2023.2002. 2008.527648. doi:10.1101/2023.02.08.527648.
+48. Mihaljević I, Viljevac Vuletić M, Tomaš V, Horvat D, Zdunić Z, 
+Vuković D. PSII photochemistry responses to drought stress in 
+autochthonous and modern sweet cherry cultivars. 
+Photosynthetica. 2021;59(4):517–528. doi:10.32615/ps.2021.045.
+49. Sharma A, Kumar V, Shahzad B, Ramakrishnan M, Singh 
+Sidhu GP, Bali AS, Handa N, Kapoor D, Yadav P, Khanna K. 
+Photosynthetic response of plants under different abiotic stresses: 
+a review. J Plant Growth Regul. 2020;39(2):509–531. doi:10.1007/ 
+s00344-019-10018-x.
+50. Ślesak I, Libik M, Karpinska B, Karpinski S, Miszalski Z. The role of 
+hydrogen peroxide in regulation of plant metabolism and cellular 
+signalling in response to environmental stresses. Acta Biochim Pol. 
+2007;54(1):39–50. doi:10.18388/abp.2007_3267.
+51. Tsikas D. Assessment of lipid peroxidation by measuring malon-
+dialdehyde (MDA) and relatives in biological samples: analytical 
+and biological challenges. Anal Biochem. 2017;524(524):13–30. 
+doi:10.1016/j.ab.2016.10.021.
+52. Ruelland E, Vaultier MN, Zachowski A, Hurry V. Cold signalling 
+and cold acclimation in plants. Adv Bot Res. 2009;49:35–150. 
+doi:10.1016/S0065-2296(08)00602-2.
+53. Raza A, Salehi H, Rahman MA, Zahid Z, Madadkar Haghjou M, 
+Najafi-Kakavand S, Charagh S, Osman HS, Albaqami M, 
+Zhuang Y. Plant hormones and neurotransmitter interactions 
+mediate antioxidant defenses under induced oxidative stress in 
+plants. Front Plant Sci. 2022;13:961872. doi:10.3389/fpls.2022. 
+961872.
+54. Jaleel CA, Riadh K, Gopi R, Manivannan P, Ines J, Al-Juburi HJ, 
+Chang-Xing Z, Hong-Bo S, Panneerselvam R. Antioxidant defense 
+responses: physiological plasticity in higher plants under abiotic 
+constraints. Acta Physiol Plant. 2009;31(3):427–436. doi:10.1007/ 
+s11738-009-0275-6.
+55. Gill SS, Tuteja N. Reactive oxygen species and antioxidant machin-
+ery in abiotic stress tolerance in crop plants. Plant Physiol 
+Biochem. 2010;48(12):909–930. doi:10.1016/j.plaphy.2010.08.016.
+e2285169-12
+ C. XU ET AL.

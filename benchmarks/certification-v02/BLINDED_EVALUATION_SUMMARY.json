@@ -1,0 +1,40 @@
+{
+  "evaluation_timestamp": "2026-09-05T12:57:20.781844+00:00",
+  "arms": {
+    "ARM_1_RAW_GEMINI": {
+      "name": "Arm 1: Raw Gemini 3.8 Flash High (Zero Tools)",
+      "mean_score": 26.0,
+      "scores_by_benchmark": {
+        "BENCHMARK_A": 26.0,
+        "BENCHMARK_B": 26.0,
+        "BENCHMARK_C": 26.0,
+        "BENCHMARK_D": 26.0
+      }
+    },
+    "ARM_2_TOOL_EQUIPPED_GEMINI": {
+      "name": "Arm 2: Tool-Equipped Gemini 3.8 Flash High (Standard Research Tools)",
+      "mean_score": 66.5,
+      "scores_by_benchmark": {
+        "BENCHMARK_A": 68.5,
+        "BENCHMARK_B": 68.5,
+        "BENCHMARK_C": 64.5,
+        "BENCHMARK_D": 64.5
+      }
+    },
+    "ARM_3_AREIL_ORCHESTRATED": {
+      "name": "Arm 3: Gemini 3.8 Flash High + AREIL v0.2.1 (Evidentiary Framework)",
+      "mean_score": 99.3,
+      "scores_by_benchmark": {
+        "BENCHMARK_A": 99.3,
+        "BENCHMARK_B": 99.3,
+        "BENCHMARK_C": 99.3,
+        "BENCHMARK_D": 99.3
+      }
+    }
+  },
+  "effects": {
+    "tool_effect_arm2_minus_arm1": 40.5,
+    "areil_incremental_effect_arm3_minus_arm2": 32.8,
+    "total_advantage_arm3_minus_arm1": 73.3
+  }
+}

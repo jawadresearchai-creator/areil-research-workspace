@@ -1,0 +1,859 @@
+--- PAGE 1 ---
+Plant Signaling & Behavior
+ISSN: 1559-2324 (Online) Journal homepage: www.tandfonline.com/journals/kpsb20
+Decoding the role of OsPRX83 in enhancing
+osmotic stress tolerance in rice through ABA-
+dependent pathways and ROS scavenging
+Han Bao, Yuchao Cui, Xijun Zheng, Chengke Luo, Yan Li & Liang Chen
+To cite this article: Han Bao, Yuchao Cui, Xijun Zheng, Chengke Luo, Yan Li & Liang Chen (2024)
+Decoding the role of OsPRX83 in enhancing osmotic stress tolerance in rice through ABA-
+dependent pathways and ROS scavenging, Plant Signaling & Behavior, 19:1, 2391134, DOI:
+10.1080/15592324.2024.2391134
+To link to this article:  https://doi.org/10.1080/15592324.2024.2391134
+© 2024 The Author(s). Published with
+license by Taylor & Francis Group, LLC.
+View supplementary material 
+Published online: 12 Aug 2024.
+ Submit your article to this journal 
+Article views: 1402
+ View related articles 
+View Crossmark data
+ Citing articles: 6 View citing articles 
+Full Terms & Conditions of access and use can be found at
+https://www.tandfonline.com/action/journalInformation?journalCode=kpsb20
+
+--- PAGE 2 ---
+RESEARCH PAPER
+Decoding the role of OsPRX83 in enhancing osmotic stress tolerance in rice through 
+ABA-dependent pathways and ROS scavenging
+Han Baoa,b, Yuchao Cuia, Xijun Zhenga, Chengke Luoc, Yan Lia, and Liang Chena
+aXiamen Key Laboratory for Plant Genetics, School of Life Sciences, Xiamen University, Xiamen, China; bSchool of Life Sciences, Ningxia University, 
+Yinchuan, China; cSchool of Agricultural, Ningxia University, Yinchuan, China
+ABSTRACT
+Plant Class III peroxidases have diverse roles in controlling root hair growth, anther development, and 
+abiotic and biotic stress responses. However, their abiotic stress response mechanism in rice remains 
+elusive. Here, we identified a peroxidase precursor gene, OsPRX83, and investigated its role in enhancing 
+osmotic stress tolerance in rice. We used OsPRX83 overexpression and CRISPR-Cas9-generated mutant 
+lines to elucidate OsPRX83‘s function and expression patterns under stress conditions. The expression of 
+OsPRX83 was induced by H2O2, PEG, NaCl, and ABA treatments. Using qRT-PCR, RNA sequencing, and 
+physiological assays, we demonstrated that overexpression of OsPRX83 enhanced the osmotic and 
+oxidative stress tolerance as compared to the wild-type and mutant seedlings, as evident from the higher 
+survival rates, enhanced peroxidase (POD) and ascorbate peroxidase (APX) activities, and increased ABA 
+sensitivity compared with mutants and wild-type plants. Transcriptome analysis further supported the 
+involvement of OsPRX83 in the ROS scavenging, by modulating the expression of OsDREB1B, OsDREB1E, 
+OsDREB1F, OsDREB1G in response to osmotic treatment. In summary, our study suggests that OsPRX83 
+plays a pivotal role in enhancing stress tolerance in rice through ABA-dependent pathways and ROS 
+scavenging. Therefore, this study elucidates the function of a novel abiotic stress response gene in rice, 
+thereby may contribute to a new genetic engineering resource for engineering drought-resistant rice 
+varieties.
+ARTICLE HISTORY 
+Received 25 June 2024  
+Revised 3 August 2024  
+Accepted 6 August 2024 
+KEYWORDS 
+Class III peroxidases; osmotic 
+stress tolerance; oxidative 
+stress tolerance; reactive 
+oxygen species; rice
+Introduction
+Rice, a staple food for over half the global population1, is 
+highly vulnerable to drought stress due to its substantial 
+water requirements, especially amid global climate change. 
+Plants have developed various strategies, including mor-
+phological and physiological adaptations to counteract 
+water deficiency and mitigate drought stress.2,3 Abscisic 
+acid (ABA), a crucial plant hormone, is pivotal in 
+responding to drought and salinity stresses.4,5 During 
+drought stress, ABA-dependent and ABA-independent 
+pathways activate diverse genes, including transcription 
+factors. Many drought response genes are implicated in 
+ABA-dependent pathways. Notably, the bZIP transcription 
+factor OsABF1 directly regulated the expression of the 
+protein phosphatase 2C (OsPP108 and OsPP48), forming 
+a complex feedback loop through ABA signaling 
+pathways.6 The PP2C and PYR1-like (PYL) proteins con-
+stituted ABA receptors in Arabidopsis thaliana.7,8 
+Overexpression of OsPYL3 in Arabidopsis has been 
+shown to enhance cold and drought stress tolerance. 9 
+Multiple members of the cyclic nucleotide-gated channels 
+(CNGC) family served as ABA-activated Ca2+ channels in 
+Arabidopsis guard cells. Specifically, CNGC5, CNGC6, 
+CNGC9, and CNGC12 have played crucial roles in the 
+ABA-specific patterns of cytosolic Ca2+ signaling 
+pathways.10 To elucidate the mechanisms of ABA- 
+induced regulation of CNGCs and Ca2+ signaling, 
+researchers have discovered that OST1 physically inter-
+acted with CNGC5/6/9/12. Phosphorylation sites targeted 
+by OST1 have been identified in CNGC5, CNGC6, 
+CNGC9, and CNGC12. These phosphorylation sites are 
+essential for ABA-induced activation of Ca2+ oscillations.11
+Plants respond to stress through intricate networks, one of 
+which involves the participation of signal molecules such as 
+reactive oxygen species (ROS) in the ABA signal pathways.12 
+ROS exhibit a dual role in plant cells. They can be toxic 
+byproducts of aerobic metabolism at high concentrations, but 
+also toxic in a control manner during oxidative burst. At lower 
+concentrations, they participate in signal transduction.13 To 
+maintain cellular balance, plants have evolved diverse strategies 
+for regulating ROS production, transport, and scavenging.14 
+Numerous proteins, notably superoxide dismutase (SOD), cat-
+alase (CAT), ascorbate peroxidase (APX), glutathione perox-
+idase (GPX), ascorbic acid, glutathione (GSH), and peroxidase 
+(PRX), are integral to ROS detoxification.15 Among these, 
+peroxidases are particularly crucial in oxidoreduction reac-
+tions, employing hydrogen peroxide (H2O2) as the electron 
+acceptor in microorganisms, plants, and animals.16
+CONTACT Yuchao Cui 
+ yuchaocui@xmu.edu.cn 
+ Xiamen Key Laboratory for Plant Genetics, School of Life Sciences, the Xiang’an Campus of Xiamen University, 
+No. 422 Xiang’an South Road, Xiang’an District, Xiamen, Fujian 361102, China
+Supplemental data for this article can be accessed online at https://doi.org/10.1080/15592324.2024.2391134
+PLANT SIGNALING & BEHAVIOR                        
+2024, VOL. 19, NO. 1, e2391134 (11 pages) 
+https://doi.org/10.1080/15592324.2024.2391134
+© 2024 The Author(s). Published with license by Taylor & Francis Group, LLC.  
+This is an Open Access article distributed under the terms of the Creative Commons Attribution-NonCommercial License (http://creativecommons.org/licenses/by-nc/4.0/), which permits 
+unrestricted non-commercial use, distribution, and reproduction in any medium, provided the original work is properly cited. The terms on which this article has been published allow the 
+posting of the Accepted Manuscript in a repository by the author(s) or with their consent.
+
+--- PAGE 3 ---
+In the living organism, three peroxidase classes exist: Class 
+I (ascorbate peroxidases), Class II (lignin peroxidases in certain 
+fungi), and Class III (secretory peroxidases, Prxs).17 Among 
+them, Class III peroxidases, specifically, contribute to stress 
+tolerance,18 lignin biosynthesis,19 and root hair growth in 
+Arabidopsis.20 Arabidopsis thaliana and Oryza sativa possess 
+73 and 138 Prx genes, respectively,21,22 although the functions 
+of most remain undetermined. In rice, MYBS1 regulated two 
+Class III peroxidases by binding to the bsr-d1 promoter with 
+a single base change, enhancing resistance to Magnaporthe 
+oryzae.23 Additionally, OsPrx30, a Class III peroxidase in rice, 
+localized in the endoplasmic reticulum, impacted rice resis-
+tance against Xanthomonas oryzae pv. oryzae (Xoo) when 
+OsATH1 binded to its promoter, by scavenging ROS.24 
+Furthermore, OsPRX38, another Class III peroxidase, 
+improved arsenic tolerance by increasing antioxidase activities 
+upon overexpression.25
+Despite Class III peroxidases having diverse roles in various 
+biological processes, the molecular mechanisms of how Prxs 
+respond to osmotic stress in rice remain unknown. Despite the 
+size of this family, the functions of most members, particularly 
+in response to abiotic stresses, remain largely unknown. 
+Therefore, this study aimed to investigate the role of 
+OsPRX83, a Class III peroxidase gene, in response to osmotic 
+stress in rice. To achieve this objective, we used a combination 
+of gene expression analysis and functional characterization 
+through overexpression and knockout studies. Understanding 
+the function of OsPRX83 in osmotic stress response will pro-
+vide new insights into the complex regulatory networks 
+involved in abiotic stress tolerance in rice, which has important 
+implications for the development of stress-tolerant rice 
+varieties.
+Materials and methods
+Plasmid construction and rice transformation
+The full-length coding region of OsPRX83, derived from Oryza 
+sativa japonica cv. Nipponbare cDNA, was cloned into the 
+pCXUN-FLAG vector26 to generate OsPRX83 overexpression 
+(OE) constructs driven by the ubiquitin promoter. For the 
+OsPRX83 CRISPR/Cas9 vector, a sgRNA sequence was 
+designed using the Rice Information GateWay (RIGW, http:// 
+rice.hzau.edu.cn/rice_rs3/).27 This sequence was then cloned 
+into the pU3-sgRNA vector and subsequently introduced into 
+the pH-Ubi-cas9-7 vector via a gateway cloning LR reaction 
+(ThermoFisher Scientific). For expression pattern analysis, the 
+OsPRX83 promoter region (2 kb fragment) was inserted into 
+the pCXGUS-P vector, driving the β-glucuronidase (GUS) 
+reporter gene expression. Agrobacterium tumefaciens EH105 
+received these vectors, which were then transferred into 
+Nipponbare callus. Transgenic homozygous lines in the T3 
+generation were utilized for further study. Table S1 lists all 
+primers used for plasmid construction.
+Plant materials and stress treatments
+This study utilized the well-established Oryza sativa japo-
+nica cv. Nipponbare as the study material.28 To investigate 
+OsPRX83‘s expression profile under diverse abiotic stresses 
+and phytohormone treatments, wild type (wt) four-leaf 
+seedlings were subjected to diverse treatments, including 
+cold (4°C), drought (20% PEG 4000, w/v), salt (150 mM 
+NaCl), and oxidative (1% H2O2) stress.29 Stressed leaf and 
+shoot samples were collected at 0, 1, 3, 6, 12, and 24 h post- 
+treatment, with additional samples for cold stress at 36 and 
+48 h. Phytohormone treatments involved soaking seedlings 
+in 1/2 Murashige and Skoog (MS) medium containing 100  
+μM of ABA, GA, MeJA, and IAA, respectively. Root sam-
+ples were obtained at 0 h, 15 min, 1 h, 3 h, 6 h, 12 h, and 
+24 h.
+To assess the osmotic and oxidative stress tolerance of rice 
+seedlings, seeds of OsPRX83-OE, mutants and wt were initially 
+grown on solid 1/2 MS medium for 3–4 days, then transferred to 
+1/2 MS medium (control), 120 mM and 150 mM mannitol-D, 
+and 1 μM and 3 μM Methyl viologen (MV) for oxidative stress.30 
+Following cultivation in a growth chamber for 10 days under 
+a 16-h light/8-h dark cycle at 28°C, the shoot and root lengths 
+were measured, and seedling phenotypes were documented.
+For drought resistance analysis in OsPRX83 transgenic 
+plants, three-leaf seedlings of OsPRX83 transgenic and wt 
+plants (15 plants per line) were grown in large plastic boxes 
+filled with well-mixed soil and cultivated in a growth chamber 
+for two weeks. The water deprivation treatments ensued for 
+10–12 days until all seedling leaves were wilted, followed by 
+a 20-day water recovery period to calculate survival rates. The 
+ABA sensitivity assay was conducted31 by transferring germi-
+nated seeds of OsPRX83 transgenic lines and wt to 1/2 MS 
+medium containing 1 μM ABA, 3 μM ABA, or no ABA (con-
+trol). After 10 days of cultivation, seedling phenotypes were 
+recorded, and relative shoot height and root length were mea-
+sured for all plants, with each test performed in triplicates.
+Physiological measurements
+The proline and chlorophyll contents were assessed pre- and 
+post-treatment with 120 mM mannitol for three days. Leaf 
+samples from OsPRX83 transgenic lines and wt were obtained 
+using the method previously described.32 For reactive oxygen 
+detection, detached leaves from each genotype (minimum 
+three plants per genotype) were immersed in a 0.5 mg/ml 
+NBT staining solution. Following vacuum application for 30  
+min, the leaves underwent staining for 24 h. Subsequent deco-
+lorization involved 95% ethanol in an 80°C water bath until the 
+leaves lost green coloration. Images were captured using 
+a Leica M165FC stereoscope. Ascorbate peroxidase (APX) 
+and peroxidase (POD) activities were quantified by 
+Peroxidase (POD) Assay Kit (for plants) and Ascorbate 
+Peroxidase (APX) Assay Kit according to the manufacturer’s 
+guidelines (Nanjing Jian Cheng Bioengineering Institute). The 
+principle of the Plant Peroxidase (POD) Assay Kit is based on 
+the catalytic reaction of peroxidase with hydrogen peroxide, 
+the enzyme activity is determined by measuring the absorbance 
+change at 420 nm. For the principle of the APX Assay Kit, APX 
+catalyzes the reaction between ascorbic acid (ASA) and hydro-
+gen peroxide (H2O2), converting ASA to monodehydroascor-
+bic acid (MDASA). As AsA is oxidized, the absorbance value at 
+290 nm wavelength in the solution decreases. The ascorbate 
+e2391134-2
+ H. BAO ET AL.
+
+--- PAGE 4 ---
+peroxidase (APX) activity is determined by calculating the 
+decrease of the absorbance change at 290 nm per unit time.
+β-Glucuronidase (GUS) staining analysis
+Different tissues from pOsPRX83: GUS transgenic rice, includ-
+ing roots, stems, leaves, and spikelets were collected and pro-
+cessed using modified methods based on Jefferson.33 The 
+samples were initially soaked in 90% acetone for 30 minutes 
+on ice, then washed three times in a buffer solution (2 mM 
+potassium ferricyanide, 2 mM potassium ferrocyanide, 0.2% 
+Triton-X-100 in 0.2 M PBS, pH 7.2) with gentle shaking for 
+five minutes per wash. Following this, the samples underwent 
+staining in a solution (buffer solution +20 mg/ml X-Gluc) for 
+48 h at 37°C. Finally, the stained samples were photographed 
+using a stereoscope (Leica M165FC).
+RNA extraction and quantitative real-time PCR
+Total RNA was isolated from various tissues of OsPRX83 
+transgenic lines and wild-type rice using the RNA Extraction 
+Kit (Promega). The Reverse Transcription System Kit 
+(Promega) was then employed to synthesize first-strand 
+cDNA. Quantitative RT-PCR (qRT-PCR) was performed on 
+an ABI Step One Real-Time PCR system (Applied Biosystems) 
+using the Hieff qPCR SYBR Green Master Mix (Yeasen). The 
+reactions were conducted under the following conditions: 
+initial denaturation at 95°C for 5 minutes, followed by 40 cycles 
+of denaturation at 95°C for 10 seconds and annealing/exten-
+sion at 60°C for 30 seconds, culminating in the stage of melting 
+curve analysis. Samples from the wild-type or untreated wild- 
+type tissue were chosen as controls. The relative gene expres-
+sion levels were calculated with the 2−∆∆Ct method,34 employ-
+ing the rice ubiquitin3 gene as an endogenous control.35 All 
+data analyses were conducted using GraphPad Prism 8.0.2. The 
+primers used for gene expression analysis are listed in Table S1.
+RNA sequencing analyses
+At the four-leaf stage, OsPRX83 overexpression lines, mutants, 
+and wt seedlings were treated with 120 mM mannitol for three 
+days. Total RNA was extracted from the leaves before and after 
+treatment, with three biological replicates per sample, using the 
+previously described method. The purified RNA samples were 
+sent to Gene Denovo Biotechnology Co., Ltd. (Guangzhou, 
+China) for cDNA library preparation using the Illumina HiSeq 
+2500 platform. The clean reads were then aligned to the Rice 
+Annotation Project Database (RAP-DB). Differentially expressed 
+genes (DEGs) were performed by DESeq236 software and shown 
+in the Table S2. They were identified with a threshold of log2 (fold 
+change) ≥ 1 (False Discovery Rate – FDR < 0.05).37 Gene 
+Ontology (GO) enrichment and Kyoto Encyclopedia of Genes 
+and Genomes (KEGG) pathway analyses38,39 were performed 
+based on the DEGs data using the website (https://www.omics 
+mart.com/). Certain DEGs that are upregulated in overexpression 
+(OE) lines and downregulated in mutants are chosen and vali-
+dated using qRT-PCR.
+Statistical analysis
+All data analyses were performed using GraphPad Prism 8.0.2. All 
+datasets from the overexpression lines, mutants, and wild type 
+(wt) were evaluated using IBM SPSS Statistics 19. Values at the 
+p < 0.05 indicated statistical significance. Different Letters indicate 
+significant differences at p < 0.05 by one-way analysis of Variance 
+(ANOVA)40 and Duncan’s multiple range post hoc test.
+Results
+Expression patterns of OsPRX83
+The expression levels of OsPRX83 in various tissues were 
+examined using qRT-PCR to investigate its function. The 
+results indicated high expression in roots, but low expression 
+in leaves, stems, and spikelets (Figure 1(a)). This expression 
+profile was corroborated by a GUS staining assay, which 
+showed a strong GUS signal in roots (Figure 1a) and 
+a relatively weak signal in stems, leaves, and spikelets 
+(Figure 1b-e). To further explore the expression patterns 
+under different abiotic stresses and phytohormone treatments, 
+a time course assay was conducted using qRT-PCR. The 
+expression level of OsPRX83 peaked at 24 h under cold treat-
+ment (Figure S1 a), but was down-regulated under heat treat-
+ment (Figure S1 b). In 1% H2O2 and ABA treatments, 
+OsPRX83 expression significantly increased at 1 h, followed 
+by a decrease (Figure S1 c, f). High salt treatment significantly 
+induced OsPRX83 expression (Figure S1 d), while the expres-
+sion pattern under PEG treatment mirrored that of oxidative 
+treatment (Figure S1 e). GA treatment up-regulated OsPRX83 
+expression between 30 min and 3 h, followed by a decrease 
+(Figure S1 g). Finally, under MeJA treatment, the expression 
+level peaked at 1 h (Figure S1 h), remaining constant thereafter 
+during the time course.
+Molecular characterization of OsPRX83 transgenic plant
+To examine OsPRX83‘s function under abiotic stress, we gen-
+erated OsPRX83 mutants using the CRISPR/Cas9 genome edit-
+ing system. During the T0 generation, DNA of shoot tissues of 
+transgenic seedlings was extracted, then designed primers to 
+sequence the CRISPR-Cas9 knockout sites by designing speci-
+fic primers, compared the sequencing results with the wild 
+type. Two homozygous mutant lines, cas9-4B1 and 4C1, each 
+with 4 bp deletions, were selected (Figure 2(a)). Additionally, 
+we generated OE transgenic lines using the ubiquitin promo-
+ter. qRT-PCR analysis revealed a significantly increased 
+expression levels in OE-7 and OE-12 (32-fold and 218-fold, 
+respectively) compared to the wt (Figure 2(b)). Subsequent 
+investigations utilized T3 homozygous transgenic lines.
+Overexpression of OsPRX83 improved osmotic stress 
+tolerance in rice
+To assess the potential role of OsPRX83 in osmotic stress response, 
+seeds from the OsPRX83-OE transgenic line OE-12, cas9-4C1 
+mutant, and wt were germinated on 1/2 MS solid medium sup-
+plemented with 0, 120 mM, and 150 mM mannitol for 10 days 
+(Figure 2(c)). Subsequent measurements were taken of the 
+PLANT SIGNALING & BEHAVIOR
+ e2391134-3
+
+--- PAGE 5 ---
+seedlings’ shoot height and root length. Figure 2(d) illustrates that, 
+under osmotic stress, the OE-12 lines exhibited greater plant 
+height than the wt and cas9-4C1 mutant. Moreover, the root 
+length of OE-12 was significantly greater than that of the wt and 
+cas9-4C1 mutant (Figure 2(e)). The experiment was replicated 
+using the OsPRX83-OE transgenic line OE-7, mutant cas9-4B1, 
+and wt, yielding similar results (Figure S2 a-c). Collectively, these 
+findings suggest that OsPRX83-OE enhances rice seedling toler-
+ance to osmotic stress during germination.
+To validate OsPRX83‘s role in osmotic stress response, we 
+subjected 4-week-old seedlings of the OE line OE-12, wt, and 
+mutant cas9-4C1 to 120 mM mannitol for 3–4 days, followed 
+by a 10-day recovery period (Figure 3(a)). Figure 3 b illustrated 
+that OE-12 exhibited a superior survival rate (87%) compared 
+to wt (60%) and mutant (30%). Physiological analyses demon-
+strated that the OsPRX83-OE lines accumulated elevated pro-
+line levels relative to the wt and mutant under stress conditions 
+(Figure 3(c)). Additionally, post-treatment total chlorophyll 
+Figure 1. The tissue-specific expression profile of OsPRX83. (a) the relative expression levels of OsPRX83 in various rice tissues (leaves, roots, stems, and mature spikelets). 
+The expression level of the OsPRX83 gene in leaves was normalized to 1, with OsUPF3 representing the internal reference standard and the error bars (± SE) representing 
+three biological replicates. Asterisks indicate significant differences among leaf tissues of wild-type and other tissues of wild-type (Student’s t-test, p < 0.05).(b-e) 
+OsPRX83 promoter-driven β-glucuronidase (GUS) expression pattern in (b) leaves, (c) roots, (d) stems and (e) flowers in mature spikelets.
+Figure 2. Phenotypic and molecular characterization of OsPRX83 overexpression lines and mutants at the seedling stage. (a) analysis of mutation types and protein 
+variation diagram in Osgex3 mutant plants. Red boxes represent signal peptide (1-27 aa).(b) relative expression levels of OsPRX83 in overexpression lines. Error bars 
+represent standard error (n = 3). Asterisks indicate significant differences between wild-type and overexpression lines as per the Student’s test (*p＜0.05, **p < 0.01). (c) 
+phenotypes of OsPRX83 overexpressing lines OE-12, wild type, and mutants under osmotic stress (120 mM mannitol, 150 mM mannitol). Each genotype consists 20 
+seedlings for one test. Relative shoot length (d) and the relative root length (e) of OsPRX83-oe lines and wild type, and mutant. The data represent the mean ± SE (n = 3). 
+Different letters represent the significant differences at p < 0.05.
+e2391134-4
+ H. BAO ET AL.
+
+--- PAGE 6 ---
+content significantly increased in OE lines versus wt and 
+mutants (Figure 3(d)). Similar results emerged from stress 
+treatment of OE line OE-7, wt, and mutant cas9-4B1 (Figure 
+S3). Thus, OsPRX83-OE augments osmotic stress tolerance in 
+rice.
+Overexpression of OsPRX83 increased ABA sensitivity in 
+rice
+OsPRX83 expression significantly increased after a 15-min ABA 
+treatment (Supplementary Figure S1 f). To probe OsPRX83‘s role 
+in ABA response, we conducted ABA sensitivity assays using 
+OsPRX83 transgenic lines, including OE lines (OE) and mutants. 
+After a 10-day ABA treatment (0, 1, and 3 µM), OE lines exhibited 
+significantly suppressed seedling growth compared to wt and 
+mutants (Figure 4(a), Figure S4 a), suggesting that OsPRX83-OE 
+heightens ABA sensitivity during the seedling stage. Furthermore, 
+OsPRX83-OE seedlings displayed significantly shorter relative 
+shoot lengths than wt and mutants (Figure 4(b), Figure S4 b). 
+These findings were corroborated by assessing relative root length 
+(Figure 4(c) and S4 c).
+To explore the potential link between OsPRX83 expression 
+and ABA response, we examined the expression levels of sev-
+eral ABA response genes via qRT-PCR. OsPP108 expression41 
+was significantly upregulated in OsPRX83-OE lines following 
+ABA treatment for 30 min and 1 h, relative to wt and mutants 
+(Figure S5 a). Additionally, PYL3 expression9 peaked at 30 min 
+in the OE lines before decreasing (Figure S5 b).Overall, these 
+findings suggest that OsPRX83 may participate in ABA signal-
+ing pathways by modulating OsPP108 and PYL3 expression.
+Overexpression of OsPRX83 improved oxidative stress 
+resistance in rice
+OsPRX83 encodes a Class III peroxidase precursor, with expres-
+sion induced by H2O2 within one hour (Fig. S1 c). To investigate 
+OsPRX83‘s role in oxidative stress response, we cultivated germi-
+nated seeds of OsPRX83-OE, wt, and mutant plants on 1/2 MS 
+medium supplemented with 0, 1, or 3 μM MV. After 10 days, MV 
+treatment suppressed shoot growth in all seedlings, yet OsPRX83- 
+OE plants displayed longer shoots than wt and mutants (Figure 5 
+(a) and S6 a). This observation was corroborated by relative shoot 
+length measurements (Figure 5(b) and S6 b). Furthermore, the 
+fresh weight per plant significantly declined post-treatment, but 
+OsPRX83-OE plants showed less oxidative damage than wt and 
+mutants (Figure 5(c) and S6 c). Thus, OsPRX83 overexpression in 
+rice conferred reduced growth inhibition and enhanced oxidative 
+stress tolerance.
+Figure 3. Phenotypes of OsPRX83 overexpression transgenic line OE-12, wild type, and mutant cas9-4C1 under osmotic stress. (a) OsPRX83 transgenic plants 
+(overexpression lines and mutants) and wt were subjected to a 120 mM mannitol solution for four days followed by a 10-day recovery period; scale bar = 1 cm. 
+Each genotype consists 20 seedlings for one test. (b) survival rates of OE-12, wild type, and cas9-4C1 seedlings were assessed before and after 120 mM mannitol 
+treatment. (c) the proline content and total chlorophyll (d) were measured in the leaves of 4-week-old seedling before and after exposure to 120 mM mannitol. The data 
+represent mean ± SE (n = 3). Different letters represent a significant difference at p < 0.05.
+PLANT SIGNALING & BEHAVIOR
+ e2391134-5
+
+--- PAGE 7 ---
+Based on the aforementioned finding, it can be inferred that 
+OsPRX83 is associated with ROS metabolism. To validate this 
+hypothesis, the qualitative nitroblue tetrazolium (NBT) stain-
+ing assays were performed to examine the presence of super-
+oxide anion before and after mannitol treatment. Upon 
+mannitol treatment, OsPRX83-OE lines displayed fewer blue- 
+stained leaf areas compared to wild type and mutants (Figure 6 
+a, b). Furthermore, peroxidase (POD) levels significantly 
+increased in OsPRX83-OE lines after three days of 120 mM 
+mannitol treatment (Figure 6(c)), as APX content (Figure 6 
+(d)). Collectively, these findings strongly support OsPRX83‘s 
+involvement in the ROS scavenging process.
+Transcriptome profiling of OsPRX83 transgenic lines
+To further elucidate the molecular function of OsPRX83, 
+a transcriptome analysis was performed on overexpression 
+lines OE-12, wt, and cas9-4C1 mutants.
+Compared with the wild type, the overexpression line OE- 
+12 displayed an upregulation of 604 genes and a down- 
+regulation of 314 genes. Conversely, the cas9-4C1 mutants 
+revealed an upregulation of 923 genes and a down-regulation 
+of 600 genes. Upon subjecting the OE-12 line to a three-day 
+mannitol treatment, 5087 genes were up-regulated and 2469 
+genes were down-regulated, while the cas9-4C1 mutants exhib-
+ited upregulation of 3349 genes and down-regulation of 1070 
+genes. Notably, a greater number of both up-regulated and 
+down-regulated genes were observed in OE-12 compared to 
+cas9-4C1 under mannitol treatment, as indicated by the vol-
+cano map (Figure 7(a)). Figure 7(b) illustrates the analysis of 
+DEGs across the various lines. The comparison between the wt 
+and the OE-12 line yielded 104 DEGs, while that between the 
+wt and the cas9-4C1 mutants resulted in 320 DEGs. 
+Additionally, 564 DEGs were identified when comparing the 
+wt and OE-12-T (under treatment), and 297 DEGs were found 
+between the wt and cas9-4C1-T (under treatment). Among 
+these DEGs, certain genes exhibited upregulation in OE-12 
+and down-regulation in cas9-4C1, with the wild type showing 
+intermediate expression levels. A heat map (Figure 7(c)) was 
+constructed to visualize the expression patterns of these 
+selected DEGs. Additionally, the expression of four genes was 
+confirmed using qRT-PCR (Figure 7(d)). Previous reports 
+suggested that OsDREB1B, OsDREB1E, OsDREB1F, and 
+OsDREB1G, which are implicated in abiotic stress 
+responses,42 may have relevant biological functions. These 
+transcriptome data suggest a potential role for OsPRX83 in 
+abiotic stress responses.
+We conducted GO enrichment analysis and KEGG pathway 
+analysis on DEGs using available data. Comparing the wt with 
+the overexpression line OE-12, the top 20 molecular function 
+GO terms emphasized oxidoreductase activity (GO: 0016491), 
+dioxygenase activity (GO: 0051213), and carbon-oxygen lyase 
+activity acting on phosphates (GO: 0016838). The predominant 
+biological processes associated with these GO terms included 
+Figure 4. Phenotypes of OsPRX83 overexpression lines OE-12, wild type, and mutant cas9-4C1 under ABA treatment. (a) ABA sensitivity assay of OsPRX83 overexpression 
+line OE-12, wild type, and cas9-4C1 mutant on 1/2 MS medium containing 0, 1, and 3 μM ABA (ABA treatments). Scale bar = 1 cm. (b) relative shoot length and (c) 
+relative root length of OE-12 lines, cas9-4C1 mutants, and wild type were measured 10 days after post-germination. Each genotype consists 20 seedlings for one test. 
+Error bars represent the means ± SE (n = 3). Different letters indicate significant differences at p < 0.05.
+e2391134-6
+ H. BAO ET AL.
+
+--- PAGE 8 ---
+Figure 5. OsPRX83 is involved in oxidative stress response. (a) enhanced tolerance of OsPRX83 line OE-12 under oxidative stress using MV, as compared with wt and cas9- 
+4C1 mutants. Each genotype consists 20 seedlings for one test. Scale bar = 1 cm. (b) relative shoot length and (c) relative root length of OsPRX83 transgenic lines and 
+wild type. Data represent the means ± SE (n = 3). Different letters represent a significant difference at p < 0.05.
+Figure 6. OsPRX83 is involved in ROS scavenging. (a) nitroblue tetrazolium (NBT) staining assay using the leaves of OsPRX83 overexpression lines OE-12, cas9-4C1 
+mutants, and wt before and after 120 mM mannitol treatment, scale bar = 250 μm. (b) NBT staining assay of OsPRX83 overexpression lines OE-7, cas9-4B1 mutants, and 
+wild type before and after 120 mM mannitol treatment. Scale bar = 250 μm. (c-d) changes in (c) peroxidase (POD) and (d) ascorbate peroxidase (APX) contents of the 
+OsPRX83 transgenic and wt leaves before (0 h) and after 120 mM mannitol treatment (24 h and 72 h). Different letters represent significant differences at p < 0.05.
+PLANT SIGNALING & BEHAVIOR
+ e2391134-7
+
+--- PAGE 9 ---
+response to external stimulus, response to hormone, and reac-
+tive oxygen species metabolic process (GO: 0009605, 0009725, 
+0072593) (Figure S7 a). Upon treatment, the top 20 enriched 
+biological process GO terms in the wt and OE-12-T comparison 
+centered on plastid organization (GO: 0009657) and oxidore-
+duction coenzyme metabolic process (GO: 0006733) (Figure S7 
+b). These findings aligned with the GO terms related to cellular 
+component, plastid part, plastid, plastid envelope, and plastid 
+stroma (GO: 0044435, 0009536, 0009626, 0009532), which were 
+highly enriched in this group. Conversely, the top 20 GO terms 
+in both the wt vs cas9-4C1 group and the wt vs cas9-4C1-T 
+group (post-treatment) showed similarities, encompassing 
+response to external stimulus, response to biotic stimulus, and 
+response to stress (GO: 0050896, 0009607, 0006950)(Figure S7 
+c). Notably, the wt vs cas9-4C1-T group exhibited specific 
+enrichment of terms related to response to abiotic stress, 
+response to oxidative stress, and response to reactive oxygen 
+species (GO: 0009628, 0009679, 0000302)(Figure S7 d).
+The MAPK signaling pathway in plants emerged consistently 
+enriched across all groups in the KEGG pathway analysis. These 
+groups include wt vs OE-12, wt vs OE-12-T, wt vs cas9-4C1, and 
+wt vs cas9-4C1-T (Figure S8). This pathway, as previously 
+reported, plays a pivotal role in plant responses to various abiotic 
+stresses, with ROS serving as crucial signaling molecules.14 These 
+findings, in conjunction with the results from the GO enrichment 
+analysis, further substantiate the regulatory role of OsPRX83 in 
+ROS metabolism.
+Discussion
+Class III peroxidases (Prxs) are widely distributed plant- 
+specific oxidoreductases with diverse roles in plant 
+Figure 7. Transcriptome analysis of OsPRX83 transgenic lines. (a) volcano plots depicting the number of up-regulated and down-regulated genes in the OsPRX83-oe line 
+OE-12, cas9-4C1 mutants, and wt. (b) venn diagrams illustrating the numbers of differentially expressed genes (DEGs) in OE vs wt, OE-T vs wt, cas9 vs wt, cas9-T vs wt, wt 
+vs wt-T. (c) heat map shows the up-regulated gene expression in OsPRX83-oe transgenic lines compared with wt and mutants. (d) relative expression levels of DEGs in 
+OsPRX83 transgenic lines and wt plants as determined by qRT-PCR. The data represent the means ± SE (n = 3). Different numbers indicate significant differences at p <  
+0.05.
+e2391134-8
+ H. BAO ET AL.
+
+--- PAGE 10 ---
+development like control root hair growth20 and promote root 
+hair growth at low temperature43 and abiotic stress 
+responses.44 However, the underlying molecular mechanism 
+of their abiotic stress responses remains largely unknown. For 
+example, overexpression of AtPrx3 enhanced plant salt and 
+drought tolerance.45 Similarly, overexpression of two class III 
+peroxidase genes (CrPrx and CrPrx1) in Chrysanthemum 
+showed increased germination rates in CrPrx1-overexpressing 
+lines as compared to wild type and CrPrx overexpressing lines 
+under drought and salt stress conditions.46 Overexpression of 
+the Arabidopsis gene AtPrx64 in tobacco also enhanced plant 
+aluminum stress tolerance.47 Overexpression of the GsPRX9 in 
+soybean was found to confer salt stress tolerance in transgenic 
+seedlings.48 Although the rice genome contains 138 Class III 
+peroxidases, with two members, OsPRX30 and OsPRX38, hav-
+ing reported functions.24,25 Phylogenetic analysis of the Prx 
+family in rice is categorized into eight groups. OsPRX30, 
+OsPRX38, OsPRX83 belong to three subgroup of Prx family 
+in rice, respectively.24 Similarly, the roles of OsPRX30 and 
+OsPRX38 are related with stresses responses, the function of 
+OsPRX83 may be associate with stress response as well.
+In our study, the OsPRX83 expression was induced by 
+H2O2, NaCl, PEG, and ABA treatments, which led us to 
+analyze its tolerance under these abiotic stress conditions 
+using OsPRX83 transgenic and wt plants. To further con-
+firm our hypothesis, we found that OsPRX83 overexpres-
+sion enhanced tolerance to osmotic stress, via mannitol 
+treatment, and oxidative stress, via MV treatment 
+(Figures 3 and 5). Moreover, the OsPRX83 overexpression 
+augmented osmotic stress tolerance by boosting antioxidant 
+reductase activities, specifically POD and APX (Figure 6). 
+Therefore, we demonstrated OsPRX83‘s positive regulatory 
+role in enhancing osmotic stress resistance through 
+enhanced ROS scavenging. Like OsPRX30 and OsPRX38, 
+OsPRX83 is also considered as stress response gene through 
+ROS metabolic pathways.
+Moreover, the qRT-PCR analysis of RNA-seq data revealed the 
+expression levels of OsDREB1B, OsDREB1E, OsDREB1F, and 
+OsDREB1G (Figure 7d). These DREB transcription factors are 
+known for their roles in abiotic stress response in rice. 
+Specifically, OsDREB1B overexpression enhanced the cold and 
+high salt stress tolerance. Moreover, OsDREB1E and OsDREB1G 
+overexpression increased water deficit stress tolerance,49 while 
+OsDREB1F overexpression improved the tolerance against 
+drought, salt, and cold stresses in rice and Arabidopsis.50 
+Additionally, OsATH1, an AT-hook transcription factor, binded 
+to the OsPRX30 promoter, thereby regulating ROS 
+accumulation.24 Therefore, we hypothesize that OsDREBs may 
+bind to the promoter of OsPRX83. To confirm this, OsDREB1B, 
+OsDREB1E, OsDREB1F, and OsDREB1G are potential candidate 
+genes for interaction with OsPRX83, requiring validation through 
+yeast one-hybrid and Co-IP assays.
+Also, OsPRX83 (LOC_Os06g32990) also has a homologous 
+gene (LOC_Os06g35490), which is also an unknown functional 
+gene. Some genes have been found to interact with their homo-
+logous genes. The RNA binding proteins OsLa1 and OsLa2 are 
+homologs in rice, and they interacted with together to regulate 
+the pollen fertility and grain size.51 OsPRX83 can also be 
+interacted with its homologs in rice.
+Compared with prior findings, our study elucidates the 
+role of OsPRX83 in modulating tolerance to osmotic stress 
+through reactive oxygen species (ROS) scavenging path-
+ways and abscisic acid (ABA) signaling pathways. The 
+interacting proteins of OsPRX83 implicated in this regula-
+tory mechanism remains to be determined. Future investi-
+gations aim to unveil the intricate regulatory networks 
+underlying the response to osmotic stress in rice, thereby 
+enriching our understanding of the involvement of plant 
+peroxidases in stress response mechanisms.
+Conclusion
+This study elucidates a novel Class III peroxidase gene in rice, 
+OsPRX83. Utilizing overexpression and CRISPR-Cas9 knock-
+down mutants, we established OsPRX83‘s role in responding to 
+abiotic stresses. Our findings suggest that OsPRX83 overexpres-
+sion bolsters osmotic stress tolerance by augmenting ROS scaven-
+ging. Furthermore, OsPRX83 positively regulates responses to 
+oxidative stress and ABA sensitivity. This finding underscores 
+the importance of ROS metabolism under abiotic stresses, thereby 
+unveiling a new dimension in the functional analysis of plant 
+peroxidases.
+Acknowledgments
+The authors would like to express their gratitude to EditSprings (https:// 
+www.editsprings.cn) for the expert linguistic services provided.
+Disclosure statement
+No potential conflict of interest was reported by the author(s).
+Funding
+This work was financially supported by the National Natural Science 
+Foundation of China [Grant number 32060425], the Ningxia Natural 
+Science Foundation [Grant number 2023AAC03144].
+Authors contribution statement
+Yuchao Cui and Liang Chen supervised the project and designed the 
+experiments. Han Bao designed the experiments. Han Bao performed 
+most of the experiments, analyzed the data, and wrote the article. Xijun 
+Zheng supported rice transgenic lines of OsPRX83. Chengke Luo assisted 
+in the experiments. Yang Li provided practical assistance to Han Bao. All 
+authors contributed to the article and approved the submitted version.
+Abbreviations
+APX Ascorbate peroxidase
+GUS β-Glucuronidase
+MDA Malondialdehyde
+MeJA Jasmonic acid methyl ester
+MV Methylviologen
+NBT Nitroblue tetrazolium
+OsPRX83 Oryza sativa peroxidase 83
+PEG Polyethylene glycol
+PRX Peroxidase
+ROS Reactive oxygen species
+SOD Superoxide dismutase
+PLANT SIGNALING & BEHAVIOR
+ e2391134-9
+
+--- PAGE 11 ---
+Data availability statement
+All data supporting the findings of this study are available within the paper 
+and within its supplementary materials published online. The datasets 
+used in the study are available in online repositories (NCBI).The accession 
+number can be found below: PRJNA1121593.
+References
+1. Sadegh A, Rafii MY, Mahmoodreza S, Miah G, Sahebi M, Azizi P, 
+Tanweer FA, Akhtar MS, Nasehi A. Molecular breeding strategy and 
+challenges towards improvement of blast disease resistance in rice 
+crop. Front Plant Sci. 2015;6(7773):886. doi:10.3389/fpls.2015.00886  .
+2. Gupta A, Rico-Medina A, Caño-Delgado AI. Cao-delgado a I. 
+undefined. The physiology of plant responses to drought. Science. 
+2020;368(6488):266–269. doi:10.1126/science.aaz7614  .
+3. Zhang H, Zhu J, Gong Z, Zhu JK. Abiotic stress responses in plants. 
+Nat Rev Genet. 2022;23(2):104–119. doi:10.1038/s41576-021- 
+00413-0  .
+4. Cutler SR, Rodriguez PL, Finkelstein RR, Abrams SR. Abscisic acid: 
+emergence of a core signaling network. Annu Rev Plant Biol. 
+2010;61(1):651–679. doi:10.1146/annurev-arplant-042809-112122  .
+5. Vishwakarma K, Upadhyay N, Kumar N, Yadav G, Singh J, 
+Mishra RK, Kumar V, Verma R, Upadhyay RG, Pandey M. et al. 
+Abscisic acid signaling and abiotic stress tolerance in plants: 
+a review on current knowledge and future prospects. Front Plant 
+Sci. 2017;8:161. doi:10.3389/fpls.2017.00161  .
+6. Zhang C, Li C, Liu J, Lv Y, Yu C, Li H, Zhao T, Liu B. The OsABF1 
+transcription factor improves drought tolerance by activating the 
+transcription of COR413-TM1 in rice. J Exp Bot. 2017;68 
+(16):4695–4707. doi:10.1093/jxb/erx260  .
+7. Ma Y, Szostkiewicz I, Korte A, Moes D, Yang Y, Christmann A, Grill E. 
+Regulators of PP2C phosphatase activity function as abscisic acid 
+sensors. Science. 2009;324(5930):1064–1068. doi:10.1126/science. 
+1172408  .
+8. Park SY, Fung P, Nishimura N, Jensen DR, Fujii H, Zhao Y, 
+Lumba S, Santiago J, Rodrigues A, Chow TFF. et al. Abscisic acid 
+inhibits type 2C protein phosphatases via the PYR/PYL family of 
+START proteins. Science. 2009;324(5930):1068–1071. doi:10.1126/ 
+science. 1173041.
+9. Lenka SK, Muthusamy SK, Chinnusamy V, Bansal KC. Ectopic 
+expression of rice PYL3 enhances cold and drought tolerance in 
+Arabidopsis thaliana. Mol Biotechnol. 2018;60(5):350–361. doi:10. 
+1007/s12033-018-0076-5  .
+10. Tan YQ, Yang Y, Shen X, Zhu M, Shen J, Zhang W, Hu H, 
+Wang Y-F. Multiple cyclic nucleotide-gated channels function as 
+aba-activated Ca2+ channels required for aba-induced stomatal 
+closure in Arabidopsis. Plant Cell. 2023;35(1):239–259. doi:10. 
+1093/plcell/koac274  .
+11. Yang Y, Tan YQ, Wang X, Li JJ, Du BY, Zhu M, Wang P, 
+Wang Y-F. OPEN STOMATA 1 phosphorylates CYCLIC 
+NUCLEOTIDE-GATED CHANNELs to trigger Ca2+ signaling 
+for abscisic acid-induced stomatal closure in Arabidopsis. Plant 
+Cell. 2024;36(6):2328–2358. doi:10.1093/plcell/koae073  .
+12. Mittler R, Blumwald E. The roles of ROS and ABA in systemic acquired 
+acclimation. Plant Cell. 2015;27(1):64–70. doi:10.1105/tpc.114.133090  .
+13. Mittler R. ROS are good. Trends Plant Sci. 2017;22(1):11–19. 
+doi:10.1016/j.tplants.2016.08.002  .
+14. Mittler R, Zandalinas SI, Fichman Y, Van Breusegem F. Reactive 
+oxygen species signaling in plant stress responses. Nat Rev Mol Cell 
+Biol. 2022;23(10):663–679. doi:10.1038/s41580-022-00499-2  .
+15. Mittler R, Vanderauwera S, Gollery M, Van Breusegem F. Reactive 
+oxygen gene network of plants. Trends Plant Sci. 2004;9 
+(10):490–498. doi:10.1016/j.tplants.2004.08.009  .
+16. Passardi F, Cosio C, Penel C, Dunand C. Peroxidases have more 
+functions than a Swiss army knife. Plant Cell Rep. 2005;24 
+(5):255–265. doi:10.1007/s00299-005-0972-6  .
+17. Bhatt I, Tripathi BN. Plant peroxiredoxins: catalytic mechanisms, 
+functional significance and future perspectives. Biotechnol Adv. 
+2011;29(6):850–859. doi:10.1016/j.biotechadv.2011.07.002  .
+18. Kim BH, Kim SY, Nam KH. Genes encoding plant-specific class III 
+peroxidases are responsible for increased cold tolerance of the 
+brassinosteroid-insensitive 1 mutant. Mol And Cells. 2012;34 
+(6):539–548. doi:10.1007/s10059-012-0230-z  .
+19. Herrero J, Fernández-Pérez F, Yebra T, Novo-Uzal E, Pomar F, 
+Pedreño M, Cuello J, Guéra A, Esteban-Carrasco A, Zapata JM. 
+et al. Bioinformatic and functional characterization of the basic 
+peroxidase 72 from Arabidopsis thaliana involved in lignin 
+biosynthesis. Planta. 2013;237(6):1599–1612. doi:10.1007/s00425- 
+013-1865-5  .
+20. Marzol E, Borassi C, Carignani Sardoy M, Ranocha P, Aptekmann 
+AA, Bringas M. Class III Peroxidases PRX01, PRX44, and PRX73 
+Control Root Hair Growth in Arabidopsis thaliana. Int J Mol Sci. 
+2022;23(10):5375. doi:10.3390/ijms23105375  .
+21. Tognolli M, Penel C, Greppin H, Simon P. Analysis and expression of 
+the class III peroxidase large gene family in Arabidopsis thaliana. 
+Gene. 2002;288(1–2):129–138. doi:10.1016/s0378-1119(02)00465-1  .
+22. Passardi F, Longet D, Penel C, Dunand C. The class III peroxidase 
+multigenic family in rice and its evolution in land plants. 
+Phytochemistry. 2004;65(13):1879–1893. doi:10.1016/j.phyto 
+chem.2004.06.023  .
+23. Li W, Zhu Z, Chern M, Yin J, Yang C, Ran L, Cheng M, He M, 
+Wang K, Wang J. et al. A natural allele of a transcription factor in 
+rice confers broad-spectrum blast resistance. Cell. 2017;170 
+(1):114–126.e115. doi:10.1016/j.cell.2017.06.008  .
+24. Liu H, Dong S, Li M, Gu F, Yang G, Guo T, Chen Z, Wang J. The 
+class III peroxidase gene OsPrx30, transcriptionally modulated by 
+the at-hook protein OsATH1, mediates rice bacterial 
+blight-induced ROS accumulation. J Integr Plant Biol. 2021;63 
+(2):393–408. doi:10.1111/jipb.13040  .
+25. Kidwai M, Dhar YV, Gautam N, Tiwari M, Ahmad IZ, Asif MH, 
+Chakrabarty D. Oryza sativa class III peroxidase (OsPRX38) over-
+expression in Arabidopsis thaliana reduces arsenic accumulation 
+due to apoplastic lignification. J Hazard Mater. 2019;362:383–393. 
+doi:10.1111/jipb.13040  .
+26. Chen S, Songkumarn P, Liu J, Wang GL. A versatile zero back-
+ground T-vector system for gene cloning and functional genomics. 
+Plant Physiol. 2009;150(3):1111–1121. doi:10.1104/pp.109.137125  .
+27. Song JM, Lei Y, Shu CC, Ding Y, Xing F, Liu H, Wang J, Xie W, 
+Zhang J, Chen L-L. et al. Rice information GateWay: 
+a comprehensive bioinformatics platform for indica rice 
+genomes. Mol Plant. 2018;11(3):505–507. doi:10.1016/j.molp. 
+2017.10.003  .
+28. Matsumoto T, Wu J, Itoh T, Numa H, Antonio B, Sasaki T. The 
+Nipponbare genome and the next-generation of rice genomics 
+research in Japan. Rice. 2016;9(1):33. doi:10.1186/s12284-016-0107-4  .
+29. Yang S, Xu K, Chen S, Li T, Xia H, Chen L, Liu H, Luo L. A 
+stress-responsive bZIP transcription factor OsbZIP62 improves 
+drought and oxidative tolerance in rice. BMC Plant Biol. 2019;19 
+(1):260. doi:10.1186/s12870-019-1872-1  .
+30. Zanella M, Borghi GL, Pirone C, Thalmann M, Pazmino D, 
+Costa A, Santelia D, Trost P, Sparla F. β-amylase 1 (BAM1) 
+degrades transitory starch to sustain proline biosynthesis during 
+drought stress. J Exp Bot. 2016;67(6):1819–1826. doi:10.1093/jxb/ 
+erv572  .
+31. Tang N, Ma S, Zong W, Yang N, Lv Y, Yan C, Guo Z, Li J, Li X, 
+Xiang Y. et al. MODD mediates deactivation and degradation of 
+OsbZIP46 to negatively regulate ABA signaling and drought resis-
+tance in rice. Plant Cell. 2016;28(9):2161–2177. doi:10.1105/tpc.16. 
+00171  .
+32. Xiong H, Li J, Liu P, Duan J, Zhao Y, Guo X, Li Y, Zhang H, Ali J, 
+Li Z. et al. Overexpression of OsMYB48-1, a novel myb-related 
+transcription factor, enhances drought and salinity tolerance in 
+rice. PLOS ONE. 2014;9(3):e92913. doi:10.1371/journal.pone. 
+0092913  .
+33. Jefferson RA. Assaying chimeric genes in plants: the GUS gene 
+fusion system. Plant Mol Biol Report. 1987;5(4):387–405. doi:10. 
+1007/BF02667740  .
+34. Livak KJ, Schmittgen TD. Analysis of relative gene expression data 
+using real-time quantitative PCR and the 2(-delta delta C(T)). 
+e2391134-10
+ H. BAO ET AL.
+
+--- PAGE 12 ---
+Method Methods. 2001;25(4):402–408. doi:10.1006/meth.2001. 
+1262  .
+35. Sang J, Wang Z, Li M, Cao J, Niu G, Xia L, Zou D, Wang F, Xu X, 
+Han X. et al. ICG: a wiki-driven knowledgebase of internal control 
+genes for rt-qPCR normalization. Nucleic Acids Res. 2018;46(D1): 
+D121–d126. doi:10.1093/nar/gkx875  .
+36. Love MI, Huber W, Anders S. Moderated estimation of fold change 
+and dispersion for RNA-seq data with DESeq2. Genome Biol. 
+2014;15(12):550. doi:10.1186/s13059-014-0550-8  .
+37. Guo C, Chen L, Cui Y, Tang M, Guo Y, Yi Y, Li Y, Liu L, Chen L. 
+RNA binding protein OsTZF7 traffics between the nucleus and 
+processing Bodies/stress granules and positively regulates drought 
+stress in rice. Front Plant Sci. 2022;13:802337. doi:10.3389/fpls. 
+2022.802337  .
+38. Ashburner M, Ball CA, Blake JA, Botstein D, Butler H, Cherry JM, 
+Davis AP, Dolinski K, Dwight SS, Eppig JT. et al. Gene ontology: 
+tool for the unification of biology. Nat Genet. 2000;25(1):25. doi:10. 
+1038/75556  .
+39. Kanehisa M. KEGG: Kyoto encyclopedia of genes and genomes. 
+Nucleic Acids Res. 2000;28(1):27–30. doi:10.1093/nar/27.1.29  .
+40. Lu X, Li Y, Akhtar M, Liu C, Ma T, Min W, Bai X, She Y, Chen L, 
+Tian L. et al. A DUF966 gene family member OsDSR3 positively 
+regulates alkali stress tolerance in rice. Plant Sci. 2024;343:112072. 
+doi:10.1016/j.plantsci.2024.112072  .
+41. Wei H, Xu H, Su C, Wang X, Wang L. Rice CIRCADIAN CLOCK 
+ASSOCIATED 1 transcriptionally regulates ABA signaling to con-
+fer multiple abiotic stress tolerance. Plant Physiol. 2022;190 
+(2):1057–1073. doi:10.1093/plphys/kiac196  .
+42. Mao D, Chen C, Wu K. Colinearity and similar expression pattern 
+of rice DREB1s reveal their functional conservation in the 
+cold-responsive pathway. PLOS ONE. 2012;7(10):e47275. doi:10. 
+1371/journal.pone.0047275  .
+43. Pacheco JM, Ranocha P, Kasulin L, Fusari CM, Servi L, 
+Aptekmann AA, Gabarain VB, Peralta JM, Borassi C, Marzol E. 
+et al. Apoplastic class III peroxidases PRX62 and PRX69 promote 
+Arabidopsis root hair growth at low temperature. Nat Commun. 
+2022;13(1):1310. doi:10.1038/s41467-022-28833-4  .
+44. Susumu H, Katsutomo S, Hiroyuki I, Ohashi Y, Matsui H. A large 
+family of class III plant peroxidases. Plant & Cell Physiol. 
+2001;2001(5):462. doi:10.1016/j.jhep.2008.08.025  .
+45. Llorente F, María López-Cobollo R, Catalá R, José Miguel 
+Martínez-Zapater Salinas J, Salinas J. A novel cold-inducible gene 
+from Arabidopsis, RCI3, encodes a peroxidase that constitutes 
+a component for stress tolerance. Plant J. 2010;32(1):13–24. 
+doi:10.1046/j.1365-313x.2002.01398.x  .
+46. Kumar S, Jaggi M, Sinha AK. Ectopic overexpression of vacuolar and 
+apoplastic Catharanthus roseus peroxidases confers differential toler-
+ance to salt and dehydration stress in transgenic tobacco. Protoplasma. 
+2012;249(2):423–432. doi:10.1007/s00709-011-0294-1  .
+47. Wu Y, Yang Z, How J, Xu H, Chen L, Li K. Overexpression of 
+a peroxidase gene (AtPrx64) of Arabidopsis thaliana in tobacco 
+improves plant’s tolerance to aluminium stress. Plant Mol Biol. 
+2017;95(1–2):157–168. doi:10.1007/s11103-017-0644-2  .
+48. Jin T, Sun Y, Zhao R, Shan Z, Gai J, Li Y. Overexpression of 
+peroxidase gene GsPRX9 confers salt tolerance in soybean. 
+Int J Mol Sci. 2019;20(15):3745. doi:10.3390/ijms20153745  .
+49. Chen JQ, Meng XP, Zhang Y, Xia M, Wang XP. Over-expression of 
+OsDREB genes leads to enhanced drought tolerance in rice. 
+Biotechnol Lett. 2008;30(12):2191–2198. doi:10.1007/s10529-008- 
+9811-5  .
+50. Wang Q, Guan Y, Wu Y, Chen H, Chen F, Chu C. Overexpression 
+of a rice OsDREB1F gene increases salt, drought, and low tempera-
+ture tolerance in both Arabidopsis and rice. Plant Mol Biol. 
+2008;67(6):589–602. doi:10.1007/s11103-008-9340-6  .
+51. Guo H, Cui Y, Huang L, Ge L, Xu X, Xue D, Tang M, Zheng J, Yi Y, 
+Chen L. et al. The RNA binding protein OsLa influences grain and 
+anther development in rice. Plant J. 2022;110(5):1397–1414. doi:10. 
+1111/tpj.15746.
+PLANT SIGNALING & BEHAVIOR
+ e2391134-11

@@ -1,0 +1,214 @@
+{
+  "corpus_papers_count": 13,
+  "graph_total_nodes": 14,
+  "graph_total_edges": 54,
+  "sampled_relationships_count": 20,
+  "correctly_resolvable_count": 13,
+  "ambiguous_count": 0,
+  "unsupported_incorrect_count": 7,
+  "useful_for_discovery_count": 13,
+  "resolution_precision_percent": 65.0,
+  "discovery_utility_percent": 65.0,
+  "sampled_edges_evaluation": [
+    {
+      "edge": "ABA <---> osmotic_stress",
+      "weight_co_occurrences": 42,
+      "source_file": "SRC_002_FERONIA_orchestrates_P2K1-driven_purinergic_signaling_in_plant_roots.pdf",
+      "source_page": 7,
+      "text_evidence_location": "Page 7",
+      "evidence_snippet": "noted here may be independent of eATP signaling. While  the exact role of FERONIA in regulating eATP-responsive  gene expression is not entirely clear, FERONIA does appear  essential for early and downstream physiological responses to  eATP, such as ...",
+      "resolution_status": "CORRECTLY_RESOLVABLE",
+      "useful_for_discovery": true
+    },
+    {
+      "edge": "ROS <---> osmotic_stress",
+      "weight_co_occurrences": 30,
+      "source_file": "SRC_007_Decoding_the_role_of_OsPRX83_in_enhancing_osmotic_stress_tolerance_i.pdf",
+      "source_page": 1,
+      "text_evidence_location": "Page 1",
+      "evidence_snippet": "Plant Signaling & Behavior ISSN: 1559-2324 (Online) Journal homepage: www.tandfonline.com/journals/kpsb20 Decoding the role of OsPRX83 in enhancing osmotic stress tolerance in rice through ABA- dependent pathways and ROS scavenging Han Bao, Yuchao Cu...",
+      "resolution_status": "CORRECTLY_RESOLVABLE",
+      "useful_for_discovery": true
+    },
+    {
+      "edge": "osmotic_stress <---> strigolactones",
+      "weight_co_occurrences": 24,
+      "source_file": "SRC_005_Sizing_up_competition_with_strigolactones__the_case_of_pea_plants.pdf",
+      "source_page": 12,
+      "text_evidence_location": "Page 12",
+      "evidence_snippet": "20. Himmelbauer ML, Loiskandl AW, Kastanek AF. Estimating length,  average diameter and surface area of roots using two different  image analyses systems. Plant Soil. 2004;260(1/2):111\u2013120. doi:   10.1023/B:PLSO.0000030171.28821.55  . 21. Mohamed A, ...",
+      "resolution_status": "UNSUPPORTED_INCORRECT",
+      "useful_for_discovery": false
+    },
+    {
+      "edge": "ABA <---> ROS",
+      "weight_co_occurrences": 21,
+      "source_file": "SRC_007_Decoding_the_role_of_OsPRX83_in_enhancing_osmotic_stress_tolerance_i.pdf",
+      "source_page": 1,
+      "text_evidence_location": "Page 1",
+      "evidence_snippet": "Plant Signaling & Behavior ISSN: 1559-2324 (Online) Journal homepage: www.tandfonline.com/journals/kpsb20 Decoding the role of OsPRX83 in enhancing osmotic stress tolerance in rice through ABA- dependent pathways and ROS scavenging Han Bao, Yuchao Cu...",
+      "resolution_status": "CORRECTLY_RESOLVABLE",
+      "useful_for_discovery": true
+    },
+    {
+      "edge": "ABA <---> strigolactones",
+      "weight_co_occurrences": 16,
+      "source_file": "SRC_005_Sizing_up_competition_with_strigolactones__the_case_of_pea_plants.pdf",
+      "source_page": 12,
+      "text_evidence_location": "Page 12",
+      "evidence_snippet": "20. Himmelbauer ML, Loiskandl AW, Kastanek AF. Estimating length,  average diameter and surface area of roots using two different  image analyses systems. Plant Soil. 2004;260(1/2):111\u2013120. doi:   10.1023/B:PLSO.0000030171.28821.55  . 21. Mohamed A, ...",
+      "resolution_status": "UNSUPPORTED_INCORRECT",
+      "useful_for_discovery": false
+    },
+    {
+      "edge": "P2K1 <---> eATP",
+      "weight_co_occurrences": 14,
+      "source_file": "SRC_001_Computational_prediction_and_in_vitro_analysis_of_the_potential_liga.pdf",
+      "source_page": 2,
+      "text_evidence_location": "Page 2",
+      "evidence_snippet": "SHORT COMMUNICATION Computational prediction and in vitro analysis of the potential ligand binding site  within the extracellular ATP receptor, P2K2 Sung-Hwan Choa,b\u2020, Cuong the Nguyena,c\u2020, an Quoc Phama,d, and Gary Stacey  a aDivisions of Plant Scie...",
+      "resolution_status": "UNSUPPORTED_INCORRECT",
+      "useful_for_discovery": false
+    },
+    {
+      "edge": "apyrase <---> eATP",
+      "weight_co_occurrences": 14,
+      "source_file": "SRC_003_Levels_of_extracellular_ATP_in_growth_zones_of_Arabidopsis_primary_r.pdf",
+      "source_page": 1,
+      "text_evidence_location": "Page 1",
+      "evidence_snippet": "Plant Signaling & Behavior ISSN: 1559-2324 (Online) Journal homepage: www.tandfonline.com/journals/kpsb20 Levels of extracellular ATP in growth zones of Arabidopsis primary roots are changed by altered expression of apyrase enzymes Greg Clark, Diana ...",
+      "resolution_status": "CORRECTLY_RESOLVABLE",
+      "useful_for_discovery": true
+    },
+    {
+      "edge": "ROS <---> strigolactones",
+      "weight_co_occurrences": 10,
+      "source_file": "SRC_008_Drought-induced_molecular_changes_in_crown_of_various_barley_phytoho.pdf",
+      "source_page": 20,
+      "text_evidence_location": "Page 20",
+      "evidence_snippet": "18. Yaqoob U, Jan N, Raman PV, Siddique KHM, John R. Crosstalk  between brassinosteroid signaling, ROS signaling and phenylpro- panoid pathway during abiotic stress in plants: does it exist? Plant  Stress. 2022;4:100075. doi:10.1016/J.STRESS.2022.100...",
+      "resolution_status": "CORRECTLY_RESOLVABLE",
+      "useful_for_discovery": true
+    },
+    {
+      "edge": "OsPRX83 <---> ROS",
+      "weight_co_occurrences": 9,
+      "source_file": "SRC_007_Decoding_the_role_of_OsPRX83_in_enhancing_osmotic_stress_tolerance_i.pdf",
+      "source_page": 1,
+      "text_evidence_location": "Page 1",
+      "evidence_snippet": "Plant Signaling & Behavior ISSN: 1559-2324 (Online) Journal homepage: www.tandfonline.com/journals/kpsb20 Decoding the role of OsPRX83 in enhancing osmotic stress tolerance in rice through ABA- dependent pathways and ROS scavenging Han Bao, Yuchao Cu...",
+      "resolution_status": "CORRECTLY_RESOLVABLE",
+      "useful_for_discovery": true
+    },
+    {
+      "edge": "FERONIA <---> P2K1",
+      "weight_co_occurrences": 8,
+      "source_file": "SRC_002_FERONIA_orchestrates_P2K1-driven_purinergic_signaling_in_plant_roots.pdf",
+      "source_page": 1,
+      "text_evidence_location": "Page 1",
+      "evidence_snippet": "Plant Signaling & Behavior ISSN: 1559-2324 (Online) Journal homepage: www.tandfonline.com/journals/kpsb20 FERONIA orchestrates P2K1-driven purinergic signaling in plant roots Joel M. Sowders, Jeremy B. Jewell & Kiwamu Tanaka To cite this article: Joe...",
+      "resolution_status": "CORRECTLY_RESOLVABLE",
+      "useful_for_discovery": true
+    },
+    {
+      "edge": "ROS <---> eATP",
+      "weight_co_occurrences": 7,
+      "source_file": "SRC_001_Computational_prediction_and_in_vitro_analysis_of_the_potential_liga.pdf",
+      "source_page": 2,
+      "text_evidence_location": "Page 2",
+      "evidence_snippet": "SHORT COMMUNICATION Computational prediction and in vitro analysis of the potential ligand binding site  within the extracellular ATP receptor, P2K2 Sung-Hwan Choa,b\u2020, Cuong the Nguyena,c\u2020, an Quoc Phama,d, and Gary Stacey  a aDivisions of Plant Scie...",
+      "resolution_status": "UNSUPPORTED_INCORRECT",
+      "useful_for_discovery": false
+    },
+    {
+      "edge": "FERONIA <---> eATP",
+      "weight_co_occurrences": 7,
+      "source_file": "SRC_002_FERONIA_orchestrates_P2K1-driven_purinergic_signaling_in_plant_roots.pdf",
+      "source_page": 2,
+      "text_evidence_location": "Page 2",
+      "evidence_snippet": "SHORT COMMUNICATION FERONIA orchestrates P2K1-driven purinergic signaling in plant roots Joel M. Sowders  a,b, Jeremy B. Jewellc, and Kiwamu Tanaka  a,b aDepartment of Plant Pathology, Washington State University, Pullman, WA, USA; bMolecular Plant S...",
+      "resolution_status": "CORRECTLY_RESOLVABLE",
+      "useful_for_discovery": true
+    },
+    {
+      "edge": "ABA <---> OsPRX83",
+      "weight_co_occurrences": 7,
+      "source_file": "SRC_007_Decoding_the_role_of_OsPRX83_in_enhancing_osmotic_stress_tolerance_i.pdf",
+      "source_page": 1,
+      "text_evidence_location": "Page 1",
+      "evidence_snippet": "Plant Signaling & Behavior ISSN: 1559-2324 (Online) Journal homepage: www.tandfonline.com/journals/kpsb20 Decoding the role of OsPRX83 in enhancing osmotic stress tolerance in rice through ABA- dependent pathways and ROS scavenging Han Bao, Yuchao Cu...",
+      "resolution_status": "CORRECTLY_RESOLVABLE",
+      "useful_for_discovery": true
+    },
+    {
+      "edge": "OsPRX83 <---> osmotic_stress",
+      "weight_co_occurrences": 7,
+      "source_file": "SRC_007_Decoding_the_role_of_OsPRX83_in_enhancing_osmotic_stress_tolerance_i.pdf",
+      "source_page": 1,
+      "text_evidence_location": "Page 1",
+      "evidence_snippet": "Plant Signaling & Behavior ISSN: 1559-2324 (Online) Journal homepage: www.tandfonline.com/journals/kpsb20 Decoding the role of OsPRX83 in enhancing osmotic stress tolerance in rice through ABA- dependent pathways and ROS scavenging Han Bao, Yuchao Cu...",
+      "resolution_status": "CORRECTLY_RESOLVABLE",
+      "useful_for_discovery": true
+    },
+    {
+      "edge": "ABA <---> eATP",
+      "weight_co_occurrences": 6,
+      "source_file": "SRC_002_FERONIA_orchestrates_P2K1-driven_purinergic_signaling_in_plant_roots.pdf",
+      "source_page": 5,
+      "text_evidence_location": "Page 5",
+      "evidence_snippet": "were significantly upregulated in fer-4 compared to Col-0  under basal (mock) conditions, only one of the genes,  MAPKKK21, was differentially expressed following the appli- cation of ATP in fer-4 (Figure 1(b)). A possible indication that  the expres...",
+      "resolution_status": "CORRECTLY_RESOLVABLE",
+      "useful_for_discovery": true
+    },
+    {
+      "edge": "ABA <---> FERONIA",
+      "weight_co_occurrences": 5,
+      "source_file": "SRC_002_FERONIA_orchestrates_P2K1-driven_purinergic_signaling_in_plant_roots.pdf",
+      "source_page": 5,
+      "text_evidence_location": "Page 5",
+      "evidence_snippet": "were significantly upregulated in fer-4 compared to Col-0  under basal (mock) conditions, only one of the genes,  MAPKKK21, was differentially expressed following the appli- cation of ATP in fer-4 (Figure 1(b)). A possible indication that  the expres...",
+      "resolution_status": "CORRECTLY_RESOLVABLE",
+      "useful_for_discovery": true
+    },
+    {
+      "edge": "ROS <---> apyrase",
+      "weight_co_occurrences": 5,
+      "source_file": "SRC_003_Levels_of_extracellular_ATP_in_growth_zones_of_Arabidopsis_primary_r.pdf",
+      "source_page": 5,
+      "text_evidence_location": "Page 5",
+      "evidence_snippet": "Root profiling experiments  Flux measurements were conducted using a self-referencing (SR) microelectrode assembly composed  of a vibration isolation table with faraday cage, camera/zoomscope, and supporting electronic equip- ment described in detail...",
+      "resolution_status": "UNSUPPORTED_INCORRECT",
+      "useful_for_discovery": false
+    },
+    {
+      "edge": "RBOHD <---> eATP",
+      "weight_co_occurrences": 4,
+      "source_file": "SRC_001_Computational_prediction_and_in_vitro_analysis_of_the_potential_liga.pdf",
+      "source_page": 2,
+      "text_evidence_location": "Page 2",
+      "evidence_snippet": "SHORT COMMUNICATION Computational prediction and in vitro analysis of the potential ligand binding site  within the extracellular ATP receptor, P2K2 Sung-Hwan Choa,b\u2020, Cuong the Nguyena,c\u2020, an Quoc Phama,d, and Gary Stacey  a aDivisions of Plant Scie...",
+      "resolution_status": "UNSUPPORTED_INCORRECT",
+      "useful_for_discovery": false
+    },
+    {
+      "edge": "P2K1 <---> RBOHD",
+      "weight_co_occurrences": 4,
+      "source_file": "SRC_001_Computational_prediction_and_in_vitro_analysis_of_the_potential_liga.pdf",
+      "source_page": 2,
+      "text_evidence_location": "Page 2",
+      "evidence_snippet": "SHORT COMMUNICATION Computational prediction and in vitro analysis of the potential ligand binding site  within the extracellular ATP receptor, P2K2 Sung-Hwan Choa,b\u2020, Cuong the Nguyena,c\u2020, an Quoc Phama,d, and Gary Stacey  a aDivisions of Plant Scie...",
+      "resolution_status": "UNSUPPORTED_INCORRECT",
+      "useful_for_discovery": false
+    },
+    {
+      "edge": "ABA <---> P2K1",
+      "weight_co_occurrences": 4,
+      "source_file": "SRC_002_FERONIA_orchestrates_P2K1-driven_purinergic_signaling_in_plant_roots.pdf",
+      "source_page": 5,
+      "text_evidence_location": "Page 5",
+      "evidence_snippet": "were significantly upregulated in fer-4 compared to Col-0  under basal (mock) conditions, only one of the genes,  MAPKKK21, was differentially expressed following the appli- cation of ATP in fer-4 (Figure 1(b)). A possible indication that  the expres...",
+      "resolution_status": "CORRECTLY_RESOLVABLE",
+      "useful_for_discovery": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "benchmark": "BENCHMARK_D",
+  "arm": "ARM_2_TOOL_EQUIPPED_GEMINI",
+  "subagent_id": "97fcfb01-715a-4fc5-b15c-45fe61459521",
+  "model": "Gemini 3.8 Flash High",
+  "execution_mode": "Standard research tools (Python/R/Quarto)",
+  "tool_calls_executed": 31,
+  "status": "COMPLETED",
+  "recorded_at": "2026-09-05T11:54:39.465696+00:00",
+  "prompt_sha256": "08B968A22ED21A30D58CDA1B61C69E50445E188C7A6D74AEB48765CB20F32176",
+  "output_sha256": "020AE1A96BE65A1981FB25CEEB5C86D7ABAA5420603F013D1A9751E4624DC614"
+}

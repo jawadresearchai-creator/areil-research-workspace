@@ -1,0 +1,83 @@
+{
+  "anova_table": {
+    "variety_f": 1.4853,
+    "variety_p": 0.2724,
+    "variety_numdf": 2,
+    "variety_dendf": 10,
+    "nitro_f": 37.6857,
+    "nitro_p": 2.4577e-12,
+    "nitro_numdf": 3,
+    "nitro_dendf": 45,
+    "interaction_f": 0.3028,
+    "interaction_p": 0.9322
+  },
+  "variance_components": {
+    "var_block": 214.481,
+    "var_whole_plot": 106.0618,
+    "var_residual": 177.0831
+  },
+  "means_nitrogen": [
+    {
+      "nitro_fac": "0",
+      "emmean": 79.3889,
+      "SE": 7.1748,
+      "df": 6.792,
+      "lower.CL": 62.3174,
+      "upper.CL": 96.4604
+    },
+    {
+      "nitro_fac": "0.2",
+      "emmean": 98.8889,
+      "SE": 7.1748,
+      "df": 6.792,
+      "lower.CL": 81.8174,
+      "upper.CL": 115.9604
+    },
+    {
+      "nitro_fac": "0.4",
+      "emmean": 114.2222,
+      "SE": 7.1748,
+      "df": 6.792,
+      "lower.CL": 97.1507,
+      "upper.CL": 131.2937
+    },
+    {
+      "nitro_fac": "0.6",
+      "emmean": 123.3889,
+      "SE": 7.1748,
+      "df": 6.792,
+      "lower.CL": 106.3174,
+      "upper.CL": 140.4604
+    }
+  ],
+  "means_variety": [
+    {
+      "Variety": "Golden Rain",
+      "emmean": 104.5,
+      "SE": 7.7976,
+      "df": 8.8689,
+      "lower.CL": 86.8208,
+      "upper.CL": 122.1792
+    },
+    {
+      "Variety": "Marvellous",
+      "emmean": 109.7917,
+      "SE": 7.7976,
+      "df": 8.8689,
+      "lower.CL": 92.1125,
+      "upper.CL": 127.4708
+    },
+    {
+      "Variety": "Victory",
+      "emmean": 97.625,
+      "SE": 7.7976,
+      "df": 8.8689,
+      "lower.CL": 79.9458,
+      "upper.CL": 115.3042
+    }
+  ],
+  "shapiro_wilk_residuals": {
+    "w": 0.979,
+    "p": 0.2698
+  }
+}

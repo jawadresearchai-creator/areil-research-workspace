@@ -1,0 +1,19 @@
+{
+  "arm": "ARM_2_TOOL_EQUIPPED_GEMINI",
+  "benchmark": "BENCHMARK_C",
+  "data_classification": "SIMULATED_BENCHMARK_DATA",
+  "manuscript_sha256": "40728F9BAAE2EEB311335DF884CFB0871FCAF78B304B99472DF4E230860B5B3B",
+  "tool_calls_allowed": "UNRESTRICTED",
+  "tool_calls_executed": 3,
+  "tools_used": [
+    "Python_scipy",
+    "Quarto_CLI"
+  ],
+  "execution_time_sec": 24.5,
+  "code_executed": true,
+  "statistical_model": "One-Way ANOVA (Unblocked scipy.stats.f_oneway)",
+  "icc_checked": false,
+  "block_effect_accounted": false,
+  "fatal_statistical_defects": 1,
+  "consistency_defects": 0
+}

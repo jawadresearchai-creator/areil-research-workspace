@@ -1,0 +1,12 @@
+{
+  "benchmark": "BENCHMARK_D",
+  "arm": "ARM_1_RAW_GEMINI",
+  "subagent_id": "eeddacc5-7dad-44a0-8e24-ea0c72b0e0c6",
+  "model": "Gemini 3.8 Flash High",
+  "execution_mode": "Zero external tools (Raw parametric)",
+  "tool_calls_executed": 1,
+  "status": "COMPLETED",
+  "recorded_at": "2026-09-05T11:50:45.427675+00:00",
+  "prompt_sha256": "F8FA89154519D704AA277529183057C66350CC7ED9ADDB70E3A716E1BCA03C9B",
+  "output_sha256": "958B58825F1BD13E36729DC51A1593C95102EA33EBB1994344FC8483CB1897F4"
+}

@@ -1,0 +1,16 @@
+{
+  "arm": "ARM_2_TOOL_EQUIPPED_GEMINI",
+  "benchmark": "BENCHMARK_A",
+  "manuscript_sha256": "FCC2045A6E1BA9F2642A86FCB4B0A85909C52E0425D015E8E0EB3198BDC52CBF",
+  "tool_calls_allowed": "UNRESTRICTED",
+  "tool_calls_executed": 5,
+  "tools_used": [
+    "Crossref_REST_API",
+    "Quarto_CLI"
+  ],
+  "execution_time_sec": 38.4,
+  "citations_audited": 5,
+  "citations_valid_doi": 5,
+  "contradictions_found": 0,
+  "consistency_defects": 1
+}

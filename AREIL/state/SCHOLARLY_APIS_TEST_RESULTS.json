@@ -1,0 +1,44 @@
+{
+  "Crossref": {
+    "status": "END_TO_END_TESTED",
+    "tested_doi": "10.1038/nature12373",
+    "title": "Nanometre-scale thermometry in a living cell",
+    "update_count": 0,
+    "retraction_field_checked": true
+  },
+  "DataCite": {
+    "status": "END_TO_END_TESTED",
+    "tested_doi": "10.5061/dryad.8515",
+    "titles": "Data from: A new malaria agent in African hominids.",
+    "publisher": "Dryad",
+    "types": "Dataset"
+  },
+  "OpenCitations": {
+    "status": "END_TO_END_TESTED",
+    "tested_doi": "10.1038/nature12373",
+    "citation_records_retrieved": 1806,
+    "sample_citing": "10.1063/1.5011231"
+  },
+  "SemanticScholar": {
+    "status": "END_TO_END_TESTED",
+    "title": "Nanometer scale thermometry in a living cell",
+    "year": 2013,
+    "citationCount": 1815
+  },
+  "Unpaywall": {
+    "status": "END_TO_END_TESTED",
+    "is_oa": true,
+    "oa_status": "bronze",
+    "best_oa_location": true
+  },
+  "EuropePMC": {
+    "status": "END_TO_END_TESTED",
+    "hitCount": 45240,
+    "sample_title": "Unraveling the crosstalk between extracellular ATP and glutamate in systemic ROS signaling."
+  },
+  "OpenAlex": {
+    "status": "END_TO_END_TESTED",
+    "title": "Nanometre-scale thermometry in a living cell",
+    "cited_by_count": 1989
+  }
+}

@@ -1,0 +1,32 @@
+---
+title: "Strigolactone-Mediated Root System Remodeling and Symbiotic Signaling Under Phosphate Starvation in Cereals"
+author: "AREIL Research Suite (Treatment Arm - Benchmark B)"
+date: "2026-09-05"
+format:
+  docx:
+    toc: false
+    number-sections: true
+  html:
+    toc: true
+    number-sections: true
+bibliography: references.bib
+---
+
+# Abstract
+Phosphate (Pi) deficiency represents an endemic agricultural barrier in cereal cultivation. In response to Pi starvation, cereal crops (*Oryza sativa*, *Zea mays*) orchestrate adaptive changes via strigolactones (SLs). This synthesis examines the canonical D14-D3-D53 perception module, rhizosphere mycorrhizal recruitment, and resolves conflicting models concerning strigolactone-ethylene epistasis in root hair development.
+
+# Phosphate Starvation and Strigolactone Mobilization
+Under low inorganic phosphate availability, roots induce carotenoid cleavage dioxygenase genes *CCD7/D17* and *CCD8/D10*, resulting in a pronounced upregulation of strigolactone biosynthesis [@Umehara2008Nature]. Exuded SLs act at sub-picomolar concentrations ($10^{-13}$ M) to stimulate rapid hyphal branching in arbuscular mycorrhizal (AM) fungi (*Gigaspora margarita*), facilitating symbiotic phosphate acquisition [@Akiyama2005Nature].
+
+Intracellularly, SLs are perceived by the alpha/beta-hydrolase receptor D14, which undergoes conformational changes upon ligand hydrolysis, recruiting the F-box protein D3 to form an active SCF complex [@Jiang2013Nature]. This complex targets the transcriptional repressor D53 for polyubiquitination and subsequent 26S proteasomal degradation, derepressing downstream Pi-adaptive transcriptional programs [@Jiang2013Nature].
+
+# Resolving Conflicting Epistasis Models: Root Hair Expansion
+A critical scientific controversy in SL biology centers on root hair elongation:
+- **The Linear Ethylene Model:** Initial genetic investigations suggested that SLs stimulate root hair expansion strictly through downstream activation of ethylene biosynthesis, as responses appeared suppressed in *ein2* ethylene-insensitive mutants [@Kapulnik2011JXB].
+- **The Dual-Pathway Resolution:** Subsequent rigorous pharmacological and genetic dissection demonstrated that synthetic SL (GR24) retains significant ability to induce root hair elongation even under complete pharmacological ethylene blockade (using aminoethoxyvinylglycine and 1-MCP) and in *etr1* / *ein2* double mutants [@Sun2014PlantPhysiol].
+
+Consequently, AREIL's contradiction analysis confirms that strigolactones do not operate via a single linear pathway, but deploy a bifurcated mechanism: one branch collaborating synergistically with ethylene, and an autonomous parallel branch operating through independent transcriptional regulators [@Sun2014PlantPhysiol].
+
+# References
+::: {#refs}
+:::

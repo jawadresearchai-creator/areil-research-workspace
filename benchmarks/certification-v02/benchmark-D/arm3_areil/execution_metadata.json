@@ -1,0 +1,12 @@
+{
+  "benchmark": "BENCHMARK_D",
+  "arm": "ARM_3_AREIL_ORCHESTRATED",
+  "subagent_id": "3f9807e3-e28a-47ac-bf4a-18f7d8db5d95",
+  "model": "Gemini 3.8 Flash High",
+  "execution_mode": "AREIL Orchestration (8-Stage Statistical Pipeline, Ledgers, Quarto Render)",
+  "tool_calls_executed": 36,
+  "status": "COMPLETED",
+  "recorded_at": "2026-09-05T11:57:16.995431+00:00",
+  "prompt_sha256": "55C60920B022DBD40316C111CA4CA54F94005781BC08E6FBB0CBC8080A4CF0F3",
+  "output_sha256": "039BA2E02CECE781F05E0B0FE6A31D25715ADA2D23CD1A37EAB648898B0CB136"
+}

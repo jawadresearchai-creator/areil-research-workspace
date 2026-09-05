@@ -1,0 +1,23 @@
+﻿---
+title: "DummyProject"
+author: "AREIL Research Team"
+date: "2026-09-05"
+format:
+  html:
+    toc: true
+    math: mathjax
+  docx:
+    toc: true
+bibliography: references.bib
+---
+
+# Introduction
+
+This project is governed by AREIL v0.2. All claims are tracked in ledgers/CLAIM_LEDGER.jsonl
+and validated against primary evidence in ledgers/EVIDENCE_LEDGER.jsonl.
+
+# Results
+
+All quantitative values are derived from executed analysis in nalysis/results/.
+
+# References

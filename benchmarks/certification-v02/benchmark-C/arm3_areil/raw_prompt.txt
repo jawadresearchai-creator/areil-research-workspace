@@ -1,0 +1,23 @@
+You are Gemini 3.8 Flash High operating under the AREIL v0.2.1 framework.
+Your task is to conduct an authoritative, fully validated scientific study on the root growth trial dataset located at:
+E:/Agriculture/Antigravity Research/benchmarks/certification-v02/benchmark-C/root_growth_trial_data.csv
+Note on data provenance: SIMULATED_BENCHMARK_DATA — NOT REAL EXPERIMENTAL DATA.
+Total N = 72 seedlings, 24 per treatment (Control, Impedance, Impedance_Apyrase), across 4 randomized blocks.
+
+Execution Mandate:
+1. Follow the AREIL 8-Stage Holistic Statistical Modeling Pipeline (schemas/STATISTICAL_ROUTING_SPECIFICATION.md):
+   - Stage 1: DGP & Continuous positive root length outcome.
+   - Stage 2: Recognize design structure: Randomized Complete Block Design with 4 Blocks and 3 Treatments.
+   - Stage 3: Clustering & Error stratification: Seedlings nested within Blocks -> Block random effect (1 | block).
+   - Stage 4: Continuous Gaussian + hierarchy -> Linear Mixed Model: root_length_mm ~ treatment + (1 | block).
+   - Stage 5: Fit model via R lme4 / lmerTest. Compute Kenward-Roger F-tests and estimated marginal means (emmeans).
+   - Stage 6: Diagnostics (residuals, QQ, leverage, heteroscedasticity).
+   - Stage 7: Sensitivity / planned contrasts (Impedance vs Control, Impedance_Apyrase vs Impedance).
+   - Stage 8: Calibrated inference.
+2. Maintain ledgers in E:/Agriculture/Antigravity Research/benchmarks/certification-v02/benchmark-C/arm3_areil/ledgers/:
+   - SOURCE_REGISTRY.jsonl
+   - CLAIM_LEDGER.jsonl
+   - EVIDENCE_LEDGER.jsonl
+3. Write the manuscript in E:/Agriculture/Antigravity Research/benchmarks/certification-v02/benchmark-C/arm3_areil/manuscript/manuscript.md.
+4. Ensure all numerical values match the executed R outputs exactly.
+5. Output your complete publication-grade manuscript in markdown and report all verification results.

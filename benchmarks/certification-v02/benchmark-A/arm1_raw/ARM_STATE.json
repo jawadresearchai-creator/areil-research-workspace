@@ -1,0 +1,13 @@
+{
+  "arm": "ARM_1_RAW_GEMINI",
+  "benchmark": "BENCHMARK_A",
+  "manuscript_sha256": "498A16E8FF3EB6BBE810DC51EB1AC0EAD3743BFD0BB7D3C202D87C5DE2EEB1C2",
+  "tool_calls_allowed": 0,
+  "tool_calls_executed": 0,
+  "tools_used": [],
+  "execution_time_sec": 11.2,
+  "citations_audited": 5,
+  "citations_valid_doi": 0,
+  "contradictions_found": 0,
+  "consistency_defects": 3
+}

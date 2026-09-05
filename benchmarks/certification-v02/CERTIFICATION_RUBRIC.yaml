@@ -1,0 +1,151 @@
+# AREIL v0.2 Hostile Certification Benchmark Rubric
+# Predefined and frozen prior to execution of certification runs
+rubric_version: "2.0.0-certification"
+date_created: "2026-09-05"
+target_distribution: "AREIL_v0.2-bound.zip"
+description: "Three-arm adversarial evaluation rubric: ARM 1 (Raw Gemini) vs ARM 2 (Tool-Equipped Gemini) vs ARM 3 (Gemini + AREIL v0.2)"
+
+evaluation_dimensions:
+  - id: D01
+    name: "Question Decomposition"
+    description: "Was the scientific problem structured into discrete, testable, falsifiable sub-questions or atomic claims?"
+    type: "rating_1_to_5"
+    weight: 1.0
+
+  - id: D02
+    name: "Relevant Source Discovery"
+    description: "Breadth and appropriateness of external scientific literature or databases queried."
+    type: "rating_1_to_5"
+    weight: 1.0
+
+  - id: D03
+    name: "Primary Source Selection"
+    description: "Proportion of evidence anchored in primary empirical papers vs. reviews or secondary summaries."
+    type: "percentage"
+    weight: 1.2
+
+  - id: D04
+    name: "Source Retrieval"
+    description: "Direct retrieval and inspection of full-text or primary figures rather than reliance on snippet recall."
+    type: "percentage"
+    weight: 1.2
+
+  - id: D05
+    name: "Citation Existence"
+    description: "Do all cited literature references exist in official registries (Crossref/DataCite/PubMed)?"
+    type: "percentage"
+    weight: 1.5
+
+  - id: D06
+    name: "Citation Identity"
+    description: "Do DOIs match the asserted author, year, title, and journal (penalty for cross-organism or wrong paper hallucination)?"
+    type: "percentage"
+    weight: 1.5
+
+  - id: D07
+    name: "Citation Support"
+    description: "Percentage of sampled claim-citation pairs confirmed supported by the cited document text/data."
+    type: "percentage"
+    weight: 1.5
+
+  - id: D08
+    name: "Contradiction Discovery"
+    description: "Active identification of conflicting findings, non-monotonic/biphasic kinetics, or conditional epistasis."
+    type: "rating_1_to_5"
+    weight: 1.2
+
+  - id: D09
+    name: "Null-Result Discovery"
+    description: "Reporting of negative results, lack of response in specific genotypes, or unrescued phenotypes."
+    type: "rating_1_to_5"
+    weight: 1.0
+
+  - id: D10
+    name: "Causal Calibration"
+    description: "Proper epistemic separation of correlation, pharmacological phenotypes, and direct biochemical binding/rescue."
+    type: "rating_1_to_5"
+    weight: 1.2
+
+  - id: D11
+    name: "Novelty Calibration"
+    description: "Bounding novelty statements by database search coverage rather than claiming absolute universal absence of prior art."
+    type: "rating_1_to_5"
+    weight: 1.0
+
+  - id: D12
+    name: "Unsupported Claims"
+    description: "Count of major factual or biological assertions made without verifiable evidence citation or data."
+    type: "defect_count"
+    weight: 1.2
+
+  - id: D13
+    name: "Fabricated Citations"
+    description: "Count of completely non-existent (HTTP 404) or fake DOIs/references."
+    type: "defect_count"
+    weight: 1.5
+
+  - id: D14
+    name: "Fabricated Numeric Facts"
+    description: "Count of statistical parameters, sample sizes, or quantitative means asserted without code execution or data grounding."
+    type: "defect_count"
+    weight: 1.5
+
+  - id: D15
+    name: "Internal Consistency"
+    description: "Absence of numerical or logical contradictions between text, tables, figures, and bibliography."
+    type: "rating_1_to_5"
+    weight: 1.0
+
+  - id: D16
+    name: "Statistical Model Appropriateness"
+    description: "Correct model specification matching experimental design (accounting for blocking, ICC, random effects, repeated measures)."
+    type: "rating_1_to_5"
+    weight: 1.5
+
+  - id: D17
+    name: "Executable Analysis"
+    description: "Were numerical results derived from executed code rather than parametric mental arithmetic?"
+    type: "binary_pass_fail"
+    weight: 1.5
+
+  - id: D18
+    name: "Uncertainty Handling"
+    description: "Reporting of standard errors, confidence intervals, degrees of freedom adjustments, and residual diagnostics."
+    type: "rating_1_to_5"
+    weight: 1.2
+
+  - id: D19
+    name: "Reproducibility"
+    description: "Can independent sessions verify exact numbers, figures, and files via cryptographic manifests?"
+    type: "binary_pass_fail"
+    weight: 1.2
+
+  - id: D20
+    name: "Hostile-Review Major Defects"
+    description: "Count of fatal or major scientific/methodological defects identified during independent hostile review."
+    type: "defect_count"
+    weight: 1.5
+
+cost_and_overhead_metrics:
+  - id: C01
+    name: "Subagent / Worker Count"
+  - id: C02
+    name: "Source & Tool Calls Executed"
+  - id: C03
+    name: "Sources Retrieved vs Cited"
+  - id: C04
+    name: "Contradiction Queries Run"
+  - id: C05
+    name: "Wall-Clock Time (Seconds)"
+  - id: C06
+    name: "Coordination & Storage Overhead (KB)"
+
+analytic_effects:
+  - id: E01
+    name: "Tool Effect"
+    formula: "ARM 2 - ARM 1"
+    meaning: "Improvement gained purely from external tools, APIs, and code execution."
+  - id: E02
+    name: "AREIL Effect"
+    formula: "ARM 3 - ARM 2"
+    meaning: "Incremental improvement gained from AREIL ledgers, routers, gates, and adversarial audit beyond tools."

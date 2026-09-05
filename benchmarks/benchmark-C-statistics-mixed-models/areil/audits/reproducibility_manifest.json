@@ -1,0 +1,112 @@
+{
+  "created_at": "2026-09-05T11:04:58.989504+00:00",
+  "project_root": "E:\\Agriculture\\Antigravity Research\\benchmarks\\benchmark-C-statistics-mixed-models\\areil",
+  "environment": {
+    "platform": "Windows-11-10.0.22631-SP0",
+    "python_version": "3.13.1",
+    "processor": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel"
+  },
+  "total_files_hashed": 20,
+  "files": [
+    {
+      "path": "analysis/results/lmer_results.json",
+      "bytes": 1097,
+      "sha256": "4350aca0937022920c6d30aee87c5647d20a42cb7299f557295341bd88030332"
+    },
+    {
+      "path": "analysis/scripts/fit_lmer_model.R",
+      "bytes": 4514,
+      "sha256": "8bda06c36765881bf2ce1364c09897aeffaacd6e8d2446a4db93aca84f73b8d0"
+    },
+    {
+      "path": "data/raw/root_growth_trial_data.csv",
+      "bytes": 3135,
+      "sha256": "6068ad343ae7659a820af0e5d4615fbcee056844b422ba43ff00dd9de53683f6"
+    },
+    {
+      "path": "figures/figure1_lme_contrasts.png",
+      "bytes": 52570,
+      "sha256": "d9d4593898ce82d76b55d2fe08b4ac3d7ee26acb5c0067295552b463dab5df32"
+    },
+    {
+      "path": "manuscript/manuscript.docx",
+      "bytes": 55810,
+      "sha256": "e56cd9f011b339367ebbb887f1748f6d4e9e77cb20947f9fff2920a12001a0d2"
+    },
+    {
+      "path": "manuscript/manuscript.html",
+      "bytes": 24126,
+      "sha256": "555ae644408690c6864265e91d75efa53ca64e49f07d67f78e0cc2317a71c621"
+    },
+    {
+      "path": "manuscript/manuscript.qmd",
+      "bytes": 2873,
+      "sha256": "cf8a8f143790dc9c5d98bb3bd877c1adde94f2b086a65da417c8ee9a985f9828"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css",
+      "bytes": 431263,
+      "sha256": "b50905abc3c4f5beb8dd568cf2793f49ca0aaced72810e1388165a179f4b2e98"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-icons.css",
+      "bytes": 99464,
+      "sha256": "01253947f506e030589e4f33fc7ec7ccdfb9505e2e596dedf16445f12e243c0a"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-icons.woff",
+      "bytes": 180288,
+      "sha256": "f55513b7b591cb84a3b87ff0e34ea24d4831d6fedc22e54b911ca64b5b544a15"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap.min.js",
+      "bytes": 80668,
+      "sha256": "d2ea6c1e0cabca20d18e924b25a1cd0187c38ba7c33f60ab06e1b0402b9bcdb5"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/clipboard/clipboard.min.js",
+      "bytes": 9160,
+      "sha256": "e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/anchor.min.js",
+      "bytes": 5888,
+      "sha256": "69098e105d990f834cff1b7886d873444228ff63c590e5ff834d568f1115ed8b"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/popper.min.js",
+      "bytes": 20084,
+      "sha256": "4d50586b184724d39ddfe0f6582861664eddd5e806e5a79e0dbaa832361414d0"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css",
+      "bytes": 3678,
+      "sha256": "4973a76eb0de3b99bc67687ab2ecea249e552bae328dd8a952dad89732e9ec18"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/quarto.js",
+      "bytes": 26830,
+      "sha256": "4ecb60f215d96b2af0fe9d985c71e32863b1c993a64725a416ac18b5991c59c6"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tabsets/tabsets.js",
+      "bytes": 2882,
+      "sha256": "a9c226bf70e82eaf5476f619cecfb70b4446b87ce4d1634d6404b0b2ba006d15"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tippy.css",
+      "bytes": 1409,
+      "sha256": "5969f497d9158d7682f8219c6f13fa67269cdf5bf50a3931d95327151dee5678"
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tippy.umd.min.js",
+      "bytes": 24033,
+      "sha256": "41181eeec6d7ba64cb9165f0e95563e34e026bde79e7c13aeec83270429b6fae"
+    },
+    {
+      "path": "manuscript/references.bib",
+      "bytes": 322,
+      "sha256": "3a9027ae969160c8a6ad4810262a1812a9260249c71788bc369b44b6a6c73b9d"
+    }
+  ]
+}

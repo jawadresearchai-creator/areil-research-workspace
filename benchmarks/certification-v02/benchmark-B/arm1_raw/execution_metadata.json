@@ -1,0 +1,13 @@
+{
+  "benchmark": "benchmark-B",
+  "arm": "arm1_raw",
+  "model": "gemini-3.8-flash-high",
+  "agent_type": "raw_gemini_runner",
+  "conversation_id": "c215f880-45a5-475a-a3ef-2ffa430fa648",
+  "provenance_status": "MODEL_EXECUTION_VERIFIED_SUBAGENT",
+  "tool_call_count": 1,
+  "output_char_count": 61399,
+  "prompt_sha256": "39095c72652ced50ec2cd1354fec31793ee78fd08b53588c304c91fd7716fe19",
+  "output_sha256": "720dc56bbfaadecd7c6fee0262f2aa7dcb856d6a44f65ba41a34708de36f5662",
+  "executed_at": "2026-09-05T12:21:35.615638+00:00"
+}

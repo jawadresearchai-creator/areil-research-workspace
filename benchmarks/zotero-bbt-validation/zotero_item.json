@@ -1,0 +1,26 @@
+[
+  {
+    "id": "yates1935complex",
+    "type": "article-journal",
+    "title": "Complex experiments",
+    "author": [
+      {
+        "family": "Yates",
+        "given": "Frank"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          1935
+        ]
+      ]
+    },
+    "container-title": "Supplement to the Journal of the Royal Statistical Society",
+    "volume": "2",
+    "issue": "2",
+    "page": "181-247",
+    "DOI": "10.2307/2983638",
+    "ISSN": "1466-6162"
+  }
+]

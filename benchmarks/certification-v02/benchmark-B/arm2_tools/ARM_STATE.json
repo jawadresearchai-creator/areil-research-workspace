@@ -1,0 +1,18 @@
+{
+  "arm": "ARM_2_TOOL_EQUIPPED_GEMINI",
+  "benchmark": "BENCHMARK_B",
+  "manuscript_sha256": "794931132A0E422D0F1D2B29E9AAF99DEC4A0A0108AC356F1F12F129A8A22481",
+  "tool_calls_allowed": "UNRESTRICTED",
+  "tool_calls_executed": 6,
+  "tools_used": [
+    "Crossref_API",
+    "PubMed_API",
+    "Quarto_CLI"
+  ],
+  "execution_time_sec": 41.8,
+  "citations_audited": 4,
+  "citations_valid_doi": 4,
+  "retraction_corrigenda_flagged": 0,
+  "contradictions_found": 0,
+  "consistency_defects": 1
+}

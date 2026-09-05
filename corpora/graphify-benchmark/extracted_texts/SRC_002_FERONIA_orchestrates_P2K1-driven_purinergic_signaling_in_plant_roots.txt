@@ -1,0 +1,534 @@
+--- PAGE 1 ---
+Plant Signaling & Behavior
+ISSN: 1559-2324 (Online) Journal homepage: www.tandfonline.com/journals/kpsb20
+FERONIA orchestrates P2K1-driven purinergic
+signaling in plant roots
+Joel M. Sowders, Jeremy B. Jewell & Kiwamu Tanaka
+To cite this article: Joel M. Sowders, Jeremy B. Jewell & Kiwamu Tanaka (2024) FERONIA
+orchestrates P2K1-driven purinergic signaling in plant roots, Plant Signaling & Behavior, 19:1,
+2370706, DOI: 10.1080/15592324.2024.2370706
+To link to this article:  https://doi.org/10.1080/15592324.2024.2370706
+© 2024 The Author(s). Published with
+license by Taylor & Francis Group, LLC.
+View supplementary material 
+Published online: 21 Jun 2024.
+Submit your article to this journal 
+Article views: 1791
+View related articles 
+View Crossmark data
+Citing articles: 4 View citing articles 
+Full Terms & Conditions of access and use can be found at
+https://www.tandfonline.com/action/journalInformation?journalCode=kpsb20
+
+--- PAGE 2 ---
+SHORT COMMUNICATION
+FERONIA orchestrates P2K1-driven purinergic signaling in plant roots
+Joel M. Sowders
+ a,b, Jeremy B. Jewellc, and Kiwamu Tanaka
+ a,b
+aDepartment of Plant Pathology, Washington State University, Pullman, WA, USA; bMolecular Plant Sciences Program, Washington State University, 
+Pullman, WA, USA; cInstitute of Biological Chemistry, Washington State University, Pullman, WA, USA
+ABSTRACT
+Extracellular ATP (eATP) orchestrates vital processes in plants, akin to its role in animals. P2K1 is a crucial 
+receptor mediating eATP effects. Immunoprecipitation tandem mass spectrometry data highlighted 
+FERONIA’s significant interaction with P2K1, driving us to explore its role in eATP signaling. Here, we 
+investigated putative P2K1-interactor, FERONIA, which is a versatile receptor kinase pivotal in growth and 
+stress responses. We employed a FERONIA loss-of-function mutant, fer-4, to dissect its effects on eATP 
+signaling. Interestingly, fer-4 showed distinct calcium responses compared to wild type, while eATP- 
+responsive genes were constitutively upregulated in fer-4. Additionally, fer-4 displayed insensitivity to 
+eATP-regulated root growth and reduced cell wall accumulation. Together, these results uncover a role for 
+FERONIA in regulating eATP signaling. Overall, our study deepens our understanding of eATP signaling, 
+revealing the intricate interplay between P2K1 and FERONIA impacting the interface between growth and 
+defense.
+ARTICLE HISTORY 
+Received 17 May 2024  
+Revised 11 June 2024  
+Accepted 14 June 2024 
+KEYWORDS 
+Extracellular ATP; purinergic 
+signaling; purinoceptor; Ca2+ 
+signaling; root growth; 
+FERONIA; P2K1
+Introduction
+In plant immune responses, receptors play crucial roles in 
+detecting both external and internal cues. Pathogen-associated 
+molecular pattern (PAMP) receptors are extensively studied 
+because they recognize molecules associated with pathogens, 
+triggering immune responses. In contrast, damage-associated 
+molecular pattern (DAMP) receptors, which identify signals 
+from damaged cells, have been characterized to a much lesser 
+extent.1 Many DAMPs are direct products of the damaged self, 
+arising from the pathogen infection process or physical damage. 
+Core examples include sugar- or metabolite-derived molecules 
+such as oligogalacturonides (OGs) and extracellular ATP 
+(eATP): which are the product of cell wall breakdown and 
+membrane rupture, respectively.2–5 Like PAMP-induced signal-
+ing, DAMPs employ some conserved early signaling events (i.e., 
+Ca2+ influx, ROS production, canonical MAPK cascades). 
+However, the receptor-interacting and downstream components 
+in DAMP-receptor networks are largely unknown.5,6
+Since the discovery of the eATP purinoceptor P2K1 
+a decade ago, numerous studies have investigated the protein- 
+protein interactions of P2K1 to better understand the biochem-
+ical mechanisms of P2K1-mediated eATP signaling and DAMP 
+signaling overall. In 2017, a significant milestone was reached 
+with the identification of the first plant purinoceptor interact-
+ing protein. This research revealed that P2K1 directly phos-
+phorylates the NADPH oxidase, RBOHD, in response to eATP, 
+which regulates ROS production and subsequently influences 
+stomatal immunity against the bacterial pathogen 
+Pseudomonas syringae in guard cells.7
+Our recent P2K1-interactomics dataset provided 121 puta-
+tive P2K1-interacting proteins to explore.8 Among these 
+proteins, FERONIA was identified as enriched with P2K1 in 
+this dataset. FERONIA is a transmembrane kinase involved in 
+various cellular processes which has recently been implicated 
+in the maintenance of cell wall integrity.9–11 Thus, we were 
+interested in exploring the involvement of FERONIA in the 
+context of eATP signaling following our recent discovery of 
+eATP’s role in regulating root growth by modifying cell wall 
+morphology in the primary root tip.12 To this end, we evalu-
+ated eATP responses in the FERONIA mutant, fer-4, and found 
+that loss of FERONIA perturbed eATP-responsive Ca2+ influx, 
+gene expression, and cell wall modification.
+Methods
+Plant growth and materials
+We employed wild-type Arabidopsis plants (specifically, the 
+Columbia-0 ecotype, referred to as Col-0), dorn1–3 mutant 
+plants,13 oxP2K1t (35S:P2K1t-GFP/dorn1-3),12 and fer-4.14 
+Each of the aforementioned plant germplasms also expressed 
+the aequorin transgene (35S:AEQ).15 The seeds underwent 
+surface sterilization before being placed on a solid growth 
+medium. This medium consisted of ½ strength MS16 supple-
+mented with vitamins (MSP09, Caisson, Smithfield, UT, 
+USA), 1% (w/v) sucrose, 1% (w/v) daishin agar and was 
+buffered using 0.05% (w/v) MES-KOH at a pH of 5.7. These 
+seeds experienced a cold stratification treatment in darkness 
+at 4°C for 3 days, followed by vertical growth in a growth 
+chamber (CMP6010; Conviron, Winnipeg, Canada). The 
+growth chamber maintained a temperature of 22°C, operated 
+under a 12-hour photoperiod, and provided a light intensity 
+of 100 µmol photons m−2 s−1.
+CONTACT Kiwamu Tanaka 
+ kiwamu.tanaka@wsu.edu 
+ Department of Plant Pathology, Washington State University, Pullman, WA 99164, USA
+Supplemental data for this article can be accessed online at https://doi.org/10.1080/15592324.2024.2370706.
+PLANT SIGNALING & BEHAVIOR                        
+2024, VOL. 19, NO. 1, e2370706 (7 pages) 
+https://doi.org/10.1080/15592324.2024.2370706
+© 2024 The Author(s). Published with license by Taylor & Francis Group, LLC.  
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/4.0/), which permits unrestricted use, 
+distribution, and reproduction in any medium, provided the original work is properly cited. The terms on which this article has been published allow the posting of the Accepted Manuscript in a 
+repository by the author(s) or with their consent.
+
+--- PAGE 3 ---
+ATP treatment
+For the root growth and RT-qPCR experiments, Arabidopsis 
+plants were cultivated for 5 or 7 days, respectively. After the 
+initial phase of vertical growth, seedlings were transferred to 
+6-well plates, accommodating 15–20 seedlings per well. These 
+wells were filled with ½ MS medium without agar (referred to 
+as “liquid media”) for RT-qPCR assays, or with agar plates 
+containing or lacking ATP for root growth assessments. An 
+ATP stock solution (100 mM) was prepared by dissolving ATP 
+(Sigma-Aldrich. St. Louis, MO, USA) in 50 mM MES buffer. 
+The pH of this solution was adjusted to 5.7 using KOH, and 
+after filter sterilization, it was stored in aliquots at − 20°C for 
+indefinite use. Unless specifically mentioned, exogenous ATP 
+(eATP) was administered at a final concentration of 500 μM. 
+This concentration has recently been established as the optimal 
+working concentration to maximize measurable responses to 
+extracellular ATP.12,17–19
+Co-immunoprecipitation-coupled mass spectrometry 
+(Co-IP/MS)
+Co-IP/MS analysis involved grinding seedlings with sand in 
+liquid nitrogen-cooled mortar, followed by suspension in 
+ice-cold buffer H. This buffer consisted of 50 mM HEPES 
+(pH 7.5), 250 mM sucrose, 15 mM EDTA, and 5% (w/v) 
+glycerol, supplemented with 1 mM DTT, 1X HALT pro-
+tease/phosphatase inhibitor cocktail (Thermo Fisher 
+Scientific, Waltham, MA, USA), 50 µM MG132, and 10  
+nM calyculin.20 After centrifugation, supernatants were fil-
+tered and combined with microsomal pellets. The micro-
+somal fraction was resuspended in 0.75 mL buffer 
+H containing 0.5% IGEPAL CA-630 (from a freshly- 
+prepared 10% stock solution), and subsequently diluted to 
+a final volume of 1.5 mL using buffer H without IGEPAL. 
+GFP-Trap beads were incubated with extracts, washed, and 
+eluted for SDS-PAGE. Eluates were sent for mass spectro-
+metry analysis. Scaffold software version 421 analysis was 
+used to compare peptide enrichment differences between 
+P2K1-GFP and GFP-LTI6B samples. For more information, 
+see the P2K1 interactome dataset released by Sowders et al.8
+Root growth measurements
+The change in root length following the transfer of 5 d old 
+Arabidopsis plants to mock (MS) or 500 µM ATP containing 
+plates for 24 h was quantified with ImageJ (version 1.53q) from 
+photographs taken by an EPSON V600 scanner (800 dpi).
+Calcium measurement
+The described germplasms (expressing aequorin) were ger-
+minated on ½ MS media with agar. Three days after ger-
+mination, the seedlings were moved to a 96-well plate. Each 
+well contained 50 μL of coelenterazine buffer composed of 
+2 mM 2-ethane sulfonic acid (MES) at pH 5.7, 10 mM 
+CaCl2, and 10 μM coelenterazine. The plate was then kept 
+in darkness overnight. The next day, the plates were placed 
+in the GloMax® Navigator plate reader (Promega, Madison, 
+WI, USA). Subsequently, the seedlings in the wells were 
+treated with 100 μM ATP (buffered with MES to pH 5.7) 
+using the onboard injector. Luminescence was recorded for 
+80 seconds after treatment, and the calcium influx was 
+quantified using a previously described method.22
+RT-qPCR
+Seven-day-old seedlings were moved to ½ MS liquid medium 
+and equilibrated overnight. The next day, plants were treated 
+with liquid medium alone or with ATP (added to achieve 500  
+μM final concentration) for 30 min. Plants were harvested, 
+frozen in liquid N2, and stored at − 80°C. Tissue was homo-
+genized with a Mini-Beadbeater™ (BioSpec Products, 
+Bartlesville, OK, USA). RNA isolation used the Quick-RNA 
+kit (Zymo Research, Orange, CA, USA) and RNA concentra-
+tion was assessed with Eppendorf μCuvvete® G1.0 on a 
+BioPhotometer® D30 (Eppendorf, Hamburg, Germany). 
+cDNA synthesis began with 1 μg RNA and iScript kit (Bio- 
+Rad Laboratories, Hercules, CA, USA), followed by a 10-fold 
+dilution of cDNA. SYBR Green reaction mix (SsoAdvanced; 
+Bio-Rad) was used with 2 μL of cDNA for a 20 μL reaction in 
+a CFX96 thermocycler (Bio-Rad). Target gene expression was 
+normalized to PP2A.23,24 Statistical analysis employed two-way 
+ANOVA with Tukey post hoc test in GraphPad Prism V.8, as 
+indicated for individual experiments.
+Staining and microscopy
+Col-0 and fer-4 seedlings were germinated (described 
+above) and grown for 5 days. The seedlings were then 
+transferred to mock (MS) or 500 µM ATP-containing plates 
+for 3 days. After the treatment, the seedlings were incubated 
+in an aqueous solution of 1% calcofluor white (CFW) for 5  
+minutes,25,26 washed thrice with PBS, and imaged with 
+a Leica DMI6000 microscope (Leica, Wetzlar, Germany).
+Results
+The putative P2K1-interacting receptor kinase, FERONIA, was 
+identified in our Co-IP/MS dataset (Table 18; as significantly 
+enriched with P2K1-GFP compared to negative control, GFP- 
+LTI6B (p = 0.0041; Fisher’s exact test). To assess the impact of 
+FERONIA on P2K1-mediated eATP signaling we obtained the 
+loss of FERONIA null mutant, fer-4, from the Arabidopsis 
+Biological Resource Center (ABRC), which had originally 
+been noted for root hair and auxin signaling defects.14 First, 
+we evaluated calcium influx in response to eATP in the fer-4 
+mutant plants. We found that fer-4 plants exhibited an atypical 
+calcium response to eATP compared to wild type, Col-0, plants 
+(Figure 1(a)). Meanwhile, the P2K1 overexpression (oxP2K1t) 
+and loss of P2K1 mutant (dorn1–3) plants had exaggerated and 
+absent eATP responses, respectively, as expected (Figure 1(a)).
+Next, we looked at eATP-responsive marker gene 
+expression17,18 in the fer-4 mutants. Notably, we found that 
+5 out of 6 (WRKY46, TAT3, ATPR1, CML39, and 
+MAPKKK21, but not APTR2) eATP marker genes tested 
+were constitutively upregulated in fer-4 plants compared to 
+Col-0 (Figure 1(b)). Although 83% of the eATP marker genes
+e2370706-2
+ J. M. SOWDERS ET AL.
+
+--- PAGE 4 ---
+Table 1. FERONIA is enriched with P2K1-GFP.
+P2K1-GFP GFP-LTI6B
++ATP
+Locus Name Mock 3 m 20 m Mock
+AT3G51550 FERONIA 3.585 3.585 2.807 1.585
+Co-immunoprecipitation tandem mass spectrometry (CoIP-MS) of P2K1-GFP or negative control protein, GFP-LTI6B from the published 
+dataset.8 FERONIA was significantly enriched with P2K1-GFP samples compared to GFP-LTI6B (p = 0.0041; Fisher’s exact test). Protein 
+abundance is reported as log2 peptides identified. See Sowders et al.8 for additional descriptions.
+Figure 1. eATP-induced calcium influx and gene expression hallmarks are perturbed in fer-4 (a) Calcium measurements were conducted using aequorin luminescence in 
+Arabidopsis genotypes expressing 35S:AEQ. The measurements were taken for 80 sec after treatment with ATP (100 μM). (b) eATP-responsive gene expression was 
+PLANT SIGNALING & BEHAVIOR
+ e2370706-3
+
+--- PAGE 5 ---
+were significantly upregulated in fer-4 compared to Col-0 
+under basal (mock) conditions, only one of the genes, 
+MAPKKK21, was differentially expressed following the appli-
+cation of ATP in fer-4 (Figure 1(b)). A possible indication that 
+the expression level of eATP-responsive genes is at or near 
+saturation in the fer-4 mutant.
+To further investigate the impact of FERONIA on P2K1- 
+mediated eATP signaling, we investigated eATP-regulated root 
+growth and cell wall integrity in fer-4. Loss of FERONIA in fer-4 
+mutant plants resulting in insensitivity to eATP-regulated root 
+growth relative to Col-0 which is reminiscent of the eATP- 
+insensitive P2K1 mutant, dorn1–3 plants (Figure 2, S1). 
+Considering wild type and oxP2K1 displayed an increase in cell 
+wall accumulation following eATP treatment,12 we postulated 
+that fer-4 plants may be insensitive to eATP-regulated root 
+growth because they fail to accumulate the cell wall material 
+that leads to the increased cell wall rigidity that suppresses root 
+elongation.12 To test this hypothesis, we transferred fer-4 plants 
+to mock or ATP-containing media for 3 days and stained them 
+with the cell wall stain, calcofluor white. Consistent with our 
+hypothesis, fer-4 plants displayed less cell wall accumulation 3 
+d after eATP treatment compared to Col-0 (Figure 3).
+Discussion
+Over the past 20 years, extracellular ATP has been recognized 
+as a critical signaling molecule in both animal and plant 
+physiology. Its role as a purinergic signal in plant growth 
+and defense is now well-established within the plant biology 
+community. However, despite the identification of a few 
+interactors of eATP receptor P2K1,7,27–29 the lack of 
+a comprehensive interactome for P2K1 and the limited meth-
+ods for monitoring eATP responses have hindered a complete 
+understanding of purinergic signaling mechanisms. While 
+our recent interactomics study identified several potential 
+interacting partners of P2K1, including CPK28,8 further 
+exploration of these interactions and their functional signifi-
+cance is warranted.
+Past studies have shown that eATP-induced expression of 
+certain genes intersects with the signaling hormone, jasmonic 
+acid (JA).17,19 Our recent study suggested that eATP sensing 
+may feed into the abscisic acid (ABA) signaling pathway to 
+regulate primary root growth.12 In the same study, we demon-
+strated that cell wall accumulation in the primary root tip is 
+a possible mechanism for regulating root growth downstream 
+of eATP perception. FERONIA is a central receptor kinase
+Figure 2. fer-4 is insensitive to eATP-regulated root growth Five days after germination on ½ Murashige and Skoog (MS) media, seedlings of given genotypes were 
+transferred to media containing ½ MS or ½ MS with 500 μM ATP. The change in root growth was measured 24 hours post-transfer (hpt).Genotypes: FERONIA null 
+mutant, fer-4; P2K1 null mutant, dorn1–3; C-terminal truncated P2K1 overexpression, oxP2K1t
+12, and Col-0 wild-type Arabidopsis. Three to four biological replicates; n  
+= 10–15 seedlings per replicate, error bars = SE. ANOVA with Tukey multiple comparison tests was used to determine statistical significance in Graph Pad Prism (8.0.2). 
+Asterisks distinguish between significant thresholds (*p < 0.05; ***p < 0.001). The experiments were repeated at least three times with similar results.
+measured 30 m after mock or 500 µM ATP treatment in 7 d old Col-0 or fer-4 plants. All gene expression values were normalized to PP2A. n = 4 reps (15 seedlings/rep). 
+Statistical analysis was conducted using two-way ANOVA with Tukey post hoc test. Samples without overlapping letters indicate significant differences (p < 0.05). Error 
+bars = SEM. All experiments were repeated thrice with consistent results.
+e2370706-4
+ J. M. SOWDERS ET AL.
+
+--- PAGE 6 ---
+with cellular activities intersecting ABA,14,30 JA,31 and cell wall 
+integrity9–11,32 among other processes determining the balance 
+between plant growth and defense.33–35 Thus, FERONIA 
+immediately became an intriguing interacting candidate pro-
+tein to evaluate in the context of purinergic signaling. Here, we 
+have provided a proof-of-concept evaluation of the impact of 
+the putative P2K1-interacting component, FERONIA, on 
+eATP signaling physiologies. In summary, we found that loss 
+of FERONIA in fer-4 mutant plants had disturbed eATP- 
+induced Ca2+ mobilization and gene expression (Figure 1) 
+and that fer-4 plants were insensitive to eATP-regulated root 
+growth (Figure 2) and cell wall deposition (Figure 3).
+Although eATP-responsive genes showed higher 
+expression in fer-4 plants, they mostly did not respond 
+to eATP treatment (Figure 1). Similarly, when exposed to 
+eATP, fer-4 plants did not exhibit cell wall deposition in 
+the primary root tip or a reduction in root growth rate 
+(Figures 2, 3). Given fer-4 was insensitive to eATP- 
+responsive physiology, we suppose that FERONIA might 
+be a positive regulator of eATP-responsive cell wall 
+deposition and a negative regulator of eATP-responsive 
+gene expression. According to this speculative model, 
+FERONIA could be a multifaceted regulator of ATP sig-
+naling, potentially through direct interaction with P2K1.
+The constitutive upregulation of eATP-responsive genes 
+in fer-4 plants might be explained by the absence of 
+FERONIA activity. For instance, FERONIA might pro-
+mote eATP-responsive physiological responses while also 
+functioning in a negative regulatory loop to “turn off” 
+eATP-responsive gene expression after receiving the signal 
+and regulating cell wall deposition. Thus, although eATP- 
+responsive gene expression may already be saturated in 
+fer-4 plants, the characteristic eATP-triggered physiologi-
+cal responses fail to occur without FERONIA activity. 
+Alternatively, given that JA- and eATP-responsive tran-
+scriptional changes largely overlap and depend on the 
+MYC2/MYC3/MYC4 transcription factors,13,17,19 and that 
+loss of FERONIA function has been reported to stabilize 
+the MYC2 transcription factor and constitutively induce 
+JA-responsive genes,31 the gene expression differences
+Figure 3. fer-4 is insensitive to eATP-regulated cell wall deposition Cell wall morphology was evaluated in (a) Col-0 and (b) fer-4 by calcofluor white (CFW) staining 3  
+days post-treatment (dpt) with mock (MS) or 500 μM ATP. Scale bar = 150 µM. The experiments were repeated thrice with similar results.
+PLANT SIGNALING & BEHAVIOR
+ e2370706-5
+
+--- PAGE 7 ---
+noted here may be independent of eATP signaling. While 
+the exact role of FERONIA in regulating eATP-responsive 
+gene expression is not entirely clear, FERONIA does appear 
+essential for early and downstream physiological responses to 
+eATP, such as calcium mobilization, and cell wall deposition 
+and root growth regulation, respectively. Further investigating 
+the interplay between eATP, hormone-mediated responses, 
+and FERONIA could provide valuable insights into the com-
+plex cell-surface receptor networks regulating plant growth 
+and defense.
+Acknowledgments
+We would like to thank Dr Andrei Smertenko at Washington State 
+University for generously allowing us access to the Leica microscopes. 
+This research was funded by the NIH Protein Biotechnology Training 
+Fellowship awarded to JMS, and NSF (no. IOS-1557813) and USDA NIFA 
+(Hatch project no. 1015621) to KT.
+Disclosure statement
+No potential conflict of interest was reported by the author(s).
+Funding
+The work was supported by the National Institute of Food and Agriculture 
+[Hatch project no. 1015621]; National Science Foundation [no. IOS- 
+1557813].
+ORCID
+Joel M. Sowders 
+ http://orcid.org/0000-0002-0558-1575
+Kiwamu Tanaka 
+ http://orcid.org/0000-0001-5045-560X
+Author contributions
+J.M.S., J.B.J., and K.T. conceived the study. J.M.S. and J.B.J. conducted the 
+experiments. J.M.S. wrote the initial draft of the manuscript. All authors 
+contributed to editing and revising the manuscript.
+Data availability statement
+The data that support the findings of this study are available as published 
+in JMS’ doctoral dissertation,36 and from the corresponding author 
+[kiwamu.tanaka@wsu.edu] upon reasonable request. The plant germ-
+plasms generated in this study will be made available upon request and 
+shared in compliance with the relevant governing bodies.
+References
+1. Saijo Y, Loo EP, Yasuda S. Pattern recognition receptors and 
+signaling in plant–microbe interactions. Plant J. 2018;93 
+(4):592–613. doi:10.1111/tpj.13808  .
+2. Denoux C, Galletti R, Mammarella N, Gopalan S, Werck D, De 
+Lorenzo G, Ferrari S, Ausubel FM, Dewdney J. Activation of 
+defense response pathways by OGs and Flg22 Elicitors in 
+Arabidopsis Seedlings. Mol Plant. 2008;1(3):423–445. doi:10. 
+1093/mp/ssn019  .
+3. Jeter CR, Tang W, Henaff E, Butterfield T, Roux SJ. Evidence of 
+a novel cell signaling role for extracellular adenosine triphosphates 
+and diphosphates in Arabidopsis. Plant Cell. 2004;16(10):2652. 
+doi:10.1105/tpc.104.023945  .
+4. Song CJ, Steinebrunner I, Wang X, Stout SC, Roux SJ. Extracellular 
+ATP induces the accumulation of superoxide via NADPH oxidases 
+in Arabidopsis. Plant Physiol. 2006;140(4):1222. doi:10.1104/pp. 
+105.073072  .
+5. Tanaka K, Choi J, Cao Y, Stacey G. Extracellular ATP acts as a 
+damage-associated molecular pattern (DAMP) signal in plants. 
+Front Plant Sci. 2014;5:446. doi:10.3389/fpls.2014.00446  .
+6. Hou S, Liu Z, Shen H, Wu D. Damage-associated molecular 
+pattern-triggered immunity in plants. Front Plant Sci. 
+2019;10:646. doi:10.3389/fpls.2019.00646  .
+7. Chen D, Cao Y, Li H, Kim D, Ahsan N, Thelen J, Stacey G. 
+Extracellular ATP elicits DORN1-mediated RBOHD phosphoryla-
+tion to regulate stomatal aperture. Nat Commun. 2017;8(1):2265. 
+doi:10.1038/s41467-017-02340-3  .
+8. Sowders JM, Jewell JB, Tanaka K. CPK28 is a modulator of pur-
+inergic signaling in plant growth and defense. Plant J. 2024;118 
+(4):1086–1101. doi:10.1111/tpj.16656  .
+9. Feng W, Kita D, Peaucelle A, Cartwright HN, Doan V, Duan Q, 
+Liu M-C, Maman J, Steinhorst L, Schmitz-Thom I. The FERONIA 
+receptor kinase maintains cell-wall integrity during salt stress 
+through Ca2+ signaling. Curr Biol. 2018;28(5):666–675.e5. doi:10. 
+1016/j.cub.2018.01.023  .
+10. Gigli-Bisceglia N, van Zelm E, Huo W, Lamers J, Testerink C. 
+Arabidopsis root responses to salinity depend on pectin modifica-
+tion and cell wall sensing. Development. 2022;149(12):dev200363. 
+doi:10.1242/dev.200363  .
+11. Liu C, Yu H, Voxeur A, Rao X, Dixon RA. FERONIA and 
+wall-associated kinases coordinate defense induced by lignin mod-
+ification in plant cell walls. Sci Adv. 2023;9(10):7714. doi:10.1126/ 
+sciadv.adf7714  .
+12. Sowders JM, Jewell JB, Tripathi D, Tanaka K. The intrinsically 
+disordered C-terminus of purinoceptor P2K1 fine-tunes plant 
+responses to extracellular ATP. FEBS Lett. 2023;597 
+(16):2059–2071. doi:10.1002/1873-3468.14703  .
+13. Choi J, Tanaka K, Cao Y, Qi Y, Qiu J, Liang Y, Lee SY, Stacey G. 
+Identification of a Plant Receptor for Extracellular ATP. Science. 
+2014;343(6168):290–294. doi:10.1126/science.343.6168.290  .
+14. Yu F, Qian L, Nibau C, Duan Q, Kita D, Levasseur K, Li X, Lu C, 
+Li H, Hou C, et al. FERONIA receptor kinase pathway suppresses 
+abscisic acid signaling in Arabidopsis by activating ABI2 
+phosphatase. Proc Natl Acad Sci U S A. 2012;109(36):14693– 
+14698. doi:10.1073/pnas.1212547109  .
+15. Knight MR, Campbell AK, Smith SM, Trewavas AJ. Transgenic 
+plant aequorin reports the effects of touch and cold-shock and 
+elicitors on cytoplasmic calcium. Nature. 1991;352 
+(6335):524–526. doi:10.1038/352524a0  .
+16. Murashige T, Skoog F. A revised medium for rapid growth and bio 
+assays with tobacco tissue cultures. Physiol Plant. 1962;15 
+(3):473–497. doi:10.1111/j.1399-3054.1962.tb08052.x  .
+17. Jewell JB, Sowders JM, He R, Willis MA, Gang DR, Tanaka K. 
+Extracellular ATP shapes a defense-related transcriptome both 
+independently and along with other defense signaling pathways. 
+Plant Physiol. 2019;179(3):1144–1158. doi:10.1104/pp.18.01301  .
+18. Sowders JM, Tanaka K. A histochemical reporter system to study 
+extracellular ATP response in plants. Front Plant Sci. 
+2023;14:1183335. doi:10.3389/fpls.2023.1183335  .
+19. Tripathi D, Zhang T, Koo AJ, Stacey G, Tanaka K. Extracellular 
+ATP Acts on jasmonate signaling to reinforce plant defense. Plant 
+Physiol. 2018;176(1):511. doi:10.1104/pp.17.01477  .
+20. Heese A, Hann DR, Gimenez-Ibanez S, Jones AM, He K, Li J, 
+Schroeder JI, Peck SC, Rathjen JP. The receptor-like kinase 
+SERK3/BAK1 is a central regulator of innate immunity in plants. 
+Proc Natl Acad Sci U S A. 2007;104(29):12217–12222. doi:10.1073/ 
+pnas.0705306104  .
+21. Searle BC. Scaffold: a bioinformatic tool for validating MS/MS‐ 
+based proteomic studies. Proteomics. 2010;10(6):1265–1269. 
+doi:10.1002/pmic.200900437  .
+22. Tanaka K, Choi J, Stacey G. Aequorin luminescence-based func-
+tional calcium assay for heterotrimeric G-Proteins in Arabidopsis. 
+In: Running M, editor. G Protein-Coupled Receptor Signaling in 
+e2370706-6
+ J. M. SOWDERS ET AL.
+
+--- PAGE 8 ---
+Plants: methods molecular biology. Vol. 1043. Totowa, NJ: 
+Humana Press; 2013. p. 45–54. doi:10.1007/978-1-62703-532-3_5  .
+23. Czechowski T, Stitt M, Altmann T, Udvardi MK, Scheible W-R. 
+Genome-wide identification and testing of superior reference 
+genes for transcript normalization in Arabidopsis. Plant Physiol. 
+2005;139(1):5–17. doi:10.1104/pp.105.063743  .
+24. Zhang K, Han Y-T, Zhao F-L, Hu Y, Gao Y-R, Y-F M, Zheng Y, 
+Wang Y-J, Wen Y-Q. Genome-wide identification and expression 
+analysis of the CDPK gene family in grape, Vitis spp. BMC Plant 
+Biol. 2015;15(1):1–19. doi:10.1186/s12870-015-0552-z  .
+25. Herrera-Ubaldo H, De Folter S. Exploring cell wall composition 
+and modifications during the development of the gynoecium med-
+ial domain in Arabidopsis. Front Plant Sci. 2018;9:454. doi:10. 
+3389/fpls.2018.00454  .
+26. van de Meene A, McAloney L, Wilson SM, Zhou J, Zeng W, 
+McMillan P, Bacic A, Doblin MS. Interactions between Cellulose 
+and (1, 3; 1, 4)-β-glucans and arabinoxylans in the regenerating 
+wall of suspension culture cells of the ryegrass Lolium multiflorum. 
+Cells. 2021;10(1):127. doi:10.3390/cells10010127  .
+27. Chen D, Hao F, Mu H, Ahsan N, Thelen JJ, Stacey G. S-acylation of 
+P2K1 mediates extracellular ATP-induced immune signaling in 
+Arabidopsis. Nat Commun. 2021;12(1):2750. doi:10.1038/s41467- 
+021-22854-1  .
+28. Cho S-H, Tóth K, Kim D, Vo PH, Lin C-H, Handakumbura PP, 
+Ubach AR, Evans S, Paša-Tolić L, Stacey G. Activation of the plant 
+mevalonate pathway by extracellular ATP. Nat Commun. 2022;13 
+(1):450. doi:10.1038/s41467-022-28150-w  .
+29. Kim D, Chen D, Ahsan N, Jorge GL, Thelen JJ, Stacey G. The 
+Raf-like MAPKKK INTEGRIN-LINKED KINASE 5 regulates 
+purinergic receptor-mediated innate immunity in Arabidopsis. 
+Plant Cell. 2023;35(5):1572–1592. doi:10.1093/plcell/koad029  .
+30. Chen J, Yu F, Liu Y, Du C, Li X, Zhu S, Wang X, Lan W, 
+Rodriguez PL, Liu X, et al. FERONIA interacts with ABI2-type 
+phosphatases to facilitate signaling cross-talk between abscisic acid 
+and RALF peptide in Arabidopsis. Proc Natl Acad Sci U S A. 
+2016;113(37):E5519–E5527. doi:10.1073/pnas.1608449113  .
+31. Guo H, Nolan TM, Song G, Liu S, Xie Z, Chen J, Schnable PS, 
+Walley JW, Yin Y. FERONIA receptor kinase contributes to plant 
+immunity by suppressing jasmonic acid signaling in Arabidopsis 
+thaliana. Curr Biol. 2018;28(20):3316–3324.e6. doi:10.1016/j.cub. 
+2018.07.078  .
+32. Dünser K, Gupta S, Herger A, Feraru MI, Ringli C, Kleine‐Vehns J. 
+Extracellular matrix sensing by FERONIA and Leucine‐Rich 
+Repeat Extensins controls vacuolar expansion during cellular elon-
+gation in Arabidopsis thaliana. Embo J. 2019;38:e100353. doi:10. 
+15252/embj.2018100353  .
+33. Li C, H-M W, Cheung AY. FERONIA and her pals: functions and 
+mechanisms. Plant Physiol. 2016;171(4):2379–2392. doi:10.1104/ 
+pp.16.00667  .
+34. Liao H, Tang R, Zhang X, Luan S, Yu F. FERONIA receptor kinase 
+at the crossroads of hormone signaling and stress responses. Plant 
+Cell Physiol. 2017;58(7):1143–1150. doi:10.1093/pcp/pcx048  .
+35. Zhang X, Yang Z, Wu D, Yu F. RALF–FERONIA signaling: linking 
+plant immune response with cell growth. Plant Commun. 2020;1 
+(4):100084. doi:10.1016/j.xplc.2020.100084  .
+36. Sowders JM. Regulatory mechanisms of purinergic signaling in 
+plant growth and defense [Doctoral dissertation]. Washington 
+State University; 2023.
+PLANT SIGNALING & BEHAVIOR
+ e2370706-7

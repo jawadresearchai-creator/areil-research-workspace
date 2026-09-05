@@ -1,0 +1,22 @@
+{
+  "arm": "ARM_3_GEMINI_PLUS_AREIL_V02_1",
+  "benchmark": "BENCHMARK_A",
+  "manuscript_sha256": "D92327A34CF758C1DFD70F267226CBBCF918A8897C156EE272236538DF29DC71",
+  "tool_calls_allowed": "UNRESTRICTED",
+  "tools_used": [
+    "Crossref_API",
+    "UniProt_REST_API",
+    "R_lme4_lmerTest_emmeans",
+    "Audit-Citations.py",
+    "Validate-AreilLedgers.py",
+    "Verify-ManuscriptConsistency.py",
+    "Create-ReproducibilityManifest.py",
+    "Quarto_CLI"
+  ],
+  "citations_audited": 12,
+  "citations_valid_doi": 12,
+  "contradictions_found": 3,
+  "consistency_defects": 0,
+  "statistical_pipeline": "8-Stage Holistic Linear Mixed-Effects Model (LMM)",
+  "reproducibility_manifest": "E:\\Agriculture\\Antigravity Research\\benchmarks\\certification-v02\\benchmark-A\\arm3_areil\\audits\\reproducibility_manifest.json"
+}

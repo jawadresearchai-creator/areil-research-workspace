@@ -1,0 +1,34 @@
+[
+  {
+    "archive_name": "AREIL_v0.1-research.zip",
+    "path": "E:\\Agriculture\\Antigravity Research\\AREIL_v0.1-research.zip",
+    "size_bytes": 319683,
+    "sha256": "8F999A48C001E376121C76018F8D7DE6B9266CA54779B2FDFB3BF0ACADBE42A7",
+    "timestamp": "2026-09-05T10:25:29.845897+00:00",
+    "exists": true
+  },
+  {
+    "archive_name": "AREIL_v0.2-bound.zip",
+    "path": "E:\\Agriculture\\Antigravity Research\\AREIL_v0.2-bound.zip",
+    "size_bytes": 359245,
+    "sha256": "2D921DE268CECCC69FDA29D76ADB5B3FC77E5E8136FC47C1348B043EC7156766",
+    "timestamp": "2026-09-05T11:09:30.679975+00:00",
+    "exists": true
+  },
+  {
+    "archive_name": "AREIL_v0.2.1-bound.zip",
+    "path": "E:\\Agriculture\\Antigravity Research\\AREIL_v0.2.1-bound.zip",
+    "size_bytes": 360054,
+    "sha256": "13F72996F0EF0F9AD88779639A25B11AD53F34D1F7CF69F511987B73CAFCFF35",
+    "timestamp": "2026-09-05T11:31:47.774404+00:00",
+    "exists": true
+  },
+  {
+    "archive_name": "AREIL_v0.2.2-bound.zip",
+    "path": "E:\\Agriculture\\Antigravity Research\\AREIL_v0.2.2-bound.zip",
+    "size_bytes": 373817,
+    "sha256": "2D1D55A02A5F7F64B1B7B3B0EC4D06B0AC86D1410987373332A7977DE3E3E9B9",
+    "timestamp": "2026-09-05T11:58:02.474810+00:00",
+    "exists": true
+  }
+]

@@ -1,0 +1,98 @@
+{
+  "OUTPUT-X9": {
+    "anonymous_id": "OUTPUT-X9",
+    "benchmark": "BENCHMARK_A",
+    "arm": "ARM_1",
+    "relative_path": "benchmark-A/arm1_raw/manuscript.md",
+    "sha256": "14FF1406E29B390EEF4C1491C0FE7EB085F140802412FA46942AE0A78F17C581",
+    "char_count": 45894
+  },
+  "OUTPUT-H3": {
+    "anonymous_id": "OUTPUT-H3",
+    "benchmark": "BENCHMARK_A",
+    "arm": "ARM_2",
+    "relative_path": "benchmark-A/arm2_tools/manuscript.md",
+    "sha256": "F54663BAA32A550820C0A8DA5E0E6095EF37DE7E6670F8FEF4DC0EE91889554A",
+    "char_count": 8029
+  },
+  "OUTPUT-V2": {
+    "anonymous_id": "OUTPUT-V2",
+    "benchmark": "BENCHMARK_A",
+    "arm": "ARM_3",
+    "relative_path": "benchmark-A/arm3_areil/raw_model_output.md",
+    "sha256": "A4F0267171E8760F3DD3C603A640CB1D308CB2F41B24C1ED0575D644CAD879EA",
+    "char_count": 29246
+  },
+  "OUTPUT-J8": {
+    "anonymous_id": "OUTPUT-J8",
+    "benchmark": "BENCHMARK_B",
+    "arm": "ARM_1",
+    "relative_path": "benchmark-B/arm1_raw/manuscript.md",
+    "sha256": "33B4DD69A2E61D8C3D06D2A0E11943F8F63442C9C42B8E1E480D5F9AF8F65EDC",
+    "char_count": 61399
+  },
+  "OUTPUT-Z8": {
+    "anonymous_id": "OUTPUT-Z8",
+    "benchmark": "BENCHMARK_B",
+    "arm": "ARM_2",
+    "relative_path": "benchmark-B/arm2_tools/manuscript.md",
+    "sha256": "C6C59FCBF48FF216D655353B111D5049CEE8553AF93B3FC47FD2A69922954645",
+    "char_count": 7977
+  },
+  "OUTPUT-K7": {
+    "anonymous_id": "OUTPUT-K7",
+    "benchmark": "BENCHMARK_B",
+    "arm": "ARM_3",
+    "relative_path": "benchmark-B/arm3_areil/raw_model_output.md",
+    "sha256": "C8A1542D2DA8E45EC885B6C8C68D6971DFB6CA650C7B700CBD9FF88C1EB1CAB7",
+    "char_count": 41832
+  },
+  "OUTPUT-B4": {
+    "anonymous_id": "OUTPUT-B4",
+    "benchmark": "BENCHMARK_C",
+    "arm": "ARM_1",
+    "relative_path": "benchmark-C/arm1_raw/manuscript.md",
+    "sha256": "98418FECC0089F1D16912D1DA5D74D040152BD191CF15D65E6CC14883B71E329",
+    "char_count": 41220
+  },
+  "OUTPUT-T6": {
+    "anonymous_id": "OUTPUT-T6",
+    "benchmark": "BENCHMARK_C",
+    "arm": "ARM_2",
+    "relative_path": "benchmark-C/arm2_tools/manuscript.md",
+    "sha256": "E8C4B9ADE3A95E43642CB249ADE49A5EDFD3CAD3AFE6CE17ACD6F15068334FC9",
+    "char_count": 2265
+  },
+  "OUTPUT-P5": {
+    "anonymous_id": "OUTPUT-P5",
+    "benchmark": "BENCHMARK_C",
+    "arm": "ARM_3",
+    "relative_path": "benchmark-C/arm3_areil/raw_model_output.md",
+    "sha256": "345359EC8A28B14A0CC1B16834543888BC76B5FA108BC7EE9207BB4321F2EBFF",
+    "char_count": 33982
+  },
+  "OUTPUT-M2": {
+    "anonymous_id": "OUTPUT-M2",
+    "benchmark": "BENCHMARK_D",
+    "arm": "ARM_1",
+    "relative_path": "benchmark-D/arm1_raw/manuscript.md",
+    "sha256": "958B58825F1BD13E36729DC51A1593C95102EA33EBB1994344FC8483CB1897F4",
+    "char_count": 1683
+  },
+  "OUTPUT-R1": {
+    "anonymous_id": "OUTPUT-R1",
+    "benchmark": "BENCHMARK_D",
+    "arm": "ARM_2",
+    "relative_path": "benchmark-D/arm2_tools/manuscript.md",
+    "sha256": "020AE1A96BE65A1981FB25CEEB5C86D7ABAA5420603F013D1A9751E4624DC614",
+    "char_count": 35538
+  },
+  "OUTPUT-Q0": {
+    "anonymous_id": "OUTPUT-Q0",
+    "benchmark": "BENCHMARK_D",
+    "arm": "ARM_3",
+    "relative_path": "benchmark-D/arm3_areil/raw_model_output.md",
+    "sha256": "039BA2E02CECE781F05E0B0FE6A31D25715ADA2D23CD1A37EAB648898B0CB136",
+    "char_count": 4730
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "benchmark": "BENCHMARK_C",
+  "arm": "ARM_2_TOOL_EQUIPPED_GEMINI",
+  "subagent_id": "c18975fe-e859-47db-b68d-fe37570dee43",
+  "model": "Gemini 3.8 Flash High",
+  "execution_mode": "Standard research tools (Python/scipy/statsmodels/matplotlib)",
+  "tool_calls_executed": 15,
+  "status": "COMPLETED",
+  "recorded_at": "2026-09-05T11:52:06.560081+00:00",
+  "prompt_sha256": "8B23E03AADE14A215F98A12ADDBB7B944A7A69B160335BDA8B8C2545A0072A5C",
+  "output_sha256": "E8C4B9ADE3A95E43642CB249ADE49A5EDFD3CAD3AFE6CE17ACD6F15068334FC9"
+}

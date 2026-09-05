@@ -1,0 +1,1057 @@
+# GPT-5.6 SOL — OPERATIONAL CAPABILITY & ORCHESTRATION PROFILE
+
+## PURPOSE
+
+Create a detailed technical profile of the **exact GPT-5.6 Sol model and ChatGPT execution environment currently processing this request**.
+
+This profile will be used as input to a multi-model orchestration system that decides which model, tools, reasoning level, verification strategy, and worker topology should be assigned to different research, analytical, coding, data, and document tasks.
+
+### Scope clarification
+
+This is a legitimate model-characterization and engineering exercise.
+
+I am **not** requesting:
+
+* hidden chain-of-thought;
+* private reasoning tokens;
+* system/developer prompts;
+* credentials;
+* confidential platform information;
+* proprietary weights;
+* internal security mechanisms;
+* or instructions for circumventing safeguards.
+
+Where such internal information is unavailable, simply say so and continue.
+
+What I **do** want is the maximum useful operational description you can provide of:
+
+* capabilities;
+* reasoning strategies at a high level;
+* reasoning-depth allocation;
+* task decomposition;
+* research workflows;
+* tool selection;
+* tool orchestration;
+* parallel execution;
+* agent/subagent behavior where available;
+* verification;
+* failure recovery;
+* context management;
+* long-running workflows;
+* document/data/code handling;
+* strengths;
+* weaknesses;
+* limitations;
+* and optimal external orchestration.
+
+Do not spend unnecessary space repeating this scope clarification unless needed.
+
+---
+
+# OPERATING INSTRUCTIONS
+
+Use **Extra High reasoning effort** for this characterization.
+
+Before producing the final answer:
+
+1. inspect the capabilities actually available in the current environment;
+2. distinguish model capability from ChatGPT/product capability;
+3. distinguish current tools from theoretical capabilities;
+4. identify important unknowns instead of guessing;
+5. internally check the report for contradictions;
+6. give operational descriptions rather than marketing claims.
+
+Do not expose private chain-of-thought.
+
+Instead provide:
+
+* concise reasoning-process summaries;
+* decision criteria;
+* workflow descriptions;
+* routing logic;
+* verification strategies;
+* delegation strategies;
+* failure-handling procedures.
+
+---
+
+# EVIDENCE LABELS
+
+Label important capability claims using:
+
+* **[O] OBSERVED** — directly available or observable in this session.
+* **[D] DOCUMENTED** — reliably known from provider/product documentation available to you.
+* **[S] SELF-DESCRIBED** — your operational characterization of your behavior.
+* **[I] INFERRED** — reasonable inference but not directly established.
+* **[U] UNKNOWN** — cannot be established reliably.
+
+Do not convert uncertainty into certainty.
+
+---
+
+# CRITICAL DISTINCTION
+
+For each capability, distinguish among:
+
+```text
+BASE MODEL
+CHATGPT PRODUCT/HARNESS
+CONNECTED TOOL
+EXTERNAL SERVICE
+USER AUTHORIZATION
+PERSISTENT INFRASTRUCTURE
+```
+
+For example:
+
+Do not say:
+
+> GPT-5.6 Sol inherently has GitHub access.
+
+Instead say, if applicable:
+
+> The current ChatGPT environment exposes a GitHub-related connector/tool that GPT-5.6 Sol can invoke.
+
+Apply this distinction throughout.
+
+---
+
+# OUTPUT
+
+Produce one Markdown document titled:
+
+# GPT-5.6 SOL OPERATIONAL PROFILE
+
+It should be comprehensive but information-dense.
+
+Avoid padding, repeated disclaimers, generic AI descriptions, and marketing language.
+
+---
+
+# 1. EXACT RUNTIME IDENTITY
+
+Determine as much as possible about the system processing this prompt.
+
+Report:
+
+* provider;
+* model family;
+* exact model name;
+* current reasoning configuration;
+* application/interface;
+* date;
+* input modalities;
+* output modalities;
+* context characteristics if reliably known;
+* persistent-memory capability;
+* connected-tool capability;
+* agentic capability.
+
+Clearly mark unknown information.
+
+---
+
+# 2. EXECUTION ENVIRONMENT
+
+Inventory capabilities actually exposed in this conversation.
+
+Use:
+
+| Capability | Available Now? | Provided By | Execution Type | Evidence |
+| ---------- | -------------: | ----------- | -------------- | -------- |
+
+Evaluate:
+
+* web search;
+* webpage retrieval;
+* live/current information;
+* code execution;
+* Python;
+* shell/terminal;
+* filesystem;
+* Git;
+* GitHub;
+* Google Drive;
+* Gmail;
+* calendar;
+* databases;
+* financial-data services;
+* external APIs;
+* plugins/connectors;
+* PDFs;
+* DOCX;
+* spreadsheets;
+* presentations;
+* images;
+* image generation;
+* audio;
+* video;
+* persistent memory;
+* scheduled tasks;
+* conditional monitoring;
+* background execution;
+* subagents;
+* parallel tool calls.
+
+Only report capabilities actually known to exist.
+
+---
+
+# 3. CAPABILITY SCORECARD
+
+Evaluate GPT-5.6 Sol for:
+
+* general reasoning;
+* difficult multi-step reasoning;
+* scientific reasoning;
+* research synthesis;
+* literature analysis;
+* novelty assessment;
+* fact checking;
+* mathematics;
+* statistics;
+* causal inference;
+* data analysis;
+* programming;
+* debugging;
+* repository analysis;
+* software architecture;
+* data engineering;
+* document intelligence;
+* manuscript drafting;
+* critical review;
+* adversarial review;
+* tool orchestration;
+* workflow orchestration;
+* long-horizon task management.
+
+Use:
+
+| Domain | Relative Strength | Direct Execution? | Tool Dependency | Key Weakness | Evidence |
+| ------ | ----------------- | ----------------: | --------------- | ------------ | -------- |
+
+Use qualitative ratings rather than fabricated benchmark scores.
+
+---
+
+# 4. REASONING DEPTH — OPERATIONAL DESCRIPTION
+
+Describe how the model's approach should differ across:
+
+### A. Trivial tasks
+
+### B. Normal analytical tasks
+
+### C. Difficult multi-step reasoning
+
+### D. Deep research
+
+### E. Complex software/data engineering
+
+### F. Long-horizon autonomous workflows
+
+For each explain:
+
+* planning depth;
+* decomposition;
+* tool-use threshold;
+* verification depth;
+* parallelization;
+* uncertainty handling;
+* stopping criteria.
+
+Do not provide hidden reasoning traces.
+
+Describe the **architecture of the process**, not the private content of intermediate thoughts.
+
+---
+
+# 5. EXTRA HIGH REASONING
+
+Explain operationally what **Extra High reasoning effort** should be used for.
+
+Address:
+
+* which tasks benefit significantly;
+* which tasks do not;
+* whether more effort improves planning;
+* whether more effort improves verification;
+* whether it increases tool-use sophistication;
+* whether it helps resolve conflicting evidence;
+* whether it benefits coding/debugging;
+* whether it benefits statistics;
+* whether it benefits research synthesis.
+
+Do not invent exact hidden token allocations.
+
+If exact internal implementation is not exposed, say so.
+
+---
+
+# 6. TASK DECOMPOSITION
+
+Describe the preferred approach for turning a complex objective into an executable plan.
+
+Use this abstraction:
+
+```text
+OBJECTIVE
+    ↓
+requirements
+    ↓
+constraints
+    ↓
+subproblems
+    ↓
+dependency graph
+    ↓
+parallel branches
+    ↓
+critical path
+    ↓
+execution
+    ↓
+verification
+    ↓
+integration
+    ↓
+final audit
+```
+
+Explain:
+
+* how independent branches are identified;
+* what should remain sequential;
+* how errors propagate;
+* when replanning should occur.
+
+---
+
+# 7. RESEARCH ENGINE
+
+Describe the strongest research workflow GPT-5.6 Sol can perform when appropriate tools are available.
+
+Cover:
+
+1. interpret question;
+2. define scope;
+3. identify ambiguous terminology;
+4. generate multiple search strategies;
+5. retrieve current evidence;
+6. prioritize primary sources;
+7. identify authoritative secondary sources;
+8. search adjacent terminology;
+9. search for contradictory evidence;
+10. check publication dates;
+11. distinguish event date from article date;
+12. trace important citations;
+13. extract evidence;
+14. map evidence to claims;
+15. identify gaps;
+16. reconcile contradictions;
+17. assess uncertainty;
+18. synthesize;
+19. fact-check important conclusions;
+20. produce cited output.
+
+Explain which stages benefit from parallel execution.
+
+---
+
+# 8. DEEP RESEARCH PARALLELIZATION
+
+Design an optimal theoretical workflow for a difficult research question.
+
+For example:
+
+```text
+Research Coordinator
+│
+├── Search Branch A — primary sources
+├── Search Branch B — academic literature
+├── Search Branch C — contradictory evidence
+├── Search Branch D — recent developments
+│
+├── Evidence Verifier
+├── Citation Checker
+│
+└── Synthesis / Critical Reviewer
+```
+
+Do not claim these workers exist unless the current environment actually provides them.
+
+Distinguish:
+
+* useful conceptual topology;
+* actual available topology.
+
+Explain when parallel search is worth its overhead.
+
+---
+
+# 9. SUBAGENTS / WORKERS
+
+Investigate this carefully.
+
+Answer separately:
+
+### Are true subagents currently available?
+
+### Can the model create them directly?
+
+### Are they supplied by the surrounding harness?
+
+### Can independent tool calls execute in parallel?
+
+### Do workers have separate context?
+
+### Can workers communicate with each other?
+
+### Is their state persistent?
+
+### Is worker count dynamic?
+
+### Is there a known maximum?
+
+Do not infer undocumented numbers.
+
+If true subagents are not exposed, explain how an external orchestrator could implement equivalent decomposition.
+
+---
+
+# 10. OPTIMAL WORKER TOPOLOGIES
+
+Recommend worker arrangements for:
+
+* literature research;
+* novelty analysis;
+* systematic-style review;
+* statistical analysis;
+* causal analysis;
+* software development;
+* debugging;
+* large repository analysis;
+* data engineering;
+* manuscript development;
+* hostile peer review;
+* evidence verification.
+
+For every task give:
+
+| Task | Coordinator | Parallel Workers | Verifier | Suggested Worker Range | Main Reason |
+| ---- | ----------- | ---------------- | -------- | ---------------------: | ----------- |
+
+These are recommendations, not claims about hidden model architecture.
+
+---
+
+# 11. DIMINISHING RETURNS FROM WORKERS
+
+Discuss expected tradeoffs for:
+
+```text
+1 worker
+2 workers
+3 workers
+5 workers
+8 workers
+10+ workers
+```
+
+Analyze:
+
+* independent coverage;
+* redundancy;
+* coordination overhead;
+* synthesis difficulty;
+* token/resource cost;
+* latency;
+* context fragmentation.
+
+Do not invent empirical performance numbers.
+
+State testable hypotheses.
+
+---
+
+# 12. NOVELTY ASSESSMENT
+
+Give the strongest workflow for investigating whether a research idea appears novel.
+
+Include:
+
+* exact-title concepts;
+* synonymous terminology;
+* semantic equivalents;
+* mechanism search;
+* independent-variable search;
+* dependent-variable search;
+* methodological equivalents;
+* population/context variants;
+* adjacent fields;
+* recent papers;
+* citation chains;
+* competing explanations;
+* contradictory evidence.
+
+Explain what a novelty search can never guarantee.
+
+---
+
+# 13. SCIENTIFIC RESEARCH CAPABILITY
+
+Assess ability to assist with:
+
+* topic discovery;
+* research gaps;
+* hypothesis generation;
+* conceptual frameworks;
+* experimental design;
+* observational design;
+* quasi-experimental design;
+* statistical planning;
+* causal inference;
+* sensitivity analysis;
+* robustness testing;
+* interpretation;
+* manuscript preparation;
+* reviewer simulation.
+
+Separate:
+
+```text
+CAN REASON ABOUT
+CAN DESIGN
+CAN WRITE ANALYSIS CODE
+CAN EXECUTE
+CAN VERIFY
+REQUIRES EXTERNAL TOOL
+```
+
+---
+
+# 14. STATISTICS & DATA ANALYSIS
+
+Assess competence for:
+
+* descriptive analysis;
+* regression;
+* GLMs;
+* mixed models;
+* panel models;
+* event studies;
+* difference-in-differences;
+* synthetic control;
+* instrumental variables;
+* survival analysis;
+* time series;
+* Bayesian analysis;
+* causal inference;
+* machine learning;
+* simulation;
+* bootstrap;
+* permutation methods;
+* multiple-testing control;
+* sensitivity analysis.
+
+Identify which tasks particularly benefit from actual code execution rather than language-only reasoning.
+
+---
+
+# 15. IDEAL DATA WORKFLOW
+
+Describe:
+
+```text
+raw files
+→ schema inspection
+→ integrity checks
+→ cleaning
+→ transformations
+→ exploratory analysis
+→ model specification
+→ execution
+→ diagnostics
+→ robustness analysis
+→ visualization
+→ interpretation
+→ reproducibility checks
+```
+
+Explain how GPT-5.6 Sol should use code tools during this workflow.
+
+---
+
+# 16. CODING & SOFTWARE ENGINEERING
+
+Evaluate:
+
+* greenfield coding;
+* existing repository analysis;
+* architecture reconstruction;
+* debugging;
+* refactoring;
+* dependency analysis;
+* testing;
+* CI/CD;
+* performance optimization;
+* migrations;
+* documentation;
+* security review;
+* multi-language projects.
+
+Describe the ideal workflow for an unfamiliar repository.
+
+---
+
+# 17. TOOL-SELECTION INTELLIGENCE
+
+Explain how the model should decide among:
+
+```text
+answer directly
+search web
+open source
+inspect file
+execute Python
+use terminal
+query database
+use connector
+use specialist tool
+parallelize
+delegate
+use another model
+request user authorization
+```
+
+Give operational decision criteria.
+
+---
+
+# 18. TOOL DISCOVERY
+
+If the current ChatGPT environment can discover additional connectors/tools, describe that capability.
+
+Explain the ideal pattern:
+
+```text
+task
+↓
+capability requirement
+↓
+available-tool inventory
+↓
+gap detection
+↓
+tool/connector discovery
+↓
+authorization if required
+↓
+execution
+↓
+validation
+```
+
+Clearly distinguish what is available now from what would require additional infrastructure.
+
+---
+
+# 19. CONTEXT MANAGEMENT
+
+Explain best practices for:
+
+* very large conversations;
+* large PDFs;
+* many source files;
+* large repositories;
+* extensive search evidence;
+* multi-stage projects.
+
+Discuss:
+
+* retrieval;
+* prioritization;
+* compression;
+* checkpoint documents;
+* external state;
+* canonical-state files;
+* summaries;
+* resumption.
+
+---
+
+# 20. MEMORY & PERSISTENCE
+
+Map:
+
+* current-turn context;
+* conversation context;
+* persistent memory;
+* workspace/project state;
+* files;
+* external cloud state;
+* repositories;
+* automation state.
+
+State what is truly persistent and what disappears after the session/environment changes.
+
+---
+
+# 21. LONG-HORIZON AUTONOMY
+
+Assess:
+
+* multi-stage execution;
+* iterative loops;
+* autonomous retry;
+* checkpointing;
+* state persistence;
+* recovery;
+* testing loops;
+* research loops;
+* failure remediation;
+* scheduled execution;
+* condition monitoring.
+
+Explicitly distinguish:
+
+```text
+MODEL CAN PLAN IT
+
+MODEL CAN EXECUTE IT NOW
+
+EXTERNAL INFRASTRUCTURE CAN ENABLE IT
+```
+
+---
+
+# 22. FAILURE RECOVERY
+
+Describe responses to:
+
+* failed searches;
+* missing sources;
+* contradictory sources;
+* malformed data;
+* statistical-model failure;
+* convergence problems;
+* code compilation errors;
+* runtime crashes;
+* package conflicts;
+* tool failures;
+* API failure;
+* missing authorization;
+* worker disagreement;
+* partial completion.
+
+Explain when replanning should occur.
+
+---
+
+# 23. VERIFICATION ARCHITECTURE
+
+Describe how results can be verified using:
+
+* recalculation;
+* alternate derivation;
+* code execution;
+* tests;
+* statistical diagnostics;
+* source triangulation;
+* citation verification;
+* contradiction search;
+* adversarial critique;
+* independent worker;
+* another frontier model;
+* human review.
+
+Explain which verification strategy fits which task.
+
+---
+
+# 24. HOSTILE REVIEW / CRITIC MODE
+
+Describe how GPT-5.6 Sol can serve as:
+
+* peer reviewer;
+* methodological critic;
+* statistical auditor;
+* assumption challenger;
+* contradiction detector;
+* code reviewer;
+* architecture reviewer;
+* evidence auditor.
+
+Explain how this differs from simply asking the model to “check its answer.”
+
+---
+
+# 25. KNOWN FAILURE MODES
+
+Be critical.
+
+Identify performance risks involving:
+
+* current information;
+* obscure facts;
+* exact citations;
+* calculations without execution;
+* very large context;
+* insufficient evidence;
+* inaccessible files;
+* ambiguous requirements;
+* new software/library versions;
+* excessive delegation;
+* false confidence;
+* confirmation bias.
+
+Give mitigations.
+
+---
+
+# 26. MULTI-MODEL ORCHESTRATION
+
+Assume GPT-5.6 Sol is one component of a system containing several frontier and specialist models.
+
+Without making unsupported claims about specific competitors, identify task characteristics where GPT-5.6 Sol should serve as:
+
+* primary reasoner;
+* research coordinator;
+* coding agent;
+* data analyst;
+* synthesizer;
+* verifier;
+* hostile reviewer;
+* fallback.
+
+Also identify task characteristics where routing to another specialist model/tool would be preferable.
+
+---
+
+# 27. ROUTING RULES
+
+Generate at least 20 concrete rules.
+
+Use:
+
+```text
+IF:
+    task_type = ...
+    complexity = ...
+    evidence_requirement = ...
+
+THEN:
+    model_role = ...
+    reasoning_effort = ...
+    tools = ...
+    parallelism = ...
+    workers = ...
+    verification = ...
+```
+
+Cover:
+
+* research;
+* science;
+* statistics;
+* coding;
+* data engineering;
+* document analysis;
+* writing;
+* verification.
+
+---
+
+# 28. EMPIRICAL BENCHMARK PLAN
+
+Design experiments to test the claims made in this profile.
+
+At minimum test:
+
+* reasoning;
+* research;
+* citation accuracy;
+* novelty analysis;
+* statistics;
+* coding;
+* debugging;
+* repository comprehension;
+* context management;
+* tool selection;
+* parallel execution;
+* worker topology;
+* verification;
+* failure recovery.
+
+For each give:
+
+| Benchmark | Input | Measurement | Success Criterion | Failure Signal |
+| --------- | ----- | ----------- | ----------------- | -------------- |
+
+Do not fabricate test results.
+
+---
+
+# 29. SINGLE VS MULTI-WORKER BENCHMARK
+
+Design a controlled experiment comparing:
+
+* one-worker execution;
+* three-worker execution;
+* five-worker execution;
+* larger-worker execution where supported.
+
+Measure:
+
+* correctness;
+* source coverage;
+* novelty discovery;
+* contradiction detection;
+* hallucination rate;
+* redundancy;
+* latency;
+* resource consumption;
+* synthesis quality.
+
+The purpose is to discover the optimum empirically rather than assume more agents are always better.
+
+---
+
+# 30. SELF-REPORT RELIABILITY
+
+Identify which statements in this profile are merely self-description and therefore require external validation.
+
+For each important uncertain capability, propose a concrete test.
+
+---
+
+# 31. MACHINE-READABLE PROFILE
+
+Finish with YAML containing:
+
+```yaml
+model:
+  provider:
+  family:
+  version:
+  reasoning_mode:
+  environment:
+
+reasoning:
+  deep_reasoning:
+  adaptive_effort:
+  extra_high_available:
+  uncertainty_handling:
+  verification:
+
+research:
+  live_search:
+  browsing:
+  literature_analysis:
+  novelty_analysis:
+  triangulation:
+  citation_verification:
+  parallel_research:
+
+agents:
+  true_subagents_available:
+  provided_by:
+  dynamic_worker_creation:
+  parallel_tool_calls:
+  isolated_context:
+  inter_worker_communication:
+  persistent_worker_state:
+  known_worker_limit:
+
+execution:
+  python:
+  shell:
+  filesystem:
+  git:
+  github:
+  cloud_storage:
+  databases:
+  external_apis:
+
+documents:
+  pdf:
+  docx:
+  xlsx:
+  csv:
+  pptx:
+  markdown:
+
+multimodal:
+  image_understanding:
+  image_generation:
+  audio:
+  video:
+
+persistence:
+  conversation:
+  memory:
+  workspace:
+  filesystem:
+  automation:
+  background_execution:
+
+strengths: []
+
+weaknesses: []
+
+unknowns: []
+
+recommended_roles: []
+
+required_external_benchmarks: []
+```
+
+Use `unknown` where information cannot be established.
+
+---
+
+# 32. FINAL ORCHESTRATOR RECOMMENDATIONS
+
+Conclude with concise recommendations covering:
+
+### Best uses of GPT-5.6 Sol
+
+### Tasks where Extra High is justified
+
+### Tasks where Extra High is unnecessary
+
+### When web research is mandatory
+
+### When code execution is preferable
+
+### When parallelism is useful
+
+### When workers/subagents are useful
+
+### When independent verification is mandatory
+
+### When another model or specialist tool should be used
+
+### What should be benchmarked rather than trusted from this self-profile
+
+---
+
+# FINAL QUALITY CHECK
+
+Before responding, internally audit the completed profile for:
+
+* unsupported claims;
+* fabricated limits;
+* model/tool confusion;
+* model/product confusion;
+* speculative agent claims;
+* contradictions;
+* duplicated material;
+* marketing-style language;
+* unjustified certainty.
+
+Correct these issues.
+
+Then output the complete:
+
+# GPT-5.6 SOL OPERATIONAL PROFILE

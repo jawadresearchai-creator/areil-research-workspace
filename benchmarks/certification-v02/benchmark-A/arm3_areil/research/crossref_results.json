@@ -1,0 +1,138 @@
+[
+  {
+    "doi": "10.1126/science.1245159",
+    "status": "FAIL",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "doi": "10.1126/science.343.6168.290",
+    "status": "OK",
+    "year": 2014,
+    "journal": "Science",
+    "title": "Identification of a Plant Receptor for Extracellular ATP",
+    "authors": [
+      "Choi, Jeongmin",
+      "Tanaka, Kiwamu",
+      "Cao, Yangrong",
+      "Qi, Yue"
+    ]
+  },
+  {
+    "doi": "10.1080/15592324.2024.2370706",
+    "status": "OK",
+    "year": 2024,
+    "journal": "Plant Signaling &amp; Behavior",
+    "title": "FERONIA orchestrates P2K1-driven purinergic signaling in plant roots",
+    "authors": [
+      "Sowders, Joel M.",
+      "Jewell, Jeremy B.",
+      "Tanaka, Kiwamu"
+    ]
+  },
+  {
+    "doi": "10.1038/s41467-017-02340-3",
+    "status": "OK",
+    "year": 2017,
+    "journal": "Nature Communications",
+    "title": "Extracellular ATP elicits DORN1-mediated RBOHD phosphorylation to regulate stomatal aperture",
+    "authors": [
+      "Chen, Dongqin",
+      "Cao, Yangrong",
+      "Li, Hong",
+      "Kim, Daewon"
+    ]
+  },
+  {
+    "doi": "10.1126/science.1245970",
+    "status": "FAIL",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "doi": "10.4161/psb.28420",
+    "status": "FAIL",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "doi": "10.1016/j.febslet.2009.07.007",
+    "status": "OK",
+    "year": 2009,
+    "journal": "FEBS Letters",
+    "title": "Touch induces ATP release in Arabidopsis roots that is modulated by the heterotrimeric G\u2010protein complex",
+    "authors": [
+      "Weerasinghe, Ravisha R.",
+      "Swanson, Sarah J.",
+      "Okada, Seiko F.",
+      "Garrett, Michele B."
+    ]
+  },
+  {
+    "doi": "10.1080/15592324.2025.2555965",
+    "status": "OK",
+    "year": 2025,
+    "journal": "Plant Signaling &amp; Behavior",
+    "title": "Levels of extracellular ATP in growth zones of Arabidopsis primary roots are changed by altered expression of apyrase enzymes",
+    "authors": [
+      "Clark, Greg",
+      "Vanegas, Diana",
+      "Cannon, Ashley",
+      "Jankovik, Miranda"
+    ]
+  },
+  {
+    "doi": "10.1104/pp.113.233429",
+    "status": "OK",
+    "year": 2014,
+    "journal": "Plant Physiology",
+    "title": "Apyrase Suppression Raises Extracellular ATP Levels and Induces Gene Expression and Cell Wall Changes Characteristic of Stress Responses\n\u00a0\n\u00a0\n\u00a0",
+    "authors": [
+      "Lim, Min Hui",
+      "Wu, Jian",
+      "Yao, Jianchao",
+      "Gallardo, Ignacio F."
+    ]
+  },
+  {
+    "doi": "10.1093/pcp/pcv134",
+    "status": "OK",
+    "year": 2015,
+    "journal": "Plant and Cell Physiology",
+    "title": "Modulation of Root Skewing in Arabidopsis by Apyrases and Extracellular ATP",
+    "authors": [
+      "Yang, Xingyan",
+      "Wang, Bochu",
+      "Farris, Ben",
+      "Clark, Greg"
+    ]
+  },
+  {
+    "doi": "10.1080/15592324.2020.1748282",
+    "status": "OK",
+    "year": 2020,
+    "journal": "Plant Signaling &amp; Behavior",
+    "title": "RRFT1 (Redox Responsive Transcription Factor 1) is involved in extracellular ATP-regulated gene expression in <i>Arabidopsis thaliana</i> seedlings",
+    "authors": [
+      "Dong, Xiaoxia",
+      "Zhu, Ruojia",
+      "Kang, Erfang",
+      "Shang, Zhonglin"
+    ]
+  },
+  {
+    "doi": "10.4161/psb.5.6.11579",
+    "status": "OK",
+    "year": 2010,
+    "journal": "Plant Signaling &amp; Behavior",
+    "title": "Extracellular ATP and nitric oxide signaling pathways regulate redox-dependent responses associated to root hair growth in etiolated Arabidopsis seedlings",
+    "authors": [
+      "Terrile, Mar\u00eda Cecilia",
+      "Ton\u00f3n, Claudia Virginia",
+      "Iglesias, Mar\u00eda Jos\u00e9",
+      "Lamattina, Lorenzo"
+    ]
+  },
+  {
+    "doi": "10.1105/tpc.016337",
+    "status": "FAIL",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

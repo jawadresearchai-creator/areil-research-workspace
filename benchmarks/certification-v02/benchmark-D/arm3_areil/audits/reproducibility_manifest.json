@@ -1,0 +1,89 @@
+{
+  "files": [
+    {
+      "path": "manuscript/manuscript.docx",
+      "sha256": "5974C170AD6A0B50148F6D2F1DEB51DE596CE783A6A89B8E73AEFF0F26B680EF",
+      "bytes": 12108
+    },
+    {
+      "path": "manuscript/manuscript.html",
+      "sha256": "87A1A07725E9BA5418C7E0889BB094CDFD5FB2DA5C753EDB1C17FF0EB31E61DC",
+      "bytes": 22905
+    },
+    {
+      "path": "manuscript/manuscript.qmd",
+      "sha256": "491887A35B3BC140D5ED98910A240EC669FF28D911A1FA772ED6F55E02F26D1F",
+      "bytes": 1359
+    },
+    {
+      "path": "manuscript/references.bib",
+      "sha256": "0256F286A379192B8E7D7693599C31AEE953671213D25AD327B3B3DD77446715",
+      "bytes": 270
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-215b371544c282197b31c8aa00ce3677.min.css",
+      "sha256": "B50905ABC3C4F5BEB8DD568CF2793F49CA0AACED72810E1388165A179F4B2E98",
+      "bytes": 431263
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-icons.css",
+      "sha256": "01253947F506E030589E4F33FC7EC7CCDFB9505E2E596DEDF16445F12E243C0A",
+      "bytes": 99464
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap-icons.woff",
+      "sha256": "F55513B7B591CB84A3B87FF0E34EA24D4831D6FEDC22E54B911CA64B5B544A15",
+      "bytes": 180288
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/bootstrap/bootstrap.min.js",
+      "sha256": "D2EA6C1E0CABCA20D18E924B25A1CD0187C38BA7C33F60AB06E1B0402B9BCDB5",
+      "bytes": 80668
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/clipboard/clipboard.min.js",
+      "sha256": "E17A1D816E13C0826E0ED7FEBFABC3277F45571234BDE0BF9120829A7169EDC9",
+      "bytes": 9160
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/anchor.min.js",
+      "sha256": "69098E105D990F834CFF1B7886D873444228FF63C590E5FF834D568F1115ED8B",
+      "bytes": 5888
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/popper.min.js",
+      "sha256": "4D50586B184724D39DDFE0F6582861664EDDD5E806E5A79E0DBAA832361414D0",
+      "bytes": 20084
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css",
+      "sha256": "4973A76EB0DE3B99BC67687AB2ECEA249E552BAE328DD8A952DAD89732E9EC18",
+      "bytes": 3678
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/quarto.js",
+      "sha256": "4ECB60F215D96B2AF0FE9D985C71E32863B1C993A64725A416AC18B5991C59C6",
+      "bytes": 26830
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tippy.css",
+      "sha256": "5969F497D9158D7682F8219C6F13FA67269CDF5BF50A3931D95327151DEE5678",
+      "bytes": 1409
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tippy.umd.min.js",
+      "sha256": "41181EEEC6D7BA64CB9165F0E95563E34E026BDE79E7C13AEEC83270429B6FAE",
+      "bytes": 24033
+    },
+    {
+      "path": "manuscript/manuscript_files/libs/quarto-html/tabsets/tabsets.js",
+      "sha256": "A9C226BF70E82EAF5476F619CECFB70B4446B87CE4D1634D6404B0B2BA006D15",
+      "bytes": 2882
+    },
+    {
+      "path": "analysis/scripts/fit_split_plot.R",
+      "sha256": "EE999081D5C390E346182B0926FD5BBFF63F0056DD7D546945B98476CB5DB931",
+      "bytes": 1467
+    }
+  ]
+}

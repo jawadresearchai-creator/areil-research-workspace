@@ -1,0 +1,73 @@
+{
+  "type": "object",
+  "required": [
+    "claim_id",
+    "text",
+    "claim_type",
+    "status"
+  ],
+  "properties": {
+    "claim_id": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "claim_type": {
+      "enum": [
+        "background",
+        "empirical",
+        "mechanistic",
+        "method",
+        "result",
+        "interpretation",
+        "novelty",
+        "limitation"
+      ]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contradiction_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "support_level": {
+      "enum": [
+        "strong",
+        "moderate",
+        "weak",
+        "contested",
+        "not_established",
+        "pending"
+      ]
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "searching",
+        "adjudicated",
+        "approved",
+        "rejected",
+        "blocked"
+      ]
+    },
+    "allowed_strength": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "destinations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

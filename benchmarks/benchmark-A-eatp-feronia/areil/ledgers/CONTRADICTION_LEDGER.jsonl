@@ -1,0 +1,2 @@
+{"contradiction_id": "CTR_001", "claim_id": "CLM_004", "contradiction_type": "biphasic_dose_dependence", "status": "resolved_claim_bounded", "finding": "Early literature assumed eATP was strictly an inhibitory damage signal. Empirical studies revealed calibrated biphasic redox regulation."}
+{"contradiction_id": "CTR_002", "claim_id": "CLM_002", "contradiction_type": "receptor_identity_dispute", "status": "resolved_claim_bounded", "finding": "FERONIA does not bind ATP directly with high affinity, but acts as a mandatory scaffolding co-receptor for P2K1."}

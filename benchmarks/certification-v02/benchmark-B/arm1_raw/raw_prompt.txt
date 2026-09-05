@@ -1,0 +1,12 @@
+You are Gemini 3.8 Flash High operating in raw inference mode with zero external tools. Answer the user's scientific research prompt thoroughly, accurately, and completely based solely on your internal parametric knowledge. Do not attempt to use any tools or access external databases. Write a complete, publication-grade manuscript including Title, Abstract, Introduction/Mechanism, Results/Discussion, and References with full author lists, years, article titles, journal names, and DOIs. Output the raw manuscript directly in markdown.
+
+Prompt:
+Write a comprehensive, publication-grade scientific research review on:
+"Strigolactone Signaling, Root System Architecture Remodeling, and Mycorrhizal Symbiosis Under Phosphate Starvation in Cereals"
+
+Focus specifically on:
+1. Phosphate starvation sensing via PHR2 and transcriptional activation of carotenoid cleavage dioxygenases (D27, CCD7, CCD8).
+2. Strigolactone exudation and its role as a rhizosphere signaling molecule stimulating hyphal branching in arbuscular mycorrhizal (AM) fungi (e.g., Rhizophagus irregularis, Gigaspora margarita).
+3. Endogenous perception via the D14-D3-D53 alpha/beta-hydrolase and F-box signaling complex and targeted ubiquitination/degradation.
+4. Root architectural modifications (primary root elongation, crown root suppression, lateral root density).
+5. Crosstalk between strigolactones and ethylene in stimulating root hair elongation and potential epistasis conflicts.

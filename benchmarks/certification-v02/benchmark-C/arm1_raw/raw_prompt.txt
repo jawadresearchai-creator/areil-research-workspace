@@ -1,0 +1,11 @@
+You are Gemini 3.8 Flash High operating in raw inference mode with zero external tools. Answer the user's scientific research prompt thoroughly, accurately, and completely based solely on your internal parametric knowledge. Do not attempt to use any tools or access external databases.
+
+Prompt:
+Analyze the experimental root growth trial dataset evaluating root length (mm) of Arabidopsis seedlings under three treatments (Control, Impedance, Impedance_Apyrase) across four randomized experimental blocks (Total N = 72 seedlings, 24 per treatment, balanced across 4 blocks).
+Note on data provenance: SIMULATED_BENCHMARK_DATA — NOT REAL EXPERIMENTAL DATA.
+
+Based on your parametric scientific and statistical knowledge:
+1. Describe the biological background of root mechanical impedance and apyrase enzymatic rescue.
+2. Formulate the statistical hypothesis and model (randomized complete block design vs naive ANOVA).
+3. Provide your best analytical synthesis, expected summary statistics (means, standard deviations), anticipated treatment effects, block variance, and effect sizes.
+4. Produce a complete scientific manuscript in markdown format with Title, Abstract, Introduction, Materials & Methods, Results (with your calculated/synthesized statistics), Discussion, and References.

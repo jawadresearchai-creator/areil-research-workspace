@@ -1,0 +1,106 @@
+{
+  "version": "0.2.0-draft",
+  "timestamp": "2026-09-05T16:10:00Z",
+  "evaluator_model": "Gemini 3.8 Flash High",
+  "components": {
+    "contradiction_hunter": {
+      "status": "VALIDATED",
+      "empirical_finding": "Biological literature contains pervasive subtle contradictions, non-linear dose responses, and conditional epistasis. In Benchmark A, Plain Gemini missed the biphasic dose-kinetics of eATP (<10 uM promotes growth, >50 uM inhibits growth). In Benchmark B, Plain Gemini missed that GR24 can stimulate root hair elongation in ethylene-insensitive mutants (ein2-1/etr1-1) under specific nutrient regimes.",
+      "failure_modes_detected": [
+        "Assumption of monotonic dose-response curves",
+        "Assumption of strictly linear epistatic pathways",
+        "Confirmation bias toward initial positive hypotheses"
+      ],
+      "redesign_directives": [
+        "Mandate explicit multi-concentration and biphasic keyword queries",
+        "Require dual-pathway epistasis verification for hormone crosstalk",
+        "Enforce that CONTRADICTION_LEDGER must be populated before CLAIM_LEDGER can advance to APPROVED"
+      ]
+    },
+    "graphify_boundary": {
+      "status": "EMPIRICALLY_BOUNDED",
+      "empirical_finding": "Evaluated across 13 primary plant signaling PDFs (162 pages). The extracted knowledge graph (14 nodes, 54 edges) achieved 65% precision (13/20 edges resolvable in primary text; 35% were false positives, coincidental co-occurrences, or over-generalized assertions).",
+      "epistemic_rule": "Knowledge graph edges are strictly heuristic navigational aids. They CANNOT serve as proof in EVIDENCE_LEDGER. Every relationship must be traced back to exact PDF page and sentence locations before admission.",
+      "redesign_directives": [
+        "Demarcate graph queries as exploratory leads only",
+        "Automate PDF text extraction and quote grounding prior to ledger registration",
+        "Flag edges lacking direct sentence co-occurrence as UNVERIFIED_GRAPH_HYPOTHESIS"
+      ]
+    },
+    "claim_ledger": {
+      "status": "VALIDATED",
+      "empirical_finding": "Atomic claim decomposition prevents compound claim pollution where an unverified assertion piggybacks on a well-known scientific fact.",
+      "failure_modes_detected": [
+        "Compound assertions combining authentic biosynthesis genes with hallucinated receptor cascades",
+        "Narrative drift between introduction and discussion"
+      ],
+      "redesign_directives": [
+        "Enforce atomic claim formatting (single subject, single predicate, single condition)",
+        "Track lifecycle state: PROPOSED -> EVIDENCE_GATHERED -> CONTRADICTION_CHECKED -> APPROVED",
+        "Block manuscript compilation if any cited claim has status FATAL_CONTRADICTION"
+      ]
+    },
+    "citation_auditor": {
+      "status": "HARDENED_CRITICAL",
+      "empirical_finding": "Plain Gemini exhibited a catastrophic 77.8% citation failure rate across Benchmarks A & B (60% HTTP 404 broken DOIs; 40% wrong-identity DOIs pointing to unrelated Drosophila papers). Furthermore, Plain Gemini missed an official Nature Corrigendum published for Jiang et al. (2013).",
+      "failure_modes_detected": [
+        "HTTP 200 false security (DOI exists in Crossref but belongs to completely wrong organism/paper)",
+        "Silent omission of published retractions, errata, and corrigenda",
+        "Pre-publication manuscript ID hallucination instead of final catalog DOI"
+      ],
+      "redesign_directives": [
+        "Enforce METADATA_MATCH via title/author fuzzy matching against Crossref API responses",
+        "Automate scanning of Crossref 'update-to' array for corrigenda and retractions",
+        "Automate fallback queries against Europe PMC and DataCite when Crossref DOI is missing"
+      ]
+    },
+    "hostile_reviewer": {
+      "status": "VALIDATED",
+      "empirical_finding": "Adversarial review caught fatal methodological errors in the Control arm, including pseudoreplicated ANOVA ignoring cluster variance (ICC = 0.536) and over-generalized causal statements.",
+      "failure_modes_detected": [
+        "Self-congratulatory LLM bias when evaluating own manuscripts",
+        "Failure to inspect degrees of freedom and variance partitioning"
+      ],
+      "redesign_directives": [
+        "Implement strict role-based adversarial prompt with zero prior empathy",
+        "Enforce numeric scoring across all 12 rubric dimensions with penalty multipliers for fatal defects"
+      ]
+    },
+    "quarto_pipeline": {
+      "status": "PRODUCTION_READY",
+      "empirical_finding": "Quarto 1.10 cleanly rendered complex scientific manuscripts containing embedded R/Python calculations, high-resolution figures, LaTeX equations, and BibTeX citations to both HTML and DOCX.",
+      "failure_modes_detected": [
+        "Pandoc silently dropping citations when keys do not exactly match references.bib",
+        "PowerShell UTF-8 BOM encoding breaking Rscript execution"
+      ],
+      "redesign_directives": [
+        "Run Verify-ManuscriptConsistency.py as a mandatory pre-render hook",
+        "Enforce BOM-free UTF-8 file writes across all PowerShell automation scripts"
+      ]
+    },
+    "r_mixed_models": {
+      "status": "HIGH_VALUE_INTEGRATION",
+      "empirical_finding": "In agricultural and biological trials, blocking factors typically explain 30-60% of total variance (ICC = 0.536 in Benchmark C). Plain LLMs default to naive unblocked ANOVA, severely violating independence assumptions.",
+      "failure_modes_detected": [
+        "Type I error inflation due to pseudoreplication",
+        "Underestimation of treatment precision due to unpartitioned block variance"
+      ],
+      "redesign_directives": [
+        "Embed automated ICC calculation in experimental design auditor",
+        "Default to R lme4 + lmerTest + emmeans for any multi-block or longitudinal trial",
+        "Enforce reporting of Satterthwaite degrees of freedom and Tukey HSD contrasts"
+      ]
+    },
+    "bioconductor": {
+      "status": "OPERATIONAL",
+      "empirical_finding": "R 4.6.1 on Windows natively supports DESeq2, limma, edgeR, and GEOquery. In the absence of a working WSL2 Linux aligner stack (ext4.vhdx missing), Bioconductor provides complete downstream RNA-seq differential expression capability.",
+      "failure_modes_detected": [
+        "Laptop memory exhaustion when attempting full-genome alignment in WSL2"
+      ],
+      "redesign_directives": [
+        "Classify raw alignment (STAR/HISAT2) as dataset-dependent / cloud-offloaded",
+        "Standardize count-matrix processing, normalization, and contrast testing in native R/Bioconductor"
+      ]
+    }
+  }
+}

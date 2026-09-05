@@ -1,0 +1,21 @@
+{
+  "arm": "ARM_3_GEMINI_PLUS_AREIL_V02",
+  "benchmark": "BENCHMARK_D",
+  "data_classification": "REAL_PUBLIC_DATA",
+  "manuscript_sha256": "491887A35B3BC140D5ED98910A240EC669FF28D911A1FA772ED6F55E02F26D1F",
+  "tool_calls_allowed": "UNRESTRICTED",
+  "tool_calls_executed": 14,
+  "tools_used": [
+    "R_lme4",
+    "R_lmerTest",
+    "R_emmeans",
+    "Verify-ManuscriptConsistency.py",
+    "Quarto_CLI"
+  ],
+  "execution_time_sec": 56.4,
+  "code_executed": true,
+  "statistical_model": "Split-Plot Linear Mixed Model: lmer(yield ~ Variety * nitro + (1 | Block) + (1 | Block:Variety))",
+  "fatal_statistical_defects": 0,
+  "consistency_defects": 0,
+  "reproducibility_manifest": "E:\\Agriculture\\Antigravity Research\\benchmarks\\certification-v02\\benchmark-D\\arm3_areil\\audits\\reproducibility_manifest.json"
+}

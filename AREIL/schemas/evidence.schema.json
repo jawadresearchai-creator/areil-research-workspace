@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "source_id",
+    "claim_ids",
+    "direction",
+    "verification_status"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "claim_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "direction": {
+      "enum": [
+        "supports",
+        "contradicts",
+        "qualifies",
+        "context"
+      ]
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fact": {
+      "type": "string"
+    },
+    "limitations": {
+      "type": [
+        "string",
+        "array",
+        "null"
+      ]
+    },
+    "verification_status": {
+      "enum": [
+        "unverified",
+        "metadata_only",
+        "abstract_verified",
+        "source_verified",
+        "independently_verified"
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "version": "v0.2.2-bound",
+  "package_name": "AREIL_v0.2.2-bound.zip",
+  "sha256": "2D1D55A02A5F7F64B1B7B3B0EC4D06B0AC86D1410987373332A7977DE3E3E9B9",
+  "certified_at": "2026-09-05T11:58:02.501944+00:00",
+  "certification_status": "CERTIFIED_FOR_RESEARCH_ASSISTANCE",
+  "statistical_pipeline": "8-Stage Holistic Statistical Modeling Pipeline (Universal Shapiro-Wilk gate eliminated)",
+  "regression_tests_passed": [
+    "Test-StatisticalRoutingRule.py",
+    "Test-SessionReconstruction.py",
+    "Validate-AreilLedgers.py",
+    "Verify-ManuscriptConsistency.py",
+    "Audit-Citations.py"
+  ]
+}

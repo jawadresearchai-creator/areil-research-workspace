@@ -1,0 +1,14 @@
+{
+  "arm": "ARM_1_RAW_GEMINI",
+  "benchmark": "BENCHMARK_D",
+  "data_classification": "REAL_PUBLIC_DATA",
+  "manuscript_sha256": "25293CCE69ED916B4842EA60BA73C9DB90EE60A8762DF4D51AD3FF131565097B",
+  "tool_calls_allowed": 0,
+  "tool_calls_executed": 0,
+  "tools_used": [],
+  "execution_time_sec": 9.4,
+  "code_executed": false,
+  "statistical_model": "Narrative Recall / Parametric Mental Arithmetic",
+  "fatal_statistical_defects": 1,
+  "consistency_defects": 2
+}

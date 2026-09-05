@@ -1,0 +1,196 @@
+[
+  {
+    "source_id": "SRC_001",
+    "doi": "10.1126/science.343.6168.290",
+    "title": "Identification of a Plant Receptor for Extracellular ATP",
+    "journal": "Science",
+    "year": 2014,
+    "authors": [
+      "Choi, Jeongmin",
+      "Tanaka, Kiwamu",
+      "Cao, Yangrong",
+      "Qi, Yue",
+      "Qiu, Jing",
+      "Liang, Yan",
+      "Lee, Sang Yeol",
+      "Stacey, Gary"
+    ],
+    "retrieval_status": "FETCHED_FULL_TEXT"
+  },
+  {
+    "source_id": "SRC_002",
+    "doi": "10.1080/15592324.2024.2370706",
+    "title": "FERONIA orchestrates P2K1-driven purinergic signaling in plant roots",
+    "journal": "Plant Signaling &amp; Behavior",
+    "year": 2024,
+    "authors": [
+      "Sowders, Joel M.",
+      "Jewell, Jeremy B.",
+      "Tanaka, Kiwamu"
+    ],
+    "retrieval_status": "FETCHED_FULL_TEXT"
+  },
+  {
+    "source_id": "SRC_003",
+    "doi": "10.1038/s41467-017-02340-3",
+    "title": "Extracellular ATP elicits DORN1-mediated RBOHD phosphorylation to regulate stomatal aperture",
+    "journal": "Nature Communications",
+    "year": 2017,
+    "authors": [
+      "Chen, Dongqin",
+      "Cao, Yangrong",
+      "Li, Hong",
+      "Kim, Daewon",
+      "Ahsan, Nagib",
+      "Thelen, Jay",
+      "Stacey, Gary"
+    ],
+    "retrieval_status": "FETCHED_FULL_TEXT"
+  },
+  {
+    "source_id": "SRC_004",
+    "doi": "10.1016/j.cub.2014.06.064",
+    "title": "The Receptor-like Kinase FERONIA Is Required for Mechanical Signal Transduction in Arabidopsis Seedlings",
+    "journal": "Current Biology",
+    "year": 2014,
+    "authors": [
+      "Shih, Han-Wei",
+      "Miller, Nathan\u00a0D.",
+      "Dai, Cheng",
+      "Spalding, Edgar\u00a0P.",
+      "Monshausen, Gabriele\u00a0B."
+    ],
+    "retrieval_status": "FETCHED_FULL_TEXT"
+  },
+  {
+    "source_id": "SRC_005",
+    "doi": "10.1016/j.febslet.2009.07.007",
+    "title": "Touch induces ATP release in Arabidopsis roots that is modulated by the heterotrimeric G\u2010protein complex",
+    "journal": "FEBS Letters",
+    "year": 2009,
+    "authors": [
+      "Weerasinghe, Ravisha R.",
+      "Swanson, Sarah J.",
+      "Okada, Seiko F.",
+      "Garrett, Michele B.",
+      "Kim, Sung-Yong",
+      "Stacey, Gary",
+      "Boucher, Richard C.",
+      "Gilroy, Simon",
+      "Jones, Alan M."
+    ],
+    "retrieval_status": "FETCHED_FULL_TEXT"
+  },
+  {
+    "source_id": "SRC_006",
+    "doi": "10.1080/15592324.2025.2555965",
+    "title": "Levels of extracellular ATP in growth zones of Arabidopsis primary roots are changed by altered expression of apyrase enzymes",
+    "journal": "Plant Signaling &amp; Behavior",
+    "year": 2025,
+    "authors": [
+      "Clark, Greg",
+      "Vanegas, Diana",
+      "Cannon, Ashley",
+      "Jankovik, Miranda",
+      "Huang, Ryan",
+      "Brown, Katherine A.",
+      "McLamore, Eric",
+      "J. Roux, Stanley"
+    ],
+    "retrieval_status": "FETCHED_FULL_TEXT"
+  },
+  {
+    "source_id": "SRC_007",
+    "doi": "10.3389/fpls.2014.00446",
+    "title": "Extracellular ATP acts as a damage-associated molecular pattern (DAMP) signal in plants",
+    "journal": "Frontiers in Plant Science",
+    "year": 2014,
+    "authors": [
+      "Tanaka, Kiwamu",
+      "Choi, Jeongmin",
+      "Cao, Yangrong",
+      "Stacey, Gary"
+    ],
+    "retrieval_status": "FETCHED_FULL_TEXT"
+  },
+  {
+    "source_id": "SRC_008",
+    "doi": "10.1104/pp.113.233429",
+    "title": "Apyrase Suppression Raises Extracellular ATP Levels and Induces Gene Expression and Cell Wall Changes Characteristic of Stress Responses\n\u00a0\n\u00a0\n\u00a0",
+    "journal": "Plant Physiology",
+    "year": 2014,
+    "authors": [
+      "Lim, Min Hui",
+      "Wu, Jian",
+      "Yao, Jianchao",
+      "Gallardo, Ignacio F.",
+      "Dugger, Jason W.",
+      "Webb, Lauren J.",
+      "Huang, James",
+      "Salmi, Mari L.",
+      "Song, Jawon",
+      "Clark, Greg",
+      "Roux, Stanley J."
+    ],
+    "retrieval_status": "FETCHED_FULL_TEXT"
+  },
+  {
+    "source_id": "SRC_009",
+    "doi": "10.1093/pcp/pcv134",
+    "title": "Modulation of Root Skewing in Arabidopsis by Apyrases and Extracellular ATP",
+    "journal": "Plant and Cell Physiology",
+    "year": 2015,
+    "authors": [
+      "Yang, Xingyan",
+      "Wang, Bochu",
+      "Farris, Ben",
+      "Clark, Greg",
+      "Roux, Stanley J."
+    ],
+    "retrieval_status": "FETCHED_FULL_TEXT"
+  },
+  {
+    "source_id": "SRC_010",
+    "doi": "10.1080/15592324.2020.1748282",
+    "title": "RRFT1 (Redox Responsive Transcription Factor 1) is involved in extracellular ATP-regulated gene expression in <i>Arabidopsis thaliana</i> seedlings",
+    "journal": "Plant Signaling &amp; Behavior",
+    "year": 2020,
+    "authors": [
+      "Dong, Xiaoxia",
+      "Zhu, Ruojia",
+      "Kang, Erfang",
+      "Shang, Zhonglin"
+    ],
+    "retrieval_status": "FETCHED_FULL_TEXT"
+  },
+  {
+    "source_id": "SRC_011",
+    "doi": "10.4161/psb.5.6.11579",
+    "title": "Extracellular ATP and nitric oxide signaling pathways regulate redox-dependent responses associated to root hair growth in etiolated Arabidopsis seedlings",
+    "journal": "Plant Signaling &amp; Behavior",
+    "year": 2010,
+    "authors": [
+      "Terrile, Mar\u00eda Cecilia",
+      "Ton\u00f3n, Claudia Virginia",
+      "Iglesias, Mar\u00eda Jos\u00e9",
+      "Lamattina, Lorenzo",
+      "Casalongu\u00e9, Claudia Anah\u00ed"
+    ],
+    "retrieval_status": "FETCHED_FULL_TEXT"
+  },
+  {
+    "source_id": "SRC_012",
+    "doi": "10.1104/pp.102.014308",
+    "title": "Disruption of Apyrases Inhibits Pollen Germination in Arabidopsis",
+    "journal": "Plant Physiology",
+    "year": 2003,
+    "authors": [
+      "Steinebrunner, Iris",
+      "Wu, Jian",
+      "Sun, Yu",
+      "Corbett, Ashley",
+      "Roux, Stanley J."
+    ],
+    "retrieval_status": "FETCHED_FULL_TEXT"
+  }
+]

@@ -1,0 +1,39 @@
+---
+title: "Mechanistic Coordination Between FERONIA and P2K1 in Extracellular ATP Signaling Under Mechanical Impedance"
+author: "AREIL Research Suite (Treatment Arm)"
+date: "2026-09-05"
+format:
+  docx:
+    toc: false
+    number-sections: true
+  html:
+    toc: true
+    number-sections: true
+bibliography: references.bib
+---
+
+# Abstract
+Extracellular ATP (eATP) operates as a concentration-sensitive apoplastic signal coordinating root growth plasticity. Here we synthesize evidence detailing how physical impedance provokes eATP release, triggering heteromeric perception by the purinergic receptor kinase P2K1 and the cell wall integrity sensor FERONIA. Crucially, evidence reveals that eATP does not act as an unvarying growth inhibitor: root responses follow strict biphasic kinetics where sub-micromolar concentrations promote cell expansion, whereas higher micromolar accumulation induces RBOHD-mediated reactive oxygen species (ROS) bursts and growth arrest.
+
+# Receptor Perception: P2K1 Recognition and FERONIA Scaffolding
+Mechanical contact and impedance deform root cell walls, provoking localized apoplastic eATP release into the elongation zone [@Weerasinghe2025Apyrase]. Direct binding assays demonstrate that eATP binds the extracellular lectin domain of P2K1/DORN1 with high affinity ($K_d = 45.7 \pm 3.1$ nM), provoking autophosphorylation and rapid calcium influx [@Choi2014P2K1].
+
+While FERONIA was originally suspected to harbor autonomous eATP-binding capacity, biochemical evidence shows FERONIA lacks a high-affinity ATP-binding pocket ($K_d > 100$ $\mu$M) [@Chen2024FERONIA]. Instead, FERONIA functions as an indispensable scaffold that physically recruits P2K1 into a receptor kinase complex at the plasma membrane. In *fer-4* loss-of-function mutants, P2K1-dependent downstream phosphorylation of MAPKs is completely abrogated, demonstrating that FERONIA is required for functional purinergic signal transduction [@Chen2024FERONIA].
+
+# ROS Dynamics: RBOHD Phosphorylation and Biphasic Growth Control
+Assembly of the activated P2K1-FERONIA complex stimulates apoplastic ROS generation via direct phosphorylation of the NADPH oxidase RBOHD [@Chen2024FERONIA]. Elevated ROS subsequently drives oxidative cross-linking of structural cell-wall glycoproteins and activates downstream transcription factors such as RRFT1 [@Sun2020RRFT1].
+
+Significantly, contrary to the widespread oversimplification that eATP is strictly an inhibitory damage signal, empirical dosing demonstrates a biphasic response:
+1. Low-level eATP ($0.1 - 1.0$ $\mu$M) stimulates primary root elongation by 18--24% [@Clark2010Biphasic].
+2. High-level eATP ($>10$ $\mu$M), characteristic of severe mechanical impedance, triggers sustained RBOHD ROS accumulation and arrests root expansion [@Clark2010Biphasic; @Weerasinghe2025Apyrase].
+
+Overexpression of apoplastic apyrases (*AtAPY1* and *AtAPY2*) hydrolyzes excess eATP into AMP, rescuing root growth under mechanical constraint and confirming that eATP accumulation governs the growth cessation threshold [@Weerasinghe2025Apyrase].
+
+# Hostile Review & Evidence Summary
+During adversarial hostile review, two major causal risks were identified and resolved:
+- **Disproven Direct Binding:** Claims that FERONIA directly binds ATP were excised based on biochemical $K_d$ measurements [@Chen2024FERONIA].
+- **Calibrated Biphasic Growth:** Claims that eATP exclusively halts root growth were revised to incorporate dose-dependent growth promotion at sub-micromolar levels [@Clark2010Biphasic].
+
+# References
+::: {#refs}
+:::
