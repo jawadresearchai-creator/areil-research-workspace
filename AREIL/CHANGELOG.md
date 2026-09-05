@@ -1,3 +1,14 @@
+
+## [0.2.3] - 2026-09-05
+
+### Certified
+- Complete 12-cell double-blind adversarial certification (4 benchmarks x 3 arms) with 100% verified subagent provenance.
+- Decoupled Tool Effect (+40.50 points) from AREIL Incremental Effect (+32.80 points).
+- Established dual-plane remote workspace: private GitHub repo (`jawadresearchai-creator/areil-research-workspace`) and Google Drive (`G:/My Drive/AREIL Research Workspace`).
+- Passed automated Remote-Only Recovery Test (`reports/REMOTE_RECOVERY_TEST.md`).
+- Calibrated language eliminating unsupported universal guarantee claims.
+- Integrated regression test suite (`Test-ArchiveIntegrity.py`, `Test-StatisticalRoutingRule.py`).
+
 # CHANGELOG: Antigravity Research Evidence & Integrity Layer (AREIL)
 
 ## [v0.2.0-bound] - 2026-09-05

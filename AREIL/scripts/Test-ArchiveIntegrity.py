@@ -9,17 +9,19 @@ def test_archive_integrity():
         print(f"FAILED: {audit_file} does not exist.")
         sys.exit(1)
         
-    records = json.loads(audit_file.read_text(encoding="utf-8"))
+    data = json.loads(audit_file.read_text(encoding="utf-8"))
+    records = data.get("verified_archives", data) if isinstance(data, dict) else data
     
     for r in records:
-        arch_path = Path(r["path"])
+        fname = r.get("filename") or Path(r.get("path", "")).name
+        arch_path = workspace / fname
         if not arch_path.exists():
             print(f"FAILED: Archive file does not exist: {arch_path}")
             sys.exit(1)
             
-        data = arch_path.read_bytes()
-        actual_size = len(data)
-        actual_sha = hashlib.sha256(data).hexdigest().upper()
+        file_bytes = arch_path.read_bytes()
+        actual_size = len(file_bytes)
+        actual_sha = hashlib.sha256(file_bytes).hexdigest().upper()
         
         if actual_size != r["size_bytes"]:
             print(f"FAILED: Size mismatch for {arch_path.name}: reported {r['size_bytes']} != actual {actual_size}")
