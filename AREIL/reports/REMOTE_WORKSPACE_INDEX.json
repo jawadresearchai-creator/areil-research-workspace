@@ -11,7 +11,7 @@
     "repo_name": "areil-research-workspace",
     "visibility": "private",
     "default_branch": "main",
-    "head_commit": "TRACKED_AT_HEAD"
+    "head_commit": "620e871a666135634a7892cfdc8eb01fefda2826"
   },
   "google_drive_workspace": {
     "workspace_name": "AREIL Research Workspace",
