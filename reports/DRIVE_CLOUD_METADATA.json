@@ -1,0 +1,803 @@
+[
+  {
+    "stable_id": 223637,
+    "cloud_id": "1LHFPaLuI-KSnleAHzWaB72jCxKKMmCol",
+    "parent_stable_id": 223635,
+    "title": "00_REMOTE_INDEX",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "00_REMOTE_INDEX"
+  },
+  {
+    "stable_id": 223771,
+    "cloud_id": "1G2sYTjHW8_zwkyA0BshyLb0FA2ReDSvS",
+    "parent_stable_id": 223637,
+    "title": "REMOTE_WORKSPACE_INDEX.json",
+    "is_folder": false,
+    "size": 2664,
+    "rel_path": "00_REMOTE_INDEX/REMOTE_WORKSPACE_INDEX.json"
+  },
+  {
+    "stable_id": 223775,
+    "cloud_id": "1DLEfvZM_c2vRVwrahuGH7tObYUKQfqqK",
+    "parent_stable_id": 223637,
+    "title": "REMOTE_ARTIFACT_REGISTRY.jsonl",
+    "is_folder": false,
+    "size": 16155,
+    "rel_path": "00_REMOTE_INDEX/REMOTE_ARTIFACT_REGISTRY.jsonl"
+  },
+  {
+    "stable_id": 223779,
+    "cloud_id": "1jAwjYOFZinPl8tvStn8-q3YpAJIebi1c",
+    "parent_stable_id": 223637,
+    "title": "README.md",
+    "is_folder": false,
+    "size": 2744,
+    "rel_path": "00_REMOTE_INDEX/README.md"
+  },
+  {
+    "stable_id": 223639,
+    "cloud_id": "1VXiWJazEVHxs2_7poNLp8gpvCKcJzIqo",
+    "parent_stable_id": 223635,
+    "title": "01_DISTRIBUTIONS",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "01_DISTRIBUTIONS"
+  },
+  {
+    "stable_id": 223736,
+    "cloud_id": "1LupqQavK0rJ_-680bagSnuYsLi5k4RrO",
+    "parent_stable_id": 223639,
+    "title": "AREIL_v0.1-research.zip",
+    "is_folder": false,
+    "size": 319683,
+    "rel_path": "01_DISTRIBUTIONS/AREIL_v0.1-research.zip"
+  },
+  {
+    "stable_id": 223738,
+    "cloud_id": "1w3i7wxGtWqpr8PrjHBCfCZX41Ezl4bcf",
+    "parent_stable_id": 223639,
+    "title": "AREIL_v0.2-bound.zip",
+    "is_folder": false,
+    "size": 359245,
+    "rel_path": "01_DISTRIBUTIONS/AREIL_v0.2-bound.zip"
+  },
+  {
+    "stable_id": 223740,
+    "cloud_id": "1kG-TpUMh_TuOEGTxGRRJlZrJgKeL-gHM",
+    "parent_stable_id": 223639,
+    "title": "AREIL_v0.2.1-bound.zip",
+    "is_folder": false,
+    "size": 360054,
+    "rel_path": "01_DISTRIBUTIONS/AREIL_v0.2.1-bound.zip"
+  },
+  {
+    "stable_id": 223742,
+    "cloud_id": "1NqVnZjlmwY8-WR0IHcVpMe0MEuyYhRWM",
+    "parent_stable_id": 223639,
+    "title": "AREIL_v0.2.2-bound.zip",
+    "is_folder": false,
+    "size": 373817,
+    "rel_path": "01_DISTRIBUTIONS/AREIL_v0.2.2-bound.zip"
+  },
+  {
+    "stable_id": 224253,
+    "cloud_id": "1C90gInS_7BlJMJkML210KqVNFytX945G",
+    "parent_stable_id": 223639,
+    "title": "AREIL_v0.2.3-bound.zip",
+    "is_folder": false,
+    "size": 389783,
+    "rel_path": "01_DISTRIBUTIONS/AREIL_v0.2.3-bound.zip"
+  },
+  {
+    "stable_id": 223641,
+    "cloud_id": "15FxdvzlZrd2i0hkMOftwHZQloIYOu6Q1",
+    "parent_stable_id": 223635,
+    "title": "02_PROJECTS",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "02_PROJECTS"
+  },
+  {
+    "stable_id": 223643,
+    "cloud_id": "1VJhV9TvhSUPPTeLHj-7GZJa31ZXsp5EH",
+    "parent_stable_id": 223635,
+    "title": "03_DATASETS",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "03_DATASETS"
+  },
+  {
+    "stable_id": 223744,
+    "cloud_id": "1aOr3bp1Nbs8mHpZkZt0A8v1OITNLLsbi",
+    "parent_stable_id": 223643,
+    "title": "root_growth_trial_data.csv",
+    "is_folder": false,
+    "size": 3135,
+    "rel_path": "03_DATASETS/root_growth_trial_data.csv"
+  },
+  {
+    "stable_id": 223746,
+    "cloud_id": "1exCyHq48yzGjrC6H8NfIm6F3O9Sl9gEh",
+    "parent_stable_id": 223643,
+    "title": "yates_oats_1935_trial.csv",
+    "is_folder": false,
+    "size": 1850,
+    "rel_path": "03_DATASETS/yates_oats_1935_trial.csv"
+  },
+  {
+    "stable_id": 223645,
+    "cloud_id": "1JXXnv-2L_519dKe6C4ywBADNoRhRBVpN",
+    "parent_stable_id": 223635,
+    "title": "04_CORPORA",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "04_CORPORA"
+  },
+  {
+    "stable_id": 223647,
+    "cloud_id": "1PK5wP4RrFS3e3OtkXttqHagWDE3HSQBM",
+    "parent_stable_id": 223635,
+    "title": "05_ANALYSIS_OUTPUTS",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "05_ANALYSIS_OUTPUTS"
+  },
+  {
+    "stable_id": 223649,
+    "cloud_id": "1sW1juQ6DMEDk9OXiOTCeP97rUTeIipnb",
+    "parent_stable_id": 223635,
+    "title": "06_FIGURES",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "06_FIGURES"
+  },
+  {
+    "stable_id": 223651,
+    "cloud_id": "1P_ZTFuqFKuhfiKSnNxVaXau-0ky0HFZq",
+    "parent_stable_id": 223635,
+    "title": "07_TABLES",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "07_TABLES"
+  },
+  {
+    "stable_id": 223653,
+    "cloud_id": "10bT_accC6P-AQ4vFqGEQgcG8q6rsoCvx",
+    "parent_stable_id": 223635,
+    "title": "08_MANUSCRIPTS",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "08_MANUSCRIPTS"
+  },
+  {
+    "stable_id": 224129,
+    "cloud_id": "1kBr1q_HZqRmPukUr4rpnxXK1Aneq8Eo-",
+    "parent_stable_id": 223653,
+    "title": "benchmark-A",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "08_MANUSCRIPTS/benchmark-A"
+  },
+  {
+    "stable_id": 224131,
+    "cloud_id": "1ONss_dGzcemUzdVRTvxlzclIaOo9aSTA",
+    "parent_stable_id": 224129,
+    "title": "raw_model_output.md",
+    "is_folder": false,
+    "size": 29464,
+    "rel_path": "08_MANUSCRIPTS/benchmark-A/raw_model_output.md"
+  },
+  {
+    "stable_id": 224133,
+    "cloud_id": "142LX_Twp6-Qz6ahiK3DCiHMv9GCIuWA1",
+    "parent_stable_id": 224129,
+    "title": "figures",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "08_MANUSCRIPTS/benchmark-A/figures"
+  },
+  {
+    "stable_id": 224135,
+    "cloud_id": "1djZ-V0g0tzO-DJoARyI4qFB753HcBdHK",
+    "parent_stable_id": 224133,
+    "title": "figure1_root_impedance_interaction.png",
+    "is_folder": false,
+    "size": 51866,
+    "rel_path": "08_MANUSCRIPTS/benchmark-A/figures/figure1_root_impedance_interaction.png"
+  },
+  {
+    "stable_id": 224137,
+    "cloud_id": "1YTQ6vXMTCKaKiHbjdXVfykGbjcMY6E3m",
+    "parent_stable_id": 224133,
+    "title": "figure2_model_diagnostics.png",
+    "is_folder": false,
+    "size": 52593,
+    "rel_path": "08_MANUSCRIPTS/benchmark-A/figures/figure2_model_diagnostics.png"
+  },
+  {
+    "stable_id": 224139,
+    "cloud_id": "1yObWVF8QvB3vTtrRQe5JwlJHr_FlWYIc",
+    "parent_stable_id": 224129,
+    "title": "manuscript",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "08_MANUSCRIPTS/benchmark-A/manuscript"
+  },
+  {
+    "stable_id": 224141,
+    "cloud_id": "11E-Ze1oU4A2ocUUIbaxb1-gwypAk2pw7",
+    "parent_stable_id": 224139,
+    "title": "manuscript.docx",
+    "is_folder": false,
+    "size": 116723,
+    "rel_path": "08_MANUSCRIPTS/benchmark-A/manuscript/manuscript.docx"
+  },
+  {
+    "stable_id": 224143,
+    "cloud_id": "1a4w_OuevbyNjagNln5bfKI7PZ8heGC9g",
+    "parent_stable_id": 224139,
+    "title": "manuscript.html",
+    "is_folder": false,
+    "size": 66923,
+    "rel_path": "08_MANUSCRIPTS/benchmark-A/manuscript/manuscript.html"
+  },
+  {
+    "stable_id": 224145,
+    "cloud_id": "1tif70RxUrssccykyrjx1KqICtTpcAQkq",
+    "parent_stable_id": 224139,
+    "title": "manuscript.qmd",
+    "is_folder": false,
+    "size": 22361,
+    "rel_path": "08_MANUSCRIPTS/benchmark-A/manuscript/manuscript.qmd"
+  },
+  {
+    "stable_id": 224147,
+    "cloud_id": "1WElXKS0JduS7WeV3CRM6OFDKJbYEcy_3",
+    "parent_stable_id": 224139,
+    "title": "figures",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "08_MANUSCRIPTS/benchmark-A/manuscript/figures"
+  },
+  {
+    "stable_id": 224149,
+    "cloud_id": "1rJ6JzA3gow9Xg1VjrkLrwXGCZcFG0buq",
+    "parent_stable_id": 224147,
+    "title": "figure1_root_impedance_interaction.png",
+    "is_folder": false,
+    "size": 51866,
+    "rel_path": "08_MANUSCRIPTS/benchmark-A/manuscript/figures/figure1_root_impedance_interaction.png"
+  },
+  {
+    "stable_id": 224151,
+    "cloud_id": "1offBuTeyf_Cz336m34lkLyEeOKeiIqp7",
+    "parent_stable_id": 224147,
+    "title": "figure2_model_diagnostics.png",
+    "is_folder": false,
+    "size": 52593,
+    "rel_path": "08_MANUSCRIPTS/benchmark-A/manuscript/figures/figure2_model_diagnostics.png"
+  },
+  {
+    "stable_id": 224153,
+    "cloud_id": "176Li6HCdY4MH4YYY-GYr--pLlmI6iycC",
+    "parent_stable_id": 223653,
+    "title": "benchmark-B",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "08_MANUSCRIPTS/benchmark-B"
+  },
+  {
+    "stable_id": 224155,
+    "cloud_id": "12gGYDVWTAyuda4GTPGZ4XXToaF3bv0Y_",
+    "parent_stable_id": 224153,
+    "title": "manuscript.md",
+    "is_folder": false,
+    "size": 34618,
+    "rel_path": "08_MANUSCRIPTS/benchmark-B/manuscript.md"
+  },
+  {
+    "stable_id": 224157,
+    "cloud_id": "1K-sCsfXHDthwCVevt_-4cn4uPzhpj9ng",
+    "parent_stable_id": 224153,
+    "title": "raw_model_output.md",
+    "is_folder": false,
+    "size": 42177,
+    "rel_path": "08_MANUSCRIPTS/benchmark-B/raw_model_output.md"
+  },
+  {
+    "stable_id": 224159,
+    "cloud_id": "1EeMCjokGKHNjCZNqvVyN_1ZRwETWmt_v",
+    "parent_stable_id": 224153,
+    "title": "figures",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "08_MANUSCRIPTS/benchmark-B/figures"
+  },
+  {
+    "stable_id": 224161,
+    "cloud_id": "1vZE_enVw86NujsDx_Z_-XqrA0vqIvYvR",
+    "parent_stable_id": 224159,
+    "title": "figure1_root_hair_epistasis_interaction.png",
+    "is_folder": false,
+    "size": 59571,
+    "rel_path": "08_MANUSCRIPTS/benchmark-B/figures/figure1_root_hair_epistasis_interaction.png"
+  },
+  {
+    "stable_id": 224163,
+    "cloud_id": "1fT8JQK51UWOo8A6QQ-29NnMpUVAyYik_",
+    "parent_stable_id": 224159,
+    "title": "figure2_primary_root_and_crown_roots.png",
+    "is_folder": false,
+    "size": 69059,
+    "rel_path": "08_MANUSCRIPTS/benchmark-B/figures/figure2_primary_root_and_crown_roots.png"
+  },
+  {
+    "stable_id": 224165,
+    "cloud_id": "1-ZRHPrTqCxEzQDIpV1WL4gqu5XFLoxKm",
+    "parent_stable_id": 224159,
+    "title": "figure3_model_diagnostics.png",
+    "is_folder": false,
+    "size": 73292,
+    "rel_path": "08_MANUSCRIPTS/benchmark-B/figures/figure3_model_diagnostics.png"
+  },
+  {
+    "stable_id": 224167,
+    "cloud_id": "16zd3W5MzVx2bUvKcuE2HgqkhE5QsOhw0",
+    "parent_stable_id": 224153,
+    "title": "manuscript",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "08_MANUSCRIPTS/benchmark-B/manuscript"
+  },
+  {
+    "stable_id": 224169,
+    "cloud_id": "1n4FKvufDO8uQbba_juLHJp58hfisOnwd",
+    "parent_stable_id": 224167,
+    "title": "manuscript.docx",
+    "is_folder": false,
+    "size": 187330,
+    "rel_path": "08_MANUSCRIPTS/benchmark-B/manuscript/manuscript.docx"
+  },
+  {
+    "stable_id": 224171,
+    "cloud_id": "1veIyerj7QwbT5pGL5oxGgpl3GSfL69DA",
+    "parent_stable_id": 224167,
+    "title": "manuscript.html",
+    "is_folder": false,
+    "size": 84259,
+    "rel_path": "08_MANUSCRIPTS/benchmark-B/manuscript/manuscript.html"
+  },
+  {
+    "stable_id": 224173,
+    "cloud_id": "1Xbd-wvaWOs91ZZz01dtpIpgt0FmDZN9d",
+    "parent_stable_id": 224167,
+    "title": "manuscript.qmd",
+    "is_folder": false,
+    "size": 29000,
+    "rel_path": "08_MANUSCRIPTS/benchmark-B/manuscript/manuscript.qmd"
+  },
+  {
+    "stable_id": 224175,
+    "cloud_id": "1cjc_Y5TWCYKSLQj4uaUthUTFfaPfkkaY",
+    "parent_stable_id": 224167,
+    "title": "figures",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "08_MANUSCRIPTS/benchmark-B/manuscript/figures"
+  },
+  {
+    "stable_id": 224177,
+    "cloud_id": "1MXQMrVctgU7Gm_RKlYXTNSyLr3Nln_ag",
+    "parent_stable_id": 224175,
+    "title": "figure1_root_hair_epistasis_interaction.png",
+    "is_folder": false,
+    "size": 59571,
+    "rel_path": "08_MANUSCRIPTS/benchmark-B/manuscript/figures/figure1_root_hair_epistasis_interaction.png"
+  },
+  {
+    "stable_id": 224179,
+    "cloud_id": "1BatznDEq-Oe8b6ZCUJ6zQnpn6JGMvEDD",
+    "parent_stable_id": 224175,
+    "title": "figure2_primary_root_and_crown_roots.png",
+    "is_folder": false,
+    "size": 69059,
+    "rel_path": "08_MANUSCRIPTS/benchmark-B/manuscript/figures/figure2_primary_root_and_crown_roots.png"
+  },
+  {
+    "stable_id": 224181,
+    "cloud_id": "14W-XOdVkWU-aqJYsYyJe2pZLYdKKxWmL",
+    "parent_stable_id": 224175,
+    "title": "figure3_model_diagnostics.png",
+    "is_folder": false,
+    "size": 73292,
+    "rel_path": "08_MANUSCRIPTS/benchmark-B/manuscript/figures/figure3_model_diagnostics.png"
+  },
+  {
+    "stable_id": 224183,
+    "cloud_id": "17hXgRdIRLdVG6GoLaEwOgohxmQNSw5h-",
+    "parent_stable_id": 223653,
+    "title": "benchmark-C",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "08_MANUSCRIPTS/benchmark-C"
+  },
+  {
+    "stable_id": 224185,
+    "cloud_id": "1Pj6egx1EB875ZmMsJfrPxRrrz25FX8d5",
+    "parent_stable_id": 224183,
+    "title": "raw_model_output.md",
+    "is_folder": false,
+    "size": 34269,
+    "rel_path": "08_MANUSCRIPTS/benchmark-C/raw_model_output.md"
+  },
+  {
+    "stable_id": 224187,
+    "cloud_id": "1fDtIjlB1yj4GiVObSSfubB1YbR0P8U50",
+    "parent_stable_id": 224183,
+    "title": "figures",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "08_MANUSCRIPTS/benchmark-C/figures"
+  },
+  {
+    "stable_id": 224189,
+    "cloud_id": "18Jfi6gOSEqDHYOzvt1Y26kuP-0fkhHRw",
+    "parent_stable_id": 224187,
+    "title": "figure1_lme_contrasts.png",
+    "is_folder": false,
+    "size": 65364,
+    "rel_path": "08_MANUSCRIPTS/benchmark-C/figures/figure1_lme_contrasts.png"
+  },
+  {
+    "stable_id": 224191,
+    "cloud_id": "1UE6XFHhhbm6IrWr1UhzWHXGwjVURaQwp",
+    "parent_stable_id": 224187,
+    "title": "figure2_diagnostics.png",
+    "is_folder": false,
+    "size": 78051,
+    "rel_path": "08_MANUSCRIPTS/benchmark-C/figures/figure2_diagnostics.png"
+  },
+  {
+    "stable_id": 224193,
+    "cloud_id": "1TofgcihLTfNfKsGyprK73Xa4SrjDgJ3g",
+    "parent_stable_id": 224183,
+    "title": "manuscript",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "08_MANUSCRIPTS/benchmark-C/manuscript"
+  },
+  {
+    "stable_id": 224195,
+    "cloud_id": "13Rolt6K-vBcCAcKFy4u0mfmV5MNJ-2mF",
+    "parent_stable_id": 224193,
+    "title": "manuscript.docx",
+    "is_folder": false,
+    "size": 148014,
+    "rel_path": "08_MANUSCRIPTS/benchmark-C/manuscript/manuscript.docx"
+  },
+  {
+    "stable_id": 224197,
+    "cloud_id": "1gPJumpzNlu1LSGEULmpXCHW4KJ_feFI6",
+    "parent_stable_id": 224193,
+    "title": "manuscript.html",
+    "is_folder": false,
+    "size": 73168,
+    "rel_path": "08_MANUSCRIPTS/benchmark-C/manuscript/manuscript.html"
+  },
+  {
+    "stable_id": 224199,
+    "cloud_id": "1b-z1DvosKmUI4xGYWeZ_JAL_kLfsYZiL",
+    "parent_stable_id": 224193,
+    "title": "manuscript.md",
+    "is_folder": false,
+    "size": 29192,
+    "rel_path": "08_MANUSCRIPTS/benchmark-C/manuscript/manuscript.md"
+  },
+  {
+    "stable_id": 224201,
+    "cloud_id": "18GZI_IwUXFsmrbuuoiJ43X-dwogew6xb",
+    "parent_stable_id": 224193,
+    "title": "manuscript.qmd",
+    "is_folder": false,
+    "size": 28090,
+    "rel_path": "08_MANUSCRIPTS/benchmark-C/manuscript/manuscript.qmd"
+  },
+  {
+    "stable_id": 224203,
+    "cloud_id": "1pRD6_749MKvctK3hroo3xiqfgmLVQJiO",
+    "parent_stable_id": 223653,
+    "title": "benchmark-D",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "08_MANUSCRIPTS/benchmark-D"
+  },
+  {
+    "stable_id": 224205,
+    "cloud_id": "1V_J80Ahopz3i_rp7tFeytjN_BXC33p-B",
+    "parent_stable_id": 224203,
+    "title": "raw_model_output.md",
+    "is_folder": false,
+    "size": 4793,
+    "rel_path": "08_MANUSCRIPTS/benchmark-D/raw_model_output.md"
+  },
+  {
+    "stable_id": 224207,
+    "cloud_id": "1oV1EvgfFgvEoCqORf89C0yG5Nhk8KcAF",
+    "parent_stable_id": 224203,
+    "title": "manuscript",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "08_MANUSCRIPTS/benchmark-D/manuscript"
+  },
+  {
+    "stable_id": 224209,
+    "cloud_id": "15LEZvTNPFZKW7hrgbQIO9dA54zt0moCE",
+    "parent_stable_id": 224207,
+    "title": "manuscript.docx",
+    "is_folder": false,
+    "size": 15010,
+    "rel_path": "08_MANUSCRIPTS/benchmark-D/manuscript/manuscript.docx"
+  },
+  {
+    "stable_id": 224211,
+    "cloud_id": "1112ZwXjUsqa4Yd8_rdyURJE4pTKvp1Bf",
+    "parent_stable_id": 224207,
+    "title": "manuscript.html",
+    "is_folder": false,
+    "size": 30841,
+    "rel_path": "08_MANUSCRIPTS/benchmark-D/manuscript/manuscript.html"
+  },
+  {
+    "stable_id": 224213,
+    "cloud_id": "1xvBbvJobxlZBFc8vCEXl0ptbVD3DuSQE",
+    "parent_stable_id": 224207,
+    "title": "manuscript.qmd",
+    "is_folder": false,
+    "size": 4793,
+    "rel_path": "08_MANUSCRIPTS/benchmark-D/manuscript/manuscript.qmd"
+  },
+  {
+    "stable_id": 223655,
+    "cloud_id": "15YDGRAagCZO7tQdoAZNLfrRB3DikzwaF",
+    "parent_stable_id": 223635,
+    "title": "09_BENCHMARKS",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "09_BENCHMARKS"
+  },
+  {
+    "stable_id": 224223,
+    "cloud_id": "1ObN9uVzynX96aPTZ47WBl3eoadhvPgSC",
+    "parent_stable_id": 223655,
+    "title": "certification-v02",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "09_BENCHMARKS/certification-v02"
+  },
+  {
+    "stable_id": 224225,
+    "cloud_id": "1NLVxBadbRmpRTgOw4_Ovii4g5fJrZ9MF",
+    "parent_stable_id": 224223,
+    "title": "BENCHMARK_PROVENANCE_AUDIT.yaml",
+    "is_folder": false,
+    "size": 8300,
+    "rel_path": "09_BENCHMARKS/certification-v02/BENCHMARK_PROVENANCE_AUDIT.yaml"
+  },
+  {
+    "stable_id": 224227,
+    "cloud_id": "1v7OvKh9rvFLyasixHS75Nd_W4VEeQttV",
+    "parent_stable_id": 224223,
+    "title": "BLINDED_EVALUATION_RAW.md",
+    "is_folder": false,
+    "size": 4706,
+    "rel_path": "09_BENCHMARKS/certification-v02/BLINDED_EVALUATION_RAW.md"
+  },
+  {
+    "stable_id": 224229,
+    "cloud_id": "1wvNPPu8PfnB0ldocOh1JLe5K3agVbhW3",
+    "parent_stable_id": 224223,
+    "title": "BLINDED_EVALUATION_SCORES.json",
+    "is_folder": false,
+    "size": 7747,
+    "rel_path": "09_BENCHMARKS/certification-v02/BLINDED_EVALUATION_SCORES.json"
+  },
+  {
+    "stable_id": 224231,
+    "cloud_id": "1ru3rVs5vOQ8Q87p4Muob7B-FhZSm_Ph9",
+    "parent_stable_id": 224223,
+    "title": "BLINDED_EVALUATION_SUMMARY.json",
+    "is_folder": false,
+    "size": 1169,
+    "rel_path": "09_BENCHMARKS/certification-v02/BLINDED_EVALUATION_SUMMARY.json"
+  },
+  {
+    "stable_id": 224233,
+    "cloud_id": "1XpkGo_7QvCinw6Xu27_X2YLF2uRvCIRt",
+    "parent_stable_id": 224223,
+    "title": "BLINDING_MAP.json",
+    "is_folder": false,
+    "size": 3398,
+    "rel_path": "09_BENCHMARKS/certification-v02/BLINDING_MAP.json"
+  },
+  {
+    "stable_id": 224235,
+    "cloud_id": "1k2LbNXgiyrfXrl2L4bxm0YmgsFRyEYyi",
+    "parent_stable_id": 224223,
+    "title": "CERTIFICATION_RUBRIC.yaml",
+    "is_folder": false,
+    "size": 5416,
+    "rel_path": "09_BENCHMARKS/certification-v02/CERTIFICATION_RUBRIC.yaml"
+  },
+  {
+    "stable_id": 224237,
+    "cloud_id": "1DwqFThSm8ga-8IuxkArJmvFOdkgX7CYZ",
+    "parent_stable_id": 224223,
+    "title": "CHECKPOINT_STATE.yaml",
+    "is_folder": false,
+    "size": 4920,
+    "rel_path": "09_BENCHMARKS/certification-v02/CHECKPOINT_STATE.yaml"
+  },
+  {
+    "stable_id": 224239,
+    "cloud_id": "1cFA7RiSY-n8uBm7XFJNxlyq9GMNyq80T",
+    "parent_stable_id": 224223,
+    "title": "CITATION_SUPPORT_VERIFICATION.json",
+    "is_folder": false,
+    "size": 14850,
+    "rel_path": "09_BENCHMARKS/certification-v02/CITATION_SUPPORT_VERIFICATION.json"
+  },
+  {
+    "stable_id": 223657,
+    "cloud_id": "16TtIjVFsp8bdW2Qx256EYYdfadDa4CTF",
+    "parent_stable_id": 223635,
+    "title": "10_AUDITS",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "10_AUDITS"
+  },
+  {
+    "stable_id": 223659,
+    "cloud_id": "1EKMrBeInDfFvPP3jCuY6UmUJvvfSDGHp",
+    "parent_stable_id": 223635,
+    "title": "11_REPORTS",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "11_REPORTS"
+  },
+  {
+    "stable_id": 223748,
+    "cloud_id": "17OCvaEhysb56kVlc3AGrJjtrofo6UwbG",
+    "parent_stable_id": 223659,
+    "title": "ARCHIVE_INTEGRITY_AUDIT.json",
+    "is_folder": false,
+    "size": 1531,
+    "rel_path": "11_REPORTS/ARCHIVE_INTEGRITY_AUDIT.json"
+  },
+  {
+    "stable_id": 223750,
+    "cloud_id": "1Vf0pZJrNfC4pYjCORqcIqb2_cuYjH-Ne",
+    "parent_stable_id": 223659,
+    "title": "BENCHMARK_PROVENANCE_AUDIT.yaml",
+    "is_folder": false,
+    "size": 8300,
+    "rel_path": "11_REPORTS/BENCHMARK_PROVENANCE_AUDIT.yaml"
+  },
+  {
+    "stable_id": 223752,
+    "cloud_id": "1GyOg2HBJAzdrLC1wSXlW5Pz3E6Px4Pkl",
+    "parent_stable_id": 223659,
+    "title": "FINAL_PROVENANCE_CERTIFICATION_REPORT.md",
+    "is_folder": false,
+    "size": 10826,
+    "rel_path": "11_REPORTS/FINAL_PROVENANCE_CERTIFICATION_REPORT.md"
+  },
+  {
+    "stable_id": 223754,
+    "cloud_id": "1jlWwht3KN4Q9nsYpzczIZiMKHg51OPS3",
+    "parent_stable_id": 223659,
+    "title": "REAL_FRESH_SESSION_GEMINI_TEST.md",
+    "is_folder": false,
+    "size": 8283,
+    "rel_path": "11_REPORTS/REAL_FRESH_SESSION_GEMINI_TEST.md"
+  },
+  {
+    "stable_id": 223756,
+    "cloud_id": "1E5cM1xqaULDGgbF0sLzpXoiVKDfNz3kG",
+    "parent_stable_id": 223659,
+    "title": "STATISTICAL_ROUTING_SPECIFICATION.md",
+    "is_folder": false,
+    "size": 6613,
+    "rel_path": "11_REPORTS/STATISTICAL_ROUTING_SPECIFICATION.md"
+  },
+  {
+    "stable_id": 224215,
+    "cloud_id": "1TNIe75VdmzMxEQ6miA5Hv7dLa1Ig4uNb",
+    "parent_stable_id": 223659,
+    "title": "BLINDED_EVALUATION_RAW.md",
+    "is_folder": false,
+    "size": 4706,
+    "rel_path": "11_REPORTS/BLINDED_EVALUATION_RAW.md"
+  },
+  {
+    "stable_id": 224217,
+    "cloud_id": "1UGtNM-MRCqlww5ek46iCNqKfHP5hdAR3",
+    "parent_stable_id": 223659,
+    "title": "BLINDED_EVALUATION_SCORES.json",
+    "is_folder": false,
+    "size": 7747,
+    "rel_path": "11_REPORTS/BLINDED_EVALUATION_SCORES.json"
+  },
+  {
+    "stable_id": 224219,
+    "cloud_id": "1ES5xYAd0QoK9pn53nX9hc-bhW92EdV6U",
+    "parent_stable_id": 223659,
+    "title": "BLINDED_EVALUATION_SUMMARY.json",
+    "is_folder": false,
+    "size": 1169,
+    "rel_path": "11_REPORTS/BLINDED_EVALUATION_SUMMARY.json"
+  },
+  {
+    "stable_id": 224221,
+    "cloud_id": "1SxcGS31Icu0Gqiyil5QdneK0VeKipVJ_",
+    "parent_stable_id": 223659,
+    "title": "BLINDING_MAP.json",
+    "is_folder": false,
+    "size": 3398,
+    "rel_path": "11_REPORTS/BLINDING_MAP.json"
+  },
+  {
+    "stable_id": 224247,
+    "cloud_id": "1wRzMXbqKcfbdLRx_wjDPVqCOPsG8aD2m",
+    "parent_stable_id": 223659,
+    "title": "REMOTE_RECOVERY_TEST.md",
+    "is_folder": false,
+    "size": 3279,
+    "rel_path": "11_REPORTS/REMOTE_RECOVERY_TEST.md"
+  },
+  {
+    "stable_id": 224261,
+    "cloud_id": "18-KU1GjrZRDg6fel_tzfP32EY7qnQPA8",
+    "parent_stable_id": 223659,
+    "title": "FINAL_CERTIFICATION_REPORT.md",
+    "is_folder": false,
+    "size": 12774,
+    "rel_path": "11_REPORTS/FINAL_CERTIFICATION_REPORT.md"
+  },
+  {
+    "stable_id": 223661,
+    "cloud_id": "1SeLgI7D4uZnQFYwSgR7mzYOrp2SXGgTt",
+    "parent_stable_id": 223635,
+    "title": "12_HANDOFFS",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "12_HANDOFFS"
+  },
+  {
+    "stable_id": 223758,
+    "cloud_id": "1xSk6L6KxwlEQuj7bZZtfeHYAaR85zOlG",
+    "parent_stable_id": 223661,
+    "title": "RESUME_HANDOFF.md",
+    "is_folder": false,
+    "size": 5660,
+    "rel_path": "12_HANDOFFS/RESUME_HANDOFF.md"
+  },
+  {
+    "stable_id": 223760,
+    "cloud_id": "1bEjiS4T7aVLU-YlpZKA-CA7eio8jwsyy",
+    "parent_stable_id": 223661,
+    "title": "FINAL_PROVENANCE_CERTIFICATION_REPORT.md",
+    "is_folder": false,
+    "size": 10826,
+    "rel_path": "12_HANDOFFS/FINAL_PROVENANCE_CERTIFICATION_REPORT.md"
+  },
+  {
+    "stable_id": 223663,
+    "cloud_id": "1uxmEcl17tRTIWF9aiwIh9CGUmh-8T83I",
+    "parent_stable_id": 223635,
+    "title": "99_ARCHIVE",
+    "is_folder": true,
+    "size": 0,
+    "rel_path": "99_ARCHIVE"
+  }
+]

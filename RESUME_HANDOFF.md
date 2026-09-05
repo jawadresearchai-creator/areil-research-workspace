@@ -1,70 +1,56 @@
-# RESUME HANDOFF: AREIL v0.2.1 FINAL EXECUTION-PROVENANCE CERTIFICATION
+# RESUME HANDOFF: AREIL v0.2.3 CERTIFIED STATE
 
-**Date & Time:** 2026-09-05T11:50:45.551707+00:00  
-**Status:** CHECKPOINTED FOR RESUME  
-**Parent Conversation ID:** `77ed7026-a6d0-4a62-9c79-9413a6d5ef7e`  
-**Workspace Root:** `E:\Agriculture\Antigravity Research\`  
+**AREIL v0.2.3 IS CERTIFIED AND FRAMEWORK CERTIFICATION IS COMPLETE.**
 
----
-
-## 1. Executive Summary of Current State
-
-All components required for the final hostile certification of AREIL v0.2.1 have been audited, corrected, and set into verifiable model execution:
-
-1. **Audit of Benchmark Provenance (Complete):**
-   - The forensic audit of the previous 12 cells was performed and documented in `E:\Agriculture\Antigravity Research\benchmarks\certification-v02\BENCHMARK_PROVENANCE_AUDIT.yaml`.
-   - Exactly 6 cells were identified as script-constructed and dispatched to genuine, independent Gemini 3.8 Flash High subagents.
-2. **Real Fresh-Session Gemini Test (Complete & Verified):**
-   - An isolated Gemini session (`conversationId`: `372bcd71-c940-4015-813d-3724181a3ca4`) with zero prior memory evaluated persistent project files.
-   - Answered all 10 operational questions with 100% precision, citing exact files, keys, and values.
-   - Full report: `E:\Agriculture\Antigravity Research\certification\fresh-install\AREIL\reports\REAL_FRESH_SESSION_GEMINI_TEST.md`.
-3. **Statistical Routing Specification & Regression Test (Complete & Verified):**
-   - Authored `E:\Agriculture\Antigravity Research\AREIL\schemas\STATISTICAL_ROUTING_SPECIFICATION.md` establishing the 8-stage holistic statistical modeling pipeline.
-   - Completely struck universal Shapiro-Wilk LMM / GLMM rules.
-   - Verified via `E:\Agriculture\Antigravity Research\AREIL\scripts\Test-StatisticalRoutingRule.py` (`REGRESSION TEST PASSED`).
-4. **Data Provenance & Yates 1935 Dataset (Complete):**
-   - Classified `root_growth_trial_data.csv` as `SIMULATED_BENCHMARK_DATA`.
-   - Exported Yates (1935) split-plot trial (`yates_oats_1935_trial.csv`, SHA-256: `CEAA6707576A739ADA4B201F28EC335F733C7A6943470163990175166CE389A2`) as `REAL_PUBLIC_DATA`.
+**Date & Time:** 2026-09-05 13:12:22 UTC  
+**Framework Status:** `CERTIFIED_FOR_RESEARCH_ASSISTANCE`  
+**Certified Distribution:** `AREIL_v0.2.3-bound.zip` (389,783 bytes | SHA-256: `D293BD31A4E4175B94E6216275C033B2E8F20A57B9E04622F67ABB659F80206C`)  
+**Current Phase:** `REAL_RESEARCH_USE`  
+**Framework Development:** `FROZEN_PENDING_REAL_WORLD_FEEDBACK`  
 
 ---
 
-## 2. Active Subagent Registry and Progress
+## Instructions for Future AI Research Sessions (ChatGPT / Gemini)
 
-| Subagent ID | Role / Arm | Benchmark | Status | Log URI / Transcript |
-| :--- | :--- | :--- | :--- | :--- |
-| `eeddacc5-7dad-44a0-8e24-ea0c72b0e0c6` | ARM 1 (Raw Gemini) | Benchmark D (Yates) | **COMPLETED & SAVED** | `file:///C:/Users/ThinkPad/.gemini/antigravity/brain/eeddacc5-7dad-44a0-8e24-ea0c72b0e0c6/.system_generated/logs/transcript.jsonl` |
-| `87d5c727-a98e-4ca5-8c1d-9c60e7b16455` | ARM 2 (Tool-Equipped) | Benchmark A (eATP/FERONIA) | RUNNING | `file:///C:/Users/ThinkPad/.gemini/antigravity/brain/87d5c727-a98e-4ca5-8c1d-9c60e7b16455/.system_generated/logs/transcript.jsonl` |
-| `daef5b17-6df1-40a7-8676-e85c07990ced` | ARM 2 (Tool-Equipped) | Benchmark B (Strigolactones) | RUNNING | `file:///C:/Users/ThinkPad/.gemini/antigravity/brain/daef5b17-6df1-40a7-8676-e85c07990ced/.system_generated/logs/transcript.jsonl` |
-| `c18975fe-e859-47db-b68d-fe37570dee43` | ARM 2 (Tool-Equipped) | Benchmark C (Root Growth) | RUNNING | `file:///C:/Users/ThinkPad/.gemini/antigravity/brain/c18975fe-e859-47db-b68d-fe37570dee43/.system_generated/logs/transcript.jsonl` |
-| `97fcfb01-715a-4fc5-b15c-45fe61459521` | ARM 2 (Tool-Equipped) | Benchmark D (Yates) | RUNNING | `file:///C:/Users/ThinkPad/.gemini/antigravity/brain/97fcfb01-715a-4fc5-b15c-45fe61459521/.system_generated/logs/transcript.jsonl` |
-| `3f9807e3-e28a-47ac-bf4a-18f7d8db5d95` | ARM 3 (AREIL Gemini) | Benchmark D (Yates) | RUNNING | `file:///C:/Users/ThinkPad/.gemini/antigravity/brain/3f9807e3-e28a-47ac-bf4a-18f7d8db5d95/.system_generated/logs/transcript.jsonl` |
+Do **NOT**:
+- check old benchmark subagents;
+- attempt to finish v0.2.1 or v0.2.2 certification;
+- rerun completed benchmarks (A, B, C, D are 100% complete and certified);
+- rebuild tools, re-install R/Quarto/Zotero, or rerun Graphify.
 
-*Note: All subagent transcripts are persistently saved on disk under `C:\Users\ThinkPad\.gemini\antigravity\brain\<conversationId>\` and survive process interruption.*
+Instead, proceed with real-world research using this exact sequence:
+1. **Read Current GitHub HEAD:** Query the latest commits on branch `main` of `https://github.com/jawadresearchai-creator/areil-research-workspace`.
+2. **Read Canonical Handoff:** Inspect `AREIL/research/HANDOFF.yaml` and `LATEST_HANDOFF.yaml` for system status and configuration pointers.
+3. **Read Remote Workspace Index:** Inspect `00_REMOTE_INDEX/REMOTE_WORKSPACE_INDEX.json` and `REMOTE_ARTIFACT_REGISTRY.jsonl` on Google Drive (`G:/My Drive/AREIL Research Workspace` or cloud ID `1bnltIQ2iGslIHbgoVlWIy23L8tAXkM5J`).
+4. **Reconcile Google Drive State:** Verify availability of target datasets in `03_DATASETS/` and reports in `11_REPORTS/`.
+5. **Select or Initialize Research Project:** Run `New-AreilProject.ps1` or create a new project directory under `projects/` (e.g. `projects/01_nitrogen_use_efficiency/`).
+6. **Proceed with AREIL Evidentiary Discipline:** Formulate research questions, maintain ledgers in `ledgers/`, adhere to `STATISTICAL_ROUTING_SPECIFICATION.md`, and author publication manuscripts.
 
 ---
 
-## 3. Exact Instructions to Resume
+## Key Remote Workspace Identifiers
 
-When the user asks to resume, the agent will execute the following step-by-step procedure:
+- **GitHub Repository (Private):** `https://github.com/jawadresearchai-creator/areil-research-workspace`
+- **Google Drive Root Folder ID:** `1bnltIQ2iGslIHbgoVlWIy23L8tAXkM5J`
+- **Google Drive Root URL:** `https://drive.google.com/drive/folders/1bnltIQ2iGslIHbgoVlWIy23L8tAXkM5J`
+- **Google Drive Subfolder IDs:**
+  - `00_REMOTE_INDEX`: `1LHFPaLuI-KSnleAHzWaB72jCxKKMmCol`
+  - `01_DISTRIBUTIONS`: `1VXiWJazEVHxs2_7poNLp8gpvCKcJzIqo`
+  - `02_PROJECTS`: `15FxdvzlZrd2i0hkMOftwHZQloIYOu6Q1`
+  - `03_DATASETS`: `1VJhV9TvhSUPPTeLHj-7GZJa31ZXsp5EH`
+  - `08_MANUSCRIPTS`: `10bT_accC6P-AQ4vFqGEQgcG8q6rsoCvx`
+  - `09_BENCHMARKS`: `15YDGRAagCZO7tQdoAZNLfrRB3DikzwaF`
+  - `11_REPORTS`: `1EKMrBeInDfFvPP3jCuY6UmUJvvfSDGHp`
+  - `12_HANDOFFS`: `1SeLgI7D4uZnQFYwSgR7mzYOrp2SXGgTt`
+- **Certified Distribution Cloud File ID:** `1C90gInS_7BlJMJkML210KqVNFytX945G`
+- **Final Certification Report Cloud File ID:** `18-KU1GjrZRDg6fel_tzfP32EY7qnQPA8`
 
-1. **Check Subagent Transcripts & Status:**
-   - Query `manage_subagents list` or read `transcript.jsonl` files on disk for each subagent.
-2. **Extract Model Artifacts & Execution Provenance:**
-   - For each completed arm directory (`benchmark-A/arm2_tools`, `benchmark-B/arm2_tools`, `benchmark-C/arm2_tools`, `benchmark-D/arm2_tools`, `benchmark-D/arm3_areil`):
-     - Extract raw completion text into `raw_model_output.md` and `manuscript.md`.
-     - Extract executed tool calls into `tool_call_log.jsonl`.
-     - Write `execution_metadata.json` (subagent ID, model, tool calls, start/end timestamps, input/output SHA256).
-     - Compute and write `SHA256SUMS.txt`.
-3. **Blinded Evaluation:**
-   - Code-blind each manuscript as `OUTPUT_X`, `OUTPUT_Y`, `OUTPUT_Z`.
-   - Score against the 20 criteria in `CERTIFICATION_RUBRIC.yaml`.
-   - Record deterministic metrics (DOI resolution, code execution, numerical consistency) vs. qualitative metrics.
-   - Reveal arm identities and calculate:
-     - **Tool Effect:** $\Delta = \text{ARM 2} - \text{ARM 1}$
-     - **AREIL Incremental Effect:** $\Delta = \text{ARM 3} - \text{ARM 2}$
-4. **Package AREIL v0.2.2-bound:**
-   - Build `E:\Agriculture\Antigravity Research\AREIL_v0.2.2-bound.zip` containing the statistical routing spec, regression test, updated model manuals, and certified code.
-   - Generate `MANIFEST.json` and `SHA256SUMS.txt`.
-5. **Issue Final Certification Report:**
-   - Author `E:\Agriculture\Antigravity Research\AREIL\reports\FINAL_PROVENANCE_CERTIFICATION_REPORT.md` (and update `V02_CERTIFICATION_REPORT.md`).
-   - Issue single certification status: `CERTIFIED_FOR_RESEARCH_ASSISTANCE`.
+---
+
+## Certification Status Summary
+
+- **Benchmark Cells:** 12 / 12 cells executed by genuine Gemini 3.8 Flash High subagents with verified cryptographic provenance.
+- **Fair Effect Decomposition:** Tool Effect (+40.50 pts), AREIL Incremental Effect (+32.80 pts).
+- **Archive Integrity:** All 5 historical and current distributions verified via `Test-ArchiveIntegrity.py`.
+- **Statistical Routing:** Strict design authority, continuous Gaussian + hierarchy -> LMM with Kenward-Roger d.f., verified via `Test-StatisticalRoutingRule.py`.
+- **Remote Portability:** Cloned environment verified via automated `REMOTE_RECOVERY_TEST.md`.

@@ -1,0 +1,64 @@
+{
+  "workspace_name": "AREIL Research Workspace",
+  "version": "0.2.3",
+  "status": "CERTIFIED_FOR_RESEARCH_ASSISTANCE",
+  "last_synchronization_utc": "2026-09-05T13:12:22.746224+00:00",
+  "next_phase": "REAL_RESEARCH_USE",
+  "next_logical_action": "Initialize the first real AREIL agriculture research project.",
+  "github_repository": {
+    "url": "https://github.com/jawadresearchai-creator/areil-research-workspace",
+    "owner": "jawadresearchai-creator",
+    "repo_name": "areil-research-workspace",
+    "visibility": "private",
+    "default_branch": "main",
+    "head_commit": "TRACKED_AT_HEAD"
+  },
+  "google_drive_workspace": {
+    "workspace_name": "AREIL Research Workspace",
+    "root_folder_id": "1bnltIQ2iGslIHbgoVlWIy23L8tAXkM5J",
+    "root_folder_url": "https://drive.google.com/drive/folders/1bnltIQ2iGslIHbgoVlWIy23L8tAXkM5J",
+    "subfolder_ids": {
+      "root": "1bnltIQ2iGslIHbgoVlWIy23L8tAXkM5J",
+      "00_REMOTE_INDEX": "1LHFPaLuI-KSnleAHzWaB72jCxKKMmCol",
+      "01_DISTRIBUTIONS": "1VXiWJazEVHxs2_7poNLp8gpvCKcJzIqo",
+      "02_PROJECTS": "15FxdvzlZrd2i0hkMOftwHZQloIYOu6Q1",
+      "03_DATASETS": "1VJhV9TvhSUPPTeLHj-7GZJa31ZXsp5EH",
+      "04_CORPORA": "1JXXnv-2L_519dKe6C4ywBADNoRhRBVpN",
+      "05_ANALYSIS_OUTPUTS": "1PK5wP4RrFS3e3OtkXttqHagWDE3HSQBM",
+      "06_FIGURES": "1sW1juQ6DMEDk9OXiOTCeP97rUTeIipnb",
+      "07_TABLES": "1P_ZTFuqFKuhfiKSnNxVaXau-0ky0HFZq",
+      "08_MANUSCRIPTS": "10bT_accC6P-AQ4vFqGEQgcG8q6rsoCvx",
+      "09_BENCHMARKS": "15YDGRAagCZO7tQdoAZNLfrRB3DikzwaF",
+      "10_AUDITS": "16TtIjVFsp8bdW2Qx256EYYdfadDa4CTF",
+      "11_REPORTS": "1EKMrBeInDfFvPP3jCuY6UmUJvvfSDGHp",
+      "12_HANDOFFS": "1SeLgI7D4uZnQFYwSgR7mzYOrp2SXGgTt",
+      "99_ARCHIVE": "1uxmEcl17tRTIWF9aiwIh9CGUmh-8T83I"
+    }
+  },
+  "certified_distribution": {
+    "filename": "AREIL_v0.2.3-bound.zip",
+    "sha256": "D293BD31A4E4175B94E6216275C033B2E8F20A57B9E04622F67ABB659F80206C",
+    "size_bytes": 389783,
+    "drive_file_id": "1C90gInS_7BlJMJkML210KqVNFytX945G",
+    "drive_parent_folder_id": "1VXiWJazEVHxs2_7poNLp8gpvCKcJzIqo"
+  },
+  "canonical_pointers": {
+    "latest_handoff": {
+      "github_path": "LATEST_HANDOFF.yaml",
+      "drive_path": "00_REMOTE_INDEX/LATEST_HANDOFF.yaml"
+    },
+    "resume_handoff": {
+      "github_path": "RESUME_HANDOFF.md",
+      "drive_path": "12_HANDOFFS/RESUME_HANDOFF.md"
+    },
+    "detailed_handoff": {
+      "github_path": "AREIL/research/HANDOFF.yaml",
+      "drive_path": "12_HANDOFFS/HANDOFF.yaml"
+    },
+    "final_certification_report": {
+      "github_path": "reports/FINAL_CERTIFICATION_REPORT.md",
+      "drive_file_id": "18-KU1GjrZRDg6fel_tzfP32EY7qnQPA8",
+      "drive_path": "11_REPORTS/FINAL_CERTIFICATION_REPORT.md"
+    }
+  }
+}

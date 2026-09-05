@@ -1,36 +1,57 @@
-handoff_version: "2.0.0"
-date_updated: "2026-09-05T16:15:00Z"
-authoritative_archive: "E:\Agriculture\Antigravity Research\AREIL_v0.1-research.zip"
-current_distribution: "E:\Agriculture\Antigravity Research\AREIL_v0.2-bound.zip"
-root_workspace: "E:\Agriculture\Antigravity Research\AREIL"
+handoff_version: "2.3.0"
+status: "CERTIFIED_FOR_RESEARCH_ASSISTANCE"
 
-system_state:
-  installation: "COMPLETE"
-  hardening: "VALIDATED"
-  self_test_status: "23_OF_23_PASSED"
-  preflight_status: "PASSED"
-  r_toolchain: "R-4.6.1_VERIFIED"
-  quarto_toolchain: "QUARTO_1.10.18_VERIFIED"
-  python_venv: "AREIL_VENV_60_PACKAGES_LOCKED"
-  zotero_integration: "ZOTERO_10_BBT_9_INSTALLED"
+areil:
+  version: "0.2.3"
+  certification_status: "CERTIFIED_FOR_RESEARCH_ASSISTANCE"
+  distribution_filename: "AREIL_v0.2.3-bound.zip"
+  distribution_sha256: "D293BD31A4E4175B94E6216275C033B2E8F20A57B9E04622F67ABB659F80206C"
+  distribution_size_bytes: 389783
 
-benchmarks_completed:
-  - id: "BENCHMARK_A"
-    topic: "eATP, P2K1/DORN1 and FERONIA Signaling"
-    status: "COMPLETE"
-    control_doi_validity: "0.0%"
-    areil_doi_validity: "100.0%"
-  - id: "BENCHMARK_B"
-    topic: "Strigolactones, Root Architecture, and AM Fungi"
-    status: "COMPLETE"
-    control_doi_validity: "50.0%"
-    areil_doi_validity: "100.0%"
-  - id: "BENCHMARK_C"
-    topic: "Randomized Complete Block Root Growth Trial"
-    status: "COMPLETE"
-    control_stats: "Naive unblocked ANOVA (ICC 0.536 ignored)"
-    areil_stats: "Linear mixed-effects model lmer (normal residuals, Satterthwaite df)"
+github:
+  owner: "jawadresearchai-creator"
+  repository: "areil-research-workspace"
+  visibility: "private"
+  branch: "main"
+  head_commit: "TRACKED_AT_HEAD"
 
-reproducibility:
-  manifest_generated: true
-  all_benchmarks_hashed: true
+google_drive:
+  workspace_name: "AREIL Research Workspace"
+  root_folder_id: "1bnltIQ2iGslIHbgoVlWIy23L8tAXkM5J"
+  root_folder_url: "https://drive.google.com/drive/folders/1bnltIQ2iGslIHbgoVlWIy23L8tAXkM5J"
+  distributions_folder_id: "1VXiWJazEVHxs2_7poNLp8gpvCKcJzIqo"
+  projects_folder_id: "15FxdvzlZrd2i0hkMOftwHZQloIYOu6Q1"
+  reports_folder_id: "1EKMrBeInDfFvPP3jCuY6UmUJvvfSDGHp"
+  handoffs_folder_id: "1SeLgI7D4uZnQFYwSgR7mzYOrp2SXGgTt"
+
+certification:
+  benchmark_cells_verified: "12/12"
+  statistical_routing: "PASSED"
+  archive_integrity: "PASSED"
+  fresh_session_recovery: "PASSED"
+  remote_recovery: "PASSED"
+
+benchmarks:
+  benchmark_a: "COMPLETE"
+  benchmark_b: "COMPLETE"
+  benchmark_c:
+    status: "COMPLETE"
+    provenance: "SIMULATED_BENCHMARK_DATA"
+  benchmark_d:
+    status: "COMPLETE"
+    provenance: "REAL_PUBLIC_DATA"
+
+current_phase:
+  name: "REAL_RESEARCH_USE"
+  framework_development: "FROZEN_PENDING_REAL_WORLD_FEEDBACK"
+
+next_logical_action:
+  action: "Initialize the first real AREIL agriculture research project."
+  rationale: "Framework certification is complete. Further synthetic framework benchmarking is lower value than real-world manuscript/research use."
+
+do_not_repeat:
+  - "Do not repeat AREIL v0.1-v0.2.3 certification benchmarks without a specific regression reason."
+  - "Do not rebuild the research toolchain."
+  - "Do not repeat Graphify certification."
+  - "Do not repeat fresh-install certification."
+  - "Do not restart benchmark subagents recorded as complete."
