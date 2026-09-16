@@ -1,0 +1,39 @@
+name: CITRUS-NET molecular triangulation
+
+on:
+  push:
+    branches: [citrus-net-molecular-arm]
+    paths:
+      - 'projects/citrus-net/**'
+      - '.github/workflows/citrus_net_molecular.yml'
+  workflow_dispatch:
+
+jobs:
+  molecular-analysis:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: Install analysis dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas numpy scipy statsmodels requests gprofiler-official openpyxl
+      - name: Run independent public-data analysis
+        run: |
+          python projects/citrus-net/scripts/analyze_public_molecular.py
+      - name: List outputs
+        run: |
+          find projects/citrus-net/public_molecular/results -maxdepth 1 -type f -printf '%f\t%k KB\n' | sort
+          cat projects/citrus-net/public_molecular/results/MOLECULAR_TRIANGULATION_REPORT.md
+      - name: Upload analysis artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: citrus-net-molecular-triangulation
+          path: |
+            projects/citrus-net/public_molecular/results/**
+          if-no-files-found: error
+          retention-days: 30
