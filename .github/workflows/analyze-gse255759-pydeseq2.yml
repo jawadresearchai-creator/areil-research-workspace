@@ -62,7 +62,6 @@ jobs:
           roots = out/'GSE255759_counts_roots.csv'
           soft = out/'GSE255759_family.soft'
 
-          # Matrix has two header rows: numeric library IDs then biological sample names.
           raw = pd.read_csv(roots, sep=';', header=None, dtype=str)
           numeric_ids = raw.iloc[0, 1:].tolist()
           sample_names = raw.iloc[1, 1:].tolist()
@@ -79,7 +78,6 @@ jobs:
           counts = counts.astype(int)
           counts.to_csv(out/'GSE255759_roots_counts_clean.csv')
 
-          # Parse SOFT into title -> GEO accession + characteristics.
           records=[]; cur=None
           for line in soft.read_text(encoding='utf-8', errors='replace').splitlines():
               if line.startswith('^SAMPLE = '):
@@ -126,6 +124,10 @@ jobs:
           lib_sums=counts.sum(axis=0).rename('library_sum').reset_index().rename(columns={'index':'sample_title'})
           lib_sums.to_csv(out/'GSE255759_library_sums.csv', index=False)
 
+          group_counts={
+              f'{combo}|{treatment}': int(n)
+              for (combo,treatment), n in manifest.groupby(['combination','treatment']).size().items()
+          }
           qc={
               'accession':'GSE255759',
               'retrieved_utc':datetime.now(timezone.utc).isoformat(),
@@ -135,23 +137,22 @@ jobs:
               'all_values_nonnegative':nonnegative,
               'duplicated_gene_ids':duplicated_genes,
               'all_sample_titles_mapped_to_SOFT':bool(manifest['gsm'].ne('').all()),
-              'group_counts':manifest.groupby(['combination','treatment']).size().astype(int).to_dict(),
+              'group_counts':group_counts,
               'target_gene_rows_present':{
                   'Ciclev10012384m.g': bool('Ciclev10012384m.g' in counts.index),
                   'Ciclev10029003m.g': bool('Ciclev10029003m.g' in counts.index)
               },
               'matrix_interpretation':'Integer, non-negative gene-by-sample matrix generated according to GEO metadata with HTSeq-count. GEO text also labels files as raw counts (RPKM), which is internally inconsistent; analysis treats the deposited integer matrix as counts and records this ambiguity.'
           }
-          (out/'matrix_validation.json').write_text(json.dumps(qc, indent=2, default=str))
+          (out/'matrix_validation.json').write_text(json.dumps(qc, indent=2))
           if not (integer_like and nonnegative and duplicated_genes==0 and manifest['gsm'].ne('').all()):
               raise SystemExit('Matrix/sample validation failed')
 
       - name: Run four prespecified PyDESeq2 contrasts
         shell: python
         run: |
-          import json, pathlib, math
+          import json, pathlib
           import pandas as pd
-          import numpy as np
           import pydeseq2
           from pydeseq2.dds import DeseqDataSet
           from pydeseq2.ds import DeseqStats
@@ -159,8 +160,7 @@ jobs:
 
           out=pathlib.Path('out')
           counts_all=pd.read_csv(out/'GSE255759_roots_counts_clean.csv', index_col=0).T
-          manifest=pd.read_csv(out/'GSE255759_root_sample_manifest.csv')
-          manifest=manifest.set_index('sample_title')
+          manifest=pd.read_csv(out/'GSE255759_root_sample_manifest.csv').set_index('sample_title')
           targets={'PIP1':'Ciclev10012384m.g','PIP2':'Ciclev10029003m.g'}
           expected={
             ('ML2x','PIP1'):{'log2FoldChange':-0.435},
@@ -180,7 +180,6 @@ jobs:
               sm=manifest[manifest['combination']==combo].copy()
               sample_order=sm.index.tolist()
               counts=counts_all.loc[sample_order].copy()
-              # Keep every deposited gene; only all-zero genes are intrinsically non-informative.
               counts=counts.loc[:, counts.sum(axis=0)>0].astype(int)
               meta=pd.DataFrame(index=sample_order)
               meta['condition']=pd.Categorical(
@@ -242,7 +241,7 @@ jobs:
       - name: Build manuscript reconciliation and checksums
         shell: python
         run: |
-          import pandas as pd, pathlib, json, math, hashlib
+          import pandas as pd, pathlib, hashlib
           out=pathlib.Path('out')
           p=pd.read_csv(out/'GSE255759_PIP_panel_pydeseq2_0.5.4.csv')
           rows=[]
