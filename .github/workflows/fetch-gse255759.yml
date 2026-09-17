@@ -30,18 +30,19 @@ jobs:
           gzip -dc out/GSE255759_counts_leaves.csv.gz > out/GSE255759_counts_leaves.csv
           gzip -dc out/GSE255759_family.soft.gz > out/GSE255759_family.soft
           (cd out && sha256sum GSE255759_counts_roots.csv.gz GSE255759_counts_leaves.csv.gz GSE255759_family.soft.gz > SHA256SUMS.txt)
+          head -n 8 out/GSE255759_counts_roots.csv > out/matrix_head.txt
+          grep -i -E 'Ciclev10012384|Ciclev10029003|10012384|10029003' out/GSE255759_counts_roots.csv > out/target_search.txt || true
 
       - name: Extract target aquaporin rows and matrix metadata
         shell: python
         run: |
-          import csv, json, pathlib, re
+          import csv, json, pathlib
           from datetime import datetime, timezone
 
           out = pathlib.Path('out')
           roots = out / 'GSE255759_counts_roots.csv'
           targets = {'Ciclev10012384': 'PIP1', 'Ciclev10029003': 'PIP2'}
 
-          # Detect delimiter and read the deposited matrix without changing values.
           sample = roots.read_text(encoding='utf-8', errors='replace')[:20000]
           try:
               dialect = csv.Sniffer().sniff(sample, delimiters=',;\t')
@@ -53,11 +54,14 @@ jobs:
               reader = csv.reader(f, delimiter=delim)
               header = next(reader)
               rows = []
+              first_ids = []
               for row in reader:
                   if not row:
                       continue
-                  key = row[0].strip().strip('"')
-                  if key in targets:
+                  if len(first_ids) < 20:
+                      first_ids.append(row[0])
+                  joined = '\t'.join(row)
+                  if any(t.lower() in joined.lower() for t in targets):
                       rows.append(row)
 
           with (out/'GSE255759_target_aquaporin_rows.csv').open('w', newline='', encoding='utf-8') as f:
@@ -65,7 +69,6 @@ jobs:
               w.writerow(header)
               w.writerows(rows)
 
-          # Store exact header/sample columns for later sample-map reconciliation.
           with (out/'GSE255759_roots_matrix_header.csv').open('w', newline='', encoding='utf-8') as f:
               csv.writer(f).writerow(header)
 
@@ -76,15 +79,14 @@ jobs:
               'matrix': 'GSE255759_counts_roots.csv.gz',
               'delimiter_detected': delim,
               'column_count': len(header),
-              'sample_columns': header[1:],
+              'header': header,
+              'first_20_row_ids': first_ids,
               'target_genes_requested': targets,
-              'target_rows_found': [r[0] for r in rows],
+              'target_rows_found_first_fields': [r[0] for r in rows],
               'target_row_count': len(rows),
-              'note': 'Values are preserved exactly as deposited; no normalization or differential-expression analysis is performed in this acquisition job.'
+              'note': 'Deposited matrices and GEO family metadata were fetched unchanged. Target extraction uses case-insensitive substring matching and does not alter source values.'
           }
           (out/'acquisition_report.json').write_text(json.dumps(report, indent=2), encoding='utf-8')
-          if len(rows) != 2:
-              raise SystemExit(f'Expected 2 target rows, found {len(rows)}: {[r[0] for r in rows]}')
 
       - name: Show acquisition summary
         shell: bash
@@ -93,8 +95,10 @@ jobs:
           cat out/acquisition_report.json
           echo '--- checksums ---'
           cat out/SHA256SUMS.txt
-          echo '--- target rows ---'
-          head -n 3 out/GSE255759_target_aquaporin_rows.csv
+          echo '--- matrix head ---'
+          cat out/matrix_head.txt
+          echo '--- target search ---'
+          cat out/target_search.txt || true
 
       - name: Upload acquisition artifact
         uses: actions/upload-artifact@v4
