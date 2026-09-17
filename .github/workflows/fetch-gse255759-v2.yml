@@ -1,0 +1,78 @@
+name: Fetch GSE255759 citrus RNA-seq data v2
+
+on:
+  push:
+    branches:
+      - fetch-gse255759
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download GEO supplementary matrices and metadata
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          ROOT_URL='https://ftp.ncbi.nlm.nih.gov/geo/series/GSE255nnn/GSE255759/suppl/GSE255759_counts_roots.csv.gz'
+          LEAF_URL='https://ftp.ncbi.nlm.nih.gov/geo/series/GSE255nnn/GSE255759/suppl/GSE255759_counts_leaves.csv.gz'
+          SOFT_URL='https://ftp.ncbi.nlm.nih.gov/geo/series/GSE255nnn/GSE255759/soft/GSE255759_family.soft.gz'
+          curl -fL --retry 5 --retry-delay 3 "$ROOT_URL" -o out/GSE255759_counts_roots.csv.gz
+          curl -fL --retry 5 --retry-delay 3 "$LEAF_URL" -o out/GSE255759_counts_leaves.csv.gz
+          curl -fL --retry 5 --retry-delay 3 "$SOFT_URL" -o out/GSE255759_family.soft.gz
+          gzip -dc out/GSE255759_counts_roots.csv.gz > out/GSE255759_counts_roots.csv
+          gzip -dc out/GSE255759_counts_leaves.csv.gz > out/GSE255759_counts_leaves.csv
+          gzip -dc out/GSE255759_family.soft.gz > out/GSE255759_family.soft
+          (cd out && sha256sum GSE255759_counts_roots.csv.gz GSE255759_counts_leaves.csv.gz GSE255759_family.soft.gz > SHA256SUMS.txt)
+          head -n 12 out/GSE255759_counts_roots.csv > out/matrix_head.txt
+          grep -i -E 'Ciclev10012384|Ciclev10029003|10012384|10029003' out/GSE255759_counts_roots.csv > out/target_search.txt || true
+
+      - name: Inspect matrix and extract target candidates
+        shell: python
+        run: |
+          import csv, json, pathlib
+          from datetime import datetime, timezone
+          out = pathlib.Path('out')
+          roots = out/'GSE255759_counts_roots.csv'
+          targets = ['Ciclev10012384','Ciclev10029003']
+          sample = roots.read_text(encoding='utf-8', errors='replace')[:20000]
+          try:
+              delim = csv.Sniffer().sniff(sample, delimiters=',;\t').delimiter
+          except Exception:
+              delim = ','
+          with roots.open(newline='', encoding='utf-8-sig', errors='replace') as f:
+              reader=csv.reader(f,delimiter=delim)
+              header=next(reader)
+              rows=[]; first=[]
+              for row in reader:
+                  if not row: continue
+                  if len(first)<30: first.append(row[0])
+                  joined='\t'.join(row).lower()
+                  if any(t.lower() in joined for t in targets): rows.append(row)
+          with (out/'GSE255759_target_aquaporin_rows.csv').open('w',newline='',encoding='utf-8') as f:
+              w=csv.writer(f); w.writerow(header); w.writerows(rows)
+          with (out/'GSE255759_roots_matrix_header.csv').open('w',newline='',encoding='utf-8') as f:
+              csv.writer(f).writerow(header)
+          report={'accession':'GSE255759','source':'NCBI GEO','retrieved_utc':datetime.now(timezone.utc).isoformat(),'delimiter_detected':delim,'column_count':len(header),'header':header,'first_30_row_ids':first,'target_ids_requested':targets,'matching_rows':len(rows),'matching_first_fields':[r[0] for r in rows],'note':'Source matrices preserved unchanged; target extraction is diagnostic only.'}
+          (out/'acquisition_report.json').write_text(json.dumps(report,indent=2),encoding='utf-8')
+
+      - name: Display diagnostics
+        shell: bash
+        run: |
+          cat out/acquisition_report.json
+          echo '--- target search ---'
+          cat out/target_search.txt || true
+          echo '--- checksums ---'
+          cat out/SHA256SUMS.txt
+
+      - name: Upload acquisition artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: GSE255759_gene_data
+          path: out/
+          if-no-files-found: error
+          retention-days: 30
