@@ -56,11 +56,11 @@ jobs:
         shell: pwsh
         run: |
           choco install inkscape -y --no-progress
-          $inkscape = Get-Command inkscape -ErrorAction SilentlyContinue
-          if (-not $inkscape) {
-            throw "Inkscape was installed but is not available on PATH."
+          $inkscapeCli = "C:\Program Files\Inkscape\bin\inkscape.com"
+          if (-not (Test-Path $inkscapeCli)) {
+            throw "Inkscape CLI wrapper was not found at $inkscapeCli."
           }
-          inkscape --version
+          & $inkscapeCli --version
 
       - name: Set up Python bridge
         uses: actions/setup-python@v5
@@ -82,7 +82,11 @@ jobs:
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force -Path artifacts | Out-Null
-          inkscape artifacts/ggplot2_smoke.svg --export-filename=artifacts/ggplot2_smoke_inkscape.pdf
+          $inkscapeCli = "C:\Program Files\Inkscape\bin\inkscape.com"
+          & $inkscapeCli artifacts/ggplot2_smoke.svg --export-type=pdf --export-overwrite --export-filename=artifacts/ggplot2_smoke_inkscape.pdf
+          if ($LASTEXITCODE -ne 0) {
+            throw "Inkscape CLI returned exit code $LASTEXITCODE."
+          }
           if (-not (Test-Path artifacts/ggplot2_smoke_inkscape.pdf)) {
             throw "Inkscape conversion did not produce the expected PDF."
           }
@@ -91,7 +95,7 @@ jobs:
         shell: pwsh
         run: |
           Rscript -e "cat('R:', R.version.string, '\n'); cat('ggplot2:', as.character(packageVersion('ggplot2')), '\n')"
-          inkscape --version
+          & "C:\Program Files\Inkscape\bin\inkscape.com" --version
           python -c "import originpro; print('originpro Python bridge:', getattr(originpro, '__version__', 'installed'))"
 
       - name: Upload figure smoke-test artifacts
