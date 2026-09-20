@@ -1,0 +1,126 @@
+name: Scientific Figure Toolchain
+
+on:
+  workflow_dispatch:
+    inputs:
+      run_originpro_self_hosted:
+        description: "Run OriginPro verification on the licensed self-hosted Windows runner"
+        required: false
+        default: false
+        type: boolean
+  push:
+    paths:
+      - ".github/workflows/scientific-figure-toolchain.yml"
+      - "scripts/verify_figure_toolchain.R"
+      - "scripts/verify_originpro.py"
+      - "scripts/setup-originpro-integration.ps1"
+      - "AREIL/.agents/skills/figure-table-engine/SKILL.md"
+  pull_request:
+    paths:
+      - ".github/workflows/scientific-figure-toolchain.yml"
+      - "scripts/verify_figure_toolchain.R"
+      - "scripts/verify_originpro.py"
+      - "scripts/setup-originpro-integration.ps1"
+      - "AREIL/.agents/skills/figure-table-engine/SKILL.md"
+
+permissions:
+  contents: read
+
+jobs:
+  r-ggplot2-inkscape:
+    name: R + ggplot2 + Inkscape
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "release"
+          use-public-rspm: true
+
+      - name: Install R figure packages
+        shell: Rscript {0}
+        run: |
+          packages <- c(
+            "ggplot2", "dplyr", "tidyr", "readxl", "openxlsx",
+            "svglite", "ragg", "patchwork", "scales"
+          )
+          missing <- packages[!vapply(packages, requireNamespace, logical(1), quietly = TRUE)]
+          if (length(missing)) install.packages(missing, repos = "https://cloud.r-project.org")
+          stopifnot(all(vapply(packages, requireNamespace, logical(1), quietly = TRUE)))
+
+      - name: Install Inkscape
+        shell: pwsh
+        run: |
+          choco install inkscape -y --no-progress
+          $inkscape = Get-Command inkscape -ErrorAction SilentlyContinue
+          if (-not $inkscape) {
+            throw "Inkscape was installed but is not available on PATH."
+          }
+          inkscape --version
+
+      - name: Set up Python bridge
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python figure bridge packages
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install originpro pandas openpyxl matplotlib scipy statsmodels
+
+      - name: Verify R/ggplot2 and create smoke-test figure
+        shell: pwsh
+        run: |
+          Rscript scripts/verify_figure_toolchain.R
+
+      - name: Verify Inkscape headless SVG-to-PDF conversion
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path artifacts | Out-Null
+          inkscape artifacts/ggplot2_smoke.svg --export-filename=artifacts/ggplot2_smoke_inkscape.pdf
+          if (-not (Test-Path artifacts/ggplot2_smoke_inkscape.pdf)) {
+            throw "Inkscape conversion did not produce the expected PDF."
+          }
+
+      - name: Report installed versions
+        shell: pwsh
+        run: |
+          Rscript -e "cat('R:', R.version.string, '\n'); cat('ggplot2:', as.character(packageVersion('ggplot2')), '\n')"
+          inkscape --version
+          python -c "import originpro; print('originpro Python bridge:', getattr(originpro, '__version__', 'installed'))"
+
+      - name: Upload figure smoke-test artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: scientific-figure-toolchain-smoke-test
+          path: artifacts/
+          if-no-files-found: error
+
+  originpro:
+    name: OriginPro licensed runner
+    if: ${{ github.event_name == 'workflow_dispatch' && inputs.run_originpro_self_hosted }}
+    runs-on: [self-hosted, Windows, X64, originpro]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up external Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install or verify OriginPro integration
+        shell: pwsh
+        run: |
+          ./scripts/setup-originpro-integration.ps1
+
+      - name: Run OriginPro automation smoke test
+        shell: pwsh
+        run: |
+          python scripts/verify_originpro.py
