@@ -69,6 +69,8 @@ jobs:
             echo "No generated outputs to commit."
           else
             git commit -m "paper11: persist R reconciliation outputs [skip ci]"
+            git fetch origin paper-11-analysis
+            git rebase origin/paper-11-analysis
             git push origin HEAD:paper-11-analysis
           fi
 
@@ -84,3 +86,5 @@ jobs:
           retention-days: 90
 
 # Trigger marker: Paper 11 R reconciliation runner active
+
+# Trigger marker: rerun after E5 factor-level correction
