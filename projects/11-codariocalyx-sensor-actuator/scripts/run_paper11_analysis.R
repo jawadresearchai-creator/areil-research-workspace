@@ -111,7 +111,8 @@ holm <- function(x) p.adjust(x, method = "holm")
 
 # ---------------- read design-control sheets ----------------
 rand <- read_sheet("08_RANDOMIZATION")
-recordings <- read_sheet("13_RECORDINGS")
+# Recording metadata contains intentionally mixed blank/file-ID columns; read as text to prevent type-guess warnings.
+recordings <- as.data.frame(read_excel(workbook, sheet = "13_RECORDINGS", col_types = "text", .name_repair = "unique"))
 
 # ---------------- E1 ----------------
 e1 <- read_sheet("14_E1_SENSOR_RESPONSE") %>%
@@ -143,10 +144,28 @@ append_result("E1", "PRIMARY", "Treatment_Period_min",
 model_meta$E1 <- list(method = method1, lmer_boundary_fallback = singular1, n = nrow(e1), plants = n_distinct(e1$Plant_ID))
 
 # E1 design-control sensitivity: plant FE + order/day/rig where linkable
-rand_e1 <- rand %>% filter(Experiment == "E1") %>% select(Plant_ID, Condition, Session_Order, Experimental_Day, Time_Block, Block)
-e1s <- e1 %>% left_join(rand_e1, by = c("Plant_ID", "Treatment_PPFD_umol_m2_s" = "Condition"))
-# Condition may be numeric/string mismatch in the workbook; if join does not work, do not fabricate terms.
+rand_e1 <- rand %>%
+  filter(Experiment == "E1") %>%
+  mutate(Rand_PPFD = as.numeric(sub("^PPFD_", "", as.character(Condition)))) %>%
+  select(Plant_ID, Rand_PPFD, Session_Order, Treatment_Order, Experimental_Day, Time_Block, Block)
+e1s <- e1 %>%
+  mutate(Plant_ID_chr = as.character(Plant_ID)) %>%
+  left_join(rand_e1 %>% mutate(Plant_ID_chr = as.character(Plant_ID)) %>% select(-Plant_ID),
+            by = c("Plant_ID_chr", "Treatment_PPFD_umol_m2_s" = "Rand_PPFD"))
 qa$E1_design_control_join_rows <- sum(complete.cases(e1s$Session_Order))
+if (qa$E1_design_control_join_rows != nrow(e1)) stop("E1 design-control join did not resolve all sessions")
+# Pre-specified sensitivity: retain the PPFD estimand while adjusting for order/day/time-block/rig-block.
+e1sens <- fixest::feols(
+  Treatment_Period_min ~ Baseline_Period_min + PPFD10 + Stimulated_Side +
+    factor(Session_Order) + factor(Experimental_Day) + factor(Time_Block) + factor(Block) | Plant_ID_chr,
+  data = e1s, cluster = ~Plant_ID_chr
+)
+rs1 <- fixest_term(e1sens, "PPFD10")
+append_result("E1", "SENSITIVITY", "Treatment_Period_min",
+              "PPFD trend adjusted for session order, experimental day, time block and rig/block",
+              rs1["estimate"], rs1["SE"], rs1["df"], rs1["statistic"], rs1["p"], rs1["low"], rs1["high"],
+              "Plant fixed effects + design-control covariates + Plant_ID-clustered SE")
+save_text(file.path(diag_dir, "E1_design_control_sensitivity.txt"), summary(e1sens))
 
 # ---------------- E2 ----------------
 e2 <- read_sheet("15_E2_INTERORGAN_COUPLING") %>%
@@ -379,6 +398,7 @@ e6 <- read_sheet("19_E6_ELECTROPHYSIOLOGY") %>%
     Ayes = tolower(as.character(A_Event_Detected)) == "yes",
     Byes = tolower(as.character(B_Event_Detected)) == "yes",
     Cyes = tolower(as.character(C_Event_Detected)) == "yes",
+    A_C_Propagation_mm_s = ifelse(as.numeric(A_C_Lag_s) > 0, as.numeric(Distance_A_C_mm) / as.numeric(A_C_Lag_s), NA_real_),
     ordered_event = as.integer(Ayes & Byes & Cyes & as.numeric(A_Onset_s) < as.numeric(B_Onset_s) & as.numeric(B_Onset_s) < as.numeric(C_Onset_s))
   )
 pp <- e6 %>% group_by(Plant_ID) %>% summarise(
