@@ -2,12 +2,6 @@ name: Paper 11 R Statistical Analysis
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - paper-11-analysis
-    paths:
-      - ".github/workflows/paper-11-analysis.yml"
-      - "projects/11-codariocalyx-sensor-actuator/**"
 
 permissions:
   contents: write
