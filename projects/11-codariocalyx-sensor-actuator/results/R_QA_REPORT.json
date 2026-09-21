@@ -1,0 +1,43 @@
+{
+  "E1_design_control_join_rows": 150,
+  "E5_all_summary_dose_within_1pct": true,
+  "E5_timeseries_matches_summary_within_1pct": true,
+  "E6_all_plants_2stim_1sham": true,
+  "E6_complete_pattern_40of40_vs_0of20": true,
+  "E1": {
+    "rows": 150,
+    "plants": 30,
+    "sessions_per_plant": 5
+  },
+  "E2": {
+    "rows": 240,
+    "plants": 30,
+    "sessions_per_plant": 8
+  },
+  "E3": {
+    "rows": 390,
+    "plants": 30,
+    "sessions_per_plant": 13
+  },
+  "E4": {
+    "rows": 120,
+    "plants": 30,
+    "sessions_per_plant": 4
+  },
+  "E5": {
+    "rows": 120,
+    "plants": 30,
+    "sessions_per_plant": 4
+  },
+  "E6": {
+    "rows": 60,
+    "plants": 20,
+    "sessions_per_plant": 3
+  },
+  "E7": {
+    "rows": 60,
+    "plants": 20,
+    "sessions_per_plant": 3
+  },
+  "workbook_sha256": "1a1aab770a41502174830546b9642534556e0b536aab6efb0e3da6c0d52aa277"
+}

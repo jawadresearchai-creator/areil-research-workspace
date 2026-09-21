@@ -1,0 +1,17 @@
+numDF,denDF,F-value,p-value,term,endpoint,correlation_structure
+1,228,2651143.2454100144,0,(Intercept),Terminal_PPFD,nested random intercepts + AR(1) within session
+2,38,390.86314772200086,0,Condition,Terminal_PPFD,nested random intercepts + AR(1) within session
+4,228,2358.2184385556807,0,TimeF,Terminal_PPFD,nested random intercepts + AR(1) within session
+8,228,1.0883670982012679,0.3720985718351778,Condition:TimeF,Terminal_PPFD,nested random intercepts + AR(1) within session
+1,228,313233.20087341603,0,(Intercept),PhiPSII,nested random intercepts + AR(1) within session
+2,38,412.7365375675898,0,Condition,PhiPSII,nested random intercepts + AR(1) within session
+4,228,1.3391815754621856,0.2562063565380288,TimeF,PhiPSII,nested random intercepts + AR(1) within session
+8,228,1.1145400259308498,0.3541837464175518,Condition:TimeF,PhiPSII,nested random intercepts + AR(1) within session
+1,228,295559.07296806417,0,(Intercept),ETR,nested random intercepts + AR(1) within session
+2,38,674.247666422646,0,Condition,ETR,nested random intercepts + AR(1) within session
+4,228,430.58549891312094,0,TimeF,ETR,nested random intercepts + AR(1) within session
+8,228,1.0790268076583098,0.37863444011989966,Condition:TimeF,ETR,nested random intercepts + AR(1) within session
+1,228,35192556.168204665,0,(Intercept),Leaf_Temperature_C,nested random intercepts + AR(1) within session
+2,38,150.309012318954,0,Condition,Leaf_Temperature_C,nested random intercepts + AR(1) within session
+4,228,0.1583104184320235,0.9590809904573948,TimeF,Leaf_Temperature_C,nested random intercepts + AR(1) within session
+8,228,0.5744334316064139,0.7983991447089998,Condition:TimeF,Leaf_Temperature_C,nested random intercepts + AR(1) within session

@@ -8,7 +8,24 @@ NOTE: Results may be misleading due to involvement in interactions
 Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
 Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
 Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
-Error in contrast.emmGrid(emm5, method = list(Structured_minus_Static = c(Static_balanced = -1,  : 
-  Nonconforming number of contrast coefficients
-Calls: %>% -> as.data.frame -> contrast -> contrast.emmGrid
-Execution halted
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+Paper 11 R analysis completed successfully.
+# A tibble: 7 × 20
+  experiment role    endpoint  label estimate       SE    df statistic         p
+  <chr>      <chr>   <chr>     <chr>    <dbl>    <dbl> <dbl>     <dbl>     <dbl>
+1 E1         PRIMARY Treatmen… Peri… -1.46e-1  2.09e-3 120.      -69.8 5.98e- 99
+2 E2         PRIMARY Delta_Te… dire…  8.53e+0  6.41e-2 210.      133.  1.10e-204
+3 E3         PRIMARY Delta_Te… Dire…  1.17e+1  3.73e-2 358       315.  0        
+4 E4         PRIMARY Median_T… Stro…  1.10e+1  1.74e-1  90.0      63.2 2.37e- 76
+5 E5         PRIMARY Terminal… Stru…  8.13e+0  1.94e-1  90.0      41.9 7.38e- 61
+6 E6         PRIMARY ordered … Stim…  1   e+0 NA        NA        NA   2.87e- 10
+7 E7         PRIMARY Integrat… Stro… -7.50e+4  2.54e+3  NA       -29.5 2.48e- 17
+# ℹ 11 more variables: CI95_low <dbl>, CI95_high <dbl>, method <chr>,
+#   selected_model <chr>, k_hat <dbl>, k_CI95_low <dbl>, k_CI95_high <dbl>,
+#   p_Holm_secondary <dbl>, stim_sessions_events <chr>,
+#   sham_sessions_events <chr>, plants_consistent <int>

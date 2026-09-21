@@ -1,0 +1,50 @@
+{
+  "E1": {
+    "method": "LMM random intercept Plant_ID; Satterthwaite df",
+    "lmer_boundary_fallback": false,
+    "n": 150,
+    "plants": 30
+  },
+  "E2": {
+    "method": "LMM Condition × Rotation + random intercept Plant_ID",
+    "n": 240,
+    "plants": 30
+  },
+  "E3": {
+    "selected": "saturating",
+    "k_hat": 1.8844,
+    "k_CI95": [1.8113, 1.9581],
+    "AIC": {
+      "linear": 1541.1716,
+      "threshold": 1053.1975,
+      "saturating": 863.1399
+    },
+    "deltaAIC": {
+      "linear": 678.0317,
+      "threshold": 190.0576,
+      "saturating": 0
+    },
+    "n": 390,
+    "plants": 30
+  },
+  "E4": {
+    "method": "LMM random intercept Plant_ID",
+    "n": 120,
+    "plants": 30
+  },
+  "E5": {
+    "method": "LMM random intercept Plant_ID",
+    "n": 120,
+    "plants": 30
+  },
+  "E6": {
+    "method": "Exact blocked randomization",
+    "n_plants": 20,
+    "p_exact": 2.868e-10
+  },
+  "E7": {
+    "method": "Plant fixed effects with Plant_ID-clustered SE (pre-specified singular-fit fallback)",
+    "n": 60,
+    "plants": 20
+  }
+}
