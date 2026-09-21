@@ -1,0 +1,71 @@
+name: Paper 11 R Statistical Analysis
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - paper-11-analysis
+    paths:
+      - ".github/workflows/paper-11-analysis.yml"
+      - "projects/11-codariocalyx-sensor-actuator/**"
+
+permissions:
+  contents: read
+
+jobs:
+  r-analysis:
+    name: Full R reconciliation E1-E7
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout analysis branch
+        uses: actions/checkout@v4
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: "release"
+          use-public-rspm: true
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev libnlopt-dev
+
+      - name: Install R packages
+        shell: Rscript {0}
+        run: |
+          packages <- c(
+            "readxl", "dplyr", "tidyr", "tibble", "purrr", "ggplot2",
+            "lme4", "lmerTest", "emmeans", "fixest", "nlme", "jsonlite", "readr"
+          )
+          missing <- packages[!vapply(packages, requireNamespace, logical(1), quietly = TRUE)]
+          if (length(missing)) install.packages(missing, repos = "https://cloud.r-project.org", Ncpus = 2)
+          stopifnot(all(vapply(packages, requireNamespace, logical(1), quietly = TRUE)))
+
+      - name: Verify authoritative workbook checksum
+        shell: bash
+        run: |
+          echo "1a1aab770a41502174830546b9642534556e0b536aab6efb0e3da6c0d52aa277  projects/11-codariocalyx-sensor-actuator/data/raw/Codariocalyx_motorius_Sensor_Actuator_Master_Workbook_2023_2024_FINAL.xlsx" | sha256sum --check --strict
+
+      - name: Run locked E1-E7 R analysis
+        run: Rscript projects/11-codariocalyx-sensor-actuator/scripts/run_paper11_analysis.R
+
+      - name: Show reconciliation report
+        if: always()
+        run: |
+          if [ -f projects/11-codariocalyx-sensor-actuator/results/R_RECONCILIATION_REPORT.md ]; then
+            cat projects/11-codariocalyx-sensor-actuator/results/R_RECONCILIATION_REPORT.md
+          fi
+
+      - name: Upload R statistical outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: paper-11-r-statistical-results
+          path: |
+            projects/11-codariocalyx-sensor-actuator/results/
+            projects/11-codariocalyx-sensor-actuator/diagnostics/
+          if-no-files-found: error
+          retention-days: 90
