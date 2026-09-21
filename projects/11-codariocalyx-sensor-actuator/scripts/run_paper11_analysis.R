@@ -339,7 +339,7 @@ model_meta$E4 <- list(method = method4, n = nrow(e4), plants = n_distinct(e4$Pla
 # ---------------- E5 ----------------
 e5 <- read_sheet("18_E5_SPATIOTEMPORAL_STRUCTURE") %>%
   mutate(
-    Condition = factor(Condition, levels = c("Static_balanced", "Structured_antiphase", "Scrambled_matched", "Common_mode_matched")),
+    Condition = factor(Condition, levels = c("Static_balanced", "Structured_antiphase", "Scrambled_matched", "CommonMode_matched")),
     Plant_ID = factor(Plant_ID),
     Terminal_Orientation_Change_deg = as.numeric(Terminal_Orientation_Change_deg)
   )
@@ -353,10 +353,10 @@ if (!is.null(m5)) {
   emm5 <- emmeans(m5, ~ Condition)
 }
 con5 <- contrast(emm5, method = list(
-  Structured_minus_Static = c(Static_balanced = -1, Structured_antiphase = 1, Scrambled_matched = 0, Common_mode_matched = 0),
-  Structured_minus_Scrambled = c(Static_balanced = 0, Structured_antiphase = 1, Scrambled_matched = -1, Common_mode_matched = 0),
-  Common_minus_Static = c(Static_balanced = -1, Structured_antiphase = 0, Scrambled_matched = 0, Common_mode_matched = 1),
-  Structured_minus_Common = c(Static_balanced = 0, Structured_antiphase = 1, Scrambled_matched = 0, Common_mode_matched = -1)
+  Structured_minus_Static = c(Static_balanced = -1, Structured_antiphase = 1, Scrambled_matched = 0, CommonMode_matched = 0),
+  Structured_minus_Scrambled = c(Static_balanced = 0, Structured_antiphase = 1, Scrambled_matched = -1, CommonMode_matched = 0),
+  Common_minus_Static = c(Static_balanced = -1, Structured_antiphase = 0, Scrambled_matched = 0, CommonMode_matched = 1),
+  Structured_minus_Common = c(Static_balanced = 0, Structured_antiphase = 1, Scrambled_matched = 0, CommonMode_matched = -1)
 ), adjust = "none") %>% as.data.frame()
 sec_idx5 <- which(con5$contrast != "Structured_minus_Static")
 con5$p_holm_secondary <- NA_real_
