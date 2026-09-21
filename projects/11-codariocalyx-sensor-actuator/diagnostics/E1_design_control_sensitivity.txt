@@ -1,0 +1,23 @@
+OLS estimation, Dep. Var.: Treatment_Period_min
+Observations: 150
+Fixed-effects: Plant_ID_chr: 30
+Standard-errors: Clustered (Plant_ID_chr) 
+                           Estimate Std. Error    t value  Pr(>|t|)    
+Baseline_Period_min        0.020338   0.045874   0.443348  0.660804    
+PPFD10                    -0.145751   0.002004 -72.729442 < 2.2e-16 ***
+Stimulated_SideRight       0.004951   0.011355   0.436017  0.666053    
+factor(Session_Order)2     0.045583   0.035086   1.299181  0.204116    
+factor(Session_Order)3     0.033438   0.028438   1.175824  0.249228    
+factor(Session_Order)4     0.019027   0.028222   0.674199  0.505524    
+factor(Session_Order)5     0.037288   0.018215   2.047080  0.049806 *  
+factor(Experimental_Day)2  0.028476   0.033805   0.842383  0.406467    
+factor(Experimental_Day)3 -0.040662   0.032847  -1.237897  0.225683    
+factor(Experimental_Day)5 -0.005741   0.034184  -0.167939  0.867797    
+factor(Experimental_Day)7 -0.026856   0.027197  -0.987448  0.331591    
+... 12 variables were removed because of collinearity
+(factor(Experimental_Day)4, factor(Experimental_Day)6 and 10 others
+[full set in $collin.var])
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.053021     Adj. R2: 0.969991
+                 Within R2: 0.977908

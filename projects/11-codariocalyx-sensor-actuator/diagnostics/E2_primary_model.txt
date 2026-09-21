@@ -1,0 +1,60 @@
+Linear mixed model fit by maximum likelihood . t-tests use Satterthwaite's
+  method [lmerModLmerTest]
+Formula: formula
+   Data: data
+Control: 
+lme4::lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e+05),  
+    check.conv.singular = "ignore")
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+    585.6     620.4    -282.8     565.6       230 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.0603 -0.6665 -0.0294  0.6392  2.6852 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ Plant_ID (Intercept) 0.3126   0.5591  
+ Residual             0.4933   0.7023  
+Number of obs: 240, groups:  Plant_ID, 30
+
+Fixed effects:
+                         Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)               0.51633    0.16390 116.89550   3.150  0.00207 ** 
+ConditionHL               8.03967    0.18134 210.00000  44.334  < 2e-16 ***
+ConditionLH              -8.94267    0.18134 210.00000 -49.313  < 2e-16 ***
+ConditionHH               0.41500    0.18134 210.00000   2.288  0.02311 *  
+Rotation180               0.13667    0.18134 210.00000   0.754  0.45192    
+ConditionHL:Rotation180   0.08800    0.25646 210.00000   0.343  0.73184    
+ConditionLH:Rotation180  -0.05133    0.25646 210.00000  -0.200  0.84155    
+ConditionHH:Rotation180  -0.12033    0.25646 210.00000  -0.469  0.63941    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) CndtHL CndtLH CndtHH Rtt180 CHL:R1 CLH:R1
+ConditionHL -0.553                                          
+ConditionLH -0.553  0.500                                   
+ConditionHH -0.553  0.500  0.500                            
+Rotation180 -0.553  0.500  0.500  0.500                     
+CndtHL:R180  0.391 -0.707 -0.354 -0.354 -0.707              
+CndtLH:R180  0.391 -0.354 -0.707 -0.354 -0.707  0.500       
+CndtHH:R180  0.391 -0.354 -0.354 -0.707 -0.707  0.500  0.500
+ Condition emmean    SE   df lower.CL upper.CL
+ LL         0.585 0.137 64.7    0.312    0.857
+ HL         8.668 0.137 64.7    8.396    8.941
+ LH        -8.384 0.137 64.7   -8.656   -8.111
+ HH         0.940 0.137 64.7    0.667    1.212
+
+Results are averaged over the levels of: Rotation 
+Degrees-of-freedom method: satterthwaite 
+Confidence level used: 0.95 
+ contrast                     estimate         SE  df t.ratio p.value
+ directional_half_difference  8.526000 0.06411508 210 132.980 <0.0001
+ HL_minus_LL                  8.083667 0.12823016 210  63.040 <0.0001
+ LH_minus_LL                 -8.968333 0.12823016 210 -69.939 <0.0001
+ HH_minus_LL                  0.354833 0.12823016 210   2.767  0.0062
+
+Results are averaged over the levels of: Rotation 
+Degrees-of-freedom method: satterthwaite 

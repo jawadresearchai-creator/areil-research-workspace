@@ -1,0 +1,51 @@
+Linear mixed model fit by maximum likelihood . t-tests use Satterthwaite's
+  method [lmerModLmerTest]
+Formula: formula
+   Data: data
+Control: 
+lme4::lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e+05),  
+    check.conv.singular = "ignore")
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+    266.6     283.4    -127.3     254.6       114 
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.29214 -0.56916 -0.01006  0.71821  2.76436 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ Plant_ID (Intercept) 0.04083  0.2021  
+ Residual             0.45247  0.6727  
+Number of obs: 120, groups:  Plant_ID, 30
+
+Fixed effects:
+                              Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)                     5.7293     0.1282 117.5838  44.680   <2e-16 ***
+Restriction_ConditionSham       0.3737     0.1737  90.0000   2.151   0.0341 *  
+Restriction_ConditionModerate   6.2450     0.1737  90.0000  35.957   <2e-16 ***
+Restriction_ConditionStrong    10.9750     0.1737  90.0000  63.191   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+                (Intr) Rstrctn_CndtnSh Rst_CM
+Rstrctn_CndtnSh -0.677                       
+Rstrctn_CnM     -0.677  0.500                
+Rstrctn_CndtnSt -0.677  0.500           0.500
+ contrast             estimate        SE df t.ratio p.value p_holm_secondary
+ Strong_minus_Free   10.975000 0.1736791 90  63.191 <0.0001               NA
+ Sham_minus_Free      0.373667 0.1736791 90   2.151  0.0341       0.03411663
+ Moderate_minus_Free  6.245000 0.1736791 90  35.957 <0.0001       0.00000000
+
+Degrees-of-freedom method: satterthwaite 
+OLS estimation, Dep. Var.: Median_Tracking_Error_deg
+Observations: 120
+Fixed-effects: Plant_ID: 30
+Standard-errors: Clustered (Plant_ID) 
+                           Estimate Std. Error t value  Pr(>|t|)    
+Percent_Natural_Amplitude -0.130253   0.001928 -67.564 < 2.2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+RMSE: 0.621505     Adj. R2: 0.975459
+                 Within R2: 0.98151 

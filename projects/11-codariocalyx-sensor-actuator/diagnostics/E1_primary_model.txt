@@ -1,0 +1,35 @@
+Linear mixed model fit by maximum likelihood . t-tests use Satterthwaite's
+  method [lmerModLmerTest]
+Formula: formula
+   Data: data
+Control: 
+lme4::lmerControl(optimizer = "bobyqa", optCtrl = list(maxfun = 2e+05),  
+    check.conv.singular = "ignore")
+
+      AIC       BIC    logLik -2*log(L)  df.resid 
+   -397.0    -378.9     204.5    -409.0       144 
+
+Scaled residuals: 
+     Min       1Q   Median       3Q      Max 
+-2.60589 -0.65108 -0.01506  0.65739  2.72556 
+
+Random effects:
+ Groups   Name        Variance  Std.Dev.
+ Plant_ID (Intercept) 0.0000369 0.006075
+ Residual             0.0037957 0.061609
+Number of obs: 150, groups:  Plant_ID, 30
+
+Fixed effects:
+                       Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)            3.329293   0.173531 148.832788  19.186   <2e-16 ***
+Baseline_Period_min   -0.030437   0.056575 148.808793  -0.538    0.591    
+PPFD10                -0.145942   0.002092 119.953670 -69.762   <2e-16 ***
+Stimulated_SideRight   0.002917   0.010073 128.613013   0.290    0.773    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) Bsl_P_ PPFD10
+Bsln_Prd_mn -0.998              
+PPFD10      -0.148  0.099       
+Stmltd_SdRg -0.049  0.020  0.016

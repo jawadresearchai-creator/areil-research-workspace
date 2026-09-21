@@ -1,0 +1,14 @@
+Authoritative workbook SHA-256 verified: 1a1aab770a41502174830546b9642534556e0b536aab6efb0e3da6c0d52aa277 
+The variables 'factor(Experimental_Day)4', 'factor(Experimental_Day)6',
+'factor(Experimental_Day)8', 'factor(Experimental_Day)9',
+'factor(Experimental_Day)10', 'factor(Time_Block)1899-12-31 10:00:00' and 6
+others have been removed because of collinearity (see $collin.var).
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+NOTE: Results may be misleading due to involvement in interactions
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+Cannot use mode = "kenward-roger" because *pbkrtest* package is not installed
+Error in contrast.emmGrid(emm5, method = list(Structured_minus_Static = c(Static_balanced = -1,  : 
+  Nonconforming number of contrast coefficients
+Calls: %>% -> as.data.frame -> contrast -> contrast.emmGrid
+Execution halted
