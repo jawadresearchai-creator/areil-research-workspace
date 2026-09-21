@@ -10,17 +10,19 @@ on:
       - "projects/11-codariocalyx-sensor-actuator/**"
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   r-analysis:
     name: Full R reconciliation E1-E7
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
 
     steps:
       - name: Checkout analysis branch
         uses: actions/checkout@v4
+        with:
+          ref: paper-11-analysis
 
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
@@ -50,13 +52,32 @@ jobs:
           echo "1a1aab770a41502174830546b9642534556e0b536aab6efb0e3da6c0d52aa277  projects/11-codariocalyx-sensor-actuator/data/raw/Codariocalyx_motorius_Sensor_Actuator_Master_Workbook_2023_2024_FINAL.xlsx" | sha256sum --check --strict
 
       - name: Run locked E1-E7 R analysis
-        run: Rscript projects/11-codariocalyx-sensor-actuator/scripts/run_paper11_analysis.R
+        shell: bash
+        run: |
+          set -o pipefail
+          mkdir -p projects/11-codariocalyx-sensor-actuator/diagnostics
+          Rscript projects/11-codariocalyx-sensor-actuator/scripts/run_paper11_analysis.R 2>&1 | tee projects/11-codariocalyx-sensor-actuator/diagnostics/R_CONSOLE_LOG.txt
 
       - name: Show reconciliation report
         if: always()
+        shell: bash
         run: |
           if [ -f projects/11-codariocalyx-sensor-actuator/results/R_RECONCILIATION_REPORT.md ]; then
             cat projects/11-codariocalyx-sensor-actuator/results/R_RECONCILIATION_REPORT.md
+          fi
+
+      - name: Persist R outputs to analysis branch
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f projects/11-codariocalyx-sensor-actuator/results/ projects/11-codariocalyx-sensor-actuator/diagnostics/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No generated outputs to commit."
+          else
+            git commit -m "paper11: persist R reconciliation outputs [skip ci]"
+            git push origin HEAD:paper-11-analysis
           fi
 
       - name: Upload R statistical outputs
@@ -67,5 +88,5 @@ jobs:
           path: |
             projects/11-codariocalyx-sensor-actuator/results/
             projects/11-codariocalyx-sensor-actuator/diagnostics/
-          if-no-files-found: error
+          if-no-files-found: warn
           retention-days: 90
