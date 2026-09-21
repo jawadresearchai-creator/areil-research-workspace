@@ -82,3 +82,5 @@ jobs:
             projects/11-codariocalyx-sensor-actuator/diagnostics/
           if-no-files-found: warn
           retention-days: 90
+
+# Trigger marker: Paper 11 R reconciliation runner active
