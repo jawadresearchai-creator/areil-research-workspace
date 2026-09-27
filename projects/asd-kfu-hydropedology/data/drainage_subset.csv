@@ -1,5 +1,3 @@
-<PARSED TEXT FOR SHEET: 1 / 1 TABS
-TAB NAME: drainage_subset.csv>
 index,Record_ID,Season_ID,Block_ID,Plot_ID,Treatment,Sample_Date,Sensor_Depth_cm,Theta_v,Lysimeter_Depth_cm,Porewater_NO3_mg_L,Porewater_EC_dS_m,Water_Table_m,Calculated_Deep_Percolation_mm,Calculated_NO3_Flux_kg_ha,Flux_Analysis_Eligible,Data_Status,Source_File
 0,DRN-00001,S1,S1_H1_B01,S1_H1_B01_P1,H-VR,2024-10-18,90,0.256,120,41.9,5.3,1.14,8.57,3.592,YES,Valid,S1_DRAINAGE_SUBSET_2024.csv
 1,DRN-00002,S1,S1_H1_B01,S1_H1_B01_P1,H-VR,2024-10-21,90,0.227,120,25.6,4.29,1.1,13.15,3.364,YES,Valid,S1_DRAINAGE_SUBSET_2024.csv
