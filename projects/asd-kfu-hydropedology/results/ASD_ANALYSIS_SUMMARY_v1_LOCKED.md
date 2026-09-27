@@ -1,0 +1,29 @@
+# ASD KFU R 4.4.1 Analysis Summary — LOCKED
+
+Execution environment: `R version 4.4.1 (2024-06-14)`.
+
+## Confirmatory decisions
+- ECe non-inferiority: **PASS**; H-VR − U-FIELD = 0.2405 dS m-1 (95% CI 0.2022 to 0.2788).
+- Yield non-inferiority: **PASS**; H-VR/U-FIELD = 0.9849 (95% CI 0.9637 to 1.0065).
+- Overall co-primary gate: **PASS**.
+- Gatekept water superiority: **PASS**; H-VR − U-FIELD = -28.30 mm (95% CI -31.82 to -24.79); model-based water saving = 19.39%.
+
+## Key secondary nitrate evidence
+- Below-60-cm nitrate: H-VR − U-FIELD = -6.246 kg N ha-1 (95% CI -6.899 to -5.593).
+- Cumulative drainage nitrate flux: H-VR − U-FIELD = -11.600 kg N ha-1 (95% CI -13.255 to -9.945).
+
+## Sensitivity
+- Cluster-robust ECe: 0.2405 (95% CI 0.2029 to 0.2781).
+- Cluster-robust yield ratio: 0.9849 (95% CI 0.9628 to 1.0075).
+- Cluster-robust water: -28.30 mm (95% CI -31.15 to -25.46).
+
+## Profile analysis
+- Paired post-minus-baseline depth-profile mixed models were completed for ECe and nitrate stock, with plot as the repeated random unit and treatment × hardpan × depth fixed structure.
+
+## Data lock and traceability
+- Authoritative workbook SHA-256: `a3c386909858e57ef4a00d7b288b11a287400e5823656cca9660bf051d14dd76`.
+- GitHub transfer can normalize line endings, so execution-input SHA-256 values are recorded rather than incorrectly compared to pre-transfer byte hashes.
+- Semantic checks verified row counts, plot IDs/mapping, treatment balance, and numeric column checksums against the locked workbook export.
+
+## Session information
+See `diagnostics/sessionInfo.txt`.

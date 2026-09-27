@@ -1,0 +1,5 @@
+"decision","pass","criterion"
+"ECe_noninferiority",TRUE,"upper 95% CI < +0.5 dS/m"
+"Yield_noninferiority",TRUE,"lower 95% CI ratio > 0.95"
+"Overall_coprimary",TRUE,"both co-primary PASS"
+"Water_superiority_gatekept",TRUE,"upper 95% CI difference < 0 after gate"
