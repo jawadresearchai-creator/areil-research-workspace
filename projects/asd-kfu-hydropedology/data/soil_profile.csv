@@ -1,5 +1,3 @@
-<PARSED TEXT FOR SHEET: 1 / 1 TABS
-TAB NAME: soil_profile.csv>
 index,Sample_ID,Season_ID,Block_ID,Plot_ID,Treatment,Sample_Date,Sampling_Phase,Depth_Top_cm,Depth_Bottom_cm,ECe_dS_m,Theta_v,NO3_N_mg_kg,NH4_N_mg_kg,Bulk_Density_g_cm3,NO3_Stock_kg_ha,NH4_Stock_kg_ha,Lab_Batch_ID,Data_Status,Source_File,Notes
 0,SP-00001,S1,S1_H1_B01,S1_H1_B01_P1,H-VR,2024-09-22,BASELINE,0,15,7.86,0.183,18.8,3.06,1.598,45.06360000000001,7.334820000000001,S1_BL_01,Valid,S1_SOIL_PROFILE_BASELINE.csv,Depth-resolved salinity and mineral-N profile
 1,SP-00002,S1,S1_H1_B01,S1_H1_B01_P1,H-VR,2024-09-22,BASELINE,15,30,7.23,0.187,16.76,2.76,1.6,40.224,6.624,S1_BL_01,Valid,S1_SOIL_PROFILE_BASELINE.csv,Depth-resolved salinity and mineral-N profile
