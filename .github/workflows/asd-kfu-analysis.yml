@@ -29,7 +29,7 @@ jobs:
       - name: Install R packages
         shell: Rscript {0}
         run: |
-          packages <- c('readr','dplyr','lme4','lmerTest','emmeans','sandwich','broom.mixed')
+          packages <- c('lme4','lmerTest','emmeans','sandwich')
           missing <- packages[!vapply(packages, requireNamespace, logical(1), quietly=TRUE)]
           if (length(missing)) install.packages(missing, repos='https://cloud.r-project.org', Ncpus=2)
           stopifnot(all(vapply(packages, requireNamespace, logical(1), quietly=TRUE)))
