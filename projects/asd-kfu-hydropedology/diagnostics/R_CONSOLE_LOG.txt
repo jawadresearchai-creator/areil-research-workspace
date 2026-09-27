@@ -1,7 +1,2 @@
-Warning message:
-In read.table(file = file, header = header, sep = sep, quote = quote,  :
-  incomplete final line found by readTableHeader on 'projects/asd-kfu-hydropedology/data/derived_analysis.csv'
-Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
-  more columns than column names
-Calls: read.csv -> read.table
+Error: nrow(soil) == 1980L is not TRUE
 Execution halted
