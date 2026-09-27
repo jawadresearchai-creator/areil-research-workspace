@@ -14,14 +14,14 @@ dir.create(out_dir, recursive=TRUE, showWarnings=FALSE)
 dir.create(diag_dir, recursive=TRUE, showWarnings=FALSE)
 
 sha256 <- function(p) strsplit(system2("sha256sum", p, stdout=TRUE), " ")[[1]][1]
-inputs <- c("derived_analysis.csv","unit_register.csv","drainage_subset.csv","soil_profile.csv")
+inputs <- c("derived_analysis.csv","unit_register.csv","drainage_subset.csv","soil_profile_valid_part1.csv","soil_profile_valid_part2.csv","soil_profile_valid_part3.csv")
 input_hashes <- data.frame(file=inputs, sha256=vapply(file.path(data_dir,inputs), sha256, character(1)))
 write.csv(input_hashes, file.path(diag_dir,"execution_input_sha256.csv"), row.names=FALSE)
 
 raw <- read.csv(file.path(data_dir,"derived_analysis.csv"), check.names=FALSE, stringsAsFactors=FALSE)
 unit <- read.csv(file.path(data_dir,"unit_register.csv"), check.names=FALSE, stringsAsFactors=FALSE)
 dr <- read.csv(file.path(data_dir,"drainage_subset.csv"), check.names=FALSE, stringsAsFactors=FALSE)
-soil0 <- read.csv(file.path(data_dir,"soil_profile.csv"), check.names=FALSE, stringsAsFactors=FALSE)
+soil0 <- do.call(rbind, lapply(c("soil_profile_valid_part1.csv","soil_profile_valid_part2.csv","soil_profile_valid_part3.csv"), function(z) read.csv(file.path(data_dir,z), check.names=FALSE, stringsAsFactors=FALSE)))
 
 # Semantic data-lock checks: invariant to LF/CRLF transfer.
 close_enough <- function(x, expected, tol=1e-7) {
