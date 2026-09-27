@@ -1,5 +1,3 @@
-<PARSED TEXT FOR SHEET: 1 / 1 TABS
-TAB NAME: unit_register.csv>
 index,Season_ID,Hardpan_Class,Block_ID,Plot_ID,Plot_Position,Treatment,Randomization_Seed,Area_m2,Buffer_m,Baseline_ECe_0_30,Baseline_ECe_0_60,Hardpan_Top_m,Eligibility,Instrumented_Subset,Field_Label,Notes
 0,S1,H1,S1_H1_B01,S1_H1_B01_P1,1,H-VR,20260927,80,3,7.54,7.36,0.49,ELIGIBLE,YES,KFU_AVTRS_SECTOR_A_2024,Randomized plot included in the 33-block seasonal design
 1,S1,H1,S1_H1_B01,S1_H1_B01_P2,2,S-VR,20260927,80,3,7.48,7.36,0.48,ELIGIBLE,YES,KFU_AVTRS_SECTOR_A_2024,Randomized plot included in the 33-block seasonal design
