@@ -1,0 +1,75 @@
+name: ASD KFU R 4.4.1 Statistical Lock
+
+on:
+  push:
+    branches: [asd-kfu-analysis]
+    paths:
+      - 'projects/asd-kfu-hydropedology/RUN_ANALYSIS'
+
+permissions:
+  contents: write
+
+jobs:
+  r-analysis:
+    name: Confirmatory mixed-model analysis
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Checkout analysis branch
+        uses: actions/checkout@v4
+        with:
+          ref: asd-kfu-analysis
+
+      - name: Set up R 4.4.1
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.4.1'
+          use-public-rspm: true
+
+      - name: Install R packages
+        shell: Rscript {0}
+        run: |
+          packages <- c('readr','dplyr','lme4','lmerTest','emmeans','sandwich','broom.mixed')
+          missing <- packages[!vapply(packages, requireNamespace, logical(1), quietly=TRUE)]
+          if (length(missing)) install.packages(missing, repos='https://cloud.r-project.org', Ncpus=2)
+          stopifnot(all(vapply(packages, requireNamespace, logical(1), quietly=TRUE)))
+
+      - name: Run locked ASD KFU analysis
+        shell: bash
+        run: |
+          set -o pipefail
+          mkdir -p projects/asd-kfu-hydropedology/results projects/asd-kfu-hydropedology/diagnostics
+          Rscript projects/asd-kfu-hydropedology/scripts/run_asd_kfu_analysis.R 2>&1 | tee projects/asd-kfu-hydropedology/diagnostics/R_CONSOLE_LOG.txt
+
+      - name: Show locked summary
+        if: always()
+        shell: bash
+        run: |
+          if [ -f projects/asd-kfu-hydropedology/results/ASD_ANALYSIS_SUMMARY_v1_LOCKED.md ]; then
+            cat projects/asd-kfu-hydropedology/results/ASD_ANALYSIS_SUMMARY_v1_LOCKED.md
+          fi
+
+      - name: Persist outputs
+        if: always()
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f projects/asd-kfu-hydropedology/results/ projects/asd-kfu-hydropedology/diagnostics/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo 'No generated outputs to commit.'
+          else
+            git commit -m 'asd-kfu: persist R 4.4.1 statistical lock outputs [skip ci]'
+            git push origin HEAD:asd-kfu-analysis
+          fi
+
+      - name: Upload analysis artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: asd-kfu-r-statistical-lock
+          path: |
+            projects/asd-kfu-hydropedology/results/
+            projects/asd-kfu-hydropedology/diagnostics/
+          if-no-files-found: warn
+          retention-days: 90
